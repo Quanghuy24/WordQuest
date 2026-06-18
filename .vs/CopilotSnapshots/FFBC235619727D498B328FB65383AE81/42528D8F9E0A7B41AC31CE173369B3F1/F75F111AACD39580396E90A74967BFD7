@@ -1,0 +1,411 @@
+﻿namespace WordQuest
+{
+    partial class frmAdminRules
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            lblTitle = new Label();
+            pnlMain = new Panel();
+            label6 = new Label();
+            label5 = new Label();
+            label4 = new Label();
+            label3 = new Label();
+            label2 = new Label();
+            label1 = new Label();
+            nudStar3 = new NumericUpDown();
+            nudStar2 = new NumericUpDown();
+            nudStar1 = new NumericUpDown();
+            nudStreakBonus = new NumericUpDown();
+            nudLives = new NumericUpDown();
+            nudTimeLimit = new NumericUpDown();
+            nudQuestionCount = new NumericUpDown();
+            lblStar3 = new Label();
+            lblStar2 = new Label();
+            lblStar1 = new Label();
+            lblStreakBonus = new Label();
+            lblLives = new Label();
+            lblTimeLimit = new Label();
+            lblQuestionCount = new Label();
+            btnSave = new Button();
+            btnDefault = new Button();
+            btnBack = new Button();
+            label7 = new Label();
+            label8 = new Label();
+            pnlMain.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)nudStar3).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)nudStar2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)nudStar1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)nudStreakBonus).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)nudLives).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)nudTimeLimit).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)nudQuestionCount).BeginInit();
+            SuspendLayout();
+            // 
+            // lblTitle
+            // 
+            lblTitle.AutoSize = true;
+            lblTitle.Font = new Font("Showcard Gothic", 20F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblTitle.Location = new Point(305, 37);
+            lblTitle.Name = "lblTitle";
+            lblTitle.Size = new Size(306, 50);
+            lblTitle.TabIndex = 0;
+            lblTitle.Text = "QUY TẮC GAME";
+            // 
+            // pnlMain
+            // 
+            pnlMain.AutoSize = true;
+            pnlMain.Controls.Add(label8);
+            pnlMain.Controls.Add(label7);
+            pnlMain.Controls.Add(label6);
+            pnlMain.Controls.Add(label5);
+            pnlMain.Controls.Add(label4);
+            pnlMain.Controls.Add(label3);
+            pnlMain.Controls.Add(label2);
+            pnlMain.Controls.Add(label1);
+            pnlMain.Controls.Add(nudStar3);
+            pnlMain.Controls.Add(nudStar2);
+            pnlMain.Controls.Add(nudStar1);
+            pnlMain.Controls.Add(nudStreakBonus);
+            pnlMain.Controls.Add(nudLives);
+            pnlMain.Controls.Add(nudTimeLimit);
+            pnlMain.Controls.Add(nudQuestionCount);
+            pnlMain.Controls.Add(lblStar3);
+            pnlMain.Controls.Add(lblStar2);
+            pnlMain.Controls.Add(lblStar1);
+            pnlMain.Controls.Add(lblStreakBonus);
+            pnlMain.Controls.Add(lblLives);
+            pnlMain.Controls.Add(lblTimeLimit);
+            pnlMain.Controls.Add(lblQuestionCount);
+            pnlMain.Location = new Point(90, 102);
+            pnlMain.Name = "pnlMain";
+            pnlMain.Size = new Size(757, 566);
+            pnlMain.TabIndex = 1;
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Location = new Point(52, 305);
+            label6.Name = "label6";
+            label6.Size = new Size(642, 25);
+            label6.TabIndex = 19;
+            label6.Text = "──────────────────────────────────────────────────────────────────────";
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Location = new Point(52, 457);
+            label5.Name = "label5";
+            label5.Size = new Size(642, 25);
+            label5.TabIndex = 18;
+            label5.Text = "──────────────────────────────────────────────────────────────────────";
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Location = new Point(52, 381);
+            label4.Name = "label4";
+            label4.Size = new Size(642, 25);
+            label4.TabIndex = 17;
+            label4.Text = "──────────────────────────────────────────────────────────────────────";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(57, 148);
+            label3.Name = "label3";
+            label3.Size = new Size(642, 25);
+            label3.TabIndex = 16;
+            label3.Text = "──────────────────────────────────────────────────────────────────────";
+            
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(52, 224);
+            label2.Name = "label2";
+            label2.Size = new Size(642, 25);
+            label2.TabIndex = 15;
+            label2.Text = "──────────────────────────────────────────────────────────────────────";
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(52, 74);
+            label1.Name = "label1";
+            label1.Size = new Size(642, 25);
+            label1.TabIndex = 14;
+            label1.Text = "──────────────────────────────────────────────────────────────────────";
+            // 
+            // nudStar3
+            // 
+            nudStar3.Font = new Font("Segoe UI", 14F, FontStyle.Bold);
+            nudStar3.Location = new Point(546, 485);
+            nudStar3.Maximum = new decimal(new int[] { 200, 0, 0, 0 });
+            nudStar3.Name = "nudStar3";
+            nudStar3.Size = new Size(153, 45);
+            nudStar3.TabIndex = 13;
+            nudStar3.Value = new decimal(new int[] { 100, 0, 0, 0 });
+            // 
+            // nudStar2
+            // 
+            nudStar2.Font = new Font("Segoe UI", 14F, FontStyle.Bold);
+            nudStar2.Location = new Point(546, 409);
+            nudStar2.Maximum = new decimal(new int[] { 200, 0, 0, 0 });
+            nudStar2.Name = "nudStar2";
+            nudStar2.Size = new Size(153, 45);
+            nudStar2.TabIndex = 12;
+            nudStar2.Value = new decimal(new int[] { 80, 0, 0, 0 });
+            // 
+            // nudStar1
+            // 
+            nudStar1.Font = new Font("Segoe UI", 14F, FontStyle.Bold);
+            nudStar1.Location = new Point(546, 333);
+            nudStar1.Maximum = new decimal(new int[] { 200, 0, 0, 0 });
+            nudStar1.Name = "nudStar1";
+            nudStar1.Size = new Size(153, 45);
+            nudStar1.TabIndex = 11;
+            nudStar1.Value = new decimal(new int[] { 50, 0, 0, 0 });
+            // 
+            // nudStreakBonus
+            // 
+            nudStreakBonus.Font = new Font("Segoe UI", 14F, FontStyle.Bold);
+            nudStreakBonus.Location = new Point(546, 257);
+            nudStreakBonus.Maximum = new decimal(new int[] { 50, 0, 0, 0 });
+            nudStreakBonus.Name = "nudStreakBonus";
+            nudStreakBonus.Size = new Size(153, 45);
+            nudStreakBonus.TabIndex = 10;
+            nudStreakBonus.Value = new decimal(new int[] { 5, 0, 0, 0 });
+            // 
+            // nudLives
+            // 
+            nudLives.Font = new Font("Segoe UI", 14F, FontStyle.Bold);
+            nudLives.Location = new Point(546, 178);
+            nudLives.Maximum = new decimal(new int[] { 10, 0, 0, 0 });
+            nudLives.Minimum = new decimal(new int[] { 1, 0, 0, 0 });
+            nudLives.Name = "nudLives";
+            nudLives.Size = new Size(153, 45);
+            nudLives.TabIndex = 9;
+            nudLives.Value = new decimal(new int[] { 3, 0, 0, 0 });
+            // 
+            // nudTimeLimit
+            // 
+            nudTimeLimit.Font = new Font("Segoe UI", 14F, FontStyle.Bold);
+            nudTimeLimit.Location = new Point(546, 100);
+            nudTimeLimit.Maximum = new decimal(new int[] { 120, 0, 0, 0 });
+            nudTimeLimit.Minimum = new decimal(new int[] { 10, 0, 0, 0 });
+            nudTimeLimit.Name = "nudTimeLimit";
+            nudTimeLimit.Size = new Size(153, 45);
+            nudTimeLimit.TabIndex = 8;
+            nudTimeLimit.Value = new decimal(new int[] { 60, 0, 0, 0 });
+            // 
+            // nudQuestionCount
+            // 
+            nudQuestionCount.Font = new Font("Segoe UI", 14F, FontStyle.Bold);
+            nudQuestionCount.Location = new Point(541, 28);
+            nudQuestionCount.Maximum = new decimal(new int[] { 30, 0, 0, 0 });
+            nudQuestionCount.Minimum = new decimal(new int[] { 5, 0, 0, 0 });
+            nudQuestionCount.Name = "nudQuestionCount";
+            nudQuestionCount.Size = new Size(153, 45);
+            nudQuestionCount.TabIndex = 7;
+            nudQuestionCount.Value = new decimal(new int[] { 15, 0, 0, 0 });
+            // 
+            // lblStar3
+            // 
+            lblStar3.AutoSize = true;
+            lblStar3.Font = new Font("Segoe UI", 14F, FontStyle.Bold);
+            lblStar3.Location = new Point(52, 487);
+            lblStar3.Name = "lblStar3";
+            lblStar3.Size = new Size(299, 38);
+            lblStar3.TabIndex = 6;
+            lblStar3.Text = "Ngưỡng sao 3 ( Khó):";
+            // 
+            // lblStar2
+            // 
+            lblStar2.AutoSize = true;
+            lblStar2.Font = new Font("Segoe UI", 14F, FontStyle.Bold);
+            lblStar2.Location = new Point(52, 409);
+            lblStar2.Name = "lblStar2";
+            lblStar2.Size = new Size(390, 38);
+            lblStar2.TabIndex = 5;
+            lblStar2.Text = "Ngưỡng sao 2 ( Trung bình):";
+            // 
+            // lblStar1
+            // 
+            lblStar1.AutoSize = true;
+            lblStar1.Font = new Font("Segoe UI", 14F, FontStyle.Bold);
+            lblStar1.Location = new Point(52, 335);
+            lblStar1.Name = "lblStar1";
+            lblStar1.Size = new Size(283, 38);
+            lblStar1.TabIndex = 4;
+            lblStar1.Text = "Ngưỡng sao 1 ( Dễ):";
+            // 
+            // lblStreakBonus
+            // 
+            lblStreakBonus.AutoSize = true;
+            lblStreakBonus.Font = new Font("Segoe UI", 14F, FontStyle.Bold);
+            lblStreakBonus.Location = new Point(52, 259);
+            lblStreakBonus.Name = "lblStreakBonus";
+            lblStreakBonus.Size = new Size(291, 38);
+            lblStreakBonus.TabIndex = 3;
+            lblStreakBonus.Text = "Điểm thưởng streak:";
+            // 
+            // lblLives
+            // 
+            lblLives.AutoSize = true;
+            lblLives.Font = new Font("Segoe UI", 14F, FontStyle.Bold);
+            lblLives.Location = new Point(52, 185);
+            lblLives.Name = "lblLives";
+            lblLives.Size = new Size(133, 38);
+            lblLives.TabIndex = 2;
+            lblLives.Text = "Số mạng";
+            // 
+            // lblTimeLimit
+            // 
+            lblTimeLimit.AutoSize = true;
+            lblTimeLimit.Font = new Font("Segoe UI", 14F, FontStyle.Bold);
+            lblTimeLimit.Location = new Point(57, 99);
+            lblTimeLimit.Name = "lblTimeLimit";
+            lblTimeLimit.Size = new Size(366, 38);
+            lblTimeLimit.TabIndex = 1;
+            lblTimeLimit.Text = "Thời gian làm 1 câu (giây):";
+            // 
+            // lblQuestionCount
+            // 
+            lblQuestionCount.AutoSize = true;
+            lblQuestionCount.Font = new Font("Segoe UI", 14F, FontStyle.Bold);
+            lblQuestionCount.Location = new Point(57, 30);
+            lblQuestionCount.Name = "lblQuestionCount";
+            lblQuestionCount.Size = new Size(249, 38);
+            lblQuestionCount.TabIndex = 0;
+            lblQuestionCount.Text = "Câu hỏi mỗi màn:";
+            // 
+            // btnSave
+            // 
+            btnSave.Location = new Point(187, 682);
+            btnSave.Name = "btnSave";
+            btnSave.Size = new Size(165, 61);
+            btnSave.TabIndex = 2;
+            btnSave.Text = "Lưu";
+            btnSave.UseVisualStyleBackColor = true;
+            btnSave.Click += btnSave_Click;
+            // 
+            // btnDefault
+            // 
+            btnDefault.Location = new Point(383, 682);
+            btnDefault.Name = "btnDefault";
+            btnDefault.Size = new Size(165, 61);
+            btnDefault.TabIndex = 3;
+            btnDefault.Text = "Mặc định";
+            btnDefault.UseVisualStyleBackColor = true;
+            btnDefault.Click += btnDefault_Click;
+            // 
+            // btnBack
+            // 
+            btnBack.Location = new Point(587, 682);
+            btnBack.Name = "btnBack";
+            btnBack.Size = new Size(165, 61);
+            btnBack.TabIndex = 4;
+            btnBack.Text = "Quay lại";
+            btnBack.UseVisualStyleBackColor = true;
+            btnBack.Click += btnBack_Click;
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Location = new Point(52, 0);
+            label7.Name = "label7";
+            label7.Size = new Size(642, 25);
+            label7.TabIndex = 20;
+            label7.Text = "──────────────────────────────────────────────────────────────────────";
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Location = new Point(52, 533);
+            label8.Name = "label8";
+            label8.Size = new Size(642, 25);
+            label8.TabIndex = 21;
+            label8.Text = "──────────────────────────────────────────────────────────────────────";
+            // 
+            // frmAdminRules
+            // 
+            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(958, 774);
+            Controls.Add(btnBack);
+            Controls.Add(btnDefault);
+            Controls.Add(btnSave);
+            Controls.Add(pnlMain);
+            Controls.Add(lblTitle);
+            Name = "frmAdminRules";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Quản lý quy tắc game";
+            Load += frmAdminRules_Load;
+            pnlMain.ResumeLayout(false);
+            pnlMain.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)nudStar3).EndInit();
+            ((System.ComponentModel.ISupportInitialize)nudStar2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)nudStar1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)nudStreakBonus).EndInit();
+            ((System.ComponentModel.ISupportInitialize)nudLives).EndInit();
+            ((System.ComponentModel.ISupportInitialize)nudTimeLimit).EndInit();
+            ((System.ComponentModel.ISupportInitialize)nudQuestionCount).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
+        }
+
+        #endregion
+
+        private Label lblTitle;
+        private Panel pnlMain;
+        private Label lblStar3;
+        private Label lblStar2;
+        private Label lblStar1;
+        private Label lblStreakBonus;
+        private Label lblLives;
+        private Label lblTimeLimit;
+        private Label lblQuestionCount;
+        private NumericUpDown nudStar3;
+        private NumericUpDown nudStar2;
+        private NumericUpDown nudStar1;
+        private NumericUpDown nudStreakBonus;
+        private NumericUpDown nudLives;
+        private NumericUpDown nudTimeLimit;
+        private NumericUpDown nudQuestionCount;
+        private Button btnSave;
+        private Button btnDefault;
+        private Button btnBack;
+        private Label label1;
+        private Label label6;
+        private Label label5;
+        private Label label4;
+        private Label label3;
+        private Label label2;
+        private Label label8;
+        private Label label7;
+    }
+}

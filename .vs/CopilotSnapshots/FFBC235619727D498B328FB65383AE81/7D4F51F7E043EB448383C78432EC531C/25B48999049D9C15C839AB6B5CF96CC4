@@ -1,0 +1,180 @@
+﻿namespace WordQuest
+{
+    partial class frmWin
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            lblTitle = new Label();
+            lblStars = new Label();
+            pnlInfo = new Panel();
+            lblRankInfo = new Label();
+            lblScoreInfo = new Label();
+            lblCorrectInfo = new Label();
+            lblTopicInfo = new Label();
+            btnReplay = new Button();
+            btnLevels = new Button();
+            btnHome = new Button();
+            pnlInfo.SuspendLayout();
+            SuspendLayout();
+            // 
+            // lblTitle
+            // 
+            lblTitle.AutoSize = true;
+            lblTitle.BackColor = Color.White;
+            lblTitle.Font = new Font("Showcard Gothic", 20F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblTitle.Location = new Point(316, 60);
+            lblTitle.Name = "lblTitle";
+            lblTitle.Size = new Size(283, 50);
+            lblTitle.TabIndex = 0;
+            lblTitle.Text = " 🏆 Xuất sắc!";
+            // 
+            // lblStars
+            // 
+            lblStars.AutoSize = true;
+            lblStars.Font = new Font("Segoe UI", 20F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblStars.Location = new Point(377, 143);
+            lblStars.Name = "lblStars";
+            lblStars.Size = new Size(194, 54);
+            lblStars.TabIndex = 1;
+            lblStars.Text = "  ⭐ ⭐ ⭐  ";
+            // 
+            // pnlInfo
+            // 
+            pnlInfo.Controls.Add(lblRankInfo);
+            pnlInfo.Controls.Add(lblScoreInfo);
+            pnlInfo.Controls.Add(lblCorrectInfo);
+            pnlInfo.Controls.Add(lblTopicInfo);
+            pnlInfo.Location = new Point(289, 237);
+            pnlInfo.Name = "pnlInfo";
+            pnlInfo.Size = new Size(369, 240);
+            pnlInfo.TabIndex = 2;
+            // 
+            // lblRankInfo
+            // 
+            lblRankInfo.AutoSize = true;
+            lblRankInfo.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblRankInfo.Location = new Point(21, 180);
+            lblRankInfo.Name = "lblRankInfo";
+            lblRankInfo.Size = new Size(321, 32);
+            lblRankInfo.TabIndex = 3;
+            lblRankInfo.Text = "🏅 Xếp loại:     S - Hoàn hảo";
+            // 
+            // lblScoreInfo
+            // 
+            lblScoreInfo.AutoSize = true;
+            lblScoreInfo.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblScoreInfo.Location = new Point(21, 131);
+            lblScoreInfo.Name = "lblScoreInfo";
+            lblScoreInfo.Size = new Size(289, 32);
+            lblScoreInfo.TabIndex = 2;
+            lblScoreInfo.Text = "🎯 Điểm số:      150 điểm";
+            // 
+            // lblCorrectInfo
+            // 
+            lblCorrectInfo.AutoSize = true;
+            lblCorrectInfo.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblCorrectInfo.Location = new Point(21, 72);
+            lblCorrectInfo.Name = "lblCorrectInfo";
+            lblCorrectInfo.Size = new Size(268, 32);
+            lblCorrectInfo.TabIndex = 1;
+            lblCorrectInfo.Text = "✅ Số câu đúng:  15/15";
+            // 
+            // lblTopicInfo
+            // 
+            lblTopicInfo.AutoSize = true;
+            lblTopicInfo.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblTopicInfo.Location = new Point(21, 21);
+            lblTopicInfo.Name = "lblTopicInfo";
+            lblTopicInfo.Size = new Size(328, 32);
+            lblTopicInfo.TabIndex = 0;
+            lblTopicInfo.Text = "Chủ đề:      Động vật - Màn 1";
+            // 
+            // btnReplay
+            // 
+            btnReplay.Font = new Font("Showcard Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnReplay.Location = new Point(194, 536);
+            btnReplay.Name = "btnReplay";
+            btnReplay.Size = new Size(238, 52);
+            btnReplay.TabIndex = 3;
+            btnReplay.Text = "🔄 Chơi lại";
+            btnReplay.UseVisualStyleBackColor = true;
+            // 
+            // btnLevels
+            // 
+            btnLevels.Font = new Font("Showcard Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnLevels.Location = new Point(523, 536);
+            btnLevels.Name = "btnLevels";
+            btnLevels.Size = new Size(227, 52);
+            btnLevels.TabIndex = 4;
+            btnLevels.Text = "📋 Chọn màn khác";
+            btnLevels.UseVisualStyleBackColor = true;
+            // 
+            // btnHome
+            // 
+            btnHome.Font = new Font("Showcard Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnHome.Location = new Point(366, 633);
+            btnHome.Name = "btnHome";
+            btnHome.Size = new Size(254, 52);
+            btnHome.TabIndex = 5;
+            btnHome.Text = "🏠 Trang chủ";
+            btnHome.UseVisualStyleBackColor = true;
+            // 
+            // frmWin
+            // 
+            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(958, 774);
+            Controls.Add(btnHome);
+            Controls.Add(btnLevels);
+            Controls.Add(btnReplay);
+            Controls.Add(pnlInfo);
+            Controls.Add(lblStars);
+            Controls.Add(lblTitle);
+            Name = "frmWin";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "frmWin";
+            Load += frmWin_Load;
+            pnlInfo.ResumeLayout(false);
+            pnlInfo.PerformLayout();
+            ResumeLayout(false);
+            PerformLayout();
+        }
+
+        #endregion
+
+        private Label lblTitle;
+        private Label lblStars;
+        private Panel pnlInfo;
+        private Label lblRankInfo;
+        private Label lblScoreInfo;
+        private Label lblCorrectInfo;
+        private Label lblTopicInfo;
+        private Button btnReplay;
+        private Button btnLevels;
+        private Button btnHome;
+    }
+}

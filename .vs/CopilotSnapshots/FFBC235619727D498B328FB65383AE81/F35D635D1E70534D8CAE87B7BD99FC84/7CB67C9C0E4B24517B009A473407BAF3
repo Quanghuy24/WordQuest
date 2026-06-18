@@ -1,0 +1,102 @@
+﻿using System.Data;
+using Microsoft.Data.SqlClient;
+using WordQuest.DTO;
+
+namespace WordQuest.DAL
+{
+    public class LevelDAL
+    {
+        public DataTable GetLevelsByTopic(int topicID)
+        {
+            const string sql = "SELECT LevelID, LevelNum, LevelName, DifficultyLevel, Mode, QuestionCount FROM Levels WHERE TopicID = @tid ORDER BY LevelNum";
+            return DatabaseHelper.ExecuteQuery(sql, new SqlParameter("@tid", topicID));
+        }
+
+        public LevelDTO? GetLevelByID(int levelID)
+        {
+            const string sql = "SELECT LevelID, TopicID, LevelNum, LevelName, DifficultyLevel, Mode, QuestionCount FROM Levels WHERE LevelID = @id";
+            var dt = DatabaseHelper.ExecuteQuery(sql, new SqlParameter("@id", levelID));
+            if (dt.Rows.Count == 0) return null;
+
+            var row = dt.Rows[0];
+            return new LevelDTO
+            {
+                LevelID = Convert.ToInt32(row["LevelID"]),
+                TopicID = Convert.ToInt32(row["TopicID"]),
+                LevelNum = Convert.ToInt32(row["LevelNum"]),
+                LevelName = row["LevelName"].ToString() ?? "",
+                DifficultyLevel = row["DifficultyLevel"].ToString() ?? "",
+                Mode = row["Mode"].ToString() ?? "",
+                QuestionCount = Convert.ToInt32(row["QuestionCount"])
+            };
+        }
+
+        public int InsertLevel(LevelDTO level)
+        {
+            const string sql = @"INSERT INTO Levels (TopicID, LevelNum, LevelName, DifficultyLevel, Mode, QuestionCount)
+                                 VALUES (@topicID, @levelNum, @name, @diff, @mode, @count);
+                                 SELECT SCOPE_IDENTITY();";
+            return Convert.ToInt32(DatabaseHelper.ExecuteScalar(sql, new SqlParameter[]
+            {
+                new SqlParameter("@topicID", level.TopicID),
+                new SqlParameter("@levelNum", level.LevelNum),
+                new SqlParameter("@name", level.LevelName),
+                new SqlParameter("@diff", level.DifficultyLevel),
+                new SqlParameter("@mode", level.Mode),
+                new SqlParameter("@count", level.QuestionCount)));
+        }
+
+        public bool UpdateLevel(LevelDTO level)
+        {
+            const string sql = "UPDATE Levels SET LevelName = @name, DifficultyLevel = @diff, Mode = @mode, QuestionCount = @count WHERE LevelID = @id";
+            return DatabaseHelper.ExecuteNonQuery(sql, new SqlParameter[]
+            {
+                new SqlParameter("@id", level.LevelID),
+                new SqlParameter("@name", level.LevelName),
+                new SqlParameter("@diff", level.DifficultyLevel),
+                new SqlParameter("@mode", level.Mode),
+                new SqlParameter("@count", level.QuestionCount)
+            }) > 0;
+        }
+
+        public bool DeleteLevel(int levelID)
+        {
+            const string sql = "DELETE FROM Levels WHERE LevelID = @id";
+            return DatabaseHelper.ExecuteNonQuery(sql, new SqlParameter[] { new SqlParameter("@id", levelID) }) > 0;
+        }
+
+        public bool AddWordToLevel(int levelID, int wordID)
+        {
+            const string sql = "INSERT INTO LevelWords (LevelID, WordID) VALUES (@lid, @wid)";
+            return DatabaseHelper.ExecuteNonQuery(sql, new SqlParameter[]
+            {
+                new SqlParameter("@lid", levelID),
+                new SqlParameter("@wid", wordID)
+            }) > 0;
+        }
+
+        public bool RemoveWordFromLevel(int levelID, int wordID)
+        {
+            const string sql = "DELETE FROM LevelWords WHERE LevelID = @lid AND WordID = @wid";
+            return DatabaseHelper.ExecuteNonQuery(sql, new SqlParameter[]
+            {
+                new SqlParameter("@lid", levelID),
+                new SqlParameter("@wid", wordID)
+            }) > 0;
+        }
+
+        public bool ClearLevelWords(int levelID)
+        {
+            const string sql = "DELETE FROM LevelWords WHERE LevelID = @lid";
+            return DatabaseHelper.ExecuteNonQuery(sql, new SqlParameter[] { new SqlParameter("@lid", levelID) }) > 0;
+        }
+
+        public DataTable GetFixedWordsForLevel(int levelID)
+        {
+            const string sql = @"SELECT w.WordID, w.EnglishWord, w.VietnameseMeaning, w.DifficultyLevel
+                                 FROM LevelWords lw JOIN Words w ON lw.WordID = w.WordID
+                                 WHERE lw.LevelID = @lid";
+            return DatabaseHelper.ExecuteQuery(sql, new SqlParameter[] { new SqlParameter("@lid", levelID) });
+        }
+    }
+}

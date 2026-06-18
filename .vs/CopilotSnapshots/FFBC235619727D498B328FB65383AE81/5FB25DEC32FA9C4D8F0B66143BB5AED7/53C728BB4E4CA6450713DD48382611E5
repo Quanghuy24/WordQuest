@@ -1,0 +1,612 @@
+﻿using System;
+using System.Data;
+using System.Drawing;
+using System.IO;
+using System.Linq;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using WordQuest.BUS;
+using WordQuest.DTO;
+
+namespace WordQuest.GUI
+{
+    public partial class frmAdmin : Form
+    {
+        private readonly Form _topics;
+        private readonly WordBUS _wordBUS = new();
+        private readonly TopicBUS _topicBUS = new();
+
+        private int _selectedWordID = -1;
+        private string _selectedImagePath = "";
+
+        // Bộ lọc hiện tại
+        private int _currentTopicFilter = -1;  // -1 = Tất cả
+        private string _currentFilterImage = "Tất cả";
+        private string _currentFilterDiff = "Tất cả";
+        private string _currentSearchKeyword = "";
+
+        public frmAdmin(Form topics)
+        {
+            InitializeComponent();
+            _topics = topics;
+        }
+
+        private async void frmAdmin_Load(object sender, EventArgs e)
+        {
+            SetupControls();
+            await LoadTopicsToComboBox();
+            await LoadTopicTree();
+            await LoadWords(); // Load tất cả từ ban đầu
+        }
+
+        private void SetupControls()
+        {
+            // Filter controls
+            cboFilterImage.Items.Clear();
+            cboFilterImage.Items.AddRange(new[] { "Tất cả", "Có ảnh", "Chưa có ảnh" });
+            cboFilterImage.SelectedIndex = 0;
+            cboFilterImage.SelectedIndexChanged += CboFilterImage_SelectedIndexChanged;
+
+            cboFilterDiff.Items.Clear();
+            cboFilterDiff.Items.AddRange(new[] { "Tất cả", "1", "2", "3" });
+            cboFilterDiff.SelectedIndex = 0;
+            cboFilterDiff.SelectedIndexChanged += CboFilterDiff_SelectedIndexChanged;
+
+            // Input controls
+            cboInputDiff.Items.Clear();
+            cboInputDiff.Items.AddRange(new[] { "1", "2", "3" });
+            cboInputDiff.SelectedIndex = 0;
+
+            // Grid events
+            dgvWords.CellClick += DgvWords_CellClick;
+            dgvWords.CellPainting += DgvWords_CellPainting;
+
+            // Button events
+            btnAdd.Click += BtnAdd_Click;
+            btnUpdate.Click += BtnUpdate_Click;
+            btnDelete.Click += BtnDelete_Click;
+            btnSearch.Click += BtnSearch_Click;
+            btnShowAll.Click += BtnShowAll_Click;
+            btnBack.Click += BtnBack_Click;
+            btnPickImage.Click += BtnPickImage_Click;
+
+            // Search
+            txtSearch.KeyDown += TxtSearch_KeyDown;
+        }
+
+        #region Load Data
+
+        private async Task LoadTopicsToComboBox()
+        {
+            try
+            {
+                var dt = await Task.Run(() => _topicBUS.GetAllTopics());
+                cboInputTopic.Items.Clear();
+                foreach (DataRow row in dt.Rows)
+                {
+                    cboInputTopic.Items.Add(new ComboItem(
+                        Convert.ToInt32(row["TopicID"]),
+                        row["TopicName"].ToString() ?? ""
+                    ));
+                }
+                if (cboInputTopic.Items.Count > 0) cboInputTopic.SelectedIndex = 0;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Lỗi load chủ đề: {ex.Message}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private async Task LoadTopicTree()
+        {
+            try
+            {
+                treeTopics.Nodes.Clear();
+                treeTopics.AfterSelect -= TreeTopics_AfterSelect;
+
+                // Node "Tất cả"
+                var allNode = new TreeNode("📋 Tất cả từ vựng") { Tag = -1 };
+                treeTopics.Nodes.Add(allNode);
+
+                var dt = await Task.Run(() => _topicBUS.GetAllTopics());
+
+                // Nhóm các topic theo ParentID
+                var topics = dt.AsEnumerable().Select(row => new
+                {
+                    TopicID = Convert.ToInt32(row["TopicID"]),
+                    TopicName = row["TopicName"].ToString() ?? "",
+                    ParentID = row["ParentID"] == DBNull.Value ? 0 : Convert.ToInt32(row["ParentID"])
+                }).ToList();
+
+                // Thêm topic cha (ParentID = 0)
+                foreach (var topic in topics.Where(t => t.ParentID == 0))
+                {
+                    var parentNode = new TreeNode($"📁 {topic.TopicName}") { Tag = topic.TopicID };
+                    treeTopics.Nodes.Add(parentNode);
+
+                    // Thêm topic con
+                    foreach (var child in topics.Where(t => t.ParentID == topic.TopicID))
+                    {
+                        var childNode = new TreeNode($"📄 {child.TopicName}") { Tag = child.TopicID };
+                        parentNode.Nodes.Add(childNode);
+                    }
+                }
+
+                treeTopics.ExpandAll();
+                treeTopics.AfterSelect += TreeTopics_AfterSelect;
+                treeTopics.SelectedNode = allNode;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Lỗi load cây chủ đề: {ex.Message}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private async Task LoadWords()
+        {
+            try
+            {
+                // Xây dựng câu lệnh SQL động
+                string sql = @"SELECT w.WordID, t.TopicName, w.EnglishWord, w.Phonetic,
+                                      w.VietnameseMeaning, w.DifficultyLevel, w.EmojiIcon, w.ImagePath
+                               FROM Words w
+                               INNER JOIN Topics t ON w.TopicID = t.TopicID
+                               WHERE 1=1";
+
+                var parameters = new System.Collections.Generic.List<Microsoft.Data.SqlClient.SqlParameter>();
+
+                // Lọc theo chủ đề
+                if (_currentTopicFilter != -1)
+                {
+                    sql += " AND w.TopicID = @topicID";
+                    parameters.Add(new Microsoft.Data.SqlClient.SqlParameter("@topicID", _currentTopicFilter));
+                }
+
+                // Lọc theo độ khó
+                if (_currentFilterDiff != "Tất cả")
+                {
+                    sql += " AND w.DifficultyLevel = @diff";
+                    parameters.Add(new Microsoft.Data.SqlClient.SqlParameter("@diff", _currentFilterDiff));
+                }
+
+                // Lọc theo hình ảnh
+                if (_currentFilterImage == "Có ảnh")
+                {
+                    sql += " AND w.ImagePath IS NOT NULL AND w.ImagePath != ''";
+                }
+                else if (_currentFilterImage == "Chưa có ảnh")
+                {
+                    sql += " AND (w.ImagePath IS NULL OR w.ImagePath = '')";
+                }
+
+                // Tìm kiếm
+                if (!string.IsNullOrEmpty(_currentSearchKeyword))
+                {
+                    sql += " AND (w.EnglishWord LIKE @search OR w.VietnameseMeaning LIKE @search OR w.Phonetic LIKE @search)";
+                    parameters.Add(new Microsoft.Data.SqlClient.SqlParameter("@search", $"%{_currentSearchKeyword}%"));
+                }
+
+                sql += " ORDER BY t.TopicName, w.EnglishWord";
+
+                var dt = await Task.Run(() => DAL.DatabaseHelper.ExecuteQuery(sql, parameters.ToArray()));
+
+                // Hiển thị lên DataGridView
+                dgvWords.Rows.Clear();
+
+                foreach (DataRow row in dt.Rows)
+                {
+                    string diff = row["DifficultyLevel"]?.ToString() ?? "1";
+                    string emoji = row["EmojiIcon"]?.ToString() ?? "📝";
+                    string imagePath = row["ImagePath"]?.ToString() ?? "";
+
+                    int rowIndex = dgvWords.Rows.Add(
+                        row["WordID"],
+                        row["TopicName"],
+                        row["EnglishWord"],
+                        row["Phonetic"],
+                        row["VietnameseMeaning"],
+                        diff,
+                        emoji,
+                        "🗑 Xóa",
+                        imagePath
+                    );
+
+                    ColorDifficultyCell(dgvWords.Rows[rowIndex], diff);
+                }
+
+                label1.Text = $"Quản lý từ vựng | Tổng: {dt.Rows.Count} từ";
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Lỗi load từ: {ex.Message}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void ColorDifficultyCell(DataGridViewRow row, string diff)
+        {
+            var cell = row.Cells["colDifficulty"];
+            switch (diff)
+            {
+                case "1":
+                    cell.Style.BackColor = Color.FromArgb(200, 230, 201);
+                    cell.Style.ForeColor = Color.FromArgb(27, 94, 32);
+                    break;
+                case "2":
+                    cell.Style.BackColor = Color.FromArgb(255, 249, 196);
+                    cell.Style.ForeColor = Color.FromArgb(230, 81, 0);
+                    break;
+                case "3":
+                    cell.Style.BackColor = Color.FromArgb(255, 205, 210);
+                    cell.Style.ForeColor = Color.FromArgb(183, 28, 28);
+                    break;
+            }
+            cell.Style.Font = new Font("Segoe UI", 9f, FontStyle.Bold);
+            cell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
+        }
+
+        #endregion
+
+        #region Filter Events
+
+        private async void TreeTopics_AfterSelect(object sender, TreeViewEventArgs e)
+        {
+            if (e.Node?.Tag == null) return;
+            _currentTopicFilter = Convert.ToInt32(e.Node.Tag);
+            await LoadWords();
+        }
+
+        private async void CboFilterImage_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            _currentFilterImage = cboFilterImage.SelectedItem?.ToString() ?? "Tất cả";
+            await LoadWords();
+        }
+
+        private async void CboFilterDiff_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            _currentFilterDiff = cboFilterDiff.SelectedItem?.ToString() ?? "Tất cả";
+            await LoadWords();
+        }
+
+        private async void TxtSearch_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                _currentSearchKeyword = txtSearch.Text.Trim();
+                await LoadWords();
+            }
+        }
+
+        private async void BtnSearch_Click(object sender, EventArgs e)
+        {
+            _currentSearchKeyword = txtSearch.Text.Trim();
+            await LoadWords();
+        }
+
+        private async void BtnShowAll_Click(object sender, EventArgs e)
+        {
+            // Reset tất cả filter
+            cboFilterImage.SelectedIndex = 0;
+            cboFilterDiff.SelectedIndex = 0;
+            txtSearch.Text = "";
+            _currentSearchKeyword = "";
+            _currentFilterImage = "Tất cả";
+            _currentFilterDiff = "Tất cả";
+            _currentTopicFilter = -1;
+
+            // Reset TreeView về node "Tất cả"
+            foreach (TreeNode node in treeTopics.Nodes)
+            {
+                if (Convert.ToInt32(node.Tag) == -1)
+                {
+                    treeTopics.SelectedNode = node;
+                    break;
+                }
+            }
+
+            await LoadWords();
+            ClearInput();
+        }
+
+        #endregion
+
+        #region Grid Events
+
+        private void DgvWords_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex < 0) return;
+
+            // Xóa từ
+            if (dgvWords.Columns[e.ColumnIndex].Name == "colErase")
+            {
+                int wordID = Convert.ToInt32(dgvWords.Rows[e.RowIndex].Cells["colID"].Value);
+                DeleteWord(wordID);
+                return;
+            }
+
+            // Load lên form sửa
+            LoadRowToInput(e.RowIndex);
+        }
+
+        private void DgvWords_CellPainting(object sender, DataGridViewCellPaintingEventArgs e)
+        {
+            if (e.RowIndex >= 0 && e.ColumnIndex >= 0 && dgvWords.Columns[e.ColumnIndex].Name == "colErase")
+            {
+                e.Paint(e.CellBounds, DataGridViewPaintParts.All);
+                var buttonRect = e.CellBounds;
+                buttonRect.Inflate(-2, -2);
+                ButtonRenderer.DrawButton(e.Graphics, buttonRect, "Xóa", e.CellStyle.Font, false, System.Windows.Forms.VisualStyles.PushButtonState.Normal);
+                e.Handled = true;
+            }
+        }
+
+        private void LoadRowToInput(int rowIndex)
+        {
+            var row = dgvWords.Rows[rowIndex];
+            _selectedWordID = Convert.ToInt32(row.Cells["colID"].Value);
+
+            // Chọn chủ đề
+            string topicName = row.Cells["colTopic"].Value?.ToString() ?? "";
+            foreach (ComboItem item in cboInputTopic.Items)
+            {
+                if (item.Name == topicName)
+                {
+                    cboInputTopic.SelectedItem = item;
+                    break;
+                }
+            }
+
+            txtEnglish.Text = row.Cells["colEnglish"].Value?.ToString() ?? "";
+            txtPhonetic.Text = row.Cells["colPhonetic"].Value?.ToString() ?? "";
+            txtVietnamese.Text = row.Cells["colVietnamese"].Value?.ToString() ?? "";
+            txtHint.Text = row.Cells["colEmojiIcon"].Value?.ToString() ?? "";
+
+            string diff = row.Cells["colDifficulty"].Value?.ToString() ?? "1";
+            int diffIdx = cboInputDiff.Items.IndexOf(diff);
+            if (diffIdx >= 0) cboInputDiff.SelectedIndex = diffIdx;
+
+            _selectedImagePath = row.Cells["colImagePath"].Value?.ToString() ?? "";
+            if (!string.IsNullOrEmpty(_selectedImagePath))
+            {
+                string fullPath = Path.Combine(Application.StartupPath, _selectedImagePath);
+                if (File.Exists(fullPath))
+                {
+                    SetPreviewImage(LoadImageSafe(fullPath));
+                }
+                else
+                {
+                    SetPreviewImage(null);
+                }
+            }
+            else
+            {
+                SetPreviewImage(null);
+            }
+
+            // Highlight dòng đang chọn
+            dgvWords.ClearSelection();
+            dgvWords.Rows[rowIndex].Selected = true;
+
+            EnableEditControls(true);
+        }
+
+        private void EnableEditControls(bool enabled)
+        {
+            btnUpdate.Enabled = enabled;
+            btnDelete.Enabled = enabled;
+        }
+
+        #endregion
+
+        #region CRUD Operations
+
+        private bool ValidateInput()
+        {
+            if (cboInputTopic.SelectedItem == null)
+            {
+                MessageBox.Show("Vui lòng chọn chủ đề!", "Thiếu thông tin", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return false;
+            }
+            if (string.IsNullOrWhiteSpace(txtEnglish.Text))
+            {
+                MessageBox.Show("Vui lòng nhập từ tiếng Anh!", "Thiếu thông tin", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return false;
+            }
+            if (string.IsNullOrWhiteSpace(txtVietnamese.Text))
+            {
+                MessageBox.Show("Vui lòng nhập nghĩa tiếng Việt!", "Thiếu thông tin", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return false;
+            }
+            return true;
+        }
+
+        private async void BtnAdd_Click(object sender, EventArgs e)
+        {
+            if (!ValidateInput()) return;
+
+            int topicID = ((ComboItem)cboInputTopic.SelectedItem).ID;
+            string englishWord = txtEnglish.Text.Trim();
+
+            // Kiểm tra trùng lặp
+            bool isDuplicate = await Task.Run(() => _wordBUS.IsDuplicateEnglishWord(topicID, englishWord, 0));
+            if (isDuplicate)
+            {
+                MessageBox.Show($"Từ '{englishWord}' đã tồn tại trong chủ đề này!", "Trùng lặp", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            var word = new WordDTO
+            {
+                TopicID = topicID,
+                EnglishWord = englishWord,
+                Phonetic = txtPhonetic.Text.Trim(),
+                VietnameseMeaning = txtVietnamese.Text.Trim(),
+                DifficultyLevel = int.Parse(cboInputDiff.SelectedItem.ToString()!),
+                EmojiIcon = txtHint.Text.Trim(),
+                ImagePath = _selectedImagePath
+            };
+
+            try
+            {
+                await Task.Run(() => _wordBUS.AddWord(word));
+                await LoadWords();
+                ClearInput();
+                MessageBox.Show("✅ Thêm từ thành công!", "Thành công", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Lỗi: {ex.Message}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private async void BtnUpdate_Click(object sender, EventArgs e)
+        {
+            if (_selectedWordID < 0)
+            {
+                MessageBox.Show("Vui lòng chọn từ cần sửa!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            if (!ValidateInput()) return;
+
+            int topicID = ((ComboItem)cboInputTopic.SelectedItem).ID;
+            string englishWord = txtEnglish.Text.Trim();
+
+            // Kiểm tra trùng lặp (trừ chính nó)
+            bool isDuplicate = await Task.Run(() => _wordBUS.IsDuplicateEnglishWord(topicID, englishWord, _selectedWordID));
+            if (isDuplicate)
+            {
+                MessageBox.Show($"Từ '{englishWord}' đã tồn tại trong chủ đề này!", "Trùng lặp", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            var word = new WordDTO
+            {
+                WordID = _selectedWordID,
+                TopicID = topicID,
+                EnglishWord = englishWord,
+                Phonetic = txtPhonetic.Text.Trim(),
+                VietnameseMeaning = txtVietnamese.Text.Trim(),
+                DifficultyLevel = int.Parse(cboInputDiff.SelectedItem.ToString()!),
+                EmojiIcon = txtHint.Text.Trim(),
+                ImagePath = _selectedImagePath
+            };
+
+            try
+            {
+                await Task.Run(() => _wordBUS.UpdateWord(word));
+                await LoadWords();
+                ClearInput();
+                MessageBox.Show("✅ Cập nhật thành công!", "Thành công", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Lỗi: {ex.Message}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private async void DeleteWord(int wordID)
+        {
+            var confirm = MessageBox.Show("Xóa từ này?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if (confirm != DialogResult.Yes) return;
+
+            try
+            {
+                await Task.Run(() => _wordBUS.DeleteWord(wordID));
+                await LoadWords();
+                if (_selectedWordID == wordID) ClearInput();
+                MessageBox.Show("✅ Xóa thành công!", "Thành công", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Lỗi: {ex.Message}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void BtnDelete_Click(object sender, EventArgs e) => DeleteWord(_selectedWordID);
+
+        private void ClearInput()
+        {
+            _selectedWordID = -1;
+            if (cboInputTopic.Items.Count > 0) cboInputTopic.SelectedIndex = 0;
+            txtEnglish.Text = "";
+            txtPhonetic.Text = "";
+            txtVietnamese.Text = "";
+            txtHint.Text = "";
+            if (cboInputDiff.Items.Count > 0) cboInputDiff.SelectedIndex = 0;
+            _selectedImagePath = "";
+            SetPreviewImage(null);
+            EnableEditControls(false);
+            dgvWords.ClearSelection();
+        }
+
+        #endregion
+
+        #region Image Handling
+
+        private Image LoadImageSafe(string fullPath)
+        {
+            if (!File.Exists(fullPath))
+                return null;
+
+            try
+            {
+                byte[] bytes = File.ReadAllBytes(fullPath);
+                using var ms = new MemoryStream(bytes);
+                using var tmp = Image.FromStream(ms);
+                return new Bitmap(tmp);
+            }
+            catch
+            {
+                return null;
+            }
+        }
+
+        private void SetPreviewImage(Image newImage)
+        {
+            var old = picPreview.Image;
+            picPreview.Image = newImage;
+            picPreview.SizeMode = PictureBoxSizeMode.Zoom;
+            old?.Dispose();
+        }
+
+        private void BtnPickImage_Click(object sender, EventArgs e)
+        {
+            using var frm = new frmImage();
+            if (frm.ShowDialog() == DialogResult.OK)
+            {
+                _selectedImagePath = frm.SelectedImagePath;
+                string fullPath = Path.Combine(Application.StartupPath, _selectedImagePath);
+                if (File.Exists(fullPath))
+                {
+                    SetPreviewImage(LoadImageSafe(fullPath));
+                }
+            }
+        }
+
+        #endregion
+
+        #region Navigation
+
+        private void BtnBack_Click(object sender, EventArgs e)
+        {
+            _topics.Show();
+            this.Close();
+        }
+
+        private void treeTopics_MouseDown(object sender, MouseEventArgs e)
+        {
+            var node = treeTopics.GetNodeAt(e.X, e.Y);
+            if (node != null) treeTopics.SelectedNode = node;
+        }
+
+        #endregion
+    }
+
+    public class ComboItem
+    {
+        public int ID { get; set; }
+        public string Name { get; set; }
+        public ComboItem(int id, string name) { ID = id; Name = name; }
+        public override string ToString() => Name;
+    }
+}

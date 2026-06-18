@@ -1,0 +1,774 @@
+D:\Program_D\Dự án mới\WordQuest - Copy - Copy - Copy - Copy\WordQuest\bin\Debug\net10.0-windows\WordQuest.exe
+D:\Program_D\Dự án mới\WordQuest - Copy - Copy - Copy - Copy\WordQuest\bin\Debug\net10.0-windows\WordQuest.deps.json
+D:\Program_D\Dự án mới\WordQuest - Copy - Copy - Copy - Copy\WordQuest\bin\Debug\net10.0-windows\WordQuest.runtimeconfig.json
+D:\Program_D\Dự án mới\WordQuest - Copy - Copy - Copy - Copy\WordQuest\bin\Debug\net10.0-windows\WordQuest.dll
+D:\Program_D\Dự án mới\WordQuest - Copy - Copy - Copy - Copy\WordQuest\bin\Debug\net10.0-windows\WordQuest.pdb
+D:\Program_D\Dự án mới\WordQuest - Copy - Copy - Copy - Copy\WordQuest\bin\Debug\net10.0-windows\Azure.Core.dll
+D:\Program_D\Dự án mới\WordQuest - Copy - Copy - Copy - Copy\WordQuest\bin\Debug\net10.0-windows\Azure.Identity.dll
+D:\Program_D\Dự án mới\WordQuest - Copy - Copy - Copy - Copy\WordQuest\bin\Debug\net10.0-windows\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Program_D\Dự án mới\WordQuest - Copy - Copy - Copy - Copy\WordQuest\bin\Debug\net10.0-windows\Microsoft.Data.SqlClient.dll
+D:\Program_D\Dự án mới\WordQuest - Copy - Copy - Copy - Copy\WordQuest\bin\Debug\net10.0-windows\Microsoft.Extensions.Caching.Abstractions.dll
+D:\Program_D\Dự án mới\WordQuest - Copy - Copy - Copy - Copy\WordQuest\bin\Debug\net10.0-windows\Microsoft.Extensions.Caching.Memory.dll
+D:\Program_D\Dự án mới\WordQuest - Copy - Copy - Copy - Copy\WordQuest\bin\Debug\net10.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\Program_D\Dự án mới\WordQuest - Copy - Copy - Copy - Copy\WordQuest\bin\Debug\net10.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+D:\Program_D\Dự án mới\WordQuest - Copy - Copy - Copy - Copy\WordQuest\bin\Debug\net10.0-windows\Microsoft.Extensions.Options.dll
+D:\Program_D\Dự án mới\WordQuest - Copy - Copy - Copy - Copy\WordQuest\bin\Debug\net10.0-windows\Microsoft.Extensions.Primitives.dll
+D:\Program_D\Dự án mới\WordQuest - Copy - Copy - Copy - Copy\WordQuest\bin\Debug\net10.0-windows\Microsoft.Identity.Client.dll
+D:\Program_D\Dự án mới\WordQuest - Copy - Copy - Copy - Copy\WordQuest\bin\Debug\net10.0-windows\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\Program_D\Dự án mới\WordQuest - Copy - Copy - Copy - Copy\WordQuest\bin\Debug\net10.0-windows\Microsoft.IdentityModel.Abstractions.dll
+D:\Program_D\Dự án mới\WordQuest - Copy - Copy - Copy - Copy\WordQuest\bin\Debug\net10.0-windows\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Program_D\Dự án mới\WordQuest - Copy - Copy - Copy - Copy\WordQuest\bin\Debug\net10.0-windows\Microsoft.IdentityModel.Logging.dll
+D:\Program_D\Dự án mới\WordQuest - Copy - Copy - Copy - Copy\WordQuest\bin\Debug\net10.0-windows\Microsoft.IdentityModel.Protocols.dll
+D:\Program_D\Dự án mới\WordQuest - Copy - Copy - Copy - Copy\WordQuest\bin\Debug\net10.0-windows\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\Program_D\Dự án mới\WordQuest - Copy - Copy - Copy - Copy\WordQuest\bin\Debug\net10.0-windows\Microsoft.IdentityModel.Tokens.dll
+D:\Program_D\Dự án mới\WordQuest - Copy - Copy - Copy - Copy\WordQuest\bin\Debug\net10.0-windows\Microsoft.SqlServer.Server.dll
+D:\Program_D\Dự án mới\WordQuest - Copy - Copy - Copy - Copy\WordQuest\bin\Debug\net10.0-windows\System.ClientModel.dll
+D:\Program_D\Dự án mới\WordQuest - Copy - Copy - Copy - Copy\WordQuest\bin\Debug\net10.0-windows\System.IdentityModel.Tokens.Jwt.dll
+D:\Program_D\Dự án mới\WordQuest - Copy - Copy - Copy - Copy\WordQuest\bin\Debug\net10.0-windows\System.Memory.Data.dll
+D:\Program_D\Dự án mới\WordQuest - Copy - Copy - Copy - Copy\WordQuest\bin\Debug\net10.0-windows\System.Speech.dll
+D:\Program_D\Dự án mới\WordQuest - Copy - Copy - Copy - Copy\WordQuest\bin\Debug\net10.0-windows\cs\Microsoft.Data.SqlClient.resources.dll
+D:\Program_D\Dự án mới\WordQuest - Copy - Copy - Copy - Copy\WordQuest\bin\Debug\net10.0-windows\de\Microsoft.Data.SqlClient.resources.dll
+D:\Program_D\Dự án mới\WordQuest - Copy - Copy - Copy - Copy\WordQuest\bin\Debug\net10.0-windows\es\Microsoft.Data.SqlClient.resources.dll
+D:\Program_D\Dự án mới\WordQuest - Copy - Copy - Copy - Copy\WordQuest\bin\Debug\net10.0-windows\fr\Microsoft.Data.SqlClient.resources.dll
+D:\Program_D\Dự án mới\WordQuest - Copy - Copy - Copy - Copy\WordQuest\bin\Debug\net10.0-windows\it\Microsoft.Data.SqlClient.resources.dll
+D:\Program_D\Dự án mới\WordQuest - Copy - Copy - Copy - Copy\WordQuest\bin\Debug\net10.0-windows\ja\Microsoft.Data.SqlClient.resources.dll
+D:\Program_D\Dự án mới\WordQuest - Copy - Copy - Copy - Copy\WordQuest\bin\Debug\net10.0-windows\ko\Microsoft.Data.SqlClient.resources.dll
+D:\Program_D\Dự án mới\WordQuest - Copy - Copy - Copy - Copy\WordQuest\bin\Debug\net10.0-windows\pl\Microsoft.Data.SqlClient.resources.dll
+D:\Program_D\Dự án mới\WordQuest - Copy - Copy - Copy - Copy\WordQuest\bin\Debug\net10.0-windows\pt-BR\Microsoft.Data.SqlClient.resources.dll
+D:\Program_D\Dự án mới\WordQuest - Copy - Copy - Copy - Copy\WordQuest\bin\Debug\net10.0-windows\ru\Microsoft.Data.SqlClient.resources.dll
+D:\Program_D\Dự án mới\WordQuest - Copy - Copy - Copy - Copy\WordQuest\bin\Debug\net10.0-windows\tr\Microsoft.Data.SqlClient.resources.dll
+D:\Program_D\Dự án mới\WordQuest - Copy - Copy - Copy - Copy\WordQuest\bin\Debug\net10.0-windows\zh-Hans\Microsoft.Data.SqlClient.resources.dll
+D:\Program_D\Dự án mới\WordQuest - Copy - Copy - Copy - Copy\WordQuest\bin\Debug\net10.0-windows\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+D:\Program_D\Dự án mới\WordQuest - Copy - Copy - Copy - Copy\WordQuest\bin\Debug\net10.0-windows\runtimes\unix\lib\net9.0\Microsoft.Data.SqlClient.dll
+D:\Program_D\Dự án mới\WordQuest - Copy - Copy - Copy - Copy\WordQuest\bin\Debug\net10.0-windows\runtimes\win\lib\net9.0\Microsoft.Data.SqlClient.dll
+D:\Program_D\Dự án mới\WordQuest - Copy - Copy - Copy - Copy\WordQuest\bin\Debug\net10.0-windows\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Program_D\Dự án mới\WordQuest - Copy - Copy - Copy - Copy\WordQuest\bin\Debug\net10.0-windows\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Program_D\Dự án mới\WordQuest - Copy - Copy - Copy - Copy\WordQuest\bin\Debug\net10.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Program_D\Dự án mới\WordQuest - Copy - Copy - Copy - Copy\WordQuest\bin\Debug\net10.0-windows\runtimes\win\lib\net10.0\System.Speech.dll
+D:\Program_D\Dự án mới\WordQuest - Copy - Copy - Copy - Copy\WordQuest\obj\Debug\net10.0-windows\WordQuest.csproj.AssemblyReference.cache
+D:\Program_D\Dự án mới\WordQuest - Copy - Copy - Copy - Copy\WordQuest\obj\Debug\net10.0-windows\WordQuest.frmImage.resources
+D:\Program_D\Dự án mới\WordQuest - Copy - Copy - Copy - Copy\WordQuest\obj\Debug\net10.0-windows\WordQuest.frmLevels.resources
+D:\Program_D\Dự án mới\WordQuest - Copy - Copy - Copy - Copy\WordQuest\obj\Debug\net10.0-windows\WordQuest.frmLogin.resources
+D:\Program_D\Dự án mới\WordQuest - Copy - Copy - Copy - Copy\WordQuest\obj\Debug\net10.0-windows\WordQuest.frmTopics.resources
+D:\Program_D\Dự án mới\WordQuest - Copy - Copy - Copy - Copy\WordQuest\obj\Debug\net10.0-windows\WordQuest.frmGame.resources
+D:\Program_D\Dự án mới\WordQuest - Copy - Copy - Copy - Copy\WordQuest\obj\Debug\net10.0-windows\WordQuest.frmLeaderboard.resources
+D:\Program_D\Dự án mới\WordQuest - Copy - Copy - Copy - Copy\WordQuest\obj\Debug\net10.0-windows\WordQuest.frmWin.resources
+D:\Program_D\Dự án mới\WordQuest - Copy - Copy - Copy - Copy\WordQuest\obj\Debug\net10.0-windows\WordQuest.Properties.Resources.resources
+D:\Program_D\Dự án mới\WordQuest - Copy - Copy - Copy - Copy\WordQuest\obj\Debug\net10.0-windows\WordQuest.frmAdmin.resources
+D:\Program_D\Dự án mới\WordQuest - Copy - Copy - Copy - Copy\WordQuest\obj\Debug\net10.0-windows\WordQuest.frmAdminMenu.resources
+D:\Program_D\Dự án mới\WordQuest - Copy - Copy - Copy - Copy\WordQuest\obj\Debug\net10.0-windows\WordQuest.frmAdminPlayers.resources
+D:\Program_D\Dự án mới\WordQuest - Copy - Copy - Copy - Copy\WordQuest\obj\Debug\net10.0-windows\WordQuest.frmAdminRules.resources
+D:\Program_D\Dự án mới\WordQuest - Copy - Copy - Copy - Copy\WordQuest\obj\Debug\net10.0-windows\WordQuest.frmAdminTopics.resources
+D:\Program_D\Dự án mới\WordQuest - Copy - Copy - Copy - Copy\WordQuest\obj\Debug\net10.0-windows\WordQuest.csproj.GenerateResource.cache
+D:\Program_D\Dự án mới\WordQuest - Copy - Copy - Copy - Copy\WordQuest\obj\Debug\net10.0-windows\WordQuest.GeneratedMSBuildEditorConfig.editorconfig
+D:\Program_D\Dự án mới\WordQuest - Copy - Copy - Copy - Copy\WordQuest\obj\Debug\net10.0-windows\WordQuest.AssemblyInfoInputs.cache
+D:\Program_D\Dự án mới\WordQuest - Copy - Copy - Copy - Copy\WordQuest\obj\Debug\net10.0-windows\WordQuest.AssemblyInfo.cs
+D:\Program_D\Dự án mới\WordQuest - Copy - Copy - Copy - Copy\WordQuest\obj\Debug\net10.0-windows\WordQuest.csproj.CoreCompileInputs.cache
+D:\Program_D\Dự án mới\WordQuest - Copy - Copy - Copy - Copy\WordQuest\obj\Debug\net10.0-windows\WordQuest.csproj.Up2Date
+D:\Program_D\Dự án mới\WordQuest - Copy - Copy - Copy - Copy\WordQuest\obj\Debug\net10.0-windows\WordQuest.dll
+D:\Program_D\Dự án mới\WordQuest - Copy - Copy - Copy - Copy\WordQuest\obj\Debug\net10.0-windows\refint\WordQuest.dll
+D:\Program_D\Dự án mới\WordQuest - Copy - Copy - Copy - Copy\WordQuest\obj\Debug\net10.0-windows\WordQuest.pdb
+D:\Program_D\Dự án mới\WordQuest - Copy - Copy - Copy - Copy\WordQuest\obj\Debug\net10.0-windows\WordQuest.genruntimeconfig.cache
+D:\Program_D\Dự án mới\WordQuest - Copy - Copy - Copy - Copy\WordQuest\obj\Debug\net10.0-windows\ref\WordQuest.dll
+D:\Program_D\Dự án mới\WordQuest - Copy - Copy - Copy - Copy - Copy\WordQuest\obj\Debug\net10.0-windows\WordQuest.csproj.AssemblyReference.cache
+D:\Program_D\Dự án mới\WordQuest - Copy - Copy - Copy - Copy - Copy\WordQuest\obj\Debug\net10.0-windows\WordQuest.GUI.frmAdmin.resources
+D:\Program_D\Dự án mới\WordQuest - Copy - Copy - Copy - Copy - Copy\WordQuest\obj\Debug\net10.0-windows\WordQuest.GUI.frmAdminMenu.resources
+D:\Program_D\Dự án mới\WordQuest - Copy - Copy - Copy - Copy - Copy\WordQuest\obj\Debug\net10.0-windows\WordQuest.GUI.frmAdminPlayers.resources
+D:\Program_D\Dự án mới\WordQuest - Copy - Copy - Copy - Copy - Copy\WordQuest\obj\Debug\net10.0-windows\WordQuest.GUI.frmAdminRules.resources
+D:\Program_D\Dự án mới\WordQuest - Copy - Copy - Copy - Copy - Copy\WordQuest\obj\Debug\net10.0-windows\WordQuest.GUI.frmAdminTopics.resources
+D:\Program_D\Dự án mới\WordQuest - Copy - Copy - Copy - Copy - Copy\WordQuest\obj\Debug\net10.0-windows\WordQuest.GUI.frmGame.resources
+D:\Program_D\Dự án mới\WordQuest - Copy - Copy - Copy - Copy - Copy\WordQuest\obj\Debug\net10.0-windows\WordQuest.GUI.frmImage.resources
+D:\Program_D\Dự án mới\WordQuest - Copy - Copy - Copy - Copy - Copy\WordQuest\obj\Debug\net10.0-windows\WordQuest.GUI.frmLeaderboard.resources
+D:\Program_D\Dự án mới\WordQuest - Copy - Copy - Copy - Copy - Copy\WordQuest\obj\Debug\net10.0-windows\WordQuest.GUI.frmLevels.resources
+D:\Program_D\Dự án mới\WordQuest - Copy - Copy - Copy - Copy - Copy\WordQuest\obj\Debug\net10.0-windows\WordQuest.GUI.frmLogin.resources
+D:\Program_D\Dự án mới\WordQuest - Copy - Copy - Copy - Copy - Copy\WordQuest\obj\Debug\net10.0-windows\WordQuest.GUI.frmTopics.resources
+D:\Program_D\Dự án mới\WordQuest - Copy - Copy - Copy - Copy - Copy\WordQuest\obj\Debug\net10.0-windows\WordQuest.GUI.frmWin.resources
+D:\Program_D\Dự án mới\WordQuest - Copy - Copy - Copy - Copy - Copy\WordQuest\obj\Debug\net10.0-windows\WordQuest.GUI.UserControls.UC_LevelCard.resources
+D:\Program_D\Dự án mới\WordQuest - Copy - Copy - Copy - Copy - Copy\WordQuest\obj\Debug\net10.0-windows\WordQuest.GUI.UserControls.UC_TopicCard.resources
+D:\Program_D\Dự án mới\WordQuest - Copy - Copy - Copy - Copy - Copy\WordQuest\obj\Debug\net10.0-windows\WordQuest.GUI.UserControls.UC_WordItem.resources
+D:\Program_D\Dự án mới\WordQuest - Copy - Copy - Copy - Copy - Copy\WordQuest\obj\Debug\net10.0-windows\WordQuest.Properties.Resources.resources
+D:\Program_D\Dự án mới\WordQuest - Copy - Copy - Copy - Copy - Copy\WordQuest\obj\Debug\net10.0-windows\WordQuest.csproj.GenerateResource.cache
+D:\Program_D\Dự án mới\WordQuest - Copy - Copy - Copy - Copy - Copy\WordQuest\obj\Debug\net10.0-windows\WordQuest.GeneratedMSBuildEditorConfig.editorconfig
+D:\Program_D\Dự án mới\WordQuest - Copy - Copy - Copy - Copy - Copy\WordQuest\obj\Debug\net10.0-windows\WordQuest.AssemblyInfoInputs.cache
+D:\Program_D\Dự án mới\WordQuest - Copy - Copy - Copy - Copy - Copy\WordQuest\obj\Debug\net10.0-windows\WordQuest.AssemblyInfo.cs
+D:\Program_D\Dự án mới\WordQuest - Copy - Copy - Copy - Copy - Copy\WordQuest\obj\Debug\net10.0-windows\WordQuest.csproj.CoreCompileInputs.cache
+D:\Program_D\Dự án mới\WordQuest - Copy - Copy - Copy - Copy - Copy\WordQuest\obj\Debug\net10.0-windows\WordQuest.dll
+D:\Program_D\Dự án mới\WordQuest - Copy - Copy - Copy - Copy - Copy\WordQuest\obj\Debug\net10.0-windows\refint\WordQuest.dll
+D:\Program_D\Dự án mới\WordQuest - Copy - Copy - Copy - Copy - Copy\WordQuest\obj\Debug\net10.0-windows\WordQuest.pdb
+D:\Program_D\Dự án mới\WordQuest - Copy - Copy - Copy - Copy - Copy\WordQuest\bin\Debug\net10.0-windows\WordQuest.exe
+D:\Program_D\Dự án mới\WordQuest - Copy - Copy - Copy - Copy - Copy\WordQuest\bin\Debug\net10.0-windows\WordQuest.deps.json
+D:\Program_D\Dự án mới\WordQuest - Copy - Copy - Copy - Copy - Copy\WordQuest\bin\Debug\net10.0-windows\WordQuest.runtimeconfig.json
+D:\Program_D\Dự án mới\WordQuest - Copy - Copy - Copy - Copy - Copy\WordQuest\bin\Debug\net10.0-windows\WordQuest.dll
+D:\Program_D\Dự án mới\WordQuest - Copy - Copy - Copy - Copy - Copy\WordQuest\bin\Debug\net10.0-windows\WordQuest.pdb
+D:\Program_D\Dự án mới\WordQuest - Copy - Copy - Copy - Copy - Copy\WordQuest\bin\Debug\net10.0-windows\Azure.Core.dll
+D:\Program_D\Dự án mới\WordQuest - Copy - Copy - Copy - Copy - Copy\WordQuest\bin\Debug\net10.0-windows\Azure.Identity.dll
+D:\Program_D\Dự án mới\WordQuest - Copy - Copy - Copy - Copy - Copy\WordQuest\bin\Debug\net10.0-windows\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Program_D\Dự án mới\WordQuest - Copy - Copy - Copy - Copy - Copy\WordQuest\bin\Debug\net10.0-windows\Microsoft.Data.SqlClient.dll
+D:\Program_D\Dự án mới\WordQuest - Copy - Copy - Copy - Copy - Copy\WordQuest\bin\Debug\net10.0-windows\Microsoft.Extensions.Caching.Abstractions.dll
+D:\Program_D\Dự án mới\WordQuest - Copy - Copy - Copy - Copy - Copy\WordQuest\bin\Debug\net10.0-windows\Microsoft.Extensions.Caching.Memory.dll
+D:\Program_D\Dự án mới\WordQuest - Copy - Copy - Copy - Copy - Copy\WordQuest\bin\Debug\net10.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\Program_D\Dự án mới\WordQuest - Copy - Copy - Copy - Copy - Copy\WordQuest\bin\Debug\net10.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+D:\Program_D\Dự án mới\WordQuest - Copy - Copy - Copy - Copy - Copy\WordQuest\bin\Debug\net10.0-windows\Microsoft.Extensions.Options.dll
+D:\Program_D\Dự án mới\WordQuest - Copy - Copy - Copy - Copy - Copy\WordQuest\bin\Debug\net10.0-windows\Microsoft.Extensions.Primitives.dll
+D:\Program_D\Dự án mới\WordQuest - Copy - Copy - Copy - Copy - Copy\WordQuest\bin\Debug\net10.0-windows\Microsoft.Identity.Client.dll
+D:\Program_D\Dự án mới\WordQuest - Copy - Copy - Copy - Copy - Copy\WordQuest\bin\Debug\net10.0-windows\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\Program_D\Dự án mới\WordQuest - Copy - Copy - Copy - Copy - Copy\WordQuest\bin\Debug\net10.0-windows\Microsoft.IdentityModel.Abstractions.dll
+D:\Program_D\Dự án mới\WordQuest - Copy - Copy - Copy - Copy - Copy\WordQuest\bin\Debug\net10.0-windows\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Program_D\Dự án mới\WordQuest - Copy - Copy - Copy - Copy - Copy\WordQuest\bin\Debug\net10.0-windows\Microsoft.IdentityModel.Logging.dll
+D:\Program_D\Dự án mới\WordQuest - Copy - Copy - Copy - Copy - Copy\WordQuest\bin\Debug\net10.0-windows\Microsoft.IdentityModel.Protocols.dll
+D:\Program_D\Dự án mới\WordQuest - Copy - Copy - Copy - Copy - Copy\WordQuest\bin\Debug\net10.0-windows\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\Program_D\Dự án mới\WordQuest - Copy - Copy - Copy - Copy - Copy\WordQuest\bin\Debug\net10.0-windows\Microsoft.IdentityModel.Tokens.dll
+D:\Program_D\Dự án mới\WordQuest - Copy - Copy - Copy - Copy - Copy\WordQuest\bin\Debug\net10.0-windows\Microsoft.SqlServer.Server.dll
+D:\Program_D\Dự án mới\WordQuest - Copy - Copy - Copy - Copy - Copy\WordQuest\bin\Debug\net10.0-windows\System.ClientModel.dll
+D:\Program_D\Dự án mới\WordQuest - Copy - Copy - Copy - Copy - Copy\WordQuest\bin\Debug\net10.0-windows\System.IdentityModel.Tokens.Jwt.dll
+D:\Program_D\Dự án mới\WordQuest - Copy - Copy - Copy - Copy - Copy\WordQuest\bin\Debug\net10.0-windows\System.Memory.Data.dll
+D:\Program_D\Dự án mới\WordQuest - Copy - Copy - Copy - Copy - Copy\WordQuest\bin\Debug\net10.0-windows\System.Speech.dll
+D:\Program_D\Dự án mới\WordQuest - Copy - Copy - Copy - Copy - Copy\WordQuest\bin\Debug\net10.0-windows\cs\Microsoft.Data.SqlClient.resources.dll
+D:\Program_D\Dự án mới\WordQuest - Copy - Copy - Copy - Copy - Copy\WordQuest\bin\Debug\net10.0-windows\de\Microsoft.Data.SqlClient.resources.dll
+D:\Program_D\Dự án mới\WordQuest - Copy - Copy - Copy - Copy - Copy\WordQuest\bin\Debug\net10.0-windows\es\Microsoft.Data.SqlClient.resources.dll
+D:\Program_D\Dự án mới\WordQuest - Copy - Copy - Copy - Copy - Copy\WordQuest\bin\Debug\net10.0-windows\fr\Microsoft.Data.SqlClient.resources.dll
+D:\Program_D\Dự án mới\WordQuest - Copy - Copy - Copy - Copy - Copy\WordQuest\bin\Debug\net10.0-windows\it\Microsoft.Data.SqlClient.resources.dll
+D:\Program_D\Dự án mới\WordQuest - Copy - Copy - Copy - Copy - Copy\WordQuest\bin\Debug\net10.0-windows\ja\Microsoft.Data.SqlClient.resources.dll
+D:\Program_D\Dự án mới\WordQuest - Copy - Copy - Copy - Copy - Copy\WordQuest\bin\Debug\net10.0-windows\ko\Microsoft.Data.SqlClient.resources.dll
+D:\Program_D\Dự án mới\WordQuest - Copy - Copy - Copy - Copy - Copy\WordQuest\bin\Debug\net10.0-windows\pl\Microsoft.Data.SqlClient.resources.dll
+D:\Program_D\Dự án mới\WordQuest - Copy - Copy - Copy - Copy - Copy\WordQuest\bin\Debug\net10.0-windows\pt-BR\Microsoft.Data.SqlClient.resources.dll
+D:\Program_D\Dự án mới\WordQuest - Copy - Copy - Copy - Copy - Copy\WordQuest\bin\Debug\net10.0-windows\ru\Microsoft.Data.SqlClient.resources.dll
+D:\Program_D\Dự án mới\WordQuest - Copy - Copy - Copy - Copy - Copy\WordQuest\bin\Debug\net10.0-windows\tr\Microsoft.Data.SqlClient.resources.dll
+D:\Program_D\Dự án mới\WordQuest - Copy - Copy - Copy - Copy - Copy\WordQuest\bin\Debug\net10.0-windows\zh-Hans\Microsoft.Data.SqlClient.resources.dll
+D:\Program_D\Dự án mới\WordQuest - Copy - Copy - Copy - Copy - Copy\WordQuest\bin\Debug\net10.0-windows\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+D:\Program_D\Dự án mới\WordQuest - Copy - Copy - Copy - Copy - Copy\WordQuest\bin\Debug\net10.0-windows\runtimes\unix\lib\net9.0\Microsoft.Data.SqlClient.dll
+D:\Program_D\Dự án mới\WordQuest - Copy - Copy - Copy - Copy - Copy\WordQuest\bin\Debug\net10.0-windows\runtimes\win\lib\net9.0\Microsoft.Data.SqlClient.dll
+D:\Program_D\Dự án mới\WordQuest - Copy - Copy - Copy - Copy - Copy\WordQuest\bin\Debug\net10.0-windows\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Program_D\Dự án mới\WordQuest - Copy - Copy - Copy - Copy - Copy\WordQuest\bin\Debug\net10.0-windows\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Program_D\Dự án mới\WordQuest - Copy - Copy - Copy - Copy - Copy\WordQuest\bin\Debug\net10.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Program_D\Dự án mới\WordQuest - Copy - Copy - Copy - Copy - Copy\WordQuest\bin\Debug\net10.0-windows\runtimes\win\lib\net10.0\System.Speech.dll
+D:\Program_D\Dự án mới\WordQuest - Copy - Copy - Copy - Copy - Copy\WordQuest\obj\Debug\net10.0-windows\WordQuest.csproj.Up2Date
+D:\Program_D\Dự án mới\WordQuest - Copy - Copy - Copy - Copy - Copy\WordQuest\obj\Debug\net10.0-windows\WordQuest.genruntimeconfig.cache
+D:\Program_D\Dự án mới\WordQuest - Copy - Copy - Copy - Copy - Copy\WordQuest\obj\Debug\net10.0-windows\ref\WordQuest.dll
+D:\Program_D\Dự án mới\WordQuest_1\WordQuest\bin\Debug\net10.0-windows\WordQuest.exe
+D:\Program_D\Dự án mới\WordQuest_1\WordQuest\bin\Debug\net10.0-windows\WordQuest.deps.json
+D:\Program_D\Dự án mới\WordQuest_1\WordQuest\bin\Debug\net10.0-windows\WordQuest.runtimeconfig.json
+D:\Program_D\Dự án mới\WordQuest_1\WordQuest\bin\Debug\net10.0-windows\WordQuest.dll
+D:\Program_D\Dự án mới\WordQuest_1\WordQuest\bin\Debug\net10.0-windows\WordQuest.pdb
+D:\Program_D\Dự án mới\WordQuest_1\WordQuest\bin\Debug\net10.0-windows\Azure.Core.dll
+D:\Program_D\Dự án mới\WordQuest_1\WordQuest\bin\Debug\net10.0-windows\Azure.Identity.dll
+D:\Program_D\Dự án mới\WordQuest_1\WordQuest\bin\Debug\net10.0-windows\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Program_D\Dự án mới\WordQuest_1\WordQuest\bin\Debug\net10.0-windows\Microsoft.Data.SqlClient.dll
+D:\Program_D\Dự án mới\WordQuest_1\WordQuest\bin\Debug\net10.0-windows\Microsoft.Extensions.Caching.Abstractions.dll
+D:\Program_D\Dự án mới\WordQuest_1\WordQuest\bin\Debug\net10.0-windows\Microsoft.Extensions.Caching.Memory.dll
+D:\Program_D\Dự án mới\WordQuest_1\WordQuest\bin\Debug\net10.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\Program_D\Dự án mới\WordQuest_1\WordQuest\bin\Debug\net10.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+D:\Program_D\Dự án mới\WordQuest_1\WordQuest\bin\Debug\net10.0-windows\Microsoft.Extensions.Options.dll
+D:\Program_D\Dự án mới\WordQuest_1\WordQuest\bin\Debug\net10.0-windows\Microsoft.Extensions.Primitives.dll
+D:\Program_D\Dự án mới\WordQuest_1\WordQuest\bin\Debug\net10.0-windows\Microsoft.Identity.Client.dll
+D:\Program_D\Dự án mới\WordQuest_1\WordQuest\bin\Debug\net10.0-windows\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\Program_D\Dự án mới\WordQuest_1\WordQuest\bin\Debug\net10.0-windows\Microsoft.IdentityModel.Abstractions.dll
+D:\Program_D\Dự án mới\WordQuest_1\WordQuest\bin\Debug\net10.0-windows\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Program_D\Dự án mới\WordQuest_1\WordQuest\bin\Debug\net10.0-windows\Microsoft.IdentityModel.Logging.dll
+D:\Program_D\Dự án mới\WordQuest_1\WordQuest\bin\Debug\net10.0-windows\Microsoft.IdentityModel.Protocols.dll
+D:\Program_D\Dự án mới\WordQuest_1\WordQuest\bin\Debug\net10.0-windows\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\Program_D\Dự án mới\WordQuest_1\WordQuest\bin\Debug\net10.0-windows\Microsoft.IdentityModel.Tokens.dll
+D:\Program_D\Dự án mới\WordQuest_1\WordQuest\bin\Debug\net10.0-windows\Microsoft.SqlServer.Server.dll
+D:\Program_D\Dự án mới\WordQuest_1\WordQuest\bin\Debug\net10.0-windows\System.ClientModel.dll
+D:\Program_D\Dự án mới\WordQuest_1\WordQuest\bin\Debug\net10.0-windows\System.IdentityModel.Tokens.Jwt.dll
+D:\Program_D\Dự án mới\WordQuest_1\WordQuest\bin\Debug\net10.0-windows\System.Memory.Data.dll
+D:\Program_D\Dự án mới\WordQuest_1\WordQuest\bin\Debug\net10.0-windows\System.Speech.dll
+D:\Program_D\Dự án mới\WordQuest_1\WordQuest\bin\Debug\net10.0-windows\cs\Microsoft.Data.SqlClient.resources.dll
+D:\Program_D\Dự án mới\WordQuest_1\WordQuest\bin\Debug\net10.0-windows\de\Microsoft.Data.SqlClient.resources.dll
+D:\Program_D\Dự án mới\WordQuest_1\WordQuest\bin\Debug\net10.0-windows\es\Microsoft.Data.SqlClient.resources.dll
+D:\Program_D\Dự án mới\WordQuest_1\WordQuest\bin\Debug\net10.0-windows\fr\Microsoft.Data.SqlClient.resources.dll
+D:\Program_D\Dự án mới\WordQuest_1\WordQuest\bin\Debug\net10.0-windows\it\Microsoft.Data.SqlClient.resources.dll
+D:\Program_D\Dự án mới\WordQuest_1\WordQuest\bin\Debug\net10.0-windows\ja\Microsoft.Data.SqlClient.resources.dll
+D:\Program_D\Dự án mới\WordQuest_1\WordQuest\bin\Debug\net10.0-windows\ko\Microsoft.Data.SqlClient.resources.dll
+D:\Program_D\Dự án mới\WordQuest_1\WordQuest\bin\Debug\net10.0-windows\pl\Microsoft.Data.SqlClient.resources.dll
+D:\Program_D\Dự án mới\WordQuest_1\WordQuest\bin\Debug\net10.0-windows\pt-BR\Microsoft.Data.SqlClient.resources.dll
+D:\Program_D\Dự án mới\WordQuest_1\WordQuest\bin\Debug\net10.0-windows\ru\Microsoft.Data.SqlClient.resources.dll
+D:\Program_D\Dự án mới\WordQuest_1\WordQuest\bin\Debug\net10.0-windows\tr\Microsoft.Data.SqlClient.resources.dll
+D:\Program_D\Dự án mới\WordQuest_1\WordQuest\bin\Debug\net10.0-windows\zh-Hans\Microsoft.Data.SqlClient.resources.dll
+D:\Program_D\Dự án mới\WordQuest_1\WordQuest\bin\Debug\net10.0-windows\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+D:\Program_D\Dự án mới\WordQuest_1\WordQuest\bin\Debug\net10.0-windows\runtimes\unix\lib\net9.0\Microsoft.Data.SqlClient.dll
+D:\Program_D\Dự án mới\WordQuest_1\WordQuest\bin\Debug\net10.0-windows\runtimes\win\lib\net9.0\Microsoft.Data.SqlClient.dll
+D:\Program_D\Dự án mới\WordQuest_1\WordQuest\bin\Debug\net10.0-windows\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Program_D\Dự án mới\WordQuest_1\WordQuest\bin\Debug\net10.0-windows\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Program_D\Dự án mới\WordQuest_1\WordQuest\bin\Debug\net10.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Program_D\Dự án mới\WordQuest_1\WordQuest\bin\Debug\net10.0-windows\runtimes\win\lib\net10.0\System.Speech.dll
+D:\Program_D\Dự án mới\WordQuest_1\WordQuest\obj\Debug\net10.0-windows\WordQuest.csproj.AssemblyReference.cache
+D:\Program_D\Dự án mới\WordQuest_1\WordQuest\obj\Debug\net10.0-windows\WordQuest.GUI.frmAdmin.resources
+D:\Program_D\Dự án mới\WordQuest_1\WordQuest\obj\Debug\net10.0-windows\WordQuest.GUI.frmAdminMenu.resources
+D:\Program_D\Dự án mới\WordQuest_1\WordQuest\obj\Debug\net10.0-windows\WordQuest.GUI.frmAdminPlayers.resources
+D:\Program_D\Dự án mới\WordQuest_1\WordQuest\obj\Debug\net10.0-windows\WordQuest.GUI.frmAdminRules.resources
+D:\Program_D\Dự án mới\WordQuest_1\WordQuest\obj\Debug\net10.0-windows\WordQuest.GUI.frmAdminTopics.resources
+D:\Program_D\Dự án mới\WordQuest_1\WordQuest\obj\Debug\net10.0-windows\WordQuest.GUI.frmGame.resources
+D:\Program_D\Dự án mới\WordQuest_1\WordQuest\obj\Debug\net10.0-windows\WordQuest.GUI.frmImage.resources
+D:\Program_D\Dự án mới\WordQuest_1\WordQuest\obj\Debug\net10.0-windows\WordQuest.GUI.frmLeaderboard.resources
+D:\Program_D\Dự án mới\WordQuest_1\WordQuest\obj\Debug\net10.0-windows\WordQuest.GUI.frmLevels.resources
+D:\Program_D\Dự án mới\WordQuest_1\WordQuest\obj\Debug\net10.0-windows\WordQuest.GUI.frmLogin.resources
+D:\Program_D\Dự án mới\WordQuest_1\WordQuest\obj\Debug\net10.0-windows\WordQuest.GUI.frmTopics.resources
+D:\Program_D\Dự án mới\WordQuest_1\WordQuest\obj\Debug\net10.0-windows\WordQuest.GUI.frmWin.resources
+D:\Program_D\Dự án mới\WordQuest_1\WordQuest\obj\Debug\net10.0-windows\WordQuest.Properties.Resources.resources
+D:\Program_D\Dự án mới\WordQuest_1\WordQuest\obj\Debug\net10.0-windows\WordQuest.csproj.GenerateResource.cache
+D:\Program_D\Dự án mới\WordQuest_1\WordQuest\obj\Debug\net10.0-windows\WordQuest.GeneratedMSBuildEditorConfig.editorconfig
+D:\Program_D\Dự án mới\WordQuest_1\WordQuest\obj\Debug\net10.0-windows\WordQuest.AssemblyInfoInputs.cache
+D:\Program_D\Dự án mới\WordQuest_1\WordQuest\obj\Debug\net10.0-windows\WordQuest.AssemblyInfo.cs
+D:\Program_D\Dự án mới\WordQuest_1\WordQuest\obj\Debug\net10.0-windows\WordQuest.csproj.CoreCompileInputs.cache
+D:\Program_D\Dự án mới\WordQuest_1\WordQuest\obj\Debug\net10.0-windows\WordQuest.csproj.Up2Date
+D:\Program_D\Dự án mới\WordQuest_1\WordQuest\obj\Debug\net10.0-windows\WordQuest.dll
+D:\Program_D\Dự án mới\WordQuest_1\WordQuest\obj\Debug\net10.0-windows\refint\WordQuest.dll
+D:\Program_D\Dự án mới\WordQuest_1\WordQuest\obj\Debug\net10.0-windows\WordQuest.pdb
+D:\Program_D\Dự án mới\WordQuest_1\WordQuest\obj\Debug\net10.0-windows\WordQuest.genruntimeconfig.cache
+D:\Program_D\Dự án mới\WordQuest_1\WordQuest\obj\Debug\net10.0-windows\ref\WordQuest.dll
+D:\Program_D\Dự án mới\WordQuest_1 - Copy\WordQuest\bin\Debug\net10.0-windows\WordQuest.exe
+D:\Program_D\Dự án mới\WordQuest_1 - Copy\WordQuest\bin\Debug\net10.0-windows\WordQuest.deps.json
+D:\Program_D\Dự án mới\WordQuest_1 - Copy\WordQuest\bin\Debug\net10.0-windows\WordQuest.runtimeconfig.json
+D:\Program_D\Dự án mới\WordQuest_1 - Copy\WordQuest\bin\Debug\net10.0-windows\WordQuest.dll
+D:\Program_D\Dự án mới\WordQuest_1 - Copy\WordQuest\bin\Debug\net10.0-windows\WordQuest.pdb
+D:\Program_D\Dự án mới\WordQuest_1 - Copy\WordQuest\bin\Debug\net10.0-windows\Azure.Core.dll
+D:\Program_D\Dự án mới\WordQuest_1 - Copy\WordQuest\bin\Debug\net10.0-windows\Azure.Identity.dll
+D:\Program_D\Dự án mới\WordQuest_1 - Copy\WordQuest\bin\Debug\net10.0-windows\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Program_D\Dự án mới\WordQuest_1 - Copy\WordQuest\bin\Debug\net10.0-windows\Microsoft.Data.SqlClient.dll
+D:\Program_D\Dự án mới\WordQuest_1 - Copy\WordQuest\bin\Debug\net10.0-windows\Microsoft.Extensions.Caching.Abstractions.dll
+D:\Program_D\Dự án mới\WordQuest_1 - Copy\WordQuest\bin\Debug\net10.0-windows\Microsoft.Extensions.Caching.Memory.dll
+D:\Program_D\Dự án mới\WordQuest_1 - Copy\WordQuest\bin\Debug\net10.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\Program_D\Dự án mới\WordQuest_1 - Copy\WordQuest\bin\Debug\net10.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+D:\Program_D\Dự án mới\WordQuest_1 - Copy\WordQuest\bin\Debug\net10.0-windows\Microsoft.Extensions.Options.dll
+D:\Program_D\Dự án mới\WordQuest_1 - Copy\WordQuest\bin\Debug\net10.0-windows\Microsoft.Extensions.Primitives.dll
+D:\Program_D\Dự án mới\WordQuest_1 - Copy\WordQuest\bin\Debug\net10.0-windows\Microsoft.Identity.Client.dll
+D:\Program_D\Dự án mới\WordQuest_1 - Copy\WordQuest\bin\Debug\net10.0-windows\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\Program_D\Dự án mới\WordQuest_1 - Copy\WordQuest\bin\Debug\net10.0-windows\Microsoft.IdentityModel.Abstractions.dll
+D:\Program_D\Dự án mới\WordQuest_1 - Copy\WordQuest\bin\Debug\net10.0-windows\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Program_D\Dự án mới\WordQuest_1 - Copy\WordQuest\bin\Debug\net10.0-windows\Microsoft.IdentityModel.Logging.dll
+D:\Program_D\Dự án mới\WordQuest_1 - Copy\WordQuest\bin\Debug\net10.0-windows\Microsoft.IdentityModel.Protocols.dll
+D:\Program_D\Dự án mới\WordQuest_1 - Copy\WordQuest\bin\Debug\net10.0-windows\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\Program_D\Dự án mới\WordQuest_1 - Copy\WordQuest\bin\Debug\net10.0-windows\Microsoft.IdentityModel.Tokens.dll
+D:\Program_D\Dự án mới\WordQuest_1 - Copy\WordQuest\bin\Debug\net10.0-windows\Microsoft.SqlServer.Server.dll
+D:\Program_D\Dự án mới\WordQuest_1 - Copy\WordQuest\bin\Debug\net10.0-windows\System.ClientModel.dll
+D:\Program_D\Dự án mới\WordQuest_1 - Copy\WordQuest\bin\Debug\net10.0-windows\System.IdentityModel.Tokens.Jwt.dll
+D:\Program_D\Dự án mới\WordQuest_1 - Copy\WordQuest\bin\Debug\net10.0-windows\System.Memory.Data.dll
+D:\Program_D\Dự án mới\WordQuest_1 - Copy\WordQuest\bin\Debug\net10.0-windows\System.Speech.dll
+D:\Program_D\Dự án mới\WordQuest_1 - Copy\WordQuest\bin\Debug\net10.0-windows\cs\Microsoft.Data.SqlClient.resources.dll
+D:\Program_D\Dự án mới\WordQuest_1 - Copy\WordQuest\bin\Debug\net10.0-windows\de\Microsoft.Data.SqlClient.resources.dll
+D:\Program_D\Dự án mới\WordQuest_1 - Copy\WordQuest\bin\Debug\net10.0-windows\es\Microsoft.Data.SqlClient.resources.dll
+D:\Program_D\Dự án mới\WordQuest_1 - Copy\WordQuest\bin\Debug\net10.0-windows\fr\Microsoft.Data.SqlClient.resources.dll
+D:\Program_D\Dự án mới\WordQuest_1 - Copy\WordQuest\bin\Debug\net10.0-windows\it\Microsoft.Data.SqlClient.resources.dll
+D:\Program_D\Dự án mới\WordQuest_1 - Copy\WordQuest\bin\Debug\net10.0-windows\ja\Microsoft.Data.SqlClient.resources.dll
+D:\Program_D\Dự án mới\WordQuest_1 - Copy\WordQuest\bin\Debug\net10.0-windows\ko\Microsoft.Data.SqlClient.resources.dll
+D:\Program_D\Dự án mới\WordQuest_1 - Copy\WordQuest\bin\Debug\net10.0-windows\pl\Microsoft.Data.SqlClient.resources.dll
+D:\Program_D\Dự án mới\WordQuest_1 - Copy\WordQuest\bin\Debug\net10.0-windows\pt-BR\Microsoft.Data.SqlClient.resources.dll
+D:\Program_D\Dự án mới\WordQuest_1 - Copy\WordQuest\bin\Debug\net10.0-windows\ru\Microsoft.Data.SqlClient.resources.dll
+D:\Program_D\Dự án mới\WordQuest_1 - Copy\WordQuest\bin\Debug\net10.0-windows\tr\Microsoft.Data.SqlClient.resources.dll
+D:\Program_D\Dự án mới\WordQuest_1 - Copy\WordQuest\bin\Debug\net10.0-windows\zh-Hans\Microsoft.Data.SqlClient.resources.dll
+D:\Program_D\Dự án mới\WordQuest_1 - Copy\WordQuest\bin\Debug\net10.0-windows\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+D:\Program_D\Dự án mới\WordQuest_1 - Copy\WordQuest\bin\Debug\net10.0-windows\runtimes\unix\lib\net9.0\Microsoft.Data.SqlClient.dll
+D:\Program_D\Dự án mới\WordQuest_1 - Copy\WordQuest\bin\Debug\net10.0-windows\runtimes\win\lib\net9.0\Microsoft.Data.SqlClient.dll
+D:\Program_D\Dự án mới\WordQuest_1 - Copy\WordQuest\bin\Debug\net10.0-windows\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Program_D\Dự án mới\WordQuest_1 - Copy\WordQuest\bin\Debug\net10.0-windows\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Program_D\Dự án mới\WordQuest_1 - Copy\WordQuest\bin\Debug\net10.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Program_D\Dự án mới\WordQuest_1 - Copy\WordQuest\bin\Debug\net10.0-windows\runtimes\win\lib\net10.0\System.Speech.dll
+D:\Program_D\Dự án mới\WordQuest_1 - Copy\WordQuest\obj\Debug\net10.0-windows\WordQuest.csproj.AssemblyReference.cache
+D:\Program_D\Dự án mới\WordQuest_1 - Copy\WordQuest\obj\Debug\net10.0-windows\WordQuest.GUI.frmAdmin.resources
+D:\Program_D\Dự án mới\WordQuest_1 - Copy\WordQuest\obj\Debug\net10.0-windows\WordQuest.GUI.frmAdminMenu.resources
+D:\Program_D\Dự án mới\WordQuest_1 - Copy\WordQuest\obj\Debug\net10.0-windows\WordQuest.GUI.frmAdminPlayers.resources
+D:\Program_D\Dự án mới\WordQuest_1 - Copy\WordQuest\obj\Debug\net10.0-windows\WordQuest.GUI.frmAdminRules.resources
+D:\Program_D\Dự án mới\WordQuest_1 - Copy\WordQuest\obj\Debug\net10.0-windows\WordQuest.GUI.frmAdminTopics.resources
+D:\Program_D\Dự án mới\WordQuest_1 - Copy\WordQuest\obj\Debug\net10.0-windows\WordQuest.GUI.frmGame.resources
+D:\Program_D\Dự án mới\WordQuest_1 - Copy\WordQuest\obj\Debug\net10.0-windows\WordQuest.GUI.frmImage.resources
+D:\Program_D\Dự án mới\WordQuest_1 - Copy\WordQuest\obj\Debug\net10.0-windows\WordQuest.GUI.frmLeaderboard.resources
+D:\Program_D\Dự án mới\WordQuest_1 - Copy\WordQuest\obj\Debug\net10.0-windows\WordQuest.GUI.frmLevels.resources
+D:\Program_D\Dự án mới\WordQuest_1 - Copy\WordQuest\obj\Debug\net10.0-windows\WordQuest.GUI.frmLogin.resources
+D:\Program_D\Dự án mới\WordQuest_1 - Copy\WordQuest\obj\Debug\net10.0-windows\WordQuest.GUI.frmTopics.resources
+D:\Program_D\Dự án mới\WordQuest_1 - Copy\WordQuest\obj\Debug\net10.0-windows\WordQuest.GUI.frmWin.resources
+D:\Program_D\Dự án mới\WordQuest_1 - Copy\WordQuest\obj\Debug\net10.0-windows\WordQuest.Properties.Resources.resources
+D:\Program_D\Dự án mới\WordQuest_1 - Copy\WordQuest\obj\Debug\net10.0-windows\WordQuest.csproj.GenerateResource.cache
+D:\Program_D\Dự án mới\WordQuest_1 - Copy\WordQuest\obj\Debug\net10.0-windows\WordQuest.GeneratedMSBuildEditorConfig.editorconfig
+D:\Program_D\Dự án mới\WordQuest_1 - Copy\WordQuest\obj\Debug\net10.0-windows\WordQuest.AssemblyInfoInputs.cache
+D:\Program_D\Dự án mới\WordQuest_1 - Copy\WordQuest\obj\Debug\net10.0-windows\WordQuest.AssemblyInfo.cs
+D:\Program_D\Dự án mới\WordQuest_1 - Copy\WordQuest\obj\Debug\net10.0-windows\WordQuest.csproj.CoreCompileInputs.cache
+D:\Program_D\Dự án mới\WordQuest_1 - Copy\WordQuest\obj\Debug\net10.0-windows\WordQuest.csproj.Up2Date
+D:\Program_D\Dự án mới\WordQuest_1 - Copy\WordQuest\obj\Debug\net10.0-windows\WordQuest.dll
+D:\Program_D\Dự án mới\WordQuest_1 - Copy\WordQuest\obj\Debug\net10.0-windows\refint\WordQuest.dll
+D:\Program_D\Dự án mới\WordQuest_1 - Copy\WordQuest\obj\Debug\net10.0-windows\WordQuest.pdb
+D:\Program_D\Dự án mới\WordQuest_1 - Copy\WordQuest\obj\Debug\net10.0-windows\WordQuest.genruntimeconfig.cache
+D:\Program_D\Dự án mới\WordQuest_1 - Copy\WordQuest\obj\Debug\net10.0-windows\ref\WordQuest.dll
+D:\Program_D\Dự án mới\WordQuest_1 - Copy - Copy\WordQuest\bin\Debug\net10.0-windows\WordQuest.exe
+D:\Program_D\Dự án mới\WordQuest_1 - Copy - Copy\WordQuest\bin\Debug\net10.0-windows\WordQuest.deps.json
+D:\Program_D\Dự án mới\WordQuest_1 - Copy - Copy\WordQuest\bin\Debug\net10.0-windows\WordQuest.runtimeconfig.json
+D:\Program_D\Dự án mới\WordQuest_1 - Copy - Copy\WordQuest\bin\Debug\net10.0-windows\WordQuest.dll
+D:\Program_D\Dự án mới\WordQuest_1 - Copy - Copy\WordQuest\bin\Debug\net10.0-windows\WordQuest.pdb
+D:\Program_D\Dự án mới\WordQuest_1 - Copy - Copy\WordQuest\bin\Debug\net10.0-windows\Azure.Core.dll
+D:\Program_D\Dự án mới\WordQuest_1 - Copy - Copy\WordQuest\bin\Debug\net10.0-windows\Azure.Identity.dll
+D:\Program_D\Dự án mới\WordQuest_1 - Copy - Copy\WordQuest\bin\Debug\net10.0-windows\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Program_D\Dự án mới\WordQuest_1 - Copy - Copy\WordQuest\bin\Debug\net10.0-windows\Microsoft.Data.SqlClient.dll
+D:\Program_D\Dự án mới\WordQuest_1 - Copy - Copy\WordQuest\bin\Debug\net10.0-windows\Microsoft.Extensions.Caching.Abstractions.dll
+D:\Program_D\Dự án mới\WordQuest_1 - Copy - Copy\WordQuest\bin\Debug\net10.0-windows\Microsoft.Extensions.Caching.Memory.dll
+D:\Program_D\Dự án mới\WordQuest_1 - Copy - Copy\WordQuest\bin\Debug\net10.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\Program_D\Dự án mới\WordQuest_1 - Copy - Copy\WordQuest\bin\Debug\net10.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+D:\Program_D\Dự án mới\WordQuest_1 - Copy - Copy\WordQuest\bin\Debug\net10.0-windows\Microsoft.Extensions.Options.dll
+D:\Program_D\Dự án mới\WordQuest_1 - Copy - Copy\WordQuest\bin\Debug\net10.0-windows\Microsoft.Extensions.Primitives.dll
+D:\Program_D\Dự án mới\WordQuest_1 - Copy - Copy\WordQuest\bin\Debug\net10.0-windows\Microsoft.Identity.Client.dll
+D:\Program_D\Dự án mới\WordQuest_1 - Copy - Copy\WordQuest\bin\Debug\net10.0-windows\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\Program_D\Dự án mới\WordQuest_1 - Copy - Copy\WordQuest\bin\Debug\net10.0-windows\Microsoft.IdentityModel.Abstractions.dll
+D:\Program_D\Dự án mới\WordQuest_1 - Copy - Copy\WordQuest\bin\Debug\net10.0-windows\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Program_D\Dự án mới\WordQuest_1 - Copy - Copy\WordQuest\bin\Debug\net10.0-windows\Microsoft.IdentityModel.Logging.dll
+D:\Program_D\Dự án mới\WordQuest_1 - Copy - Copy\WordQuest\bin\Debug\net10.0-windows\Microsoft.IdentityModel.Protocols.dll
+D:\Program_D\Dự án mới\WordQuest_1 - Copy - Copy\WordQuest\bin\Debug\net10.0-windows\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\Program_D\Dự án mới\WordQuest_1 - Copy - Copy\WordQuest\bin\Debug\net10.0-windows\Microsoft.IdentityModel.Tokens.dll
+D:\Program_D\Dự án mới\WordQuest_1 - Copy - Copy\WordQuest\bin\Debug\net10.0-windows\Microsoft.SqlServer.Server.dll
+D:\Program_D\Dự án mới\WordQuest_1 - Copy - Copy\WordQuest\bin\Debug\net10.0-windows\System.ClientModel.dll
+D:\Program_D\Dự án mới\WordQuest_1 - Copy - Copy\WordQuest\bin\Debug\net10.0-windows\System.IdentityModel.Tokens.Jwt.dll
+D:\Program_D\Dự án mới\WordQuest_1 - Copy - Copy\WordQuest\bin\Debug\net10.0-windows\System.Memory.Data.dll
+D:\Program_D\Dự án mới\WordQuest_1 - Copy - Copy\WordQuest\bin\Debug\net10.0-windows\System.Speech.dll
+D:\Program_D\Dự án mới\WordQuest_1 - Copy - Copy\WordQuest\bin\Debug\net10.0-windows\cs\Microsoft.Data.SqlClient.resources.dll
+D:\Program_D\Dự án mới\WordQuest_1 - Copy - Copy\WordQuest\bin\Debug\net10.0-windows\de\Microsoft.Data.SqlClient.resources.dll
+D:\Program_D\Dự án mới\WordQuest_1 - Copy - Copy\WordQuest\bin\Debug\net10.0-windows\es\Microsoft.Data.SqlClient.resources.dll
+D:\Program_D\Dự án mới\WordQuest_1 - Copy - Copy\WordQuest\bin\Debug\net10.0-windows\fr\Microsoft.Data.SqlClient.resources.dll
+D:\Program_D\Dự án mới\WordQuest_1 - Copy - Copy\WordQuest\bin\Debug\net10.0-windows\it\Microsoft.Data.SqlClient.resources.dll
+D:\Program_D\Dự án mới\WordQuest_1 - Copy - Copy\WordQuest\bin\Debug\net10.0-windows\ja\Microsoft.Data.SqlClient.resources.dll
+D:\Program_D\Dự án mới\WordQuest_1 - Copy - Copy\WordQuest\bin\Debug\net10.0-windows\ko\Microsoft.Data.SqlClient.resources.dll
+D:\Program_D\Dự án mới\WordQuest_1 - Copy - Copy\WordQuest\bin\Debug\net10.0-windows\pl\Microsoft.Data.SqlClient.resources.dll
+D:\Program_D\Dự án mới\WordQuest_1 - Copy - Copy\WordQuest\bin\Debug\net10.0-windows\pt-BR\Microsoft.Data.SqlClient.resources.dll
+D:\Program_D\Dự án mới\WordQuest_1 - Copy - Copy\WordQuest\bin\Debug\net10.0-windows\ru\Microsoft.Data.SqlClient.resources.dll
+D:\Program_D\Dự án mới\WordQuest_1 - Copy - Copy\WordQuest\bin\Debug\net10.0-windows\tr\Microsoft.Data.SqlClient.resources.dll
+D:\Program_D\Dự án mới\WordQuest_1 - Copy - Copy\WordQuest\bin\Debug\net10.0-windows\zh-Hans\Microsoft.Data.SqlClient.resources.dll
+D:\Program_D\Dự án mới\WordQuest_1 - Copy - Copy\WordQuest\bin\Debug\net10.0-windows\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+D:\Program_D\Dự án mới\WordQuest_1 - Copy - Copy\WordQuest\bin\Debug\net10.0-windows\runtimes\unix\lib\net9.0\Microsoft.Data.SqlClient.dll
+D:\Program_D\Dự án mới\WordQuest_1 - Copy - Copy\WordQuest\bin\Debug\net10.0-windows\runtimes\win\lib\net9.0\Microsoft.Data.SqlClient.dll
+D:\Program_D\Dự án mới\WordQuest_1 - Copy - Copy\WordQuest\bin\Debug\net10.0-windows\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Program_D\Dự án mới\WordQuest_1 - Copy - Copy\WordQuest\bin\Debug\net10.0-windows\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Program_D\Dự án mới\WordQuest_1 - Copy - Copy\WordQuest\bin\Debug\net10.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Program_D\Dự án mới\WordQuest_1 - Copy - Copy\WordQuest\bin\Debug\net10.0-windows\runtimes\win\lib\net10.0\System.Speech.dll
+D:\Program_D\Dự án mới\WordQuest_1 - Copy - Copy\WordQuest\obj\Debug\net10.0-windows\WordQuest.csproj.AssemblyReference.cache
+D:\Program_D\Dự án mới\WordQuest_1 - Copy - Copy\WordQuest\obj\Debug\net10.0-windows\WordQuest.GUI.frmAdmin.resources
+D:\Program_D\Dự án mới\WordQuest_1 - Copy - Copy\WordQuest\obj\Debug\net10.0-windows\WordQuest.GUI.frmAdminMenu.resources
+D:\Program_D\Dự án mới\WordQuest_1 - Copy - Copy\WordQuest\obj\Debug\net10.0-windows\WordQuest.GUI.frmAdminPlayers.resources
+D:\Program_D\Dự án mới\WordQuest_1 - Copy - Copy\WordQuest\obj\Debug\net10.0-windows\WordQuest.GUI.frmAdminRules.resources
+D:\Program_D\Dự án mới\WordQuest_1 - Copy - Copy\WordQuest\obj\Debug\net10.0-windows\WordQuest.GUI.frmAdminTopics.resources
+D:\Program_D\Dự án mới\WordQuest_1 - Copy - Copy\WordQuest\obj\Debug\net10.0-windows\WordQuest.GUI.frmGame.resources
+D:\Program_D\Dự án mới\WordQuest_1 - Copy - Copy\WordQuest\obj\Debug\net10.0-windows\WordQuest.GUI.frmImage.resources
+D:\Program_D\Dự án mới\WordQuest_1 - Copy - Copy\WordQuest\obj\Debug\net10.0-windows\WordQuest.GUI.frmLeaderboard.resources
+D:\Program_D\Dự án mới\WordQuest_1 - Copy - Copy\WordQuest\obj\Debug\net10.0-windows\WordQuest.GUI.frmLevels.resources
+D:\Program_D\Dự án mới\WordQuest_1 - Copy - Copy\WordQuest\obj\Debug\net10.0-windows\WordQuest.GUI.frmLogin.resources
+D:\Program_D\Dự án mới\WordQuest_1 - Copy - Copy\WordQuest\obj\Debug\net10.0-windows\WordQuest.GUI.frmTopics.resources
+D:\Program_D\Dự án mới\WordQuest_1 - Copy - Copy\WordQuest\obj\Debug\net10.0-windows\WordQuest.GUI.frmWin.resources
+D:\Program_D\Dự án mới\WordQuest_1 - Copy - Copy\WordQuest\obj\Debug\net10.0-windows\WordQuest.Properties.Resources.resources
+D:\Program_D\Dự án mới\WordQuest_1 - Copy - Copy\WordQuest\obj\Debug\net10.0-windows\WordQuest.csproj.GenerateResource.cache
+D:\Program_D\Dự án mới\WordQuest_1 - Copy - Copy\WordQuest\obj\Debug\net10.0-windows\WordQuest.GeneratedMSBuildEditorConfig.editorconfig
+D:\Program_D\Dự án mới\WordQuest_1 - Copy - Copy\WordQuest\obj\Debug\net10.0-windows\WordQuest.AssemblyInfoInputs.cache
+D:\Program_D\Dự án mới\WordQuest_1 - Copy - Copy\WordQuest\obj\Debug\net10.0-windows\WordQuest.AssemblyInfo.cs
+D:\Program_D\Dự án mới\WordQuest_1 - Copy - Copy\WordQuest\obj\Debug\net10.0-windows\WordQuest.csproj.CoreCompileInputs.cache
+D:\Program_D\Dự án mới\WordQuest_1 - Copy - Copy\WordQuest\obj\Debug\net10.0-windows\WordQuest.csproj.Up2Date
+D:\Program_D\Dự án mới\WordQuest_1 - Copy - Copy\WordQuest\obj\Debug\net10.0-windows\WordQuest.dll
+D:\Program_D\Dự án mới\WordQuest_1 - Copy - Copy\WordQuest\obj\Debug\net10.0-windows\refint\WordQuest.dll
+D:\Program_D\Dự án mới\WordQuest_1 - Copy - Copy\WordQuest\obj\Debug\net10.0-windows\WordQuest.pdb
+D:\Program_D\Dự án mới\WordQuest_1 - Copy - Copy\WordQuest\obj\Debug\net10.0-windows\WordQuest.genruntimeconfig.cache
+D:\Program_D\Dự án mới\WordQuest_1 - Copy - Copy\WordQuest\obj\Debug\net10.0-windows\ref\WordQuest.dll
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm\WordQuest\bin\Debug\net10.0-windows\WordQuest.exe
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm\WordQuest\bin\Debug\net10.0-windows\appsettings.json
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm\WordQuest\bin\Debug\net10.0-windows\nlog.config
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm\WordQuest\bin\Debug\net10.0-windows\WordQuest.deps.json
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm\WordQuest\bin\Debug\net10.0-windows\WordQuest.runtimeconfig.json
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm\WordQuest\bin\Debug\net10.0-windows\WordQuest.dll
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm\WordQuest\bin\Debug\net10.0-windows\WordQuest.pdb
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm\WordQuest\bin\Debug\net10.0-windows\Azure.Core.dll
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm\WordQuest\bin\Debug\net10.0-windows\Azure.Identity.dll
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm\WordQuest\bin\Debug\net10.0-windows\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm\WordQuest\bin\Debug\net10.0-windows\Microsoft.Data.SqlClient.dll
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm\WordQuest\bin\Debug\net10.0-windows\Microsoft.Extensions.Caching.Abstractions.dll
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm\WordQuest\bin\Debug\net10.0-windows\Microsoft.Extensions.Caching.Memory.dll
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm\WordQuest\bin\Debug\net10.0-windows\Microsoft.Extensions.Configuration.dll
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm\WordQuest\bin\Debug\net10.0-windows\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm\WordQuest\bin\Debug\net10.0-windows\Microsoft.Extensions.Configuration.FileExtensions.dll
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm\WordQuest\bin\Debug\net10.0-windows\Microsoft.Extensions.Configuration.Json.dll
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm\WordQuest\bin\Debug\net10.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm\WordQuest\bin\Debug\net10.0-windows\Microsoft.Extensions.FileProviders.Abstractions.dll
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm\WordQuest\bin\Debug\net10.0-windows\Microsoft.Extensions.FileProviders.Physical.dll
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm\WordQuest\bin\Debug\net10.0-windows\Microsoft.Extensions.FileSystemGlobbing.dll
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm\WordQuest\bin\Debug\net10.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm\WordQuest\bin\Debug\net10.0-windows\Microsoft.Extensions.Options.dll
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm\WordQuest\bin\Debug\net10.0-windows\Microsoft.Extensions.Primitives.dll
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm\WordQuest\bin\Debug\net10.0-windows\Microsoft.Identity.Client.dll
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm\WordQuest\bin\Debug\net10.0-windows\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm\WordQuest\bin\Debug\net10.0-windows\Microsoft.IdentityModel.Abstractions.dll
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm\WordQuest\bin\Debug\net10.0-windows\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm\WordQuest\bin\Debug\net10.0-windows\Microsoft.IdentityModel.Logging.dll
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm\WordQuest\bin\Debug\net10.0-windows\Microsoft.IdentityModel.Protocols.dll
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm\WordQuest\bin\Debug\net10.0-windows\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm\WordQuest\bin\Debug\net10.0-windows\Microsoft.IdentityModel.Tokens.dll
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm\WordQuest\bin\Debug\net10.0-windows\Microsoft.SqlServer.Server.dll
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm\WordQuest\bin\Debug\net10.0-windows\NLog.dll
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm\WordQuest\bin\Debug\net10.0-windows\System.ClientModel.dll
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm\WordQuest\bin\Debug\net10.0-windows\System.IdentityModel.Tokens.Jwt.dll
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm\WordQuest\bin\Debug\net10.0-windows\System.Memory.Data.dll
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm\WordQuest\bin\Debug\net10.0-windows\System.Speech.dll
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm\WordQuest\bin\Debug\net10.0-windows\cs\Microsoft.Data.SqlClient.resources.dll
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm\WordQuest\bin\Debug\net10.0-windows\de\Microsoft.Data.SqlClient.resources.dll
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm\WordQuest\bin\Debug\net10.0-windows\es\Microsoft.Data.SqlClient.resources.dll
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm\WordQuest\bin\Debug\net10.0-windows\fr\Microsoft.Data.SqlClient.resources.dll
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm\WordQuest\bin\Debug\net10.0-windows\it\Microsoft.Data.SqlClient.resources.dll
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm\WordQuest\bin\Debug\net10.0-windows\ja\Microsoft.Data.SqlClient.resources.dll
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm\WordQuest\bin\Debug\net10.0-windows\ko\Microsoft.Data.SqlClient.resources.dll
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm\WordQuest\bin\Debug\net10.0-windows\pl\Microsoft.Data.SqlClient.resources.dll
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm\WordQuest\bin\Debug\net10.0-windows\pt-BR\Microsoft.Data.SqlClient.resources.dll
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm\WordQuest\bin\Debug\net10.0-windows\ru\Microsoft.Data.SqlClient.resources.dll
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm\WordQuest\bin\Debug\net10.0-windows\tr\Microsoft.Data.SqlClient.resources.dll
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm\WordQuest\bin\Debug\net10.0-windows\zh-Hans\Microsoft.Data.SqlClient.resources.dll
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm\WordQuest\bin\Debug\net10.0-windows\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm\WordQuest\bin\Debug\net10.0-windows\runtimes\unix\lib\net9.0\Microsoft.Data.SqlClient.dll
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm\WordQuest\bin\Debug\net10.0-windows\runtimes\win\lib\net9.0\Microsoft.Data.SqlClient.dll
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm\WordQuest\bin\Debug\net10.0-windows\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm\WordQuest\bin\Debug\net10.0-windows\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm\WordQuest\bin\Debug\net10.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm\WordQuest\bin\Debug\net10.0-windows\runtimes\win\lib\net10.0\System.Speech.dll
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm\WordQuest\obj\Debug\net10.0-windows\WordQuest.csproj.AssemblyReference.cache
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm\WordQuest\obj\Debug\net10.0-windows\WordQuest.GUI.frmAdmin.resources
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm\WordQuest\obj\Debug\net10.0-windows\WordQuest.GUI.frmAdminMenu.resources
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm\WordQuest\obj\Debug\net10.0-windows\WordQuest.GUI.frmAdminPlayers.resources
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm\WordQuest\obj\Debug\net10.0-windows\WordQuest.GUI.frmAdminRules.resources
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm\WordQuest\obj\Debug\net10.0-windows\WordQuest.GUI.frmAdminTopics.resources
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm\WordQuest\obj\Debug\net10.0-windows\WordQuest.GUI.frmGame.resources
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm\WordQuest\obj\Debug\net10.0-windows\WordQuest.GUI.frmImage.resources
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm\WordQuest\obj\Debug\net10.0-windows\WordQuest.GUI.frmLeaderboard.resources
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm\WordQuest\obj\Debug\net10.0-windows\WordQuest.GUI.frmLevels.resources
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm\WordQuest\obj\Debug\net10.0-windows\WordQuest.GUI.frmLogin.resources
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm\WordQuest\obj\Debug\net10.0-windows\WordQuest.GUI.frmTopics.resources
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm\WordQuest\obj\Debug\net10.0-windows\WordQuest.GUI.frmWin.resources
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm\WordQuest\obj\Debug\net10.0-windows\WordQuest.Properties.Resources.resources
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm\WordQuest\obj\Debug\net10.0-windows\WordQuest.csproj.GenerateResource.cache
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm\WordQuest\obj\Debug\net10.0-windows\WordQuest.GeneratedMSBuildEditorConfig.editorconfig
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm\WordQuest\obj\Debug\net10.0-windows\WordQuest.AssemblyInfoInputs.cache
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm\WordQuest\obj\Debug\net10.0-windows\WordQuest.AssemblyInfo.cs
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm\WordQuest\obj\Debug\net10.0-windows\WordQuest.csproj.CoreCompileInputs.cache
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm\WordQuest\obj\Debug\net10.0-windows\WordQuest.csproj.Up2Date
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm\WordQuest\obj\Debug\net10.0-windows\WordQuest.dll
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm\WordQuest\obj\Debug\net10.0-windows\refint\WordQuest.dll
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm\WordQuest\obj\Debug\net10.0-windows\WordQuest.pdb
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm\WordQuest\obj\Debug\net10.0-windows\WordQuest.genruntimeconfig.cache
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm\WordQuest\obj\Debug\net10.0-windows\ref\WordQuest.dll
+D:\Program_D\Dự án mới\WordQuest_1 - bản chính\WordQuest\bin\Debug\net10.0-windows\WordQuest.exe
+D:\Program_D\Dự án mới\WordQuest_1 - bản chính\WordQuest\bin\Debug\net10.0-windows\appsettings.json
+D:\Program_D\Dự án mới\WordQuest_1 - bản chính\WordQuest\bin\Debug\net10.0-windows\nlog.config
+D:\Program_D\Dự án mới\WordQuest_1 - bản chính\WordQuest\bin\Debug\net10.0-windows\WordQuest.deps.json
+D:\Program_D\Dự án mới\WordQuest_1 - bản chính\WordQuest\bin\Debug\net10.0-windows\WordQuest.runtimeconfig.json
+D:\Program_D\Dự án mới\WordQuest_1 - bản chính\WordQuest\bin\Debug\net10.0-windows\WordQuest.dll
+D:\Program_D\Dự án mới\WordQuest_1 - bản chính\WordQuest\bin\Debug\net10.0-windows\WordQuest.pdb
+D:\Program_D\Dự án mới\WordQuest_1 - bản chính\WordQuest\bin\Debug\net10.0-windows\Azure.Core.dll
+D:\Program_D\Dự án mới\WordQuest_1 - bản chính\WordQuest\bin\Debug\net10.0-windows\Azure.Identity.dll
+D:\Program_D\Dự án mới\WordQuest_1 - bản chính\WordQuest\bin\Debug\net10.0-windows\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Program_D\Dự án mới\WordQuest_1 - bản chính\WordQuest\bin\Debug\net10.0-windows\Microsoft.Data.SqlClient.dll
+D:\Program_D\Dự án mới\WordQuest_1 - bản chính\WordQuest\bin\Debug\net10.0-windows\Microsoft.Extensions.Caching.Abstractions.dll
+D:\Program_D\Dự án mới\WordQuest_1 - bản chính\WordQuest\bin\Debug\net10.0-windows\Microsoft.Extensions.Caching.Memory.dll
+D:\Program_D\Dự án mới\WordQuest_1 - bản chính\WordQuest\bin\Debug\net10.0-windows\Microsoft.Extensions.Configuration.dll
+D:\Program_D\Dự án mới\WordQuest_1 - bản chính\WordQuest\bin\Debug\net10.0-windows\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\Program_D\Dự án mới\WordQuest_1 - bản chính\WordQuest\bin\Debug\net10.0-windows\Microsoft.Extensions.Configuration.FileExtensions.dll
+D:\Program_D\Dự án mới\WordQuest_1 - bản chính\WordQuest\bin\Debug\net10.0-windows\Microsoft.Extensions.Configuration.Json.dll
+D:\Program_D\Dự án mới\WordQuest_1 - bản chính\WordQuest\bin\Debug\net10.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\Program_D\Dự án mới\WordQuest_1 - bản chính\WordQuest\bin\Debug\net10.0-windows\Microsoft.Extensions.FileProviders.Abstractions.dll
+D:\Program_D\Dự án mới\WordQuest_1 - bản chính\WordQuest\bin\Debug\net10.0-windows\Microsoft.Extensions.FileProviders.Physical.dll
+D:\Program_D\Dự án mới\WordQuest_1 - bản chính\WordQuest\bin\Debug\net10.0-windows\Microsoft.Extensions.FileSystemGlobbing.dll
+D:\Program_D\Dự án mới\WordQuest_1 - bản chính\WordQuest\bin\Debug\net10.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+D:\Program_D\Dự án mới\WordQuest_1 - bản chính\WordQuest\bin\Debug\net10.0-windows\Microsoft.Extensions.Options.dll
+D:\Program_D\Dự án mới\WordQuest_1 - bản chính\WordQuest\bin\Debug\net10.0-windows\Microsoft.Extensions.Primitives.dll
+D:\Program_D\Dự án mới\WordQuest_1 - bản chính\WordQuest\bin\Debug\net10.0-windows\Microsoft.Identity.Client.dll
+D:\Program_D\Dự án mới\WordQuest_1 - bản chính\WordQuest\bin\Debug\net10.0-windows\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\Program_D\Dự án mới\WordQuest_1 - bản chính\WordQuest\bin\Debug\net10.0-windows\Microsoft.IdentityModel.Abstractions.dll
+D:\Program_D\Dự án mới\WordQuest_1 - bản chính\WordQuest\bin\Debug\net10.0-windows\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Program_D\Dự án mới\WordQuest_1 - bản chính\WordQuest\bin\Debug\net10.0-windows\Microsoft.IdentityModel.Logging.dll
+D:\Program_D\Dự án mới\WordQuest_1 - bản chính\WordQuest\bin\Debug\net10.0-windows\Microsoft.IdentityModel.Protocols.dll
+D:\Program_D\Dự án mới\WordQuest_1 - bản chính\WordQuest\bin\Debug\net10.0-windows\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\Program_D\Dự án mới\WordQuest_1 - bản chính\WordQuest\bin\Debug\net10.0-windows\Microsoft.IdentityModel.Tokens.dll
+D:\Program_D\Dự án mới\WordQuest_1 - bản chính\WordQuest\bin\Debug\net10.0-windows\Microsoft.SqlServer.Server.dll
+D:\Program_D\Dự án mới\WordQuest_1 - bản chính\WordQuest\bin\Debug\net10.0-windows\NLog.dll
+D:\Program_D\Dự án mới\WordQuest_1 - bản chính\WordQuest\bin\Debug\net10.0-windows\System.ClientModel.dll
+D:\Program_D\Dự án mới\WordQuest_1 - bản chính\WordQuest\bin\Debug\net10.0-windows\System.IdentityModel.Tokens.Jwt.dll
+D:\Program_D\Dự án mới\WordQuest_1 - bản chính\WordQuest\bin\Debug\net10.0-windows\System.Memory.Data.dll
+D:\Program_D\Dự án mới\WordQuest_1 - bản chính\WordQuest\bin\Debug\net10.0-windows\System.Speech.dll
+D:\Program_D\Dự án mới\WordQuest_1 - bản chính\WordQuest\bin\Debug\net10.0-windows\cs\Microsoft.Data.SqlClient.resources.dll
+D:\Program_D\Dự án mới\WordQuest_1 - bản chính\WordQuest\bin\Debug\net10.0-windows\de\Microsoft.Data.SqlClient.resources.dll
+D:\Program_D\Dự án mới\WordQuest_1 - bản chính\WordQuest\bin\Debug\net10.0-windows\es\Microsoft.Data.SqlClient.resources.dll
+D:\Program_D\Dự án mới\WordQuest_1 - bản chính\WordQuest\bin\Debug\net10.0-windows\fr\Microsoft.Data.SqlClient.resources.dll
+D:\Program_D\Dự án mới\WordQuest_1 - bản chính\WordQuest\bin\Debug\net10.0-windows\it\Microsoft.Data.SqlClient.resources.dll
+D:\Program_D\Dự án mới\WordQuest_1 - bản chính\WordQuest\bin\Debug\net10.0-windows\ja\Microsoft.Data.SqlClient.resources.dll
+D:\Program_D\Dự án mới\WordQuest_1 - bản chính\WordQuest\bin\Debug\net10.0-windows\ko\Microsoft.Data.SqlClient.resources.dll
+D:\Program_D\Dự án mới\WordQuest_1 - bản chính\WordQuest\bin\Debug\net10.0-windows\pl\Microsoft.Data.SqlClient.resources.dll
+D:\Program_D\Dự án mới\WordQuest_1 - bản chính\WordQuest\bin\Debug\net10.0-windows\pt-BR\Microsoft.Data.SqlClient.resources.dll
+D:\Program_D\Dự án mới\WordQuest_1 - bản chính\WordQuest\bin\Debug\net10.0-windows\ru\Microsoft.Data.SqlClient.resources.dll
+D:\Program_D\Dự án mới\WordQuest_1 - bản chính\WordQuest\bin\Debug\net10.0-windows\tr\Microsoft.Data.SqlClient.resources.dll
+D:\Program_D\Dự án mới\WordQuest_1 - bản chính\WordQuest\bin\Debug\net10.0-windows\zh-Hans\Microsoft.Data.SqlClient.resources.dll
+D:\Program_D\Dự án mới\WordQuest_1 - bản chính\WordQuest\bin\Debug\net10.0-windows\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+D:\Program_D\Dự án mới\WordQuest_1 - bản chính\WordQuest\bin\Debug\net10.0-windows\runtimes\unix\lib\net9.0\Microsoft.Data.SqlClient.dll
+D:\Program_D\Dự án mới\WordQuest_1 - bản chính\WordQuest\bin\Debug\net10.0-windows\runtimes\win\lib\net9.0\Microsoft.Data.SqlClient.dll
+D:\Program_D\Dự án mới\WordQuest_1 - bản chính\WordQuest\bin\Debug\net10.0-windows\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Program_D\Dự án mới\WordQuest_1 - bản chính\WordQuest\bin\Debug\net10.0-windows\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Program_D\Dự án mới\WordQuest_1 - bản chính\WordQuest\bin\Debug\net10.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Program_D\Dự án mới\WordQuest_1 - bản chính\WordQuest\bin\Debug\net10.0-windows\runtimes\win\lib\net10.0\System.Speech.dll
+D:\Program_D\Dự án mới\WordQuest_1 - bản chính\WordQuest\obj\Debug\net10.0-windows\WordQuest.csproj.AssemblyReference.cache
+D:\Program_D\Dự án mới\WordQuest_1 - bản chính\WordQuest\obj\Debug\net10.0-windows\WordQuest.GUI.frmAdmin.resources
+D:\Program_D\Dự án mới\WordQuest_1 - bản chính\WordQuest\obj\Debug\net10.0-windows\WordQuest.GUI.frmAdminMenu.resources
+D:\Program_D\Dự án mới\WordQuest_1 - bản chính\WordQuest\obj\Debug\net10.0-windows\WordQuest.GUI.frmAdminPlayers.resources
+D:\Program_D\Dự án mới\WordQuest_1 - bản chính\WordQuest\obj\Debug\net10.0-windows\WordQuest.GUI.frmAdminRules.resources
+D:\Program_D\Dự án mới\WordQuest_1 - bản chính\WordQuest\obj\Debug\net10.0-windows\WordQuest.GUI.frmAdminTopics.resources
+D:\Program_D\Dự án mới\WordQuest_1 - bản chính\WordQuest\obj\Debug\net10.0-windows\WordQuest.GUI.frmGame.resources
+D:\Program_D\Dự án mới\WordQuest_1 - bản chính\WordQuest\obj\Debug\net10.0-windows\WordQuest.GUI.frmImage.resources
+D:\Program_D\Dự án mới\WordQuest_1 - bản chính\WordQuest\obj\Debug\net10.0-windows\WordQuest.GUI.frmLeaderboard.resources
+D:\Program_D\Dự án mới\WordQuest_1 - bản chính\WordQuest\obj\Debug\net10.0-windows\WordQuest.GUI.frmLevels.resources
+D:\Program_D\Dự án mới\WordQuest_1 - bản chính\WordQuest\obj\Debug\net10.0-windows\WordQuest.GUI.frmLogin.resources
+D:\Program_D\Dự án mới\WordQuest_1 - bản chính\WordQuest\obj\Debug\net10.0-windows\WordQuest.GUI.frmTopics.resources
+D:\Program_D\Dự án mới\WordQuest_1 - bản chính\WordQuest\obj\Debug\net10.0-windows\WordQuest.GUI.frmWin.resources
+D:\Program_D\Dự án mới\WordQuest_1 - bản chính\WordQuest\obj\Debug\net10.0-windows\WordQuest.Properties.Resources.resources
+D:\Program_D\Dự án mới\WordQuest_1 - bản chính\WordQuest\obj\Debug\net10.0-windows\WordQuest.csproj.GenerateResource.cache
+D:\Program_D\Dự án mới\WordQuest_1 - bản chính\WordQuest\obj\Debug\net10.0-windows\WordQuest.GeneratedMSBuildEditorConfig.editorconfig
+D:\Program_D\Dự án mới\WordQuest_1 - bản chính\WordQuest\obj\Debug\net10.0-windows\WordQuest.AssemblyInfoInputs.cache
+D:\Program_D\Dự án mới\WordQuest_1 - bản chính\WordQuest\obj\Debug\net10.0-windows\WordQuest.AssemblyInfo.cs
+D:\Program_D\Dự án mới\WordQuest_1 - bản chính\WordQuest\obj\Debug\net10.0-windows\WordQuest.csproj.CoreCompileInputs.cache
+D:\Program_D\Dự án mới\WordQuest_1 - bản chính\WordQuest\obj\Debug\net10.0-windows\WordQuest.csproj.Up2Date
+D:\Program_D\Dự án mới\WordQuest_1 - bản chính\WordQuest\obj\Debug\net10.0-windows\WordQuest.dll
+D:\Program_D\Dự án mới\WordQuest_1 - bản chính\WordQuest\obj\Debug\net10.0-windows\refint\WordQuest.dll
+D:\Program_D\Dự án mới\WordQuest_1 - bản chính\WordQuest\obj\Debug\net10.0-windows\WordQuest.pdb
+D:\Program_D\Dự án mới\WordQuest_1 - bản chính\WordQuest\obj\Debug\net10.0-windows\WordQuest.genruntimeconfig.cache
+D:\Program_D\Dự án mới\WordQuest_1 - bản chính\WordQuest\obj\Debug\net10.0-windows\ref\WordQuest.dll
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm - Copy\WordQuest\bin\Debug\net10.0-windows\WordQuest.exe
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm - Copy\WordQuest\bin\Debug\net10.0-windows\appsettings.json
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm - Copy\WordQuest\bin\Debug\net10.0-windows\nlog.config
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm - Copy\WordQuest\bin\Debug\net10.0-windows\WordQuest.deps.json
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm - Copy\WordQuest\bin\Debug\net10.0-windows\WordQuest.runtimeconfig.json
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm - Copy\WordQuest\bin\Debug\net10.0-windows\WordQuest.dll
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm - Copy\WordQuest\bin\Debug\net10.0-windows\WordQuest.pdb
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm - Copy\WordQuest\bin\Debug\net10.0-windows\Azure.Core.dll
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm - Copy\WordQuest\bin\Debug\net10.0-windows\Azure.Identity.dll
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm - Copy\WordQuest\bin\Debug\net10.0-windows\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm - Copy\WordQuest\bin\Debug\net10.0-windows\Microsoft.Data.SqlClient.dll
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm - Copy\WordQuest\bin\Debug\net10.0-windows\Microsoft.Extensions.Caching.Abstractions.dll
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm - Copy\WordQuest\bin\Debug\net10.0-windows\Microsoft.Extensions.Caching.Memory.dll
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm - Copy\WordQuest\bin\Debug\net10.0-windows\Microsoft.Extensions.Configuration.dll
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm - Copy\WordQuest\bin\Debug\net10.0-windows\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm - Copy\WordQuest\bin\Debug\net10.0-windows\Microsoft.Extensions.Configuration.FileExtensions.dll
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm - Copy\WordQuest\bin\Debug\net10.0-windows\Microsoft.Extensions.Configuration.Json.dll
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm - Copy\WordQuest\bin\Debug\net10.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm - Copy\WordQuest\bin\Debug\net10.0-windows\Microsoft.Extensions.FileProviders.Abstractions.dll
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm - Copy\WordQuest\bin\Debug\net10.0-windows\Microsoft.Extensions.FileProviders.Physical.dll
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm - Copy\WordQuest\bin\Debug\net10.0-windows\Microsoft.Extensions.FileSystemGlobbing.dll
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm - Copy\WordQuest\bin\Debug\net10.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm - Copy\WordQuest\bin\Debug\net10.0-windows\Microsoft.Extensions.Options.dll
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm - Copy\WordQuest\bin\Debug\net10.0-windows\Microsoft.Extensions.Primitives.dll
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm - Copy\WordQuest\bin\Debug\net10.0-windows\Microsoft.Identity.Client.dll
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm - Copy\WordQuest\bin\Debug\net10.0-windows\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm - Copy\WordQuest\bin\Debug\net10.0-windows\Microsoft.IdentityModel.Abstractions.dll
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm - Copy\WordQuest\bin\Debug\net10.0-windows\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm - Copy\WordQuest\bin\Debug\net10.0-windows\Microsoft.IdentityModel.Logging.dll
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm - Copy\WordQuest\bin\Debug\net10.0-windows\Microsoft.IdentityModel.Protocols.dll
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm - Copy\WordQuest\bin\Debug\net10.0-windows\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm - Copy\WordQuest\bin\Debug\net10.0-windows\Microsoft.IdentityModel.Tokens.dll
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm - Copy\WordQuest\bin\Debug\net10.0-windows\Microsoft.SqlServer.Server.dll
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm - Copy\WordQuest\bin\Debug\net10.0-windows\NLog.dll
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm - Copy\WordQuest\bin\Debug\net10.0-windows\System.ClientModel.dll
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm - Copy\WordQuest\bin\Debug\net10.0-windows\System.IdentityModel.Tokens.Jwt.dll
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm - Copy\WordQuest\bin\Debug\net10.0-windows\System.Memory.Data.dll
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm - Copy\WordQuest\bin\Debug\net10.0-windows\System.Speech.dll
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm - Copy\WordQuest\bin\Debug\net10.0-windows\cs\Microsoft.Data.SqlClient.resources.dll
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm - Copy\WordQuest\bin\Debug\net10.0-windows\de\Microsoft.Data.SqlClient.resources.dll
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm - Copy\WordQuest\bin\Debug\net10.0-windows\es\Microsoft.Data.SqlClient.resources.dll
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm - Copy\WordQuest\bin\Debug\net10.0-windows\fr\Microsoft.Data.SqlClient.resources.dll
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm - Copy\WordQuest\bin\Debug\net10.0-windows\it\Microsoft.Data.SqlClient.resources.dll
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm - Copy\WordQuest\bin\Debug\net10.0-windows\ja\Microsoft.Data.SqlClient.resources.dll
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm - Copy\WordQuest\bin\Debug\net10.0-windows\ko\Microsoft.Data.SqlClient.resources.dll
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm - Copy\WordQuest\bin\Debug\net10.0-windows\pl\Microsoft.Data.SqlClient.resources.dll
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm - Copy\WordQuest\bin\Debug\net10.0-windows\pt-BR\Microsoft.Data.SqlClient.resources.dll
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm - Copy\WordQuest\bin\Debug\net10.0-windows\ru\Microsoft.Data.SqlClient.resources.dll
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm - Copy\WordQuest\bin\Debug\net10.0-windows\tr\Microsoft.Data.SqlClient.resources.dll
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm - Copy\WordQuest\bin\Debug\net10.0-windows\zh-Hans\Microsoft.Data.SqlClient.resources.dll
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm - Copy\WordQuest\bin\Debug\net10.0-windows\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm - Copy\WordQuest\bin\Debug\net10.0-windows\runtimes\unix\lib\net9.0\Microsoft.Data.SqlClient.dll
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm - Copy\WordQuest\bin\Debug\net10.0-windows\runtimes\win\lib\net9.0\Microsoft.Data.SqlClient.dll
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm - Copy\WordQuest\bin\Debug\net10.0-windows\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm - Copy\WordQuest\bin\Debug\net10.0-windows\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm - Copy\WordQuest\bin\Debug\net10.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm - Copy\WordQuest\bin\Debug\net10.0-windows\runtimes\win\lib\net10.0\System.Speech.dll
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm - Copy\WordQuest\obj\Debug\net10.0-windows\WordQuest.csproj.AssemblyReference.cache
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm - Copy\WordQuest\obj\Debug\net10.0-windows\WordQuest.GUI.frmAdmin.resources
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm - Copy\WordQuest\obj\Debug\net10.0-windows\WordQuest.GUI.frmAdminMenu.resources
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm - Copy\WordQuest\obj\Debug\net10.0-windows\WordQuest.GUI.frmAdminPlayers.resources
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm - Copy\WordQuest\obj\Debug\net10.0-windows\WordQuest.GUI.frmAdminRules.resources
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm - Copy\WordQuest\obj\Debug\net10.0-windows\WordQuest.GUI.frmAdminTopics.resources
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm - Copy\WordQuest\obj\Debug\net10.0-windows\WordQuest.GUI.frmGame.resources
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm - Copy\WordQuest\obj\Debug\net10.0-windows\WordQuest.GUI.frmImage.resources
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm - Copy\WordQuest\obj\Debug\net10.0-windows\WordQuest.GUI.frmLeaderboard.resources
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm - Copy\WordQuest\obj\Debug\net10.0-windows\WordQuest.GUI.frmLevels.resources
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm - Copy\WordQuest\obj\Debug\net10.0-windows\WordQuest.GUI.frmLogin.resources
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm - Copy\WordQuest\obj\Debug\net10.0-windows\WordQuest.GUI.frmTopics.resources
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm - Copy\WordQuest\obj\Debug\net10.0-windows\WordQuest.GUI.frmWin.resources
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm - Copy\WordQuest\obj\Debug\net10.0-windows\WordQuest.Properties.Resources.resources
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm - Copy\WordQuest\obj\Debug\net10.0-windows\WordQuest.csproj.GenerateResource.cache
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm - Copy\WordQuest\obj\Debug\net10.0-windows\WordQuest.GeneratedMSBuildEditorConfig.editorconfig
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm - Copy\WordQuest\obj\Debug\net10.0-windows\WordQuest.AssemblyInfoInputs.cache
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm - Copy\WordQuest\obj\Debug\net10.0-windows\WordQuest.AssemblyInfo.cs
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm - Copy\WordQuest\obj\Debug\net10.0-windows\WordQuest.csproj.CoreCompileInputs.cache
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm - Copy\WordQuest\obj\Debug\net10.0-windows\WordQuest.csproj.Up2Date
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm - Copy\WordQuest\obj\Debug\net10.0-windows\WordQuest.dll
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm - Copy\WordQuest\obj\Debug\net10.0-windows\refint\WordQuest.dll
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm - Copy\WordQuest\obj\Debug\net10.0-windows\WordQuest.pdb
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm - Copy\WordQuest\obj\Debug\net10.0-windows\WordQuest.genruntimeconfig.cache
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm - Copy\WordQuest\obj\Debug\net10.0-windows\ref\WordQuest.dll
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1\WordQuest\bin\Debug\net10.0-windows\WordQuest.exe
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1\WordQuest\bin\Debug\net10.0-windows\appsettings.json
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1\WordQuest\bin\Debug\net10.0-windows\nlog.config
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1\WordQuest\bin\Debug\net10.0-windows\WordQuest.deps.json
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1\WordQuest\bin\Debug\net10.0-windows\WordQuest.runtimeconfig.json
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1\WordQuest\bin\Debug\net10.0-windows\WordQuest.dll
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1\WordQuest\bin\Debug\net10.0-windows\WordQuest.pdb
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1\WordQuest\bin\Debug\net10.0-windows\Azure.Core.dll
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1\WordQuest\bin\Debug\net10.0-windows\Azure.Identity.dll
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1\WordQuest\bin\Debug\net10.0-windows\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1\WordQuest\bin\Debug\net10.0-windows\Microsoft.Data.SqlClient.dll
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1\WordQuest\bin\Debug\net10.0-windows\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1\WordQuest\bin\Debug\net10.0-windows\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1\WordQuest\bin\Debug\net10.0-windows\Microsoft.Extensions.Configuration.dll
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1\WordQuest\bin\Debug\net10.0-windows\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1\WordQuest\bin\Debug\net10.0-windows\Microsoft.Extensions.Configuration.FileExtensions.dll
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1\WordQuest\bin\Debug\net10.0-windows\Microsoft.Extensions.Configuration.Json.dll
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1\WordQuest\bin\Debug\net10.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1\WordQuest\bin\Debug\net10.0-windows\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1\WordQuest\bin\Debug\net10.0-windows\Microsoft.Extensions.FileProviders.Physical.dll
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1\WordQuest\bin\Debug\net10.0-windows\Microsoft.Extensions.FileSystemGlobbing.dll
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1\WordQuest\bin\Debug\net10.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1\WordQuest\bin\Debug\net10.0-windows\Microsoft.Extensions.Options.dll
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1\WordQuest\bin\Debug\net10.0-windows\Microsoft.Extensions.Primitives.dll
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1\WordQuest\bin\Debug\net10.0-windows\Microsoft.Identity.Client.dll
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1\WordQuest\bin\Debug\net10.0-windows\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1\WordQuest\bin\Debug\net10.0-windows\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1\WordQuest\bin\Debug\net10.0-windows\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1\WordQuest\bin\Debug\net10.0-windows\Microsoft.IdentityModel.Logging.dll
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1\WordQuest\bin\Debug\net10.0-windows\Microsoft.IdentityModel.Protocols.dll
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1\WordQuest\bin\Debug\net10.0-windows\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1\WordQuest\bin\Debug\net10.0-windows\Microsoft.IdentityModel.Tokens.dll
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1\WordQuest\bin\Debug\net10.0-windows\Microsoft.SqlServer.Server.dll
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1\WordQuest\bin\Debug\net10.0-windows\NLog.dll
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1\WordQuest\bin\Debug\net10.0-windows\System.ClientModel.dll
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1\WordQuest\bin\Debug\net10.0-windows\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1\WordQuest\bin\Debug\net10.0-windows\System.Memory.Data.dll
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1\WordQuest\bin\Debug\net10.0-windows\System.Speech.dll
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1\WordQuest\bin\Debug\net10.0-windows\cs\Microsoft.Data.SqlClient.resources.dll
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1\WordQuest\bin\Debug\net10.0-windows\de\Microsoft.Data.SqlClient.resources.dll
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1\WordQuest\bin\Debug\net10.0-windows\es\Microsoft.Data.SqlClient.resources.dll
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1\WordQuest\bin\Debug\net10.0-windows\fr\Microsoft.Data.SqlClient.resources.dll
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1\WordQuest\bin\Debug\net10.0-windows\it\Microsoft.Data.SqlClient.resources.dll
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1\WordQuest\bin\Debug\net10.0-windows\ja\Microsoft.Data.SqlClient.resources.dll
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1\WordQuest\bin\Debug\net10.0-windows\ko\Microsoft.Data.SqlClient.resources.dll
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1\WordQuest\bin\Debug\net10.0-windows\pl\Microsoft.Data.SqlClient.resources.dll
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1\WordQuest\bin\Debug\net10.0-windows\pt-BR\Microsoft.Data.SqlClient.resources.dll
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1\WordQuest\bin\Debug\net10.0-windows\ru\Microsoft.Data.SqlClient.resources.dll
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1\WordQuest\bin\Debug\net10.0-windows\tr\Microsoft.Data.SqlClient.resources.dll
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1\WordQuest\bin\Debug\net10.0-windows\zh-Hans\Microsoft.Data.SqlClient.resources.dll
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1\WordQuest\bin\Debug\net10.0-windows\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1\WordQuest\bin\Debug\net10.0-windows\runtimes\unix\lib\net9.0\Microsoft.Data.SqlClient.dll
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1\WordQuest\bin\Debug\net10.0-windows\runtimes\win\lib\net9.0\Microsoft.Data.SqlClient.dll
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1\WordQuest\bin\Debug\net10.0-windows\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1\WordQuest\bin\Debug\net10.0-windows\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1\WordQuest\bin\Debug\net10.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1\WordQuest\bin\Debug\net10.0-windows\runtimes\win\lib\net10.0\System.Speech.dll
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1\WordQuest\obj\Debug\net10.0-windows\WordQuest.csproj.AssemblyReference.cache
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1\WordQuest\obj\Debug\net10.0-windows\WordQuest.GUI.frmAdmin.resources
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1\WordQuest\obj\Debug\net10.0-windows\WordQuest.GUI.frmAdminMenu.resources
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1\WordQuest\obj\Debug\net10.0-windows\WordQuest.GUI.frmAdminPlayers.resources
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1\WordQuest\obj\Debug\net10.0-windows\WordQuest.GUI.frmAdminRules.resources
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1\WordQuest\obj\Debug\net10.0-windows\WordQuest.GUI.frmAdminTopics.resources
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1\WordQuest\obj\Debug\net10.0-windows\WordQuest.GUI.frmGame.resources
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1\WordQuest\obj\Debug\net10.0-windows\WordQuest.GUI.frmImage.resources
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1\WordQuest\obj\Debug\net10.0-windows\WordQuest.GUI.frmLeaderboard.resources
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1\WordQuest\obj\Debug\net10.0-windows\WordQuest.GUI.frmLevels.resources
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1\WordQuest\obj\Debug\net10.0-windows\WordQuest.GUI.frmLogin.resources
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1\WordQuest\obj\Debug\net10.0-windows\WordQuest.GUI.frmTopics.resources
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1\WordQuest\obj\Debug\net10.0-windows\WordQuest.GUI.frmWin.resources
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1\WordQuest\obj\Debug\net10.0-windows\WordQuest.Properties.Resources.resources
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1\WordQuest\obj\Debug\net10.0-windows\WordQuest.csproj.GenerateResource.cache
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1\WordQuest\obj\Debug\net10.0-windows\WordQuest.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1\WordQuest\obj\Debug\net10.0-windows\WordQuest.AssemblyInfoInputs.cache
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1\WordQuest\obj\Debug\net10.0-windows\WordQuest.AssemblyInfo.cs
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1\WordQuest\obj\Debug\net10.0-windows\WordQuest.csproj.CoreCompileInputs.cache
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1\WordQuest\obj\Debug\net10.0-windows\WordQuest.csproj.Up2Date
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1\WordQuest\obj\Debug\net10.0-windows\WordQuest.dll
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1\WordQuest\obj\Debug\net10.0-windows\refint\WordQuest.dll
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1\WordQuest\obj\Debug\net10.0-windows\WordQuest.pdb
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1\WordQuest\obj\Debug\net10.0-windows\WordQuest.genruntimeconfig.cache
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1\WordQuest\obj\Debug\net10.0-windows\ref\WordQuest.dll
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1 - Copy\WordQuest\obj\Debug\net10.0-windows\WordQuest.csproj.AssemblyReference.cache
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1 - Copy\WordQuest\obj\Debug\net10.0-windows\WordQuest.GUI.frmAdmin.resources
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1 - Copy\WordQuest\obj\Debug\net10.0-windows\WordQuest.GUI.frmAdminMenu.resources
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1 - Copy\WordQuest\obj\Debug\net10.0-windows\WordQuest.GUI.frmAdminPlayers.resources
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1 - Copy\WordQuest\obj\Debug\net10.0-windows\WordQuest.GUI.frmAdminRules.resources
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1 - Copy\WordQuest\obj\Debug\net10.0-windows\WordQuest.GUI.frmAdminTopics.resources
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1 - Copy\WordQuest\obj\Debug\net10.0-windows\WordQuest.GUI.frmGame.resources
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1 - Copy\WordQuest\obj\Debug\net10.0-windows\WordQuest.GUI.frmImage.resources
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1 - Copy\WordQuest\obj\Debug\net10.0-windows\WordQuest.GUI.frmLeaderboard.resources
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1 - Copy\WordQuest\obj\Debug\net10.0-windows\WordQuest.GUI.frmLevels.resources
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1 - Copy\WordQuest\obj\Debug\net10.0-windows\WordQuest.GUI.frmLogin.resources
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1 - Copy\WordQuest\obj\Debug\net10.0-windows\WordQuest.GUI.frmTopics.resources
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1 - Copy\WordQuest\obj\Debug\net10.0-windows\WordQuest.GUI.frmWin.resources
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1 - Copy\WordQuest\obj\Debug\net10.0-windows\WordQuest.Properties.Resources.resources
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1 - Copy\WordQuest\obj\Debug\net10.0-windows\WordQuest.csproj.GenerateResource.cache
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1 - Copy\WordQuest\obj\Debug\net10.0-windows\WordQuest.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1 - Copy\WordQuest\obj\Debug\net10.0-windows\WordQuest.AssemblyInfoInputs.cache
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1 - Copy\WordQuest\obj\Debug\net10.0-windows\WordQuest.AssemblyInfo.cs
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1 - Copy\WordQuest\obj\Debug\net10.0-windows\WordQuest.csproj.CoreCompileInputs.cache
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1 - Copy\WordQuest\obj\Debug\net10.0-windows\WordQuest.dll
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1 - Copy\WordQuest\obj\Debug\net10.0-windows\refint\WordQuest.dll
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1 - Copy\WordQuest\obj\Debug\net10.0-windows\WordQuest.pdb
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1 - Copy\WordQuest\bin\Debug\net10.0-windows\WordQuest.exe
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1 - Copy\WordQuest\bin\Debug\net10.0-windows\appsettings.json
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1 - Copy\WordQuest\bin\Debug\net10.0-windows\nlog.config
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1 - Copy\WordQuest\bin\Debug\net10.0-windows\WordQuest.deps.json
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1 - Copy\WordQuest\bin\Debug\net10.0-windows\WordQuest.runtimeconfig.json
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1 - Copy\WordQuest\bin\Debug\net10.0-windows\WordQuest.dll
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1 - Copy\WordQuest\bin\Debug\net10.0-windows\WordQuest.pdb
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1 - Copy\WordQuest\bin\Debug\net10.0-windows\Azure.Core.dll
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1 - Copy\WordQuest\bin\Debug\net10.0-windows\Azure.Identity.dll
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1 - Copy\WordQuest\bin\Debug\net10.0-windows\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1 - Copy\WordQuest\bin\Debug\net10.0-windows\Microsoft.Data.SqlClient.dll
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1 - Copy\WordQuest\bin\Debug\net10.0-windows\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1 - Copy\WordQuest\bin\Debug\net10.0-windows\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1 - Copy\WordQuest\bin\Debug\net10.0-windows\Microsoft.Extensions.Configuration.dll
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1 - Copy\WordQuest\bin\Debug\net10.0-windows\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1 - Copy\WordQuest\bin\Debug\net10.0-windows\Microsoft.Extensions.Configuration.FileExtensions.dll
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1 - Copy\WordQuest\bin\Debug\net10.0-windows\Microsoft.Extensions.Configuration.Json.dll
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1 - Copy\WordQuest\bin\Debug\net10.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1 - Copy\WordQuest\bin\Debug\net10.0-windows\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1 - Copy\WordQuest\bin\Debug\net10.0-windows\Microsoft.Extensions.FileProviders.Physical.dll
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1 - Copy\WordQuest\bin\Debug\net10.0-windows\Microsoft.Extensions.FileSystemGlobbing.dll
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1 - Copy\WordQuest\bin\Debug\net10.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1 - Copy\WordQuest\bin\Debug\net10.0-windows\Microsoft.Extensions.Options.dll
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1 - Copy\WordQuest\bin\Debug\net10.0-windows\Microsoft.Extensions.Primitives.dll
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1 - Copy\WordQuest\bin\Debug\net10.0-windows\Microsoft.Identity.Client.dll
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1 - Copy\WordQuest\bin\Debug\net10.0-windows\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1 - Copy\WordQuest\bin\Debug\net10.0-windows\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1 - Copy\WordQuest\bin\Debug\net10.0-windows\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1 - Copy\WordQuest\bin\Debug\net10.0-windows\Microsoft.IdentityModel.Logging.dll
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1 - Copy\WordQuest\bin\Debug\net10.0-windows\Microsoft.IdentityModel.Protocols.dll
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1 - Copy\WordQuest\bin\Debug\net10.0-windows\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1 - Copy\WordQuest\bin\Debug\net10.0-windows\Microsoft.IdentityModel.Tokens.dll
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1 - Copy\WordQuest\bin\Debug\net10.0-windows\Microsoft.SqlServer.Server.dll
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1 - Copy\WordQuest\bin\Debug\net10.0-windows\NLog.dll
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1 - Copy\WordQuest\bin\Debug\net10.0-windows\System.ClientModel.dll
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1 - Copy\WordQuest\bin\Debug\net10.0-windows\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1 - Copy\WordQuest\bin\Debug\net10.0-windows\System.Memory.Data.dll
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1 - Copy\WordQuest\bin\Debug\net10.0-windows\System.Speech.dll
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1 - Copy\WordQuest\bin\Debug\net10.0-windows\cs\Microsoft.Data.SqlClient.resources.dll
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1 - Copy\WordQuest\bin\Debug\net10.0-windows\de\Microsoft.Data.SqlClient.resources.dll
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1 - Copy\WordQuest\bin\Debug\net10.0-windows\es\Microsoft.Data.SqlClient.resources.dll
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1 - Copy\WordQuest\bin\Debug\net10.0-windows\fr\Microsoft.Data.SqlClient.resources.dll
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1 - Copy\WordQuest\bin\Debug\net10.0-windows\it\Microsoft.Data.SqlClient.resources.dll
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1 - Copy\WordQuest\bin\Debug\net10.0-windows\ja\Microsoft.Data.SqlClient.resources.dll
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1 - Copy\WordQuest\bin\Debug\net10.0-windows\ko\Microsoft.Data.SqlClient.resources.dll
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1 - Copy\WordQuest\bin\Debug\net10.0-windows\pl\Microsoft.Data.SqlClient.resources.dll
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1 - Copy\WordQuest\bin\Debug\net10.0-windows\pt-BR\Microsoft.Data.SqlClient.resources.dll
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1 - Copy\WordQuest\bin\Debug\net10.0-windows\ru\Microsoft.Data.SqlClient.resources.dll
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1 - Copy\WordQuest\bin\Debug\net10.0-windows\tr\Microsoft.Data.SqlClient.resources.dll
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1 - Copy\WordQuest\bin\Debug\net10.0-windows\zh-Hans\Microsoft.Data.SqlClient.resources.dll
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1 - Copy\WordQuest\bin\Debug\net10.0-windows\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1 - Copy\WordQuest\bin\Debug\net10.0-windows\runtimes\unix\lib\net9.0\Microsoft.Data.SqlClient.dll
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1 - Copy\WordQuest\bin\Debug\net10.0-windows\runtimes\win\lib\net9.0\Microsoft.Data.SqlClient.dll
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1 - Copy\WordQuest\bin\Debug\net10.0-windows\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1 - Copy\WordQuest\bin\Debug\net10.0-windows\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1 - Copy\WordQuest\bin\Debug\net10.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1 - Copy\WordQuest\bin\Debug\net10.0-windows\runtimes\win\lib\net10.0\System.Speech.dll
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1 - Copy\WordQuest\obj\Debug\net10.0-windows\WordQuest.csproj.Up2Date
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1 - Copy\WordQuest\obj\Debug\net10.0-windows\WordQuest.genruntimeconfig.cache
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1 - Copy\WordQuest\obj\Debug\net10.0-windows\ref\WordQuest.dll
+C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1 - Copy\WordQuest\obj\Debug\net10.0-windows\WordQuest.sourcelink.json

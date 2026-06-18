@@ -1,0 +1,16 @@
+# Visual Studio cache/options
+.vs/
+
+# Build output
+bin/
+obj/
+
+# Local user-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Rider
+.idea/
+*.sln.iml

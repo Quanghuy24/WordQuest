@@ -1,0 +1,81 @@
+﻿using System;
+using System.Data;
+using WordQuest.DAL;
+using WordQuest.DTO;
+
+namespace WordQuest.BUS
+{
+    public class WordBUS
+    {
+        private readonly WordDAL _wordDAL = new(); // Sử dụng một instance duy nhất của WordDAL trong toàn bộ WordBUS
+
+
+        // Lấy tất cả từ vựng, có thể dùng để hiển thị trong DataGridView ở tab Quản lý từ vựng
+        public DataTable GetAllWords() => _wordDAL.GetAllWords(); 
+
+
+        // Lấy từ vựng theo chủ đề, dùng để hiển thị trong DataGridView khi chọn một chủ đề cụ thể
+        public DataTable GetWordsByTopic(int topicID) => _wordDAL.GetWordsByTopic(topicID); 
+
+
+        // Lấy một số lượng từ vựng ngẫu nhiên theo chủ đề và độ khó, dùng để tạo câu hỏi
+        public DataTable GetWordsByTopicAndDifficulty(int topicID, int difficultyLevel, int count) 
+            => _wordDAL.GetWordsByTopicAndDifficulty(topicID, difficultyLevel, count);
+
+
+        // Lấy từ vựng theo cấp độ, dùng để hiển thị trong DataGridView khi chọn một cấp độ cụ thể
+        public DataTable GetWordsByLevelID(int levelID) => _wordDAL.GetWordsByLevelID(levelID);
+        
+
+        // Tìm kiếm từ vựng theo từ khóa, độ khó và bộ lọc ảnh, dùng để hiển thị kết quả tìm kiếm trong DataGridView ở tab Quản lý từ vựng
+        public DataTable SearchWords(string keyword, string difficulty, string imageFilter) 
+            => _wordDAL.SearchWords(keyword, difficulty, imageFilter);
+
+
+        // Lấy thông tin chi tiết của một từ vựng theo ID, dùng để hiển thị trong form chỉnh sửa từ vựng
+        public WordDTO? GetWordByID(int wordID) => _wordDAL.GetWordByID(wordID);
+
+
+        // Thêm một từ vựng mới, dùng khi người dùng nhấn nút "Thêm" trong form quản lý từ vựng
+        public int AddWord(WordDTO word)
+        {
+            if (string.IsNullOrWhiteSpace(word.EnglishWord))
+                throw new Exception("Từ tiếng Anh không được để trống!");
+            if (string.IsNullOrWhiteSpace(word.VietnameseMeaning))
+                throw new Exception("Nghĩa tiếng Việt không được để trống!");
+            if (word.DifficultyLevel < 1 || word.DifficultyLevel > 3)
+                throw new Exception("Độ khó phải từ 1 đến 3!");
+            if (_wordDAL.IsDuplicateEnglishWord(word.TopicID, word.EnglishWord, 0))
+                throw new Exception($"Từ '{word.EnglishWord}' đã tồn tại trong chủ đề này!");
+
+            return _wordDAL.InsertWord(word);
+        }
+
+
+        // Cập nhật thông tin một từ vựng, dùng khi người dùng nhấn nút "Lưu" trong form chỉnh sửa từ vựng
+        public bool UpdateWord(WordDTO word)
+        {
+            if (word.WordID <= 0)
+                throw new Exception("ID từ vựng không hợp lệ!");
+            if (string.IsNullOrWhiteSpace(word.EnglishWord))
+                throw new Exception("Từ tiếng Anh không được để trống!");
+            if (string.IsNullOrWhiteSpace(word.VietnameseMeaning))
+                throw new Exception("Nghĩa tiếng Việt không được để trống!");
+            if (_wordDAL.IsDuplicateEnglishWord(word.TopicID, word.EnglishWord, word.WordID))
+                throw new Exception($"Từ '{word.EnglishWord}' đã tồn tại trong chủ đề này!");
+
+            return _wordDAL.UpdateWord(word);
+        }
+
+        // Xóa một từ vựng, dùng khi người dùng nhấn nút "Xóa" trong form quản lý từ vựng
+        public bool DeleteWord(int wordID)
+        {
+            if (wordID <= 0)
+                throw new Exception("ID từ vựng không hợp lệ!");
+            if (_wordDAL.IsWordInUse(wordID))
+                throw new Exception("Từ này đang được dùng trong màn chơi! Không thể xóa.");
+
+            return _wordDAL.DeleteWord(wordID);
+        }
+    }
+}

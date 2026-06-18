@@ -1,0 +1,405 @@
+2026-05-30 16:56:03.8126 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2026-05-30 16:56:03.8126 Info Registered target NLog.Targets.ConsoleTarget(Name=logconsole)
+2026-05-30 16:56:03.8126 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.4.2778. Product version: 5.3.4+73d83d3161d31288ca5c554cc50d27b6bed5f28b. GlobalAssemblyCache: False
+2026-05-30 16:56:03.8334 Info Validating config: TargetNames=logfile, logconsole, ConfigItems=27, FilePath=D:\Program_D\Dự án mới\WordQuest_1 - đang làm\WordQuest\bin\Debug\net10.0-windows\NLog.config
+2026-05-30 16:56:03.8421 Info Configuration initialized.
+2026-05-30 16:57:23.6285 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2026-05-30 16:57:23.6346 Info Registered target NLog.Targets.ConsoleTarget(Name=logconsole)
+2026-05-30 16:57:23.6346 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.4.2778. Product version: 5.3.4+73d83d3161d31288ca5c554cc50d27b6bed5f28b. GlobalAssemblyCache: False
+2026-05-30 16:57:23.6555 Info Validating config: TargetNames=logfile, logconsole, ConfigItems=27, FilePath=D:\Program_D\Dự án mới\WordQuest_1 - đang làm\WordQuest\bin\Debug\net10.0-windows\NLog.config
+2026-05-30 16:57:23.6677 Info Configuration initialized.
+2026-05-30 18:33:44.6845 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2026-05-30 18:33:44.6845 Info Registered target NLog.Targets.ConsoleTarget(Name=logconsole)
+2026-05-30 18:33:44.6845 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.4.2778. Product version: 5.3.4+73d83d3161d31288ca5c554cc50d27b6bed5f28b. GlobalAssemblyCache: False
+2026-05-30 18:33:44.7074 Info Validating config: TargetNames=logfile, logconsole, ConfigItems=27, FilePath=D:\Program_D\Dự án mới\WordQuest_1 - đang làm\WordQuest\bin\Debug\net10.0-windows\NLog.config
+2026-05-30 18:33:44.7172 Info Configuration initialized.
+2026-05-30 18:58:23.8978 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2026-05-30 18:58:23.8978 Info Registered target NLog.Targets.ConsoleTarget(Name=logconsole)
+2026-05-30 18:58:23.8978 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.4.2778. Product version: 5.3.4+73d83d3161d31288ca5c554cc50d27b6bed5f28b. GlobalAssemblyCache: False
+2026-05-30 18:58:23.9184 Info Validating config: TargetNames=logfile, logconsole, ConfigItems=27, FilePath=D:\Program_D\Dự án mới\WordQuest_1 - đang làm\WordQuest\bin\Debug\net10.0-windows\NLog.config
+2026-05-30 18:58:23.9184 Info Configuration initialized.
+2026-05-30 22:43:08.5156 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2026-05-30 22:43:08.5197 Info Registered target NLog.Targets.ConsoleTarget(Name=logconsole)
+2026-05-30 22:43:08.5197 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.4.2778. Product version: 5.3.4+73d83d3161d31288ca5c554cc50d27b6bed5f28b. GlobalAssemblyCache: False
+2026-05-30 22:43:08.5369 Info Validating config: TargetNames=logfile, logconsole, ConfigItems=27, FilePath=D:\Program_D\Dự án mới\WordQuest_1 - đang làm\WordQuest\bin\Debug\net10.0-windows\NLog.config
+2026-05-30 22:43:08.5369 Info Configuration initialized.
+2026-05-30 22:46:08.8971 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2026-05-30 22:46:08.8971 Info Registered target NLog.Targets.ConsoleTarget(Name=logconsole)
+2026-05-30 22:46:08.8971 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.4.2778. Product version: 5.3.4+73d83d3161d31288ca5c554cc50d27b6bed5f28b. GlobalAssemblyCache: False
+2026-05-30 22:46:08.9156 Info Validating config: TargetNames=logfile, logconsole, ConfigItems=27, FilePath=D:\Program_D\Dự án mới\WordQuest_1 - đang làm\WordQuest\bin\Debug\net10.0-windows\NLog.config
+2026-05-30 22:46:08.9243 Info Configuration initialized.
+2026-05-30 22:46:54.8108 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2026-05-30 22:46:54.8137 Info Registered target NLog.Targets.ConsoleTarget(Name=logconsole)
+2026-05-30 22:46:54.8137 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.4.2778. Product version: 5.3.4+73d83d3161d31288ca5c554cc50d27b6bed5f28b. GlobalAssemblyCache: False
+2026-05-30 22:46:54.8309 Info Validating config: TargetNames=logfile, logconsole, ConfigItems=27, FilePath=D:\Program_D\Dự án mới\WordQuest_1 - đang làm\WordQuest\bin\Debug\net10.0-windows\NLog.config
+2026-05-30 22:46:54.8309 Info Configuration initialized.
+2026-05-30 22:50:06.0650 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2026-05-30 22:50:06.0650 Info Registered target NLog.Targets.ConsoleTarget(Name=logconsole)
+2026-05-30 22:50:06.0650 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.4.2778. Product version: 5.3.4+73d83d3161d31288ca5c554cc50d27b6bed5f28b. GlobalAssemblyCache: False
+2026-05-30 22:50:06.0863 Info Validating config: TargetNames=logfile, logconsole, ConfigItems=27, FilePath=D:\Program_D\Dự án mới\WordQuest_1 - đang làm\WordQuest\bin\Debug\net10.0-windows\NLog.config
+2026-05-30 22:50:06.0863 Info Configuration initialized.
+2026-05-30 22:51:29.0963 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2026-05-30 22:51:29.0963 Info Registered target NLog.Targets.ConsoleTarget(Name=logconsole)
+2026-05-30 22:51:29.0963 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.4.2778. Product version: 5.3.4+73d83d3161d31288ca5c554cc50d27b6bed5f28b. GlobalAssemblyCache: False
+2026-05-30 22:51:29.1144 Info Validating config: TargetNames=logfile, logconsole, ConfigItems=27, FilePath=D:\Program_D\Dự án mới\WordQuest_1 - đang làm\WordQuest\bin\Debug\net10.0-windows\NLog.config
+2026-05-30 22:51:29.1144 Info Configuration initialized.
+2026-05-30 22:55:54.0655 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2026-05-30 22:55:54.0655 Info Registered target NLog.Targets.ConsoleTarget(Name=logconsole)
+2026-05-30 22:55:54.0655 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.4.2778. Product version: 5.3.4+73d83d3161d31288ca5c554cc50d27b6bed5f28b. GlobalAssemblyCache: False
+2026-05-30 22:55:54.0852 Info Validating config: TargetNames=logfile, logconsole, ConfigItems=27, FilePath=D:\Program_D\Dự án mới\WordQuest_1 - đang làm\WordQuest\bin\Debug\net10.0-windows\NLog.config
+2026-05-30 22:55:54.0940 Info Configuration initialized.
+2026-05-30 22:57:52.1098 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2026-05-30 22:57:52.1125 Info Registered target NLog.Targets.ConsoleTarget(Name=logconsole)
+2026-05-30 22:57:52.1125 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.4.2778. Product version: 5.3.4+73d83d3161d31288ca5c554cc50d27b6bed5f28b. GlobalAssemblyCache: False
+2026-05-30 22:57:52.1125 Info Validating config: TargetNames=logfile, logconsole, ConfigItems=27, FilePath=D:\Program_D\Dự án mới\WordQuest_1 - đang làm\WordQuest\bin\Debug\net10.0-windows\NLog.config
+2026-05-30 22:57:52.1366 Info Configuration initialized.
+2026-05-30 22:58:57.7850 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2026-05-30 22:58:57.7850 Info Registered target NLog.Targets.ConsoleTarget(Name=logconsole)
+2026-05-30 22:58:57.7850 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.4.2778. Product version: 5.3.4+73d83d3161d31288ca5c554cc50d27b6bed5f28b. GlobalAssemblyCache: False
+2026-05-30 22:58:57.8036 Info Validating config: TargetNames=logfile, logconsole, ConfigItems=27, FilePath=D:\Program_D\Dự án mới\WordQuest_1 - đang làm\WordQuest\bin\Debug\net10.0-windows\NLog.config
+2026-05-30 22:58:57.8036 Info Configuration initialized.
+2026-05-30 23:05:22.0648 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2026-05-30 23:05:22.0648 Info Registered target NLog.Targets.ConsoleTarget(Name=logconsole)
+2026-05-30 23:05:22.0648 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.4.2778. Product version: 5.3.4+73d83d3161d31288ca5c554cc50d27b6bed5f28b. GlobalAssemblyCache: False
+2026-05-30 23:05:22.0838 Info Validating config: TargetNames=logfile, logconsole, ConfigItems=27, FilePath=D:\Program_D\Dự án mới\WordQuest_1 - đang làm\WordQuest\bin\Debug\net10.0-windows\NLog.config
+2026-05-30 23:05:22.0838 Info Configuration initialized.
+2026-05-30 23:52:54.7579 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2026-05-30 23:52:54.7579 Info Registered target NLog.Targets.ConsoleTarget(Name=logconsole)
+2026-05-30 23:52:54.7579 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.4.2778. Product version: 5.3.4+73d83d3161d31288ca5c554cc50d27b6bed5f28b. GlobalAssemblyCache: False
+2026-05-30 23:52:54.7779 Info Validating config: TargetNames=logfile, logconsole, ConfigItems=27, FilePath=D:\Program_D\Dự án mới\WordQuest_1 - đang làm\WordQuest\bin\Debug\net10.0-windows\NLog.config
+2026-05-30 23:52:54.7865 Info Configuration initialized.
+2026-05-31 18:17:06.4605 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2026-05-31 18:17:06.4605 Info Registered target NLog.Targets.ConsoleTarget(Name=logconsole)
+2026-05-31 18:17:06.4605 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.4.2778. Product version: 5.3.4+73d83d3161d31288ca5c554cc50d27b6bed5f28b. GlobalAssemblyCache: False
+2026-05-31 18:17:06.4826 Info Validating config: TargetNames=logfile, logconsole, ConfigItems=27, FilePath=D:\Program_D\Dự án mới\WordQuest_1 - đang làm\WordQuest\bin\Debug\net10.0-windows\NLog.config
+2026-05-31 18:17:06.4920 Info Configuration initialized.
+2026-05-31 22:15:26.3967 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2026-05-31 22:15:26.3967 Info Registered target NLog.Targets.ConsoleTarget(Name=logconsole)
+2026-05-31 22:15:26.3967 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.4.2778. Product version: 5.3.4+73d83d3161d31288ca5c554cc50d27b6bed5f28b. GlobalAssemblyCache: False
+2026-05-31 22:15:26.4197 Info Validating config: TargetNames=logfile, logconsole, ConfigItems=27, FilePath=D:\Program_D\Dự án mới\WordQuest_1 - đang làm\WordQuest\bin\Debug\net10.0-windows\NLog.config
+2026-05-31 22:15:26.4197 Info Configuration initialized.
+2026-05-31 22:16:36.6138 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2026-05-31 22:16:36.6165 Info Registered target NLog.Targets.ConsoleTarget(Name=logconsole)
+2026-05-31 22:16:36.6165 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.4.2778. Product version: 5.3.4+73d83d3161d31288ca5c554cc50d27b6bed5f28b. GlobalAssemblyCache: False
+2026-05-31 22:16:36.6165 Info Validating config: TargetNames=logfile, logconsole, ConfigItems=27, FilePath=D:\Program_D\Dự án mới\WordQuest_1 - đang làm\WordQuest\bin\Debug\net10.0-windows\NLog.config
+2026-05-31 22:16:36.6390 Info Configuration initialized.
+2026-05-31 22:16:46.9852 Info Shutdown() called. Logger closing...
+2026-05-31 22:16:46.9852 Info Closing old configuration.
+2026-05-31 22:16:46.9852 Info Logger has been closed down.
+2026-05-31 22:16:46.9976 Info AppDomain Shutting down. LogFactory closing...
+2026-05-31 22:16:46.9976 Info LogFactory has been closed.
+2026-05-31 23:31:49.3640 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2026-05-31 23:31:49.3667 Info Registered target NLog.Targets.ConsoleTarget(Name=logconsole)
+2026-05-31 23:31:49.3667 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.4.2778. Product version: 5.3.4+73d83d3161d31288ca5c554cc50d27b6bed5f28b. GlobalAssemblyCache: False
+2026-05-31 23:31:49.3841 Info Validating config: TargetNames=logfile, logconsole, ConfigItems=27, FilePath=D:\Program_D\Dự án mới\WordQuest_1 - đang làm\WordQuest\bin\Debug\net10.0-windows\NLog.config
+2026-05-31 23:31:49.3841 Info Configuration initialized.
+2026-06-04 22:15:03.0743 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2026-06-04 22:15:03.0743 Info Registered target NLog.Targets.ConsoleTarget(Name=logconsole)
+2026-06-04 22:15:03.0810 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.4.2778. Product version: 5.3.4+73d83d3161d31288ca5c554cc50d27b6bed5f28b. GlobalAssemblyCache: False
+2026-06-04 22:15:03.0810 Info Validating config: TargetNames=logfile, logconsole, ConfigItems=27, FilePath=D:\Program_D\Dự án mới\WordQuest_1 - đang làm\WordQuest\bin\Debug\net10.0-windows\NLog.config
+2026-06-04 22:15:03.1014 Info Configuration initialized.
+2026-06-04 22:17:47.5326 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2026-06-04 22:17:47.5354 Info Registered target NLog.Targets.ConsoleTarget(Name=logconsole)
+2026-06-04 22:17:47.5354 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.4.2778. Product version: 5.3.4+73d83d3161d31288ca5c554cc50d27b6bed5f28b. GlobalAssemblyCache: False
+2026-06-04 22:17:47.5521 Info Validating config: TargetNames=logfile, logconsole, ConfigItems=27, FilePath=D:\Program_D\Dự án mới\WordQuest_1 - đang làm\WordQuest\bin\Debug\net10.0-windows\NLog.config
+2026-06-04 22:17:47.5521 Info Configuration initialized.
+2026-06-04 22:18:42.0501 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2026-06-04 22:18:42.0501 Info Registered target NLog.Targets.ConsoleTarget(Name=logconsole)
+2026-06-04 22:18:42.0501 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.4.2778. Product version: 5.3.4+73d83d3161d31288ca5c554cc50d27b6bed5f28b. GlobalAssemblyCache: False
+2026-06-04 22:18:42.0501 Info Validating config: TargetNames=logfile, logconsole, ConfigItems=27, FilePath=D:\Program_D\Dự án mới\WordQuest_1 - đang làm\WordQuest\bin\Debug\net10.0-windows\NLog.config
+2026-06-04 22:18:42.0745 Info Configuration initialized.
+2026-06-04 22:19:37.7415 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2026-06-04 22:19:37.7415 Info Registered target NLog.Targets.ConsoleTarget(Name=logconsole)
+2026-06-04 22:19:37.7415 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.4.2778. Product version: 5.3.4+73d83d3161d31288ca5c554cc50d27b6bed5f28b. GlobalAssemblyCache: False
+2026-06-04 22:19:37.7415 Info Validating config: TargetNames=logfile, logconsole, ConfigItems=27, FilePath=D:\Program_D\Dự án mới\WordQuest_1 - đang làm\WordQuest\bin\Debug\net10.0-windows\NLog.config
+2026-06-04 22:19:37.7659 Info Configuration initialized.
+2026-06-14 08:09:56.5853 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2026-06-14 08:09:56.5853 Info Registered target NLog.Targets.ConsoleTarget(Name=logconsole)
+2026-06-14 08:09:56.5853 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.4.2778. Product version: 5.3.4+73d83d3161d31288ca5c554cc50d27b6bed5f28b. GlobalAssemblyCache: False
+2026-06-14 08:09:56.6103 Info Validating config: TargetNames=logfile, logconsole, ConfigItems=27, FilePath=D:\Program_D\Dự án mới\WordQuest_1 - đang làm - Copy\WordQuest\bin\Debug\net10.0-windows\NLog.config
+2026-06-14 08:09:56.6197 Info Configuration initialized.
+2026-06-14 08:17:48.0243 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2026-06-14 08:17:48.0243 Info Registered target NLog.Targets.ConsoleTarget(Name=logconsole)
+2026-06-14 08:17:48.0243 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.4.2778. Product version: 5.3.4+73d83d3161d31288ca5c554cc50d27b6bed5f28b. GlobalAssemblyCache: False
+2026-06-14 08:17:48.0439 Info Validating config: TargetNames=logfile, logconsole, ConfigItems=27, FilePath=D:\Program_D\Dự án mới\WordQuest_1 - đang làm - Copy\WordQuest\bin\Debug\net10.0-windows\NLog.config
+2026-06-14 08:17:48.0439 Info Configuration initialized.
+2026-06-14 08:20:31.8452 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2026-06-14 08:20:31.8452 Info Registered target NLog.Targets.ConsoleTarget(Name=logconsole)
+2026-06-14 08:20:31.8516 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.4.2778. Product version: 5.3.4+73d83d3161d31288ca5c554cc50d27b6bed5f28b. GlobalAssemblyCache: False
+2026-06-14 08:20:31.8516 Info Validating config: TargetNames=logfile, logconsole, ConfigItems=27, FilePath=D:\Program_D\Dự án mới\WordQuest_1 - đang làm - Copy\WordQuest\bin\Debug\net10.0-windows\NLog.config
+2026-06-14 08:20:31.8724 Info Configuration initialized.
+2026-06-14 08:29:10.4327 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2026-06-14 08:29:10.4327 Info Registered target NLog.Targets.ConsoleTarget(Name=logconsole)
+2026-06-14 08:29:10.4327 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.4.2778. Product version: 5.3.4+73d83d3161d31288ca5c554cc50d27b6bed5f28b. GlobalAssemblyCache: False
+2026-06-14 08:29:10.4526 Info Validating config: TargetNames=logfile, logconsole, ConfigItems=27, FilePath=D:\Program_D\Dự án mới\WordQuest_1 - đang làm - Copy\WordQuest\bin\Debug\net10.0-windows\NLog.config
+2026-06-14 08:29:10.4611 Info Configuration initialized.
+2026-06-14 09:36:51.4601 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2026-06-14 09:36:51.4601 Info Registered target NLog.Targets.ConsoleTarget(Name=logconsole)
+2026-06-14 09:36:51.4601 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.4.2778. Product version: 5.3.4+73d83d3161d31288ca5c554cc50d27b6bed5f28b. GlobalAssemblyCache: False
+2026-06-14 09:36:51.4888 Info Validating config: TargetNames=logfile, logconsole, ConfigItems=27, FilePath=D:\Program_D\Dự án mới\WordQuest_1 - đang làm - Copy\WordQuest\bin\Debug\net10.0-windows\NLog.config
+2026-06-14 09:36:51.4975 Info Configuration initialized.
+2026-06-14 09:51:11.4304 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2026-06-14 09:51:11.4304 Info Registered target NLog.Targets.ConsoleTarget(Name=logconsole)
+2026-06-14 09:51:11.4304 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.4.2778. Product version: 5.3.4+73d83d3161d31288ca5c554cc50d27b6bed5f28b. GlobalAssemblyCache: False
+2026-06-14 09:51:11.4502 Info Validating config: TargetNames=logfile, logconsole, ConfigItems=27, FilePath=D:\Program_D\Dự án mới\WordQuest_1 - đang làm - Copy\WordQuest\bin\Debug\net10.0-windows\NLog.config
+2026-06-14 09:51:11.4502 Info Configuration initialized.
+2026-06-14 09:54:33.5981 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2026-06-14 09:54:33.6010 Info Registered target NLog.Targets.ConsoleTarget(Name=logconsole)
+2026-06-14 09:54:33.6010 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.4.2778. Product version: 5.3.4+73d83d3161d31288ca5c554cc50d27b6bed5f28b. GlobalAssemblyCache: False
+2026-06-14 09:54:33.6200 Info Validating config: TargetNames=logfile, logconsole, ConfigItems=27, FilePath=D:\Program_D\Dự án mới\WordQuest_1 - đang làm - Copy\WordQuest\bin\Debug\net10.0-windows\NLog.config
+2026-06-14 09:54:33.6200 Info Configuration initialized.
+2026-06-14 10:01:51.1366 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2026-06-14 10:01:51.1366 Info Registered target NLog.Targets.ConsoleTarget(Name=logconsole)
+2026-06-14 10:01:51.1366 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.4.2778. Product version: 5.3.4+73d83d3161d31288ca5c554cc50d27b6bed5f28b. GlobalAssemblyCache: False
+2026-06-14 10:01:51.1552 Info Validating config: TargetNames=logfile, logconsole, ConfigItems=27, FilePath=D:\Program_D\Dự án mới\WordQuest_1 - đang làm - Copy\WordQuest\bin\Debug\net10.0-windows\NLog.config
+2026-06-14 10:01:51.1656 Info Configuration initialized.
+2026-06-14 10:10:08.0892 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2026-06-14 10:10:08.0924 Info Registered target NLog.Targets.ConsoleTarget(Name=logconsole)
+2026-06-14 10:10:08.0924 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.4.2778. Product version: 5.3.4+73d83d3161d31288ca5c554cc50d27b6bed5f28b. GlobalAssemblyCache: False
+2026-06-14 10:10:08.1107 Info Validating config: TargetNames=logfile, logconsole, ConfigItems=27, FilePath=D:\Program_D\Dự án mới\WordQuest_1 - đang làm - Copy\WordQuest\bin\Debug\net10.0-windows\NLog.config
+2026-06-14 10:10:08.1190 Info Configuration initialized.
+2026-06-14 10:32:00.5892 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2026-06-14 10:32:00.5892 Info Registered target NLog.Targets.ConsoleTarget(Name=logconsole)
+2026-06-14 10:32:00.5892 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.4.2778. Product version: 5.3.4+73d83d3161d31288ca5c554cc50d27b6bed5f28b. GlobalAssemblyCache: False
+2026-06-14 10:32:00.6116 Info Validating config: TargetNames=logfile, logconsole, ConfigItems=27, FilePath=D:\Program_D\Dự án mới\WordQuest_1 - đang làm - Copy\WordQuest\bin\Debug\net10.0-windows\NLog.config
+2026-06-14 10:32:00.6220 Info Configuration initialized.
+2026-06-14 10:33:02.2231 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2026-06-14 10:33:02.2231 Info Registered target NLog.Targets.ConsoleTarget(Name=logconsole)
+2026-06-14 10:33:02.2290 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.4.2778. Product version: 5.3.4+73d83d3161d31288ca5c554cc50d27b6bed5f28b. GlobalAssemblyCache: False
+2026-06-14 10:33:02.2452 Info Validating config: TargetNames=logfile, logconsole, ConfigItems=27, FilePath=D:\Program_D\Dự án mới\WordQuest_1 - đang làm - Copy\WordQuest\bin\Debug\net10.0-windows\NLog.config
+2026-06-14 10:33:02.2452 Info Configuration initialized.
+2026-06-14 10:33:35.3743 Info Shutdown() called. Logger closing...
+2026-06-14 10:33:35.3743 Info Closing old configuration.
+2026-06-14 10:33:35.4319 Info Logger has been closed down.
+2026-06-14 10:33:35.4319 Info AppDomain Shutting down. LogFactory closing...
+2026-06-14 10:33:35.4484 Info LogFactory has been closed.
+2026-06-14 11:54:23.9457 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2026-06-14 11:54:23.9457 Info Registered target NLog.Targets.ConsoleTarget(Name=logconsole)
+2026-06-14 11:54:23.9457 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.4.2778. Product version: 5.3.4+73d83d3161d31288ca5c554cc50d27b6bed5f28b. GlobalAssemblyCache: False
+2026-06-14 11:54:23.9641 Info Validating config: TargetNames=logfile, logconsole, ConfigItems=27, FilePath=D:\Program_D\Dự án mới\WordQuest_1 - đang làm - Copy\WordQuest\bin\Debug\net10.0-windows\NLog.config
+2026-06-14 11:54:23.9641 Info Configuration initialized.
+2026-06-14 12:14:40.7928 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2026-06-14 12:14:40.7928 Info Registered target NLog.Targets.ConsoleTarget(Name=logconsole)
+2026-06-14 12:14:40.7928 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.4.2778. Product version: 5.3.4+73d83d3161d31288ca5c554cc50d27b6bed5f28b. GlobalAssemblyCache: False
+2026-06-14 12:14:40.8119 Info Validating config: TargetNames=logfile, logconsole, ConfigItems=27, FilePath=D:\Program_D\Dự án mới\WordQuest_1 - đang làm - Copy\WordQuest\bin\Debug\net10.0-windows\NLog.config
+2026-06-14 12:14:40.8201 Info Configuration initialized.
+2026-06-14 12:19:13.1216 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2026-06-14 12:19:13.1216 Info Registered target NLog.Targets.ConsoleTarget(Name=logconsole)
+2026-06-14 12:19:13.1216 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.4.2778. Product version: 5.3.4+73d83d3161d31288ca5c554cc50d27b6bed5f28b. GlobalAssemblyCache: False
+2026-06-14 12:19:13.1407 Info Validating config: TargetNames=logfile, logconsole, ConfigItems=27, FilePath=D:\Program_D\Dự án mới\WordQuest_1 - đang làm - Copy\WordQuest\bin\Debug\net10.0-windows\NLog.config
+2026-06-14 12:19:13.1492 Info Configuration initialized.
+2026-06-14 19:55:25.2422 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2026-06-14 19:55:25.2422 Info Registered target NLog.Targets.ConsoleTarget(Name=logconsole)
+2026-06-14 19:55:25.2422 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.4.2778. Product version: 5.3.4+73d83d3161d31288ca5c554cc50d27b6bed5f28b. GlobalAssemblyCache: False
+2026-06-14 19:55:25.2703 Info Validating config: TargetNames=logfile, logconsole, ConfigItems=27, FilePath=C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1\WordQuest\bin\Debug\net10.0-windows\NLog.config
+2026-06-14 19:55:25.2703 Info Configuration initialized.
+2026-06-14 19:57:37.8799 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2026-06-14 19:57:37.8799 Info Registered target NLog.Targets.ConsoleTarget(Name=logconsole)
+2026-06-14 19:57:37.8799 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.4.2778. Product version: 5.3.4+73d83d3161d31288ca5c554cc50d27b6bed5f28b. GlobalAssemblyCache: False
+2026-06-14 19:57:37.8994 Info Validating config: TargetNames=logfile, logconsole, ConfigItems=27, FilePath=C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1\WordQuest\bin\Debug\net10.0-windows\NLog.config
+2026-06-14 19:57:37.9084 Info Configuration initialized.
+2026-06-14 20:06:14.0644 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2026-06-14 20:06:14.0675 Info Registered target NLog.Targets.ConsoleTarget(Name=logconsole)
+2026-06-14 20:06:14.0675 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.4.2778. Product version: 5.3.4+73d83d3161d31288ca5c554cc50d27b6bed5f28b. GlobalAssemblyCache: False
+2026-06-14 20:06:14.0829 Info Validating config: TargetNames=logfile, logconsole, ConfigItems=27, FilePath=C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1\WordQuest\bin\Debug\net10.0-windows\NLog.config
+2026-06-14 20:06:14.0829 Info Configuration initialized.
+2026-06-15 22:41:40.7650 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2026-06-15 22:41:40.7650 Info Registered target NLog.Targets.ConsoleTarget(Name=logconsole)
+2026-06-15 22:41:40.7650 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.4.2778. Product version: 5.3.4+73d83d3161d31288ca5c554cc50d27b6bed5f28b. GlobalAssemblyCache: False
+2026-06-15 22:41:40.7916 Info Validating config: TargetNames=logfile, logconsole, ConfigItems=27, FilePath=C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1\WordQuest\bin\Debug\net10.0-windows\NLog.config
+2026-06-15 22:41:40.8017 Info Configuration initialized.
+2026-06-16 15:33:59.3494 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2026-06-16 15:33:59.3494 Info Registered target NLog.Targets.ConsoleTarget(Name=logconsole)
+2026-06-16 15:33:59.3494 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.4.2778. Product version: 5.3.4+73d83d3161d31288ca5c554cc50d27b6bed5f28b. GlobalAssemblyCache: False
+2026-06-16 15:33:59.3715 Info Validating config: TargetNames=logfile, logconsole, ConfigItems=27, FilePath=C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1\WordQuest\bin\Debug\net10.0-windows\NLog.config
+2026-06-16 15:33:59.3797 Info Configuration initialized.
+2026-06-17 16:07:46.5769 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2026-06-17 16:07:46.5769 Info Registered target NLog.Targets.ConsoleTarget(Name=logconsole)
+2026-06-17 16:07:46.5865 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.4.2778. Product version: 5.3.4+73d83d3161d31288ca5c554cc50d27b6bed5f28b. GlobalAssemblyCache: False
+2026-06-17 16:07:46.6050 Info Validating config: TargetNames=logfile, logconsole, ConfigItems=27, FilePath=C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1\WordQuest\bin\Debug\net10.0-windows\NLog.config
+2026-06-17 16:07:46.6176 Info Configuration initialized.
+2026-06-17 16:28:11.4932 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2026-06-17 16:28:11.4932 Info Registered target NLog.Targets.ConsoleTarget(Name=logconsole)
+2026-06-17 16:28:11.4932 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.4.2778. Product version: 5.3.4+73d83d3161d31288ca5c554cc50d27b6bed5f28b. GlobalAssemblyCache: False
+2026-06-17 16:28:11.4932 Info Validating config: TargetNames=logfile, logconsole, ConfigItems=27, FilePath=C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1\WordQuest\bin\Debug\net10.0-windows\NLog.config
+2026-06-17 16:28:11.5208 Info Configuration initialized.
+2026-06-17 16:32:30.4662 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2026-06-17 16:32:30.4662 Info Registered target NLog.Targets.ConsoleTarget(Name=logconsole)
+2026-06-17 16:32:30.4725 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.4.2778. Product version: 5.3.4+73d83d3161d31288ca5c554cc50d27b6bed5f28b. GlobalAssemblyCache: False
+2026-06-17 16:32:30.4725 Info Validating config: TargetNames=logfile, logconsole, ConfigItems=27, FilePath=C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1\WordQuest\bin\Debug\net10.0-windows\NLog.config
+2026-06-17 16:32:30.4929 Info Configuration initialized.
+2026-06-17 16:36:44.5159 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2026-06-17 16:36:44.5159 Info Registered target NLog.Targets.ConsoleTarget(Name=logconsole)
+2026-06-17 16:36:44.5498 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.4.2778. Product version: 5.3.4+73d83d3161d31288ca5c554cc50d27b6bed5f28b. GlobalAssemblyCache: False
+2026-06-17 16:36:44.5633 Info Validating config: TargetNames=logfile, logconsole, ConfigItems=27, FilePath=C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1\WordQuest\bin\Debug\net10.0-windows\NLog.config
+2026-06-17 16:36:44.5714 Info Configuration initialized.
+2026-06-17 16:39:13.0986 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2026-06-17 16:39:13.0986 Info Registered target NLog.Targets.ConsoleTarget(Name=logconsole)
+2026-06-17 16:39:13.0986 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.4.2778. Product version: 5.3.4+73d83d3161d31288ca5c554cc50d27b6bed5f28b. GlobalAssemblyCache: False
+2026-06-17 16:39:13.1197 Info Validating config: TargetNames=logfile, logconsole, ConfigItems=27, FilePath=C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1\WordQuest\bin\Debug\net10.0-windows\NLog.config
+2026-06-17 16:39:13.1197 Info Configuration initialized.
+2026-06-17 16:48:40.7783 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2026-06-17 16:48:40.7783 Info Registered target NLog.Targets.ConsoleTarget(Name=logconsole)
+2026-06-17 16:48:40.7783 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.4.2778. Product version: 5.3.4+73d83d3161d31288ca5c554cc50d27b6bed5f28b. GlobalAssemblyCache: False
+2026-06-17 16:48:40.7976 Info Validating config: TargetNames=logfile, logconsole, ConfigItems=27, FilePath=C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1\WordQuest\bin\Debug\net10.0-windows\NLog.config
+2026-06-17 16:48:40.8056 Info Configuration initialized.
+2026-06-17 16:50:18.7264 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2026-06-17 16:50:18.7264 Info Registered target NLog.Targets.ConsoleTarget(Name=logconsole)
+2026-06-17 16:50:18.7264 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.4.2778. Product version: 5.3.4+73d83d3161d31288ca5c554cc50d27b6bed5f28b. GlobalAssemblyCache: False
+2026-06-17 16:50:18.7438 Info Validating config: TargetNames=logfile, logconsole, ConfigItems=27, FilePath=C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1\WordQuest\bin\Debug\net10.0-windows\NLog.config
+2026-06-17 16:50:18.7438 Info Configuration initialized.
+2026-06-17 22:08:18.2325 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2026-06-17 22:08:18.2325 Info Registered target NLog.Targets.ConsoleTarget(Name=logconsole)
+2026-06-17 22:08:18.2325 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.4.2778. Product version: 5.3.4+73d83d3161d31288ca5c554cc50d27b6bed5f28b. GlobalAssemblyCache: False
+2026-06-17 22:08:18.2589 Info Validating config: TargetNames=logfile, logconsole, ConfigItems=27, FilePath=C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1\WordQuest\bin\Debug\net10.0-windows\NLog.config
+2026-06-17 22:08:18.2693 Info Configuration initialized.
+2026-06-17 22:08:28.1662 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2026-06-17 22:08:28.1662 Info Registered target NLog.Targets.ConsoleTarget(Name=logconsole)
+2026-06-17 22:08:28.1726 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.4.2778. Product version: 5.3.4+73d83d3161d31288ca5c554cc50d27b6bed5f28b. GlobalAssemblyCache: False
+2026-06-17 22:08:28.1726 Info Validating config: TargetNames=logfile, logconsole, ConfigItems=27, FilePath=C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1\WordQuest\bin\Debug\net10.0-windows\NLog.config
+2026-06-17 22:08:28.1943 Info Configuration initialized.
+2026-06-17 22:24:44.8228 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2026-06-17 22:24:44.8228 Info Registered target NLog.Targets.ConsoleTarget(Name=logconsole)
+2026-06-17 22:24:44.8309 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.4.2778. Product version: 5.3.4+73d83d3161d31288ca5c554cc50d27b6bed5f28b. GlobalAssemblyCache: False
+2026-06-17 22:24:44.8309 Info Validating config: TargetNames=logfile, logconsole, ConfigItems=27, FilePath=C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1\WordQuest\bin\Debug\net10.0-windows\NLog.config
+2026-06-17 22:24:44.8536 Info Configuration initialized.
+2026-06-18 07:48:22.3075 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2026-06-18 07:48:22.3075 Info Registered target NLog.Targets.ConsoleTarget(Name=logconsole)
+2026-06-18 07:48:22.3168 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.4.2778. Product version: 5.3.4+73d83d3161d31288ca5c554cc50d27b6bed5f28b. GlobalAssemblyCache: False
+2026-06-18 07:48:22.3168 Info Validating config: TargetNames=logfile, logconsole, ConfigItems=27, FilePath=C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1\WordQuest\bin\Debug\net10.0-windows\NLog.config
+2026-06-18 07:48:22.3435 Info Configuration initialized.
+2026-06-18 08:22:31.4888 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2026-06-18 08:22:31.4925 Info Registered target NLog.Targets.ConsoleTarget(Name=logconsole)
+2026-06-18 08:22:31.4925 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.4.2778. Product version: 5.3.4+73d83d3161d31288ca5c554cc50d27b6bed5f28b. GlobalAssemblyCache: False
+2026-06-18 08:22:31.5174 Info Validating config: TargetNames=logfile, logconsole, ConfigItems=27, FilePath=C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1\WordQuest\bin\Debug\net10.0-windows\NLog.config
+2026-06-18 08:22:31.5263 Info Configuration initialized.
+2026-06-18 08:23:41.3580 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2026-06-18 08:23:41.3618 Info Registered target NLog.Targets.ConsoleTarget(Name=logconsole)
+2026-06-18 08:23:41.3659 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.4.2778. Product version: 5.3.4+73d83d3161d31288ca5c554cc50d27b6bed5f28b. GlobalAssemblyCache: False
+2026-06-18 08:23:41.3659 Info Validating config: TargetNames=logfile, logconsole, ConfigItems=27, FilePath=C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1\WordQuest\bin\Debug\net10.0-windows\NLog.config
+2026-06-18 08:23:41.3659 Info Configuration initialized.
+2026-06-18 08:26:05.2246 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2026-06-18 08:26:05.2246 Info Registered target NLog.Targets.ConsoleTarget(Name=logconsole)
+2026-06-18 08:26:05.2246 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.4.2778. Product version: 5.3.4+73d83d3161d31288ca5c554cc50d27b6bed5f28b. GlobalAssemblyCache: False
+2026-06-18 08:26:05.2440 Info Validating config: TargetNames=logfile, logconsole, ConfigItems=27, FilePath=C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1\WordQuest\bin\Debug\net10.0-windows\NLog.config
+2026-06-18 08:26:05.2440 Info Configuration initialized.
+2026-06-18 08:27:38.2254 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2026-06-18 08:27:38.2254 Info Registered target NLog.Targets.ConsoleTarget(Name=logconsole)
+2026-06-18 08:27:38.2254 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.4.2778. Product version: 5.3.4+73d83d3161d31288ca5c554cc50d27b6bed5f28b. GlobalAssemblyCache: False
+2026-06-18 08:27:38.2254 Info Validating config: TargetNames=logfile, logconsole, ConfigItems=27, FilePath=C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1\WordQuest\bin\Debug\net10.0-windows\NLog.config
+2026-06-18 08:27:38.2546 Info Configuration initialized.
+2026-06-18 09:05:43.8841 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2026-06-18 09:05:43.8841 Info Registered target NLog.Targets.ConsoleTarget(Name=logconsole)
+2026-06-18 09:05:43.8841 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.4.2778. Product version: 5.3.4+73d83d3161d31288ca5c554cc50d27b6bed5f28b. GlobalAssemblyCache: False
+2026-06-18 09:05:43.9057 Info Validating config: TargetNames=logfile, logconsole, ConfigItems=27, FilePath=C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1\WordQuest\bin\Debug\net10.0-windows\NLog.config
+2026-06-18 09:05:43.9142 Info Configuration initialized.
+2026-06-18 09:30:57.3744 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2026-06-18 09:30:57.3744 Info Registered target NLog.Targets.ConsoleTarget(Name=logconsole)
+2026-06-18 09:30:57.3831 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.4.2778. Product version: 5.3.4+73d83d3161d31288ca5c554cc50d27b6bed5f28b. GlobalAssemblyCache: False
+2026-06-18 09:30:57.3954 Info Validating config: TargetNames=logfile, logconsole, ConfigItems=27, FilePath=C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1\WordQuest\bin\Debug\net10.0-windows\NLog.config
+2026-06-18 09:30:57.3954 Info Configuration initialized.
+2026-06-18 09:35:30.6006 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2026-06-18 09:35:30.6006 Info Registered target NLog.Targets.ConsoleTarget(Name=logconsole)
+2026-06-18 09:35:30.6006 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.4.2778. Product version: 5.3.4+73d83d3161d31288ca5c554cc50d27b6bed5f28b. GlobalAssemblyCache: False
+2026-06-18 09:35:30.6299 Info Validating config: TargetNames=logfile, logconsole, ConfigItems=27, FilePath=C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1\WordQuest\bin\Debug\net10.0-windows\NLog.config
+2026-06-18 09:35:30.6404 Info Configuration initialized.
+2026-06-18 09:39:06.9253 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2026-06-18 09:39:06.9253 Info Registered target NLog.Targets.ConsoleTarget(Name=logconsole)
+2026-06-18 09:39:06.9331 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.4.2778. Product version: 5.3.4+73d83d3161d31288ca5c554cc50d27b6bed5f28b. GlobalAssemblyCache: False
+2026-06-18 09:39:06.9453 Info Validating config: TargetNames=logfile, logconsole, ConfigItems=27, FilePath=C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1\WordQuest\bin\Debug\net10.0-windows\NLog.config
+2026-06-18 09:39:06.9453 Info Configuration initialized.
+2026-06-18 09:40:19.0917 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2026-06-18 09:40:19.0917 Info Registered target NLog.Targets.ConsoleTarget(Name=logconsole)
+2026-06-18 09:40:19.0993 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.4.2778. Product version: 5.3.4+73d83d3161d31288ca5c554cc50d27b6bed5f28b. GlobalAssemblyCache: False
+2026-06-18 09:40:19.1127 Info Validating config: TargetNames=logfile, logconsole, ConfigItems=27, FilePath=C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1\WordQuest\bin\Debug\net10.0-windows\NLog.config
+2026-06-18 09:40:19.1127 Info Configuration initialized.
+2026-06-18 09:40:27.9818 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2026-06-18 09:40:27.9818 Info Registered target NLog.Targets.ConsoleTarget(Name=logconsole)
+2026-06-18 09:40:27.9818 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.4.2778. Product version: 5.3.4+73d83d3161d31288ca5c554cc50d27b6bed5f28b. GlobalAssemblyCache: False
+2026-06-18 09:40:28.0005 Info Validating config: TargetNames=logfile, logconsole, ConfigItems=27, FilePath=C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1\WordQuest\bin\Debug\net10.0-windows\NLog.config
+2026-06-18 09:40:28.0111 Info Configuration initialized.
+2026-06-18 09:40:57.5636 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2026-06-18 09:40:57.5636 Info Registered target NLog.Targets.ConsoleTarget(Name=logconsole)
+2026-06-18 09:40:57.5701 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.4.2778. Product version: 5.3.4+73d83d3161d31288ca5c554cc50d27b6bed5f28b. GlobalAssemblyCache: False
+2026-06-18 09:40:57.5842 Info Validating config: TargetNames=logfile, logconsole, ConfigItems=27, FilePath=C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1\WordQuest\bin\Debug\net10.0-windows\NLog.config
+2026-06-18 09:40:57.5842 Info Configuration initialized.
+2026-06-18 09:58:50.0546 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2026-06-18 09:58:50.0578 Info Registered target NLog.Targets.ConsoleTarget(Name=logconsole)
+2026-06-18 09:58:50.0578 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.4.2778. Product version: 5.3.4+73d83d3161d31288ca5c554cc50d27b6bed5f28b. GlobalAssemblyCache: False
+2026-06-18 09:58:50.0766 Info Validating config: TargetNames=logfile, logconsole, ConfigItems=27, FilePath=C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1\WordQuest\bin\Debug\net10.0-windows\NLog.config
+2026-06-18 09:58:50.0766 Info Configuration initialized.
+2026-06-18 09:59:43.8005 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2026-06-18 09:59:43.8034 Info Registered target NLog.Targets.ConsoleTarget(Name=logconsole)
+2026-06-18 09:59:43.8034 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.4.2778. Product version: 5.3.4+73d83d3161d31288ca5c554cc50d27b6bed5f28b. GlobalAssemblyCache: False
+2026-06-18 09:59:43.8222 Info Validating config: TargetNames=logfile, logconsole, ConfigItems=27, FilePath=C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1\WordQuest\bin\Debug\net10.0-windows\NLog.config
+2026-06-18 09:59:43.8222 Info Configuration initialized.
+2026-06-18 15:26:57.0151 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2026-06-18 15:26:57.0151 Info Registered target NLog.Targets.ConsoleTarget(Name=logconsole)
+2026-06-18 15:26:57.0223 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.4.2778. Product version: 5.3.4+73d83d3161d31288ca5c554cc50d27b6bed5f28b. GlobalAssemblyCache: False
+2026-06-18 15:26:57.0364 Info Validating config: TargetNames=logfile, logconsole, ConfigItems=27, FilePath=C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1\WordQuest\bin\Debug\net10.0-windows\NLog.config
+2026-06-18 15:26:57.0364 Info Configuration initialized.
+2026-06-18 15:34:16.0557 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2026-06-18 15:34:16.0557 Info Registered target NLog.Targets.ConsoleTarget(Name=logconsole)
+2026-06-18 15:34:16.0557 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.4.2778. Product version: 5.3.4+73d83d3161d31288ca5c554cc50d27b6bed5f28b. GlobalAssemblyCache: False
+2026-06-18 15:34:16.0741 Info Validating config: TargetNames=logfile, logconsole, ConfigItems=27, FilePath=C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1\WordQuest\bin\Debug\net10.0-windows\NLog.config
+2026-06-18 15:34:16.0741 Info Configuration initialized.
+2026-06-18 15:39:12.1113 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2026-06-18 15:39:12.1148 Info Registered target NLog.Targets.ConsoleTarget(Name=logconsole)
+2026-06-18 15:39:12.1148 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.4.2778. Product version: 5.3.4+73d83d3161d31288ca5c554cc50d27b6bed5f28b. GlobalAssemblyCache: False
+2026-06-18 15:39:12.1316 Info Validating config: TargetNames=logfile, logconsole, ConfigItems=27, FilePath=C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1\WordQuest\bin\Debug\net10.0-windows\NLog.config
+2026-06-18 15:39:12.1316 Info Configuration initialized.
+2026-06-18 15:42:16.8385 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2026-06-18 15:42:16.8385 Info Registered target NLog.Targets.ConsoleTarget(Name=logconsole)
+2026-06-18 15:42:16.8446 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.4.2778. Product version: 5.3.4+73d83d3161d31288ca5c554cc50d27b6bed5f28b. GlobalAssemblyCache: False
+2026-06-18 15:42:16.8446 Info Validating config: TargetNames=logfile, logconsole, ConfigItems=27, FilePath=C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1\WordQuest\bin\Debug\net10.0-windows\NLog.config
+2026-06-18 15:42:16.8655 Info Configuration initialized.
+2026-06-18 15:43:33.1840 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2026-06-18 15:43:33.1840 Info Registered target NLog.Targets.ConsoleTarget(Name=logconsole)
+2026-06-18 15:43:33.1840 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.4.2778. Product version: 5.3.4+73d83d3161d31288ca5c554cc50d27b6bed5f28b. GlobalAssemblyCache: False
+2026-06-18 15:43:33.2020 Info Validating config: TargetNames=logfile, logconsole, ConfigItems=27, FilePath=C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1\WordQuest\bin\Debug\net10.0-windows\NLog.config
+2026-06-18 15:43:33.2106 Info Configuration initialized.
+2026-06-18 16:06:29.3796 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2026-06-18 16:06:29.3825 Info Registered target NLog.Targets.ConsoleTarget(Name=logconsole)
+2026-06-18 16:06:29.3825 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.4.2778. Product version: 5.3.4+73d83d3161d31288ca5c554cc50d27b6bed5f28b. GlobalAssemblyCache: False
+2026-06-18 16:06:29.3825 Info Validating config: TargetNames=logfile, logconsole, ConfigItems=27, FilePath=C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1\WordQuest\bin\Debug\net10.0-windows\NLog.config
+2026-06-18 16:06:29.4064 Info Configuration initialized.
+2026-06-18 16:15:56.2657 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2026-06-18 16:15:56.2657 Info Registered target NLog.Targets.ConsoleTarget(Name=logconsole)
+2026-06-18 16:15:56.2727 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.4.2778. Product version: 5.3.4+73d83d3161d31288ca5c554cc50d27b6bed5f28b. GlobalAssemblyCache: False
+2026-06-18 16:15:56.2727 Info Validating config: TargetNames=logfile, logconsole, ConfigItems=27, FilePath=C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1\WordQuest\bin\Debug\net10.0-windows\NLog.config
+2026-06-18 16:15:56.2914 Info Configuration initialized.
+2026-06-18 17:02:58.1822 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2026-06-18 17:02:58.1822 Info Registered target NLog.Targets.ConsoleTarget(Name=logconsole)
+2026-06-18 17:02:58.1822 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.4.2778. Product version: 5.3.4+73d83d3161d31288ca5c554cc50d27b6bed5f28b. GlobalAssemblyCache: False
+2026-06-18 17:02:58.2022 Info Validating config: TargetNames=logfile, logconsole, ConfigItems=27, FilePath=C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1\WordQuest\bin\Debug\net10.0-windows\NLog.config
+2026-06-18 17:02:58.2022 Info Configuration initialized.
+2026-06-18 22:50:59.0193 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2026-06-18 22:50:59.0230 Info Registered target NLog.Targets.ConsoleTarget(Name=logconsole)
+2026-06-18 22:50:59.0230 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.4.2778. Product version: 5.3.4+73d83d3161d31288ca5c554cc50d27b6bed5f28b. GlobalAssemblyCache: False
+2026-06-18 22:50:59.0467 Info Validating config: TargetNames=logfile, logconsole, ConfigItems=27, FilePath=C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1\WordQuest\bin\Debug\net10.0-windows\NLog.config
+2026-06-18 22:50:59.0590 Info Configuration initialized.
+2026-06-18 23:54:18.1541 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2026-06-18 23:54:18.1541 Info Registered target NLog.Targets.ConsoleTarget(Name=logconsole)
+2026-06-18 23:54:18.1618 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.4.2778. Product version: 5.3.4+73d83d3161d31288ca5c554cc50d27b6bed5f28b. GlobalAssemblyCache: False
+2026-06-18 23:54:18.1618 Info Validating config: TargetNames=logfile, logconsole, ConfigItems=27, FilePath=C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1 - Copy\WordQuest\bin\Debug\net10.0-windows\NLog.config
+2026-06-18 23:54:18.1837 Info Configuration initialized.
+2026-06-19 00:06:54.6056 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2026-06-19 00:06:54.6056 Info Registered target NLog.Targets.ConsoleTarget(Name=logconsole)
+2026-06-19 00:06:54.6056 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.4.2778. Product version: 5.3.4+73d83d3161d31288ca5c554cc50d27b6bed5f28b. GlobalAssemblyCache: False
+2026-06-19 00:06:54.6264 Info Validating config: TargetNames=logfile, logconsole, ConfigItems=27, FilePath=C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1 - Copy\WordQuest\bin\Debug\net10.0-windows\NLog.config
+2026-06-19 00:06:54.6264 Info Configuration initialized.
+2026-06-19 00:08:45.9222 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2026-06-19 00:08:45.9222 Info Registered target NLog.Targets.ConsoleTarget(Name=logconsole)
+2026-06-19 00:08:45.9222 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.4.2778. Product version: 5.3.4+73d83d3161d31288ca5c554cc50d27b6bed5f28b. GlobalAssemblyCache: False
+2026-06-19 00:08:45.9394 Info Validating config: TargetNames=logfile, logconsole, ConfigItems=27, FilePath=C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1 - Copy\WordQuest\bin\Debug\net10.0-windows\NLog.config
+2026-06-19 00:08:45.9476 Info Configuration initialized.
+2026-06-19 00:16:34.1769 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2026-06-19 00:16:34.1805 Info Registered target NLog.Targets.ConsoleTarget(Name=logconsole)
+2026-06-19 00:16:34.1805 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.4.2778. Product version: 5.3.4+73d83d3161d31288ca5c554cc50d27b6bed5f28b. GlobalAssemblyCache: False
+2026-06-19 00:16:34.1994 Info Validating config: TargetNames=logfile, logconsole, ConfigItems=27, FilePath=C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1 - Copy\WordQuest\bin\Debug\net10.0-windows\NLog.config
+2026-06-19 00:16:34.1994 Info Configuration initialized.
+2026-06-19 00:18:06.4067 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2026-06-19 00:18:06.4067 Info Registered target NLog.Targets.ConsoleTarget(Name=logconsole)
+2026-06-19 00:18:06.4149 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.4.2778. Product version: 5.3.4+73d83d3161d31288ca5c554cc50d27b6bed5f28b. GlobalAssemblyCache: False
+2026-06-19 00:18:06.4149 Info Validating config: TargetNames=logfile, logconsole, ConfigItems=27, FilePath=C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1 - Copy\WordQuest\bin\Debug\net10.0-windows\NLog.config
+2026-06-19 00:18:06.4417 Info Configuration initialized.
