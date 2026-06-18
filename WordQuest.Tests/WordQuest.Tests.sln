@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 18
+VisualStudioVersion = 18.6.11819.183 stable
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordQuest.Tests", "WordQuest.Tests.csproj", "{0A6BAB98-12B2-2E01-546D-6201656F5D08}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0A6BAB98-12B2-2E01-546D-6201656F5D08}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A6BAB98-12B2-2E01-546D-6201656F5D08}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A6BAB98-12B2-2E01-546D-6201656F5D08}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A6BAB98-12B2-2E01-546D-6201656F5D08}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DDAD64B7-D52F-4125-B02D-B1C0DE4BB29B}
+	EndGlobalSection
+EndGlobal

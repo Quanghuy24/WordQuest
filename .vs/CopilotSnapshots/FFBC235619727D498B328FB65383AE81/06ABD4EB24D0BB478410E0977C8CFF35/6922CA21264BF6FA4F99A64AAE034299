@@ -1,0 +1,114 @@
+﻿using System;
+using System.Drawing;
+using System.Windows.Forms;
+
+namespace WordQuest.GUI.UserControls
+{
+    public partial class UC_LevelCard : UserControl
+    {
+        private Label lblTitle;
+        private Label lblStars;
+        private Label lblInfo;
+        private Button btnPlayVI;
+        private Button btnPlayEN;
+        private bool _isUnlocked;
+
+        public event EventHandler<(int LevelNum, string Mode)>? PlayClicked;
+
+        public UC_LevelCard()
+        {
+            InitializeComponent();
+            BuildControls();
+        }
+
+        private void BuildControls()
+        {
+            this.lblTitle = new Label();
+            this.lblStars = new Label();
+            this.lblInfo = new Label();
+            this.btnPlayVI = new Button();
+            this.btnPlayEN = new Button();
+            this.SuspendLayout();
+
+            // lblTitle
+            this.lblTitle.Font = new Font("Segoe UI", 14F, FontStyle.Bold);
+            this.lblTitle.Location = new Point(10, 10);
+            this.lblTitle.Size = new Size(200, 35);
+            this.lblTitle.TextAlign = ContentAlignment.MiddleLeft;
+
+            // lblStars
+            this.lblStars.Font = new Font("Segoe UI", 12F);
+            this.lblStars.Location = new Point(10, 45);
+            this.lblStars.Size = new Size(100, 30);
+
+            // lblInfo
+            this.lblInfo.Font = new Font("Segoe UI", 10F);
+            this.lblInfo.ForeColor = Color.Brown;
+            this.lblInfo.Location = new Point(10, 75);
+            this.lblInfo.Size = new Size(250, 25);
+
+            // btnPlayVI
+            this.btnPlayVI.BackColor = Color.FromArgb(255, 128, 0);
+            this.btnPlayVI.FlatStyle = FlatStyle.Flat;
+            this.btnPlayVI.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
+            this.btnPlayVI.Location = new Point(270, 20);
+            this.btnPlayVI.Size = new Size(120, 35);
+            this.btnPlayVI.Text = "▶ Tiếng Việt";
+            this.btnPlayVI.UseVisualStyleBackColor = false;
+            this.btnPlayVI.Click += (s, e) => PlayClicked?.Invoke(this, (0, "VI"));
+
+            // btnPlayEN
+            this.btnPlayEN.BackColor = Color.FromArgb(0, 150, 80);
+            this.btnPlayEN.FlatStyle = FlatStyle.Flat;
+            this.btnPlayEN.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
+            this.btnPlayEN.Location = new Point(270, 60);
+            this.btnPlayEN.Size = new Size(120, 35);
+            this.btnPlayEN.Text = "▶ Tiếng Anh";
+            this.btnPlayEN.UseVisualStyleBackColor = false;
+            this.btnPlayEN.Click += (s, e) => PlayClicked?.Invoke(this, (0, "EN"));
+
+            // UC_LevelCard
+            this.BackColor = Color.FromArgb(255, 248, 225);
+            this.BorderStyle = BorderStyle.FixedSingle;
+            this.Size = new Size(410, 110);
+            this.Controls.Add(this.lblTitle);
+            this.Controls.Add(this.lblStars);
+            this.Controls.Add(this.lblInfo);
+            this.Controls.Add(this.btnPlayVI);
+            this.Controls.Add(this.btnPlayEN);
+
+            this.ResumeLayout(false);
+        }
+
+        public void SetLevelData(int levelNum, string levelName, string difficulty, int stars, int questionCount, bool unlocked, string unlockMessage = "")
+        {
+            _isUnlocked = unlocked;
+
+            lblTitle.Text = $"Màn {levelNum}: {levelName}";
+            lblStars.Text = stars switch
+            {
+                1 => "⭐☆☆",
+                2 => "⭐⭐☆",
+                3 => "⭐⭐⭐",
+                _ => "☆☆☆"
+            };
+            lblInfo.Text = $"{questionCount} câu • Cấp độ: {difficulty}";
+
+            if (!unlocked)
+            {
+                btnPlayVI.Enabled = false;
+                btnPlayEN.Enabled = false;
+                btnPlayVI.BackColor = Color.FromArgb(150, 150, 150);
+                btnPlayEN.BackColor = Color.FromArgb(150, 150, 150);
+                lblInfo.Text = $"🔒 {unlockMessage}";
+            }
+            else
+            {
+                btnPlayVI.Enabled = true;
+                btnPlayEN.Enabled = true;
+                btnPlayVI.BackColor = Color.FromArgb(255, 128, 0);
+                btnPlayEN.BackColor = Color.FromArgb(0, 150, 80);
+            }
+        }
+    }
+}

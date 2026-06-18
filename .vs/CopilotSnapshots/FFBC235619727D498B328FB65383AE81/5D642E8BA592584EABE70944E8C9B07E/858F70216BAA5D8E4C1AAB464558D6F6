@@ -1,0 +1,240 @@
+﻿using System.Data;
+using Microsoft.Data.SqlClient;
+using WordQuest.DTO;
+
+namespace WordQuest.DAL
+{
+    public class WordDAL
+    {
+        public DataTable GetAllWords()
+        {
+            const string sql = @"SELECT w.WordID, t.TopicName, w.EnglishWord, w.Phonetic,
+                                        w.VietnameseMeaning, w.DifficultyLevel, w.EmojiIcon, w.ImagePath
+                                 FROM Words w INNER JOIN Topics t ON w.TopicID = t.TopicID
+                                 ORDER BY t.TopicName, w.EnglishWord";
+            return DatabaseHelper.ExecuteQuery(sql);
+        }
+
+        public DataTable GetWordsByTopic(int topicID)
+        {
+            const string sql = @"SELECT WordID, EnglishWord, Phonetic, VietnameseMeaning,
+                                        DifficultyLevel, EmojiIcon, ImagePath
+                                 FROM Words WHERE TopicID = @tid ORDER BY EnglishWord";
+            return DatabaseHelper.ExecuteQuery(sql, new SqlParameter("@tid", topicID));
+        }
+
+        public DataTable GetWordsByTopicAndDifficulty(int topicID, int difficultyLevel, int count)
+        {
+            const string sql = @"SELECT TOP (@count) WordID, EnglishWord, VietnameseMeaning,
+                                        Phonetic, EmojiIcon, ImagePath, DifficultyLevel
+                                 FROM Words WHERE TopicID = @topicID AND DifficultyLevel = @difficulty
+                                 ORDER BY NEWID()";
+            return DatabaseHelper.ExecuteQuery(sql,
+                new SqlParameter("@count", count),
+                new SqlParameter("@topicID", topicID),
+                new SqlParameter("@difficulty", difficultyLevel));
+        }
+
+        public DataTable GetWordsByLevelID(int levelID)
+        {
+            const string sql = @"SELECT w.WordID, w.EnglishWord, w.VietnameseMeaning,
+                                        w.Phonetic, w.EmojiIcon, w.ImagePath, w.DifficultyLevel
+                                 FROM LevelWords lw
+                                 JOIN Words w ON lw.WordID = w.WordID
+                                 WHERE lw.LevelID = @LevelID";
+            return DatabaseHelper.ExecuteQuery(sql, new SqlParameter("@LevelID", levelID));
+        }
+
+        public DataTable SearchWords(string keyword, string difficulty, string imageFilter)
+        {
+            string sql = @"SELECT w.WordID, t.TopicName, w.EnglishWord, w.Phonetic,
+                                  w.VietnameseMeaning, w.DifficultyLevel, w.EmojiIcon, w.ImagePath
+                           FROM Words w INNER JOIN Topics t ON w.TopicID = t.TopicID WHERE 1=1";
+
+            if (!string.IsNullOrEmpty(keyword))
+                sql += " AND (w.EnglishWord LIKE @kw OR w.VietnameseMeaning LIKE @kw OR w.Phonetic LIKE @kw)";
+
+            if (!string.IsNullOrEmpty(difficulty) && difficulty != "Tất cả")
+                sql += " AND w.DifficultyLevel = @diff";
+
+            if (imageFilter == "Có ảnh")
+                sql += " AND w.ImagePath IS NOT NULL AND w.ImagePath != ''";
+            else if (imageFilter == "Chưa có ảnh")
+                sql += " AND (w.ImagePath IS NULL OR w.ImagePath = '')";
+
+            sql += " ORDER BY t.TopicName, w.EnglishWord";
+
+            var parameters = new List<SqlParameter>();
+            if (!string.IsNullOrEmpty(keyword))
+                parameters.Add(new SqlParameter("@kw", "%" + keyword + "%"));
+            if (!string.IsNullOrEmpty(difficulty) && difficulty != "Tất cả")
+                parameters.Add(new SqlParameter("@diff", difficulty));
+
+            return DatabaseHelper.ExecuteQuery(sql, parameters.ToArray());
+        }
+
+        public WordDTO? GetWordByID(int wordID)
+        {
+            const string sql = "SELECT WordID, TopicID, EnglishWord, Phonetic, VietnameseMeaning, DifficultyLevel, EmojiIcon, ImagePath FROM Words WHERE WordID = @id";
+            var dt = DatabaseHelper.ExecuteQuery(sql, new SqlParameter("@id", wordID));
+            if (dt.Rows.Count == 0) return null;
+
+            var row = dt.Rows[0];
+            return new WordDTO
+            {
+                WordID = Convert.ToInt32(row["WordID"]),
+                TopicID = Convert.ToInt32(row["TopicID"]),
+                EnglishWord = row["EnglishWord"].ToString() ?? "",
+                Phonetic = row["Phonetic"].ToString() ?? "",
+                VietnameseMeaning = row["VietnameseMeaning"].ToString() ?? "",
+                DifficultyLevel = Convert.ToInt32(row["DifficultyLevel"]),
+                EmojiIcon = row["EmojiIcon"].ToString() ?? "",
+                ImagePath = row["ImagePath"].ToString() ?? ""
+            };
+        }
+
+        public int InsertWord(WordDTO word)
+        {
+            const string sql = @"INSERT INTO Words (TopicID, EnglishWord, Phonetic, VietnameseMeaning, DifficultyLevel, EmojiIcon, ImagePath)
+                                 VALUES (@topicID, @en, @phonetic, @vi, @diff, @emoji, @img);
+                                 SELECT SCOPE_IDENTITY();";
+            return Convert.ToInt32(DatabaseHelper.ExecuteScalar(sql, new SqlParameter[]
+                {
+                new SqlParameter("@topicID", word.TopicID),
+                new SqlParameter("@en", word.EnglishWord),
+                new SqlParameter("@phonetic", word.Phonetic),
+                new SqlParameter("@vi", word.VietnameseMeaning),
+                new SqlParameter("@diff", word.DifficultyLevel),
+                new SqlParameter("@emoji", word.EmojiIcon),
+                new SqlParameter("@img", word.ImagePath)}));
+        }
+
+        public bool UpdateWord(WordDTO word)
+        {
+            const string sql = @"UPDATE Words SET TopicID = @topicID, EnglishWord = @en, Phonetic = @phonetic,
+                                 VietnameseMeaning = @vi, DifficultyLevel = @diff, EmojiIcon = @emoji, ImagePath = @img
+                                 WHERE WordID = @id";
+            return DatabaseHelper.ExecuteNonQuery(sql, new SqlParameter[]
+                {
+                new SqlParameter("@id", word.WordID),
+                new SqlParameter("@topicID", word.TopicID),
+                new SqlParameter("@en", word.EnglishWord),
+                new SqlParameter("@phonetic", word.Phonetic),
+                new SqlParameter("@vi", word.VietnameseMeaning),
+                new SqlParameter("@diff", word.DifficultyLevel),
+                new SqlParameter("@emoji", word.EmojiIcon),
+                new SqlParameter("@img", word.ImagePath)}) > 0;
+        }
+
+        public bool DeleteWord(int wordID)
+        {
+            const string sql = "DELETE FROM Words WHERE WordID = @id";
+            return DatabaseHelper.ExecuteNonQuery(sql, new SqlParameter[] { new SqlParameter("@id", wordID) }) > 0;
+        }
+
+        public bool IsWordInUse(int wordID)
+        {
+            const string sql = "SELECT COUNT(1) FROM LevelWords WHERE WordID = @id";
+            return Convert.ToInt32(DatabaseHelper.ExecuteScalar(sql, new SqlParameter[] { new SqlParameter("@id", wordID) })) > 0;
+        }
+
+        public bool IsDuplicateEnglishWord(int topicID, string englishWord, int excludeWordID = 0)
+        {
+            const string sql = "SELECT COUNT(1) FROM Words WHERE TopicID = @tid AND EnglishWord = @word AND WordID != @id";
+            return Convert.ToInt32(DatabaseHelper.ExecuteScalar(sql, new SqlParameter[]
+                {
+                new SqlParameter("@tid", topicID),
+                new SqlParameter("@word", englishWord),
+                new SqlParameter("@id", excludeWordID)})) > 0;
+        }
+
+        // Thêm các method này vào class WordDAL
+
+        public DataTable SearchWordsAdvanced(string keyword, string difficulty, string imageFilter, int topicFilter, int maxRows)
+        {
+            var parameters = new List<SqlParameter>();
+            var conditions = new List<string>();
+
+            if (topicFilter != -1)
+            {
+                conditions.Add("w.TopicID = @topicID");
+                parameters.Add(new SqlParameter("@topicID", topicFilter));
+            }
+
+            if (!string.IsNullOrEmpty(difficulty) && difficulty != "Tất cả")
+            {
+                conditions.Add("w.DifficultyLevel = @diff");
+                parameters.Add(new SqlParameter("@diff", difficulty));
+            }
+
+            if (imageFilter == "Có ảnh")
+            {
+                conditions.Add("w.ImagePath IS NOT NULL AND w.ImagePath != ''");
+            }
+            else if (imageFilter == "Chưa có ảnh")
+            {
+                conditions.Add("(w.ImagePath IS NULL OR w.ImagePath = '')");
+            }
+
+            if (!string.IsNullOrEmpty(keyword))
+            {
+                conditions.Add("(w.EnglishWord LIKE @search OR w.VietnameseMeaning LIKE @search)");
+                parameters.Add(new SqlParameter("@search", "%" + keyword + "%"));
+            }
+
+            string whereClause = conditions.Count > 0 ? "WHERE " + string.Join(" AND ", conditions) : "";
+            string sql = $@"
+        SELECT TOP {maxRows} w.WordID, t.TopicName, w.EnglishWord, w.Phonetic,
+               w.VietnameseMeaning, w.DifficultyLevel, w.EmojiIcon, w.ImagePath
+        FROM Words w WITH (NOLOCK)
+        INNER JOIN Topics t ON w.TopicID = t.TopicID
+        {whereClause}
+        ORDER BY t.TopicName, w.EnglishWord";
+
+            return DatabaseHelper.ExecuteQuery(sql, parameters.ToArray());
+        }
+
+        public int GetTotalWordsCount(string keyword, string difficulty, string imageFilter, int topicFilter)
+        {
+            var parameters = new List<SqlParameter>();
+            var conditions = new List<string>();
+
+            if (topicFilter != -1)
+            {
+                conditions.Add("w.TopicID = @topicID");
+                parameters.Add(new SqlParameter("@topicID", topicFilter));
+            }
+
+            if (!string.IsNullOrEmpty(difficulty) && difficulty != "Tất cả")
+            {
+                conditions.Add("w.DifficultyLevel = @diff");
+                parameters.Add(new SqlParameter("@diff", difficulty));
+            }
+
+            if (imageFilter == "Có ảnh")
+            {
+                conditions.Add("w.ImagePath IS NOT NULL AND w.ImagePath != ''");
+            }
+            else if (imageFilter == "Chưa có ảnh")
+            {
+                conditions.Add("(w.ImagePath IS NULL OR w.ImagePath = '')");
+            }
+
+            if (!string.IsNullOrEmpty(keyword))
+            {
+                conditions.Add("(w.EnglishWord LIKE @search OR w.VietnameseMeaning LIKE @search)");
+                parameters.Add(new SqlParameter("@search", "%" + keyword + "%"));
+            }
+
+            string whereClause = conditions.Count > 0 ? "WHERE " + string.Join(" AND ", conditions) : "";
+            string sql = $@"
+        SELECT COUNT(*)
+        FROM Words w
+        INNER JOIN Topics t ON w.TopicID = t.TopicID
+        {whereClause}";
+
+            return Convert.ToInt32(DatabaseHelper.ExecuteScalar(sql, parameters.ToArray()));
+        }
+
+            }
+        }

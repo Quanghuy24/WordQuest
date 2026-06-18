@@ -1,0 +1,23 @@
+d:/Program_D/Dự án mới/WordQuest_1 - đang làm - Copy/implementation_plan.md
+C:\\Users\\LEGION\\.gemini\\antigravity\\brain\\cba30f57-e202-451b-8147-82405dcbc556\\implementation_plan.md
+d:\\Program_D\\Dự án mới\\WordQuest_1 - đang làm - Copy\\WordQuest\\WordQuest.csproj
+d:\\Program_D\\Dự án mới\\WordQuest_1 - đang làm - Copy\\WordQuest\\GUI\\frmGame.cs
+C:\\Users\\LEGION\\.gemini\\antigravity\\brain\\cba30f57-e202-451b-8147-82405dcbc556\\task.md
+C:\\Users\\LEGION\\.gemini\\antigravity\\brain\\cba30f57-e202-451b-8147-82405dcbc556\\scratch\\rename_dbhelper.py
+C:\\Users\\LEGION\\.gemini\\antigravity\\brain\\cba30f57-e202-451b-8147-82405dcbc556\\scratch\\rename_dbhelper.ps1
+C:\\Users\\LEGION\\.gemini\\antigravity\\brain\\cba30f57-e202-451b-8147-82405dcbc556\\scratch\\rename_player.ps1
+C:\\Users\\LEGION\\.gemini\\antigravity\\brain\\cba30f57-e202-451b-8147-82405dcbc556\\scratch\\FixEncoding\\Program.cs
+C:\\Users\\LEGION\\.gemini\\antigravity\\brain\\cba30f57-e202-451b-8147-82405dcbc556\\scratch\\rename_other.ps1
+C:/Users/LEGION/.gemini/antigravity/brain/cba30f57-e202-451b-8147-82405dcbc556/scratch/rename_dto.ps1
+C:\\Users\\LEGION\\.gemini\\antigravity\\brain\\cba30f57-e202-451b-8147-82405dcbc556\\scratch\\rename_ui.ps1
+C:/Users/LEGION/.gemini/antigravity/brain/cba30f57-e202-451b-8147-82405dcbc556/scratch/rename_ui_clean.ps1
+C:/Users/LEGION/.gemini/antigravity/brain/cba30f57-e202-451b-8147-82405dcbc556/scratch/rename_ui.ps1
+C:/Users/LEGION/.gemini/antigravity/brain/cba30f57-e202-451b-8147-82405dcbc556/scratch/rename_ui_final.ps1
+C:\\Users\\LEGION\\.gemini\\antigravity\\brain\\cba30f57-e202-451b-8147-82405dcbc556\\scratch\\rename_remaining.ps1
+d:\\Program_D\\Dự án mới\\WordQuest_1 - đang làm - Copy\\WordQuest\\BUS\\GameBUS.cs
+C:\\Users\\LEGION\\.gemini\\antigravity\\brain\\cba30f57-e202-451b-8147-82405dcbc556\\scratch\\rename_locals.ps1
+C:\\Users\\LEGION\\.gemini\\antigravity\\brain\\cba30f57-e202-451b-8147-82405dcbc556\\scratch\\rename_final.ps1
+C:\\Users\\LEGION\\.gemini\\antigravity\\brain\\cba30f57-e202-451b-8147-82405dcbc556\\scratch\\rename_bus_dal.ps1
+d:\\Program_D\\Dự án mới\\WordQuest_1 - đang làm - Copy\\WordQuest\\DAL\\DatabaseHelper.cs
+C:\\Users\\LEGION\\.gemini\\antigravity\\brain\\cba30f57-e202-451b-8147-82405dcbc556\\scratch\\rename_game.ps1
+d:\\Program_D\\Dự án mới\\WordQuest_1 - đang làm - Copy\\WordQuest\\Program.cs

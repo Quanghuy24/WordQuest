@@ -1,0 +1,1082 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Data;
+using System.Drawing;
+using System.IO;
+using System.Linq;
+using System.Speech.Synthesis;
+using System.Windows.Forms;
+using WordQuest.BUS;
+using WordQuest.DTO;
+
+namespace WordQuest.GUI
+{
+    public partial class frmGame : Form
+    {
+        #region ==================== Constants ====================
+
+        private const int TIMER_INTERVAL_MS = 8;        // Cập nhật timer mỗi 8ms (120 FPS)
+        private const int CORRECT_ANSWER_DELAY_MS = 3000;  // Delay sau khi đúng
+        private const int WRONG_ANSWER_DELAY_MS = 1500;    // Delay sau khi sai
+        private const int SHOW_ANSWER_DELAY_MS = 1000;     // Delay hiển thị đáp án sau khi sai
+        private const int HINT_PENALTY_SCORE = 3;          // Điểm bị trừ khi dùng gợi ý
+        private const int BASE_SCORE = 10;                 // Điểm cơ bản cho mỗi câu đúng
+        private const int TIME_WARNING_THRESHOLD = 10;     // Giây bắt đầu cảnh báo
+        private const int TIME_DANGER_THRESHOLD = 20;      // Giây bắt đầu nguy hiểm
+
+        private static readonly Color CORRECT_COLOR = Color.FromArgb(78, 203, 113);
+        private static readonly Color WRONG_COLOR = Color.FromArgb(255, 107, 107);
+        private static readonly Color HINT_COLOR = Color.FromArgb(255, 193, 7);
+        private static readonly Color SLOT_DEFAULT_COLOR = Color.FromArgb(139, 90, 43);
+        private static readonly Color SLOT_FILLED_COLOR = Color.FromArgb(50, 45, 100);
+        private static readonly Color TIMER_NORMAL_COLOR = Color.FromArgb(78, 203, 113);
+        private static readonly Color TIMER_WARNING_COLOR = Color.FromArgb(247, 201, 72);
+        private static readonly Color TIMER_DANGER_COLOR = Color.FromArgb(255, 107, 107);
+
+        #endregion
+
+        #region ==================== Fields ====================
+
+        // Thông tin game từ tham số
+        private readonly int _playerID;
+        private readonly int _topicID;
+        private readonly string _topicName;
+        private readonly string _topicEmoji;
+        private readonly int _levelNum;
+        private readonly string _gameMode;
+        private readonly int _levelID;
+
+        // BUS Layer
+        private readonly GameBUS _gameBUS;
+        private readonly ScoreHistoryBUS _scoreBUS;
+        private readonly PlayerProgressBUS _progressBUS;
+        private readonly PlayerBUS _playerBUS;
+        private readonly AnswerManagerBUS _answerBUS;
+
+        // Dữ liệu game
+        private DataTable _wordsTable;
+        private GameRuleDTO _currentRule;
+
+        // Trạng thái game
+        private int _currentWordIndex;
+        private int _lives;
+        private int _streak;
+        private int _score;
+        private int _correctCount;
+        private int _totalTimeSpentMs;
+        private int _remainingMs;
+        private string _currentAnswer;
+        private bool _isAnswered;
+        private bool _isGameEnding;
+        private bool _isWaitingForNext;
+
+        // UI Components động
+        private List<Button> _answerSlots;
+        private List<Button> _letterButtons;
+
+        // Speech Synthesizer
+        private SpeechSynthesizer _speechSynthesizer;
+
+        #endregion
+
+        #region ==================== Constructor ====================
+
+        public frmGame(int playerID, string username, int topicID, string topicName, string topicEmoji,
+                       int levelNum, string gameMode, int levelID)
+        {
+            InitializeComponent();
+
+            // Khởi tạo tham số
+            _playerID = playerID;
+            _topicID = topicID;
+            _topicName = topicName;
+            _topicEmoji = topicEmoji;
+            _levelNum = levelNum;
+            _gameMode = gameMode;
+            _levelID = levelID;
+
+            // Khởi tạo BUS (Dependency Injection đơn giản)
+            _gameBUS = new GameBUS();
+            _scoreBUS = new ScoreHistoryBUS();
+            _progressBUS = new PlayerProgressBUS();
+            _playerBUS = new PlayerBUS();
+            _answerBUS = new AnswerManagerBUS();
+
+            // Khởi tạo collections
+            _answerSlots = new List<Button>();
+            _letterButtons = new List<Button>();
+
+            // Thiết lập form
+            lblTopic.Text = $"{_topicEmoji} {_topicName} - Màn {_levelNum}";
+        }
+
+        #endregion
+
+        #region ==================== Form Events ====================
+
+        private async void frmGame_Load(object sender, EventArgs e)
+        {
+            await InitializeGameAsync();
+        }
+
+        private void BtnExit_Click(object sender, EventArgs e)
+        {
+            HandleExitGame();
+        }
+
+        private void BtnHint_Click(object sender, EventArgs e)
+        {
+            HandleHint();
+        }
+
+        private void GameTimer_Tick(object sender, EventArgs e)
+        {
+            UpdateTimer();
+        }
+
+        protected override void OnFormClosing(FormClosingEventArgs e)
+        {
+            CleanupResources();
+            base.OnFormClosing(e);
+        }
+
+        #endregion
+
+        #region ==================== Initialization ====================
+
+        /// <summary>
+        /// Khởi tạo game bất đồng bộ
+        /// </summary>
+        private async Task InitializeGameAsync()
+        {
+            try
+            {
+                // Hiển thị loading cursor
+                Cursor = Cursors.WaitCursor;
+
+                // Tải luật chơi
+                _currentRule = await Task.Run(() => _gameBUS.GetGameRule());
+                InitializeGameState();
+
+                // Thiết lập giao diện
+                SetupUI();
+
+                // Tải danh sách từ vựng
+                _wordsTable = await Task.Run(() => _gameBUS.GetWordsForLevel(_levelID));
+
+                if (!ValidateGameData())
+                {
+                    Close();
+                    return;
+                }
+
+                // Khởi tạo Speech Synthesizer
+                InitializeSpeechSynthesizer();
+
+                // Hiển thị câu hỏi đầu tiên
+                ShowCurrentWord();
+            }
+            catch (Exception ex)
+            {
+                HandleInitializationError(ex);
+            }
+            finally
+            {
+                Cursor = Cursors.Default;
+            }
+        }
+
+        /// <summary>
+        /// Khởi tạo giá trị mặc định cho game
+        /// </summary>
+        private void InitializeGameState()
+        {
+            _lives = _currentRule?.Lives ?? 3;
+            _streak = 0;
+            _score = 0;
+            _correctCount = 0;
+            _totalTimeSpentMs = 0;
+            _currentWordIndex = 0;
+            _isGameEnding = false;
+            _isAnswered = false;
+            _isWaitingForNext = false;
+        }
+
+        /// <summary>
+        /// Thiết lập giao diện người dùng
+        /// </summary>
+        private void SetupUI()
+        {
+            this.StartPosition = FormStartPosition.CenterScreen;
+            this.BackColor = Color.FromArgb(101, 67, 33);
+
+            // Header Panel
+            pnlHeader.BackColor = Color.FromArgb(75, 45, 15);
+
+            // Picture Box
+            picWord.BackColor = Color.FromArgb(120, 80, 40);
+            picWord.SizeMode = PictureBoxSizeMode.Zoom;
+
+            // Labels
+            lblStreak.Text = "🔥 0";
+            lblQuestion.ForeColor = Color.White;
+            lblEnglish.Visible = false;
+
+            // Hint Button
+            btnHint.BackColor = Color.FromArgb(247, 201, 72);
+            btnHint.FlatStyle = FlatStyle.Flat;
+
+            // Progress Bar - chỉ hiển thị 0 nếu chưa có giá trị
+            pbTime.Minimum = 0;
+            pbTime.Maximum = 100; // Sẽ được cập nhật lại sau
+            pbTime.Value = 0;
+
+            // Timer
+            gameTimer.Interval = TIMER_INTERVAL_MS;
+
+            UpdateLivesDisplay();
+        }
+
+        /// <summary>
+        /// Khởi tạo SpeechSynthesizer để đọc từ tiếng Anh
+        /// </summary>
+        private void InitializeSpeechSynthesizer()
+        {
+            try
+            {
+                _speechSynthesizer = new SpeechSynthesizer();
+                _speechSynthesizer.SelectVoiceByHints(VoiceGender.Female, VoiceAge.Child);
+            }
+            catch
+            {
+                _speechSynthesizer = null; // Không có voice thì bỏ qua
+            }
+        }
+
+        /// <summary>
+        /// Kiểm tra dữ liệu game có hợp lệ không
+        /// </summary>
+        private bool ValidateGameData()
+        {
+            if (_wordsTable == null || _wordsTable.Rows.Count == 0)
+            {
+                MessageBox.Show("Không có dữ liệu câu hỏi cho màn này!", "Thông báo",
+                    MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return false;
+            }
+            return true;
+        }
+
+        /// <summary>
+        /// Xử lý lỗi khởi tạo game
+        /// </summary>
+        private void HandleInitializationError(Exception ex)
+        {
+            MessageBox.Show($"Lỗi khởi tạo game: {ex.Message}", "Lỗi",
+                MessageBoxButtons.OK, MessageBoxIcon.Error);
+            Close();
+        }
+
+        #endregion
+
+        #region ==================== Core Game Logic ====================
+
+        /// <summary>
+        /// Hiển thị câu hỏi hiện tại
+        /// </summary>
+        private void ShowCurrentWord()
+        {
+            if (_isGameEnding) return;
+
+            // Reset trạng thái cho câu mới
+            _isAnswered = false;
+            _isWaitingForNext = false;
+
+            if (_currentWordIndex >= _wordsTable.Rows.Count)
+            {
+                EndGame();
+                return;
+            }
+
+            var row = _wordsTable.Rows[_currentWordIndex];
+
+            // Lấy đáp án đúng dựa trên chế độ chơi
+            _currentAnswer = GetCurrentAnswer(row);
+            _currentAnswer = _currentAnswer.Trim().ToUpper();
+
+            // Khởi tạo AnswerManager với đáp án mới
+            _answerBUS.Initialize(_currentAnswer);
+
+            // Cập nhật giao diện
+            UpdateQuestionDisplay();
+            RenderWordImage(row);
+            BuildAnswerSlots();
+            BuildLetterButtons();
+            StartTimer();
+        }
+
+        /// <summary>
+        /// Lấy đáp án đúng dựa trên chế độ chơi
+        /// </summary>
+        private string GetCurrentAnswer(DataRow row)
+        {
+            return _gameMode == "VI"
+                ? row["VietnameseMeaning"]?.ToString() ?? ""
+                : row["EnglishWord"]?.ToString() ?? "";
+        }
+
+        /// <summary>
+        /// Cập nhật hiển thị số câu hỏi
+        /// </summary>
+        private void UpdateQuestionDisplay()
+        {
+            lblQuestion.Text = $"Câu {_currentWordIndex + 1}/{_wordsTable.Rows.Count}";
+            lblEnglish.Visible = false;
+        }
+
+        /// <summary>
+        /// Kiểm tra câu trả lời
+        /// </summary>
+        private void CheckAnswer()
+        {
+            if (_isAnswered || _isGameEnding || _isWaitingForNext) return;
+
+            _isAnswered = true;
+            StopTimer();
+
+            if (_answerBUS.IsCorrect())
+            {
+                HandleCorrectAnswer();
+            }
+            else
+            {
+                HandleWrongAnswer();
+            }
+        }
+
+        /// <summary>
+        /// Xử lý khi trả lời đúng
+        /// </summary>
+        private void HandleCorrectAnswer()
+        {
+            // Phát âm thanh
+            PlaySound(true);
+
+            // Cập nhật điểm và streak
+            UpdateScoreAndStreak();
+
+            // Đánh dấu các ô đúng
+            HighlightAllSlots(CORRECT_COLOR);
+
+            // Đọc từ và hiển thị thông tin
+            SpeakCurrentWord();
+            ShowEnglishInfo();
+
+            // Chuyển sang câu tiếp theo sau delay
+            _isWaitingForNext = true;
+            var timer = new System.Windows.Forms.Timer { Interval = CORRECT_ANSWER_DELAY_MS };
+            timer.Tick += (s, e) =>
+            {
+                timer.Stop();
+                timer.Dispose();
+                _currentWordIndex++;
+                ShowCurrentWord();
+            };
+            timer.Start();
+        }
+
+        /// <summary>
+        /// Xử lý khi trả lời sai
+        /// </summary>
+        private void HandleWrongAnswer()
+        {
+            // Phát âm thanh
+            PlaySound(false);
+
+            // Reset streak và trừ mạng
+            _streak = 0;
+            _lives--;
+            UpdateStreakDisplay();
+            UpdateLivesDisplay();
+
+            // Đánh dấu các ô sai
+            HighlightAllSlots(WRONG_COLOR);
+
+            // Hiển thị đáp án đúng sau delay
+            var showAnswerTimer = new System.Windows.Forms.Timer { Interval = SHOW_ANSWER_DELAY_MS };
+            showAnswerTimer.Tick += (s1, e1) =>
+            {
+                showAnswerTimer.Stop();
+                showAnswerTimer.Dispose();
+                ShowCorrectAnswer();
+
+                // Kiểm tra game over hoặc chuyển tiếp
+                var nextTimer = new System.Windows.Forms.Timer { Interval = WRONG_ANSWER_DELAY_MS };
+                nextTimer.Tick += (s2, e2) =>
+                {
+                    nextTimer.Stop();
+                    nextTimer.Dispose();
+
+                    if (_lives <= 0)
+                    {
+                        EndGame();
+                    }
+                    else
+                    {
+                        _currentWordIndex++;
+                        ShowCurrentWord();
+                    }
+                };
+                nextTimer.Start();
+            };
+            showAnswerTimer.Start();
+        }
+
+        /// <summary>
+        /// Cập nhật điểm số và streak
+        /// </summary>
+        private void UpdateScoreAndStreak()
+        {
+            _streak++;
+            _correctCount++;
+
+            // Tính điểm: 10 điểm cơ bản + thưởng streak (nếu có)
+            int bonus = (_streak >= 3 && _currentRule != null) ? _currentRule.StreakBonus : 0;
+            _score += BASE_SCORE + bonus;
+
+            UpdateStreakDisplay();
+        }
+
+        /// <summary>
+        /// Hiển thị đáp án đúng
+        /// </summary>
+        private void ShowCorrectAnswer()
+        {
+            string correctAnswer = _currentAnswer.Replace(" ", "");
+
+            for (int i = 0; i < _answerSlots.Count && i < correctAnswer.Length; i++)
+            {
+                _answerSlots[i].Text = correctAnswer[i].ToString();
+                _answerSlots[i].BackColor = CORRECT_COLOR;
+            }
+        }
+
+        /// <summary>
+        /// Hiển thị thông tin tiếng Anh (phiên âm và từ)
+        /// </summary>
+        private void ShowEnglishInfo()
+        {
+            var row = _wordsTable.Rows[_currentWordIndex];
+            string englishWord = row["EnglishWord"]?.ToString() ?? "";
+            string phonetic = row["Phonetic"]?.ToString() ?? "";
+
+            if (!string.IsNullOrEmpty(englishWord))
+            {
+                lblEnglish.Text = $"{phonetic}  {englishWord}";
+                lblEnglish.Visible = true;
+            }
+        }
+
+        /// <summary>
+        /// Phát âm từ tiếng Anh
+        /// </summary>
+        private void SpeakCurrentWord()
+        {
+            if (_speechSynthesizer == null) return;
+
+            try
+            {
+                string englishWord = _wordsTable.Rows[_currentWordIndex]["EnglishWord"]?.ToString() ?? "";
+                if (!string.IsNullOrEmpty(englishWord))
+                {
+                    _speechSynthesizer.SpeakAsync(englishWord);
+                }
+            }
+            catch
+            {
+                // Bỏ qua lỗi phát âm
+            }
+        }
+
+        /// <summary>
+        /// Xử lý khi hết giờ
+        /// </summary>
+        private void HandleTimeOut()
+        {
+            if (_isAnswered || _isGameEnding || _isWaitingForNext) return;
+
+            _isAnswered = true;
+            StopTimer();
+
+            _lives--;
+            UpdateLivesDisplay();
+            ShowCorrectAnswer();
+
+            _isWaitingForNext = true;
+            var timer = new Timer { Interval = WRONG_ANSWER_DELAY_MS };
+            timer.Tick += (s, e) =>
+            {
+                timer.Stop();
+                timer.Dispose();
+
+                if (_lives <= 0)
+                {
+                    EndGame();
+                }
+                else
+                {
+                    _currentWordIndex++;
+                    ShowCurrentWord();
+                }
+            };
+            timer.Start();
+        }
+
+        #endregion
+
+        #region ==================== Timer Management ====================
+
+        /// <summary>
+        /// Bắt đầu timer đếm ngược
+        /// </summary>
+        private void StartTimer()
+        {
+            if (_currentRule == null) return;
+
+            _remainingMs = _currentRule.TimeLimit * 1000;
+            _totalTimeSpentMs = 0;
+
+            UpdateProgressBar();
+            UpdateTimerDisplay();
+            gameTimer.Start();
+        }
+
+        /// <summary>
+        /// Dừng timer
+        /// </summary>
+        private void StopTimer()
+        {
+            gameTimer.Stop();
+        }
+
+        /// <summary>
+        /// Cập nhật timer mỗi tick
+        /// </summary>
+        private void UpdateTimer()
+        {
+            if (_isAnswered || _isGameEnding || _isWaitingForNext) return;
+
+            _remainingMs = Math.Max(0, _remainingMs - TIMER_INTERVAL_MS);
+            _totalTimeSpentMs += TIMER_INTERVAL_MS;
+
+            UpdateProgressBar();
+            UpdateTimerDisplay();
+
+            if (_remainingMs <= 0)
+            {
+                StopTimer();
+                HandleTimeOut();
+            }
+        }
+
+        /// <summary>
+        /// Cập nhật thanh ProgressBar
+        /// </summary>
+        private void UpdateProgressBar()
+        {
+            if (_currentRule == null) return;
+
+            try
+            {
+                int maxValue = _currentRule.TimeLimit * 1000;
+                pbTime.Maximum = maxValue;
+                pbTime.Value = Math.Min(maxValue, Math.Max(0, _remainingMs));
+            }
+            catch
+            {
+                // Bỏ qua lỗi progressbar
+            }
+        }
+
+        /// <summary>
+        /// Cập nhật hiển thị thời gian
+        /// </summary>
+        private void UpdateTimerDisplay()
+        {
+            int secondsLeft = (int)Math.Ceiling(_remainingMs / 1000.0);
+            lblTimer.Text = $"{secondsLeft}s";
+
+            // Đổi màu theo thời gian còn lại
+            if (secondsLeft <= TIME_WARNING_THRESHOLD)
+            {
+                lblTimer.ForeColor = TIMER_DANGER_COLOR;
+            }
+            else if (secondsLeft <= TIME_DANGER_THRESHOLD)
+            {
+                lblTimer.ForeColor = TIMER_WARNING_COLOR;
+            }
+            else
+            {
+                lblTimer.ForeColor = TIMER_NORMAL_COLOR;
+            }
+        }
+
+        #endregion
+
+        #region ==================== UI Building ====================
+
+        /// <summary>
+        /// Xây dựng các ô chứa chữ cái trả lời
+        /// </summary>
+        private void BuildAnswerSlots()
+        {
+            pnlAnswer.SuspendLayout();
+            pnlAnswer.Controls.Clear();
+            _answerSlots.Clear();
+
+            char[] chars = _currentAnswer.ToCharArray();
+            int slotWidth = 45;
+            int slotHeight = 50;
+            int gap = 6;
+            int totalWidth = chars.Length * (slotWidth + gap);
+            int startX = Math.Max(5, (pnlAnswer.Width - totalWidth) / 2);
+
+            for (int i = 0; i < chars.Length; i++)
+            {
+                if (chars[i] == ' ')
+                {
+                    AddSpaceLabel(startX, i, slotWidth, gap, slotHeight);
+                    continue;
+                }
+
+                var slot = CreateAnswerSlot(startX, i, slotWidth, gap, slotHeight);
+                pnlAnswer.Controls.Add(slot);
+                _answerSlots.Add(slot);
+            }
+
+            pnlAnswer.ResumeLayout();
+        }
+
+        /// <summary>
+        /// Tạo ô trống cho khoảng trắng
+        /// </summary>
+        private void AddSpaceLabel(int startX, int index, int slotWidth, int gap, int slotHeight)
+        {
+            var space = new Label
+            {
+                Size = new Size(15, slotHeight),
+                Location = new Point(startX + index * (slotWidth + gap), 5)
+            };
+            pnlAnswer.Controls.Add(space);
+        }
+
+        /// <summary>
+        /// Tạo ô trả lời
+        /// </summary>
+        private Button CreateAnswerSlot(int startX, int index, int slotWidth, int gap, int slotHeight)
+        {
+            return new Button
+            {
+                Size = new Size(slotWidth, slotHeight),
+                Location = new Point(startX + index * (slotWidth + gap), 5),
+                Text = "",
+                Font = new Font("Segoe UI", 14, FontStyle.Bold),
+                ForeColor = Color.White,
+                BackColor = SLOT_DEFAULT_COLOR,
+                FlatStyle = FlatStyle.Flat,
+                Tag = index
+            };
+        }
+
+        /// <summary>
+        /// Xây dựng các nút chữ cái
+        /// </summary>
+        private void BuildLetterButtons()
+        {
+            pnlLetters.SuspendLayout();
+            pnlLetters.Controls.Clear();
+            _letterButtons.Clear();
+
+            var letters = _answerBUS.GetAvailableLetters();
+            int buttonWidth = 55;
+            int buttonHeight = 55;
+            int gap = 8;
+            int totalWidth = letters.Count * (buttonWidth + gap);
+            int startX = Math.Max(5, (pnlLetters.Width - totalWidth) / 2);
+
+            for (int i = 0; i < letters.Count; i++)
+            {
+                var button = CreateLetterButton(startX, i, buttonWidth, gap, buttonHeight, letters[i]);
+                pnlLetters.Controls.Add(button);
+                _letterButtons.Add(button);
+            }
+
+            pnlLetters.ResumeLayout();
+        }
+
+        /// <summary>
+        /// Tạo nút chữ cái
+        /// </summary>
+        private Button CreateLetterButton(int startX, int index, int buttonWidth, int gap, int buttonHeight, string letter)
+        {
+            var btn = new Button
+            {
+                Size = new Size(buttonWidth, buttonHeight),
+                Location = new Point(startX + index * (buttonWidth + gap), 5),
+                Text = letter,
+                Font = new Font("Segoe UI", 16, FontStyle.Bold),
+                ForeColor = Color.White,
+                BackColor = Color.FromArgb(180, 100, 30),
+                FlatStyle = FlatStyle.Flat,
+                Cursor = Cursors.Hand
+            };
+            btn.Click += LetterButton_Click;
+            return btn;
+        }
+
+        /// <summary>
+        /// Xử lý sự kiện click nút chữ cái
+        /// </summary>
+        private void LetterButton_Click(object sender, EventArgs e)
+        {
+            if (_isAnswered || _isGameEnding || _isWaitingForNext || sender is not Button btn) return;
+
+            int nextIndex = _answerBUS.GetFilledLetters().Count;
+            if (nextIndex >= _answerSlots.Count) return;
+
+            // Thêm chữ cái vào AnswerManager
+            _answerBUS.AddLetter(btn.Text);
+
+            // Cập nhật UI
+            _answerSlots[nextIndex].Text = btn.Text;
+            _answerSlots[nextIndex].BackColor = SLOT_FILLED_COLOR;
+            _answerSlots[nextIndex].Tag = btn;
+
+            btn.Visible = false;
+
+            // Kiểm tra nếu đã điền đầy đủ
+            if (_answerBUS.IsFull())
+            {
+                CheckAnswer();
+            }
+        }
+
+        /// <summary>
+        /// Xử lý sự kiện click vào ô trả lời (bỏ chữ)
+        /// </summary>
+        private void AnswerSlot_Click(object sender, EventArgs e)
+        {
+            if (_isAnswered || _isGameEnding || _isWaitingForNext || sender is not Button slot) return;
+
+            int slotIndex = _answerSlots.IndexOf(slot);
+            if (slotIndex < 0) return;
+
+            var filledLetters = _answerBUS.GetFilledLetters();
+
+            // Xóa từ vị trí click đến cuối
+            for (int i = filledLetters.Count - 1; i >= slotIndex; i--)
+            {
+                if (_answerSlots[i].Tag is Button originalButton)
+                {
+                    originalButton.Visible = true;
+                }
+                _answerSlots[i].Text = "";
+                _answerSlots[i].BackColor = SLOT_DEFAULT_COLOR;
+            }
+
+            _answerBUS.RemoveFromIndex(slotIndex);
+        }
+
+        /// <summary>
+        /// Hiển thị hình ảnh hoặc emoji
+        /// </summary>
+        private void RenderWordImage(DataRow row)
+        {
+            string imagePath = row["ImagePath"]?.ToString() ?? "";
+            string emoji = row["EmojiIcon"]?.ToString() ?? "📝";
+
+            // Giải phóng ảnh cũ
+            if (picWord.Image != null)
+            {
+                picWord.Image.Dispose();
+                picWord.Image = null;
+            }
+
+            if (!string.IsNullOrEmpty(imagePath))
+            {
+                string fullPath = Path.Combine(Application.StartupPath, imagePath);
+                if (File.Exists(fullPath))
+                {
+                    try
+                    {
+                        using var fs = new FileStream(fullPath, FileMode.Open, FileAccess.Read, FileShare.Read);
+                        using var img = Image.FromStream(fs, true, true);
+                        picWord.Image = new Bitmap(img);
+                        return;
+                    }
+                    catch
+                    {
+                        // Fallback to emoji
+                    }
+                }
+            }
+
+            RenderEmoji(emoji);
+        }
+
+        /// <summary>
+        /// Hiển thị emoji khi không có ảnh
+        /// </summary>
+        private void RenderEmoji(string emoji)
+        {
+            int width = picWord.Width > 0 ? picWord.Width : 300;
+            int height = picWord.Height > 0 ? picWord.Height : 280;
+
+            var bitmap = new Bitmap(width, height);
+
+            using (var graphics = Graphics.FromImage(bitmap))
+            {
+                graphics.Clear(Color.FromArgb(26, 21, 66));
+                using var font = new Font("Segoe UI Emoji", 80);
+                var size = graphics.MeasureString(emoji, font);
+                float x = (bitmap.Width - size.Width) / 2;
+                float y = (bitmap.Height - size.Height) / 2;
+                graphics.DrawString(emoji, font, Brushes.White, x, y);
+            }
+
+            picWord.Image = bitmap;
+        }
+
+        /// <summary>
+        /// Highlight tất cả các ô với màu chỉ định
+        /// </summary>
+        private void HighlightAllSlots(Color color)
+        {
+            foreach (var slot in _answerSlots)
+            {
+                slot.BackColor = color;
+            }
+        }
+
+        #endregion
+
+        #region ==================== Hint System ====================
+
+        /// <summary>
+        /// Xử lý gợi ý
+        /// </summary>
+        private void HandleHint()
+        {
+            if (_isAnswered || _isGameEnding || _isWaitingForNext) return;
+
+            string letter = _answerBUS.UseHint();
+            if (letter == null) return;
+
+            int currentIndex = _answerBUS.GetFilledLetters().Count - 1;
+            if (currentIndex < 0 || currentIndex >= _answerSlots.Count) return;
+
+            // Cập nhật UI
+            _answerSlots[currentIndex].Text = letter;
+            _answerSlots[currentIndex].BackColor = HINT_COLOR;
+
+            // Ẩn nút chữ cái tương ứng
+            var button = _letterButtons.FirstOrDefault(b => b.Text == letter && b.Visible);
+            if (button != null)
+            {
+                button.Visible = false;
+            }
+
+            // Trừ điểm khi dùng gợi ý
+            _score = Math.Max(0, _score - HINT_PENALTY_SCORE);
+
+            // Kiểm tra nếu đã điền đầy đủ
+            if (_answerBUS.IsFull())
+            {
+                CheckAnswer();
+            }
+        }
+
+        #endregion
+
+        #region ==================== UI Updates ====================
+
+        /// <summary>
+        /// Cập nhật hiển thị mạng sống
+        /// </summary>
+        private void UpdateLivesDisplay()
+        {
+            int maxLives = Math.Max(1, _currentRule?.Lives ?? 3);
+            lblLives.Text = string.Concat(Enumerable.Range(0, maxLives)
+                .Select(i => i < _lives ? "❤️" : "🖤"));
+        }
+
+        /// <summary>
+        /// Cập nhật hiển thị streak
+        /// </summary>
+        private void UpdateStreakDisplay()
+        {
+            lblStreak.Text = $"🔥 {_streak}";
+        }
+
+        /// <summary>
+        /// Phát âm thanh
+        /// </summary>
+        private void PlaySound(bool isCorrect)
+        {
+            try
+            {
+                if (isCorrect)
+                {
+                    System.Media.SystemSounds.Asterisk.Play();
+                }
+                else
+                {
+                    System.Media.SystemSounds.Hand.Play();
+                }
+            }
+            catch
+            {
+                // Bỏ qua lỗi âm thanh
+            }
+        }
+
+        #endregion
+
+        #region ==================== Game End ====================
+
+        /// <summary>
+        /// Kết thúc game
+        /// </summary>
+        private async void EndGame()
+        {
+            if (_isGameEnding) return;
+            _isGameEnding = true;
+
+            StopTimer();
+
+            int stars = CalculateStars();
+
+            try
+            {
+                await SaveGameResultAsync(stars);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Lỗi lưu tiến độ: {ex.Message}", "Lỗi",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+            // Hiển thị form kết thúc
+            ShowResultForm(stars);
+        }
+
+        /// <summary>
+        /// Tính số sao đạt được
+        /// </summary>
+        private int CalculateStars()
+        {
+            if (_currentRule == null) return 0;
+
+            if (_correctCount >= _currentRule.Star3Threshold) return 3;
+            if (_correctCount >= _currentRule.Star2Threshold) return 2;
+            if (_correctCount >= _currentRule.Star1Threshold) return 1;
+            return 0;
+        }
+
+        /// <summary>
+        /// Lưu kết quả game bất đồng bộ
+        /// </summary>
+        private async Task SaveGameResultAsync(int stars)
+        {
+            await Task.Run(() =>
+            {
+                _progressBUS.SaveProgress(_playerID, _topicID, _levelNum, _score, stars);
+                _scoreBUS.SaveScoreHistory(_playerID, _topicID, _levelNum, _score, stars, _totalTimeSpentMs / 1000);
+                _playerBUS.UpdatePlayerStats(_playerID, _score, stars);
+            });
+        }
+
+        /// <summary>
+        /// Hiển thị form kết quả
+        /// </summary>
+        private void ShowResultForm(int stars)
+        {
+            CleanupResources();
+
+            var resultForm = new frmWin(
+                _playerID, "",
+                _topicID, _topicName, _topicEmoji,
+                _levelNum, _score, stars,
+                _correctCount, _totalTimeSpentMs / 1000,
+                _wordsTable.Rows.Count, _gameMode)
+            {
+                Owner = this.Owner
+            };
+            resultForm.Show();
+            Close();
+        }
+
+        /// <summary>
+        /// Xử lý thoát game
+        /// </summary>
+        private void HandleExitGame()
+        {
+            if (_isGameEnding) return;
+
+            StopTimer();
+
+            var result = MessageBox.Show("Bạn có chắc muốn thoát?\nTiến độ sẽ không được lưu!",
+                "Thoát game", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+                _isGameEnding = true;
+                CleanupResources();
+
+                Owner?.Show();
+                Close();
+            }
+            else
+            {
+                StartTimer();
+            }
+        }
+
+        #endregion
+
+        #region ==================== Resource Management ====================
+
+        /// <summary>
+        /// Dọn dẹp tài nguyên
+        /// </summary>
+        private void CleanupResources()
+        {
+            // Giải phóng SpeechSynthesizer
+            if (_speechSynthesizer != null)
+            {
+                try
+                {
+                    _speechSynthesizer.Dispose();
+                }
+                catch
+                {
+                    // Bỏ qua lỗi dispose
+                }
+                _speechSynthesizer = null;
+            }
+
+            // Giải phóng ảnh trong PictureBox
+            if (picWord.Image != null)
+            {
+                try
+                {
+                    picWord.Image.Dispose();
+                }
+                catch { }
+                picWord.Image = null;
+            }
+        }
+
+        #endregion
+    }
+}

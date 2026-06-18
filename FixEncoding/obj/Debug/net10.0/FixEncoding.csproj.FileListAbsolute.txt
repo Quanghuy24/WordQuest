@@ -1,0 +1,14 @@
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm - Copy\FixEncoding\bin\Debug\net10.0\FixEncoding.exe
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm - Copy\FixEncoding\bin\Debug\net10.0\FixEncoding.deps.json
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm - Copy\FixEncoding\bin\Debug\net10.0\FixEncoding.runtimeconfig.json
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm - Copy\FixEncoding\bin\Debug\net10.0\FixEncoding.dll
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm - Copy\FixEncoding\bin\Debug\net10.0\FixEncoding.pdb
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm - Copy\FixEncoding\obj\Debug\net10.0\FixEncoding.GeneratedMSBuildEditorConfig.editorconfig
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm - Copy\FixEncoding\obj\Debug\net10.0\FixEncoding.AssemblyInfoInputs.cache
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm - Copy\FixEncoding\obj\Debug\net10.0\FixEncoding.AssemblyInfo.cs
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm - Copy\FixEncoding\obj\Debug\net10.0\FixEncoding.csproj.CoreCompileInputs.cache
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm - Copy\FixEncoding\obj\Debug\net10.0\FixEncoding.dll
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm - Copy\FixEncoding\obj\Debug\net10.0\refint\FixEncoding.dll
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm - Copy\FixEncoding\obj\Debug\net10.0\FixEncoding.pdb
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm - Copy\FixEncoding\obj\Debug\net10.0\FixEncoding.genruntimeconfig.cache
+D:\Program_D\Dự án mới\WordQuest_1 - đang làm - Copy\FixEncoding\obj\Debug\net10.0\ref\FixEncoding.dll

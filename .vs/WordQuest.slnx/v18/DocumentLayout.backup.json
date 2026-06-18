@@ -1,0 +1,1164 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\LEGION\\Desktop\\Huy\\K\u00EC 2 n\u0103m 2\\Ki2_Nam2\\202605_D\u1EF1 \u00E1n KTLT\\WordQuest_1 - Copy\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3C49E057-AEDF-2B04-CD9E-4B300BF346A2}|WordQuest\\WordQuest.csproj|c:\\users\\legion\\desktop\\huy\\k\u00EC 2 n\u0103m 2\\ki2_nam2\\202605_d\u1EF1 \u00E1n ktlt\\wordquest_1 - copy\\wordquest\\dal\\databasehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C49E057-AEDF-2B04-CD9E-4B300BF346A2}|WordQuest\\WordQuest.csproj|solutionrelative:wordquest\\dal\\databasehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C49E057-AEDF-2B04-CD9E-4B300BF346A2}|WordQuest\\WordQuest.csproj|c:\\users\\legion\\desktop\\huy\\k\u00EC 2 n\u0103m 2\\ki2_nam2\\202605_d\u1EF1 \u00E1n ktlt\\wordquest_1 - copy\\wordquest\\bus\\playerbus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C49E057-AEDF-2B04-CD9E-4B300BF346A2}|WordQuest\\WordQuest.csproj|solutionrelative:wordquest\\bus\\playerbus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C49E057-AEDF-2B04-CD9E-4B300BF346A2}|WordQuest\\WordQuest.csproj|c:\\users\\legion\\desktop\\huy\\k\u00EC 2 n\u0103m 2\\ki2_nam2\\202605_d\u1EF1 \u00E1n ktlt\\wordquest_1 - copy\\wordquest\\dal\\worddal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C49E057-AEDF-2B04-CD9E-4B300BF346A2}|WordQuest\\WordQuest.csproj|solutionrelative:wordquest\\dal\\worddal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C49E057-AEDF-2B04-CD9E-4B300BF346A2}|WordQuest\\WordQuest.csproj|c:\\users\\legion\\desktop\\huy\\k\u00EC 2 n\u0103m 2\\ki2_nam2\\202605_d\u1EF1 \u00E1n ktlt\\wordquest_1 - copy\\wordquest\\dal\\topicdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C49E057-AEDF-2B04-CD9E-4B300BF346A2}|WordQuest\\WordQuest.csproj|solutionrelative:wordquest\\dal\\topicdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C49E057-AEDF-2B04-CD9E-4B300BF346A2}|WordQuest\\WordQuest.csproj|c:\\users\\legion\\desktop\\huy\\k\u00EC 2 n\u0103m 2\\ki2_nam2\\202605_d\u1EF1 \u00E1n ktlt\\wordquest_1 - copy\\wordquest\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C49E057-AEDF-2B04-CD9E-4B300BF346A2}|WordQuest\\WordQuest.csproj|solutionrelative:wordquest\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C49E057-AEDF-2B04-CD9E-4B300BF346A2}|WordQuest\\WordQuest.csproj|c:\\users\\legion\\desktop\\huy\\k\u00EC 2 n\u0103m 2\\ki2_nam2\\202605_d\u1EF1 \u00E1n ktlt\\wordquest_1 - copy\\wordquest\\dal\\playerdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C49E057-AEDF-2B04-CD9E-4B300BF346A2}|WordQuest\\WordQuest.csproj|solutionrelative:wordquest\\dal\\playerdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C49E057-AEDF-2B04-CD9E-4B300BF346A2}|WordQuest\\WordQuest.csproj|c:\\users\\legion\\desktop\\huy\\k\u00EC 2 n\u0103m 2\\ki2_nam2\\202605_d\u1EF1 \u00E1n ktlt\\wordquest_1 - copy\\wordquest\\bus\\gamebus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C49E057-AEDF-2B04-CD9E-4B300BF346A2}|WordQuest\\WordQuest.csproj|solutionrelative:wordquest\\bus\\gamebus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C49E057-AEDF-2B04-CD9E-4B300BF346A2}|WordQuest\\WordQuest.csproj|c:\\users\\legion\\desktop\\huy\\k\u00EC 2 n\u0103m 2\\ki2_nam2\\202605_d\u1EF1 \u00E1n ktlt\\wordquest_1 - copy\\wordquest\\dal\\gameruledal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C49E057-AEDF-2B04-CD9E-4B300BF346A2}|WordQuest\\WordQuest.csproj|solutionrelative:wordquest\\dal\\gameruledal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C49E057-AEDF-2B04-CD9E-4B300BF346A2}|WordQuest\\WordQuest.csproj|c:\\users\\legion\\desktop\\huy\\k\u00EC 2 n\u0103m 2\\ki2_nam2\\202605_d\u1EF1 \u00E1n ktlt\\wordquest_1 - copy\\wordquest\\dal\\imagedal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C49E057-AEDF-2B04-CD9E-4B300BF346A2}|WordQuest\\WordQuest.csproj|solutionrelative:wordquest\\dal\\imagedal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C49E057-AEDF-2B04-CD9E-4B300BF346A2}|WordQuest\\WordQuest.csproj|c:\\users\\legion\\desktop\\huy\\k\u00EC 2 n\u0103m 2\\ki2_nam2\\202605_d\u1EF1 \u00E1n ktlt\\wordquest_1 - copy\\wordquest\\gui\\frmgame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C49E057-AEDF-2B04-CD9E-4B300BF346A2}|WordQuest\\WordQuest.csproj|solutionrelative:wordquest\\gui\\frmgame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C49E057-AEDF-2B04-CD9E-4B300BF346A2}|WordQuest\\WordQuest.csproj|C:\\Users\\LEGION\\Desktop\\Huy\\K\u00EC 2 n\u0103m 2\\Ki2_Nam2\\202605_D\u1EF1 \u00E1n KTLT\\WordQuest_1 - Copy\\wordquest\\gui\\frmgame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3C49E057-AEDF-2B04-CD9E-4B300BF346A2}|WordQuest\\WordQuest.csproj|solutionrelative:wordquest\\gui\\frmgame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C49E057-AEDF-2B04-CD9E-4B300BF346A2}|WordQuest\\WordQuest.csproj|C:\\Users\\LEGION\\Desktop\\Huy\\K\u00EC 2 n\u0103m 2\\Ki2_Nam2\\202605_D\u1EF1 \u00E1n KTLT\\WordQuest_1 - Copy\\wordquest\\gui\\frmimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3C49E057-AEDF-2B04-CD9E-4B300BF346A2}|WordQuest\\WordQuest.csproj|solutionrelative:wordquest\\gui\\frmimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C49E057-AEDF-2B04-CD9E-4B300BF346A2}|WordQuest\\WordQuest.csproj|c:\\users\\legion\\desktop\\huy\\k\u00EC 2 n\u0103m 2\\ki2_nam2\\202605_d\u1EF1 \u00E1n ktlt\\wordquest_1 - copy\\wordquest\\gui\\frmimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C49E057-AEDF-2B04-CD9E-4B300BF346A2}|WordQuest\\WordQuest.csproj|solutionrelative:wordquest\\gui\\frmimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C49E057-AEDF-2B04-CD9E-4B300BF346A2}|WordQuest\\WordQuest.csproj|C:\\Users\\LEGION\\Desktop\\Huy\\K\u00EC 2 n\u0103m 2\\Ki2_Nam2\\202605_D\u1EF1 \u00E1n KTLT\\WordQuest_1 - Copy\\wordquest\\gui\\frmleaderboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3C49E057-AEDF-2B04-CD9E-4B300BF346A2}|WordQuest\\WordQuest.csproj|solutionrelative:wordquest\\gui\\frmleaderboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C49E057-AEDF-2B04-CD9E-4B300BF346A2}|WordQuest\\WordQuest.csproj|C:\\Users\\LEGION\\Desktop\\Huy\\K\u00EC 2 n\u0103m 2\\Ki2_Nam2\\202605_D\u1EF1 \u00E1n KTLT\\WordQuest_1 - Copy\\wordquest\\gui\\frmadmintopics.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3C49E057-AEDF-2B04-CD9E-4B300BF346A2}|WordQuest\\WordQuest.csproj|solutionrelative:wordquest\\gui\\frmadmintopics.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C49E057-AEDF-2B04-CD9E-4B300BF346A2}|WordQuest\\WordQuest.csproj|c:\\users\\legion\\desktop\\huy\\k\u00EC 2 n\u0103m 2\\ki2_nam2\\202605_d\u1EF1 \u00E1n ktlt\\wordquest_1 - copy\\wordquest\\rename_ui_final.ps1||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{3C49E057-AEDF-2B04-CD9E-4B300BF346A2}|WordQuest\\WordQuest.csproj|solutionrelative:wordquest\\rename_ui_final.ps1||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C49E057-AEDF-2B04-CD9E-4B300BF346A2}|WordQuest\\WordQuest.csproj|c:\\users\\legion\\desktop\\huy\\k\u00EC 2 n\u0103m 2\\ki2_nam2\\202605_d\u1EF1 \u00E1n ktlt\\wordquest_1 - copy\\wordquest\\bus\\gamerulebus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C49E057-AEDF-2B04-CD9E-4B300BF346A2}|WordQuest\\WordQuest.csproj|solutionrelative:wordquest\\bus\\gamerulebus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C49E057-AEDF-2B04-CD9E-4B300BF346A2}|WordQuest\\WordQuest.csproj|c:\\users\\legion\\desktop\\huy\\k\u00EC 2 n\u0103m 2\\ki2_nam2\\202605_d\u1EF1 \u00E1n ktlt\\wordquest_1 - copy\\wordquest\\bus\\imagebus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C49E057-AEDF-2B04-CD9E-4B300BF346A2}|WordQuest\\WordQuest.csproj|solutionrelative:wordquest\\bus\\imagebus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C49E057-AEDF-2B04-CD9E-4B300BF346A2}|WordQuest\\WordQuest.csproj|c:\\users\\legion\\desktop\\huy\\k\u00EC 2 n\u0103m 2\\ki2_nam2\\202605_d\u1EF1 \u00E1n ktlt\\wordquest_1 - copy\\wordquest\\bus\\levelbus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C49E057-AEDF-2B04-CD9E-4B300BF346A2}|WordQuest\\WordQuest.csproj|solutionrelative:wordquest\\bus\\levelbus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C49E057-AEDF-2B04-CD9E-4B300BF346A2}|WordQuest\\WordQuest.csproj|c:\\users\\legion\\desktop\\huy\\k\u00EC 2 n\u0103m 2\\ki2_nam2\\202605_d\u1EF1 \u00E1n ktlt\\wordquest_1 - copy\\wordquest\\bus\\topicbus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C49E057-AEDF-2B04-CD9E-4B300BF346A2}|WordQuest\\WordQuest.csproj|solutionrelative:wordquest\\bus\\topicbus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C49E057-AEDF-2B04-CD9E-4B300BF346A2}|WordQuest\\WordQuest.csproj|c:\\users\\legion\\desktop\\huy\\k\u00EC 2 n\u0103m 2\\ki2_nam2\\202605_d\u1EF1 \u00E1n ktlt\\wordquest_1 - copy\\wordquest\\bus\\wordbus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C49E057-AEDF-2B04-CD9E-4B300BF346A2}|WordQuest\\WordQuest.csproj|solutionrelative:wordquest\\bus\\wordbus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C49E057-AEDF-2B04-CD9E-4B300BF346A2}|WordQuest\\WordQuest.csproj|c:\\users\\legion\\desktop\\huy\\k\u00EC 2 n\u0103m 2\\ki2_nam2\\202605_d\u1EF1 \u00E1n ktlt\\wordquest_1 - copy\\wordquest\\gui\\frmadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C49E057-AEDF-2B04-CD9E-4B300BF346A2}|WordQuest\\WordQuest.csproj|solutionrelative:wordquest\\gui\\frmadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C49E057-AEDF-2B04-CD9E-4B300BF346A2}|WordQuest\\WordQuest.csproj|C:\\Users\\LEGION\\Desktop\\Huy\\K\u00EC 2 n\u0103m 2\\Ki2_Nam2\\202605_D\u1EF1 \u00E1n KTLT\\WordQuest_1 - Copy\\wordquest\\gui\\frmadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3C49E057-AEDF-2B04-CD9E-4B300BF346A2}|WordQuest\\WordQuest.csproj|solutionrelative:wordquest\\gui\\frmadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C49E057-AEDF-2B04-CD9E-4B300BF346A2}|WordQuest\\WordQuest.csproj|c:\\users\\legion\\desktop\\huy\\k\u00EC 2 n\u0103m 2\\ki2_nam2\\202605_d\u1EF1 \u00E1n ktlt\\wordquest_1 - copy\\wordquest\\gui\\frmtopics.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C49E057-AEDF-2B04-CD9E-4B300BF346A2}|WordQuest\\WordQuest.csproj|solutionrelative:wordquest\\gui\\frmtopics.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C49E057-AEDF-2B04-CD9E-4B300BF346A2}|WordQuest\\WordQuest.csproj|C:\\Users\\LEGION\\Desktop\\Huy\\K\u00EC 2 n\u0103m 2\\Ki2_Nam2\\202605_D\u1EF1 \u00E1n KTLT\\WordQuest_1 - Copy\\wordquest\\gui\\frmtopics.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3C49E057-AEDF-2B04-CD9E-4B300BF346A2}|WordQuest\\WordQuest.csproj|solutionrelative:wordquest\\gui\\frmtopics.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C49E057-AEDF-2B04-CD9E-4B300BF346A2}|WordQuest\\WordQuest.csproj|c:\\users\\legion\\desktop\\huy\\k\u00EC 2 n\u0103m 2\\ki2_nam2\\202605_d\u1EF1 \u00E1n ktlt\\wordquest_1 - copy\\wordquest\\gui\\frmlevels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C49E057-AEDF-2B04-CD9E-4B300BF346A2}|WordQuest\\WordQuest.csproj|solutionrelative:wordquest\\gui\\frmlevels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C49E057-AEDF-2B04-CD9E-4B300BF346A2}|WordQuest\\WordQuest.csproj|C:\\Users\\LEGION\\Desktop\\Huy\\K\u00EC 2 n\u0103m 2\\Ki2_Nam2\\202605_D\u1EF1 \u00E1n KTLT\\WordQuest_1 - Copy\\wordquest\\gui\\frmlevels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3C49E057-AEDF-2B04-CD9E-4B300BF346A2}|WordQuest\\WordQuest.csproj|solutionrelative:wordquest\\gui\\frmlevels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C49E057-AEDF-2B04-CD9E-4B300BF346A2}|WordQuest\\WordQuest.csproj|c:\\users\\legion\\desktop\\huy\\k\u00EC 2 n\u0103m 2\\ki2_nam2\\202605_d\u1EF1 \u00E1n ktlt\\wordquest_1 - copy\\wordquest\\gui\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C49E057-AEDF-2B04-CD9E-4B300BF346A2}|WordQuest\\WordQuest.csproj|solutionrelative:wordquest\\gui\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C49E057-AEDF-2B04-CD9E-4B300BF346A2}|WordQuest\\WordQuest.csproj|C:\\Users\\LEGION\\Desktop\\Huy\\K\u00EC 2 n\u0103m 2\\Ki2_Nam2\\202605_D\u1EF1 \u00E1n KTLT\\WordQuest_1 - Copy\\wordquest\\gui\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3C49E057-AEDF-2B04-CD9E-4B300BF346A2}|WordQuest\\WordQuest.csproj|solutionrelative:wordquest\\gui\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C49E057-AEDF-2B04-CD9E-4B300BF346A2}|WordQuest\\WordQuest.csproj|c:\\users\\legion\\desktop\\huy\\k\u00EC 2 n\u0103m 2\\ki2_nam2\\202605_d\u1EF1 \u00E1n ktlt\\wordquest_1 - copy\\wordquest\\gui\\frmadmin.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C49E057-AEDF-2B04-CD9E-4B300BF346A2}|WordQuest\\WordQuest.csproj|solutionrelative:wordquest\\gui\\frmadmin.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C49E057-AEDF-2B04-CD9E-4B300BF346A2}|WordQuest\\WordQuest.csproj|c:\\users\\legion\\desktop\\huy\\k\u00EC 2 n\u0103m 2\\ki2_nam2\\202605_d\u1EF1 \u00E1n ktlt\\wordquest_1 - copy\\wordquest\\gui\\frmadminplayers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C49E057-AEDF-2B04-CD9E-4B300BF346A2}|WordQuest\\WordQuest.csproj|solutionrelative:wordquest\\gui\\frmadminplayers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C49E057-AEDF-2B04-CD9E-4B300BF346A2}|WordQuest\\WordQuest.csproj|C:\\Users\\LEGION\\Desktop\\Huy\\K\u00EC 2 n\u0103m 2\\Ki2_Nam2\\202605_D\u1EF1 \u00E1n KTLT\\WordQuest_1 - Copy\\wordquest\\gui\\frmadminplayers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3C49E057-AEDF-2B04-CD9E-4B300BF346A2}|WordQuest\\WordQuest.csproj|solutionrelative:wordquest\\gui\\frmadminplayers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C49E057-AEDF-2B04-CD9E-4B300BF346A2}|WordQuest\\WordQuest.csproj|C:\\Users\\LEGION\\Desktop\\Huy\\K\u00EC 2 n\u0103m 2\\Ki2_Nam2\\202605_D\u1EF1 \u00E1n KTLT\\WordQuest_1 - Copy\\wordquest\\gui\\frmadminmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3C49E057-AEDF-2B04-CD9E-4B300BF346A2}|WordQuest\\WordQuest.csproj|solutionrelative:wordquest\\gui\\frmadminmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C49E057-AEDF-2B04-CD9E-4B300BF346A2}|WordQuest\\WordQuest.csproj|c:\\users\\legion\\desktop\\huy\\k\u00EC 2 n\u0103m 2\\ki2_nam2\\202605_d\u1EF1 \u00E1n ktlt\\wordquest_1 - copy\\wordquest\\gui\\frmadminrules.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C49E057-AEDF-2B04-CD9E-4B300BF346A2}|WordQuest\\WordQuest.csproj|solutionrelative:wordquest\\gui\\frmadminrules.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C49E057-AEDF-2B04-CD9E-4B300BF346A2}|WordQuest\\WordQuest.csproj|C:\\Users\\LEGION\\Desktop\\Huy\\K\u00EC 2 n\u0103m 2\\Ki2_Nam2\\202605_D\u1EF1 \u00E1n KTLT\\WordQuest_1 - Copy\\wordquest\\gui\\frmadminrules.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3C49E057-AEDF-2B04-CD9E-4B300BF346A2}|WordQuest\\WordQuest.csproj|solutionrelative:wordquest\\gui\\frmadminrules.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C49E057-AEDF-2B04-CD9E-4B300BF346A2}|WordQuest\\WordQuest.csproj|c:\\users\\legion\\desktop\\huy\\k\u00EC 2 n\u0103m 2\\ki2_nam2\\202605_d\u1EF1 \u00E1n ktlt\\wordquest_1 - copy\\wordquest\\gui\\frmadmintopics.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C49E057-AEDF-2B04-CD9E-4B300BF346A2}|WordQuest\\WordQuest.csproj|solutionrelative:wordquest\\gui\\frmadmintopics.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C49E057-AEDF-2B04-CD9E-4B300BF346A2}|WordQuest\\WordQuest.csproj|c:\\users\\legion\\desktop\\huy\\k\u00EC 2 n\u0103m 2\\ki2_nam2\\202605_d\u1EF1 \u00E1n ktlt\\wordquest_1 - copy\\wordquest\\rename_final.ps1||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{3C49E057-AEDF-2B04-CD9E-4B300BF346A2}|WordQuest\\WordQuest.csproj|solutionrelative:wordquest\\rename_final.ps1||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C49E057-AEDF-2B04-CD9E-4B300BF346A2}|WordQuest\\WordQuest.csproj|c:\\users\\legion\\desktop\\huy\\k\u00EC 2 n\u0103m 2\\ki2_nam2\\202605_d\u1EF1 \u00E1n ktlt\\wordquest_1 - copy\\wordquest\\rename_dto.ps1||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{3C49E057-AEDF-2B04-CD9E-4B300BF346A2}|WordQuest\\WordQuest.csproj|solutionrelative:wordquest\\rename_dto.ps1||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C49E057-AEDF-2B04-CD9E-4B300BF346A2}|WordQuest\\WordQuest.csproj|c:\\users\\legion\\desktop\\huy\\k\u00EC 2 n\u0103m 2\\ki2_nam2\\202605_d\u1EF1 \u00E1n ktlt\\wordquest_1 - copy\\wordquest\\gui\\frmadminmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C49E057-AEDF-2B04-CD9E-4B300BF346A2}|WordQuest\\WordQuest.csproj|solutionrelative:wordquest\\gui\\frmadminmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C49E057-AEDF-2B04-CD9E-4B300BF346A2}|WordQuest\\WordQuest.csproj|c:\\users\\legion\\desktop\\huy\\k\u00EC 2 n\u0103m 2\\ki2_nam2\\202605_d\u1EF1 \u00E1n ktlt\\wordquest_1 - copy\\wordquest\\dto\\catalogdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C49E057-AEDF-2B04-CD9E-4B300BF346A2}|WordQuest\\WordQuest.csproj|solutionrelative:wordquest\\dto\\catalogdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C49E057-AEDF-2B04-CD9E-4B300BF346A2}|WordQuest\\WordQuest.csproj|c:\\users\\legion\\desktop\\huy\\k\u00EC 2 n\u0103m 2\\ki2_nam2\\202605_d\u1EF1 \u00E1n ktlt\\wordquest_1 - copy\\wordquest\\dto\\playerdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C49E057-AEDF-2B04-CD9E-4B300BF346A2}|WordQuest\\WordQuest.csproj|solutionrelative:wordquest\\dto\\playerdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C49E057-AEDF-2B04-CD9E-4B300BF346A2}|WordQuest\\WordQuest.csproj|c:\\users\\legion\\desktop\\huy\\k\u00EC 2 n\u0103m 2\\ki2_nam2\\202605_d\u1EF1 \u00E1n ktlt\\wordquest_1 - copy\\wordquest\\bus\\answermanagerbus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C49E057-AEDF-2B04-CD9E-4B300BF346A2}|WordQuest\\WordQuest.csproj|solutionrelative:wordquest\\bus\\answermanagerbus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C49E057-AEDF-2B04-CD9E-4B300BF346A2}|WordQuest\\WordQuest.csproj|C:\\Users\\LEGION\\Desktop\\Huy\\K\u00EC 2 n\u0103m 2\\Ki2_Nam2\\202605_D\u1EF1 \u00E1n KTLT\\WordQuest_1 - Copy\\wordquest\\gui\\frmwin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3C49E057-AEDF-2B04-CD9E-4B300BF346A2}|WordQuest\\WordQuest.csproj|solutionrelative:wordquest\\gui\\frmwin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C49E057-AEDF-2B04-CD9E-4B300BF346A2}|WordQuest\\WordQuest.csproj|c:\\users\\legion\\desktop\\huy\\k\u00EC 2 n\u0103m 2\\ki2_nam2\\202605_d\u1EF1 \u00E1n ktlt\\wordquest_1 - copy\\wordquest\\gui\\frmwin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C49E057-AEDF-2B04-CD9E-4B300BF346A2}|WordQuest\\WordQuest.csproj|solutionrelative:wordquest\\gui\\frmwin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C49E057-AEDF-2B04-CD9E-4B300BF346A2}|WordQuest\\WordQuest.csproj|c:\\users\\legion\\desktop\\huy\\k\u00EC 2 n\u0103m 2\\ki2_nam2\\202605_d\u1EF1 \u00E1n ktlt\\wordquest_1 - copy\\wordquest\\gui\\frmleaderboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C49E057-AEDF-2B04-CD9E-4B300BF346A2}|WordQuest\\WordQuest.csproj|solutionrelative:wordquest\\gui\\frmleaderboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C49E057-AEDF-2B04-CD9E-4B300BF346A2}|WordQuest\\WordQuest.csproj|c:\\users\\legion\\desktop\\huy\\k\u00EC 2 n\u0103m 2\\ki2_nam2\\202605_d\u1EF1 \u00E1n ktlt\\wordquest_1 - copy\\wordquest\\appconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C49E057-AEDF-2B04-CD9E-4B300BF346A2}|WordQuest\\WordQuest.csproj|solutionrelative:wordquest\\appconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C49E057-AEDF-2B04-CD9E-4B300BF346A2}|WordQuest\\WordQuest.csproj|c:\\users\\legion\\desktop\\huy\\k\u00EC 2 n\u0103m 2\\ki2_nam2\\202605_d\u1EF1 \u00E1n ktlt\\wordquest_1 - copy\\wordquest\\rename_other.ps1||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{3C49E057-AEDF-2B04-CD9E-4B300BF346A2}|WordQuest\\WordQuest.csproj|solutionrelative:wordquest\\rename_other.ps1||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C49E057-AEDF-2B04-CD9E-4B300BF346A2}|WordQuest\\WordQuest.csproj|c:\\users\\legion\\desktop\\huy\\k\u00EC 2 n\u0103m 2\\ki2_nam2\\202605_d\u1EF1 \u00E1n ktlt\\wordquest_1 - copy\\wordquest\\rename_game.ps1||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{3C49E057-AEDF-2B04-CD9E-4B300BF346A2}|WordQuest\\WordQuest.csproj|solutionrelative:wordquest\\rename_game.ps1||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C49E057-AEDF-2B04-CD9E-4B300BF346A2}|WordQuest\\WordQuest.csproj|c:\\users\\legion\\desktop\\huy\\k\u00EC 2 n\u0103m 2\\ki2_nam2\\202605_d\u1EF1 \u00E1n ktlt\\wordquest_1 - copy\\wordquest\\gui\\frmlogin.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
+      "RelativeMoniker": "D:0:0:{3C49E057-AEDF-2B04-CD9E-4B300BF346A2}|WordQuest\\WordQuest.csproj|solutionrelative:wordquest\\gui\\frmlogin.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C49E057-AEDF-2B04-CD9E-4B300BF346A2}|WordQuest\\WordQuest.csproj|c:\\users\\legion\\desktop\\huy\\k\u00EC 2 n\u0103m 2\\ki2_nam2\\202605_d\u1EF1 \u00E1n ktlt\\wordquest_1 - copy\\wordquest\\nlog.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{3C49E057-AEDF-2B04-CD9E-4B300BF346A2}|WordQuest\\WordQuest.csproj|solutionrelative:wordquest\\nlog.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C49E057-AEDF-2B04-CD9E-4B300BF346A2}|WordQuest\\WordQuest.csproj|c:\\users\\legion\\desktop\\huy\\k\u00EC 2 n\u0103m 2\\ki2_nam2\\202605_d\u1EF1 \u00E1n ktlt\\wordquest_1 - copy\\wordquest\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{3C49E057-AEDF-2B04-CD9E-4B300BF346A2}|WordQuest\\WordQuest.csproj|solutionrelative:wordquest\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C49E057-AEDF-2B04-CD9E-4B300BF346A2}|WordQuest\\WordQuest.csproj|c:\\users\\legion\\desktop\\huy\\k\u00EC 2 n\u0103m 2\\ki2_nam2\\202605_d\u1EF1 \u00E1n ktlt\\wordquest_1 - copy\\wordquest\\appsettings.example.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{3C49E057-AEDF-2B04-CD9E-4B300BF346A2}|WordQuest\\WordQuest.csproj|solutionrelative:wordquest\\appsettings.example.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C49E057-AEDF-2B04-CD9E-4B300BF346A2}|WordQuest\\WordQuest.csproj|c:\\users\\legion\\desktop\\huy\\k\u00EC 2 n\u0103m 2\\ki2_nam2\\202605_d\u1EF1 \u00E1n ktlt\\wordquest_1 - copy\\wordquest\\rename_ui.ps1||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{3C49E057-AEDF-2B04-CD9E-4B300BF346A2}|WordQuest\\WordQuest.csproj|solutionrelative:wordquest\\rename_ui.ps1||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C49E057-AEDF-2B04-CD9E-4B300BF346A2}|WordQuest\\WordQuest.csproj|c:\\users\\legion\\desktop\\huy\\k\u00EC 2 n\u0103m 2\\ki2_nam2\\202605_d\u1EF1 \u00E1n ktlt\\wordquest_1 - copy\\wordquest\\rename_locals.ps1||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{3C49E057-AEDF-2B04-CD9E-4B300BF346A2}|WordQuest\\WordQuest.csproj|solutionrelative:wordquest\\rename_locals.ps1||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C49E057-AEDF-2B04-CD9E-4B300BF346A2}|WordQuest\\WordQuest.csproj|c:\\users\\legion\\desktop\\huy\\k\u00EC 2 n\u0103m 2\\ki2_nam2\\202605_d\u1EF1 \u00E1n ktlt\\wordquest_1 - copy\\wordquest\\build_warnings_output.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{3C49E057-AEDF-2B04-CD9E-4B300BF346A2}|WordQuest\\WordQuest.csproj|solutionrelative:wordquest\\build_warnings_output.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C49E057-AEDF-2B04-CD9E-4B300BF346A2}|WordQuest\\WordQuest.csproj|c:\\users\\legion\\desktop\\huy\\k\u00EC 2 n\u0103m 2\\ki2_nam2\\202605_d\u1EF1 \u00E1n ktlt\\wordquest_1 - copy\\wordquest\\dal\\leveldal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C49E057-AEDF-2B04-CD9E-4B300BF346A2}|WordQuest\\WordQuest.csproj|solutionrelative:wordquest\\dal\\leveldal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C49E057-AEDF-2B04-CD9E-4B300BF346A2}|WordQuest\\WordQuest.csproj|c:\\users\\legion\\desktop\\huy\\k\u00EC 2 n\u0103m 2\\ki2_nam2\\202605_d\u1EF1 \u00E1n ktlt\\wordquest_1 - copy\\wordquest\\dal\\playerprogressdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C49E057-AEDF-2B04-CD9E-4B300BF346A2}|WordQuest\\WordQuest.csproj|solutionrelative:wordquest\\dal\\playerprogressdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C49E057-AEDF-2B04-CD9E-4B300BF346A2}|WordQuest\\WordQuest.csproj|c:\\users\\legion\\desktop\\huy\\k\u00EC 2 n\u0103m 2\\ki2_nam2\\202605_d\u1EF1 \u00E1n ktlt\\wordquest_1 - copy\\wordquest\\dal\\scorehistorydal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C49E057-AEDF-2B04-CD9E-4B300BF346A2}|WordQuest\\WordQuest.csproj|solutionrelative:wordquest\\dal\\scorehistorydal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Program_D\\D\u1EF1 \u00E1n m\u1EDBi\\WordQuest_1 - \u0111ang l\u00E0m\\WordQuest\\DTO\\HintResultDTO.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Program_D\\D\u1EF1 \u00E1n m\u1EDBi\\WordQuest_1 - \u0111ang l\u00E0m\\WordQuest\\DTO\\AnswerOutcomeDTO.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Program_D\\D\u1EF1 \u00E1n m\u1EDBi\\WordQuest_1 - \u0111ang l\u00E0m\\WordQuest\\DTO\\CurrentQuestionDTO.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Program_D\\D\u1EF1 \u00E1n m\u1EDBi\\WordQuest_1 - \u0111ang l\u00E0m\\WordQuest\\DTO\\TimeOutDTO.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Program_D\\D\u1EF1 \u00E1n m\u1EDBi\\WordQuest_1 - \u0111ang l\u00E0m\\WordQuest\\DTO\\LevelDTO.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Program_D\\D\u1EF1 \u00E1n m\u1EDBi\\WordQuest_1 - \u0111ang l\u00E0m\\WordQuest\\DTO\\TopicDTO.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Program_D\\D\u1EF1 \u00E1n m\u1EDBi\\WordQuest_1 - \u0111ang l\u00E0m\\WordQuest\\DTO\\GameStateDTO.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Program_D\\D\u1EF1 \u00E1n m\u1EDBi\\WordQuest_1 - \u0111ang l\u00E0m\\WordQuest\\DTO\\WordDTO.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Program_D\\D\u1EF1 \u00E1n m\u1EDBi\\WordQuest_1 - \u0111ang l\u00E0m\\WordQuest\\DTO\\GameRuleDTO.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Program_D\\D\u1EF1 \u00E1n m\u1EDBi\\WordQuest_1 - \u0111ang l\u00E0m\\WordQuest\\DTO\\GameResultDTO.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Program_D\\D\u1EF1 \u00E1n m\u1EDBi\\WordQuest_1 - \u0111ang l\u00E0m\\WordQuest\\DTO\\AnswerStateDTO.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Program_D\\D\u1EF1 \u00E1n m\u1EDBi\\WordQuest_1 - \u0111ang l\u00E0m\\WordQuest\\DTO\\ScoreHistoryDTO.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Program_D\\D\u1EF1 \u00E1n m\u1EDBi\\WordQuest_1 - \u0111ang l\u00E0m\\WordQuest\\DTO\\WordFilterDTO.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Program_D\\D\u1EF1 \u00E1n m\u1EDBi\\WordQuest_1 - \u0111ang l\u00E0m\\WordQuest\\DTO\\PlayerDTO.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DatabaseHelper.cs",
+              "DocumentMoniker": "C:\\Users\\LEGION\\Desktop\\Huy\\K\u00EC 2 n\u0103m 2\\Ki2_Nam2\\202605_D\u1EF1 \u00E1n KTLT\\WordQuest_1 - Copy\\WordQuest\\DAL\\DatabaseHelper.cs",
+              "RelativeDocumentMoniker": "WordQuest\\DAL\\DatabaseHelper.cs",
+              "ToolTip": "C:\\Users\\LEGION\\Desktop\\Huy\\K\u00EC 2 n\u0103m 2\\Ki2_Nam2\\202605_D\u1EF1 \u00E1n KTLT\\WordQuest_1 - Copy\\WordQuest\\DAL\\DatabaseHelper.cs",
+              "RelativeToolTip": "WordQuest\\DAL\\DatabaseHelper.cs",
+              "ViewState": "AgIAAE0AAAAAAAAAAADgv1gAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-14T02:36:58.755Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PlayerDAL.cs",
+              "DocumentMoniker": "C:\\Users\\LEGION\\Desktop\\Huy\\K\u00EC 2 n\u0103m 2\\Ki2_Nam2\\202605_D\u1EF1 \u00E1n KTLT\\WordQuest_1 - Copy\\WordQuest\\DAL\\PlayerDAL.cs",
+              "RelativeDocumentMoniker": "WordQuest\\DAL\\PlayerDAL.cs",
+              "ToolTip": "C:\\Users\\LEGION\\Desktop\\Huy\\K\u00EC 2 n\u0103m 2\\Ki2_Nam2\\202605_D\u1EF1 \u00E1n KTLT\\WordQuest_1 - Copy\\WordQuest\\DAL\\PlayerDAL.cs",
+              "RelativeToolTip": "WordQuest\\DAL\\PlayerDAL.cs",
+              "ViewState": "AgIAAJcAAAAAAAAAAAAcwCsAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-13T21:35:23.285Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "frmImage.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\LEGION\\Desktop\\Huy\\K\u00EC 2 n\u0103m 2\\Ki2_Nam2\\202605_D\u1EF1 \u00E1n KTLT\\WordQuest_1 - Copy\\WordQuest\\GUI\\frmImage.cs",
+              "RelativeDocumentMoniker": "WordQuest\\GUI\\frmImage.cs",
+              "ToolTip": "C:\\Users\\LEGION\\Desktop\\Huy\\K\u00EC 2 n\u0103m 2\\Ki2_Nam2\\202605_D\u1EF1 \u00E1n KTLT\\WordQuest_1\\WordQuest\\GUI\\frmImage.cs [Design]*",
+              "RelativeToolTip": "..\\WordQuest_1\\WordQuest\\GUI\\frmImage.cs [Design]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-14T01:30:47.283Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\LEGION\\Desktop\\Huy\\K\u00EC 2 n\u0103m 2\\Ki2_Nam2\\202605_D\u1EF1 \u00E1n KTLT\\WordQuest_1 - Copy\\WordQuest\\Program.cs",
+              "RelativeDocumentMoniker": "WordQuest\\Program.cs",
+              "ToolTip": "C:\\Users\\LEGION\\Desktop\\Huy\\K\u00EC 2 n\u0103m 2\\Ki2_Nam2\\202605_D\u1EF1 \u00E1n KTLT\\WordQuest_1 - Copy\\WordQuest\\Program.cs",
+              "RelativeToolTip": "WordQuest\\Program.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAA4AAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-15T15:43:58.637Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TopicDAL.cs",
+              "DocumentMoniker": "C:\\Users\\LEGION\\Desktop\\Huy\\K\u00EC 2 n\u0103m 2\\Ki2_Nam2\\202605_D\u1EF1 \u00E1n KTLT\\WordQuest_1 - Copy\\WordQuest\\DAL\\TopicDAL.cs",
+              "RelativeDocumentMoniker": "WordQuest\\DAL\\TopicDAL.cs",
+              "ToolTip": "C:\\Users\\LEGION\\Desktop\\Huy\\K\u00EC 2 n\u0103m 2\\Ki2_Nam2\\202605_D\u1EF1 \u00E1n KTLT\\WordQuest_1 - Copy\\WordQuest\\DAL\\TopicDAL.cs",
+              "RelativeToolTip": "WordQuest\\DAL\\TopicDAL.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-14T05:41:14.342Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "WordDAL.cs",
+              "DocumentMoniker": "C:\\Users\\LEGION\\Desktop\\Huy\\K\u00EC 2 n\u0103m 2\\Ki2_Nam2\\202605_D\u1EF1 \u00E1n KTLT\\WordQuest_1 - Copy\\WordQuest\\DAL\\WordDAL.cs",
+              "RelativeDocumentMoniker": "WordQuest\\DAL\\WordDAL.cs",
+              "ToolTip": "C:\\Users\\LEGION\\Desktop\\Huy\\K\u00EC 2 n\u0103m 2\\Ki2_Nam2\\202605_D\u1EF1 \u00E1n KTLT\\WordQuest_1 - Copy\\WordQuest\\DAL\\WordDAL.cs",
+              "RelativeToolTip": "WordQuest\\DAL\\WordDAL.cs",
+              "ViewState": "AgIAAHIAAAAAAAAAAAAIwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-14T05:41:24.916Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PlayerBUS.cs",
+              "DocumentMoniker": "C:\\Users\\LEGION\\Desktop\\Huy\\K\u00EC 2 n\u0103m 2\\Ki2_Nam2\\202605_D\u1EF1 \u00E1n KTLT\\WordQuest_1 - Copy\\WordQuest\\BUS\\PlayerBUS.cs",
+              "RelativeDocumentMoniker": "WordQuest\\BUS\\PlayerBUS.cs",
+              "ToolTip": "C:\\Users\\LEGION\\Desktop\\Huy\\K\u00EC 2 n\u0103m 2\\Ki2_Nam2\\202605_D\u1EF1 \u00E1n KTLT\\WordQuest_1 - Copy\\WordQuest\\BUS\\PlayerBUS.cs",
+              "RelativeToolTip": "WordQuest\\BUS\\PlayerBUS.cs",
+              "ViewState": "AgIAAE4AAAAAAAAAAAAiwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-13T21:35:28.15Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "GameBUS.cs",
+              "DocumentMoniker": "C:\\Users\\LEGION\\Desktop\\Huy\\K\u00EC 2 n\u0103m 2\\Ki2_Nam2\\202605_D\u1EF1 \u00E1n KTLT\\WordQuest_1 - Copy\\WordQuest\\BUS\\GameBUS.cs",
+              "RelativeDocumentMoniker": "WordQuest\\BUS\\GameBUS.cs",
+              "ToolTip": "C:\\Users\\LEGION\\Desktop\\Huy\\K\u00EC 2 n\u0103m 2\\Ki2_Nam2\\202605_D\u1EF1 \u00E1n KTLT\\WordQuest_1 - Copy\\WordQuest\\BUS\\GameBUS.cs",
+              "RelativeToolTip": "WordQuest\\BUS\\GameBUS.cs",
+              "ViewState": "AgIAANYBAAAAAAAAAAAUwOIBAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-14T05:24:27.678Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "GameRuleDAL.cs",
+              "DocumentMoniker": "C:\\Users\\LEGION\\Desktop\\Huy\\K\u00EC 2 n\u0103m 2\\Ki2_Nam2\\202605_D\u1EF1 \u00E1n KTLT\\WordQuest_1 - Copy\\WordQuest\\DAL\\GameRuleDAL.cs",
+              "RelativeDocumentMoniker": "WordQuest\\DAL\\GameRuleDAL.cs",
+              "ToolTip": "C:\\Users\\LEGION\\Desktop\\Huy\\K\u00EC 2 n\u0103m 2\\Ki2_Nam2\\202605_D\u1EF1 \u00E1n KTLT\\WordQuest_1 - Copy\\WordQuest\\DAL\\GameRuleDAL.cs",
+              "RelativeToolTip": "WordQuest\\DAL\\GameRuleDAL.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAAAgwFQAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-17T09:21:22.801Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ImageDAL.cs",
+              "DocumentMoniker": "C:\\Users\\LEGION\\Desktop\\Huy\\K\u00EC 2 n\u0103m 2\\Ki2_Nam2\\202605_D\u1EF1 \u00E1n KTLT\\WordQuest_1 - Copy\\WordQuest\\DAL\\ImageDAL.cs",
+              "RelativeDocumentMoniker": "WordQuest\\DAL\\ImageDAL.cs",
+              "ToolTip": "C:\\Users\\LEGION\\Desktop\\Huy\\K\u00EC 2 n\u0103m 2\\Ki2_Nam2\\202605_D\u1EF1 \u00E1n KTLT\\WordQuest_1 - Copy\\WordQuest\\DAL\\ImageDAL.cs",
+              "RelativeToolTip": "WordQuest\\DAL\\ImageDAL.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAgwBgAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-14T01:57:44.822Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "frmGame.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\LEGION\\Desktop\\Huy\\K\u00EC 2 n\u0103m 2\\Ki2_Nam2\\202605_D\u1EF1 \u00E1n KTLT\\WordQuest_1 - Copy\\WordQuest\\GUI\\frmGame.cs",
+              "RelativeDocumentMoniker": "WordQuest\\GUI\\frmGame.cs",
+              "ToolTip": "C:\\Users\\LEGION\\Desktop\\Huy\\K\u00EC 2 n\u0103m 2\\Ki2_Nam2\\202605_D\u1EF1 \u00E1n KTLT\\WordQuest_1\\WordQuest\\GUI\\frmGame.cs [Design]*",
+              "RelativeToolTip": "..\\WordQuest_1\\WordQuest\\GUI\\frmGame.cs [Design]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-14T04:37:20.194Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "frmGame.cs",
+              "DocumentMoniker": "C:\\Users\\LEGION\\Desktop\\Huy\\K\u00EC 2 n\u0103m 2\\Ki2_Nam2\\202605_D\u1EF1 \u00E1n KTLT\\WordQuest_1 - Copy\\WordQuest\\GUI\\frmGame.cs",
+              "RelativeDocumentMoniker": "WordQuest\\GUI\\frmGame.cs",
+              "ToolTip": "C:\\Users\\LEGION\\Desktop\\Huy\\K\u00EC 2 n\u0103m 2\\Ki2_Nam2\\202605_D\u1EF1 \u00E1n KTLT\\WordQuest_1 - Copy\\WordQuest\\GUI\\frmGame.cs",
+              "RelativeToolTip": "WordQuest\\GUI\\frmGame.cs",
+              "ViewState": "AgIAAEcCAAAAAAAAAAAawEgCAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-14T01:58:13.148Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "frmImage.cs",
+              "DocumentMoniker": "C:\\Users\\LEGION\\Desktop\\Huy\\K\u00EC 2 n\u0103m 2\\Ki2_Nam2\\202605_D\u1EF1 \u00E1n KTLT\\WordQuest_1 - Copy\\WordQuest\\GUI\\frmImage.cs",
+              "RelativeDocumentMoniker": "WordQuest\\GUI\\frmImage.cs",
+              "ToolTip": "C:\\Users\\LEGION\\Desktop\\Huy\\K\u00EC 2 n\u0103m 2\\Ki2_Nam2\\202605_D\u1EF1 \u00E1n KTLT\\WordQuest_1 - Copy\\WordQuest\\GUI\\frmImage.cs",
+              "RelativeToolTip": "WordQuest\\GUI\\frmImage.cs",
+              "ViewState": "AgIAAFIAAAAAAAAAAAAwwD8AAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-14T01:30:55.366Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "frmLeaderboard.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\LEGION\\Desktop\\Huy\\K\u00EC 2 n\u0103m 2\\Ki2_Nam2\\202605_D\u1EF1 \u00E1n KTLT\\WordQuest_1 - Copy\\WordQuest\\GUI\\frmLeaderboard.cs",
+              "RelativeDocumentMoniker": "WordQuest\\GUI\\frmLeaderboard.cs",
+              "ToolTip": "C:\\Users\\LEGION\\Desktop\\Huy\\K\u00EC 2 n\u0103m 2\\Ki2_Nam2\\202605_D\u1EF1 \u00E1n KTLT\\WordQuest_1\\WordQuest\\GUI\\frmLeaderboard.cs [Design]",
+              "RelativeToolTip": "..\\WordQuest_1\\WordQuest\\GUI\\frmLeaderboard.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-14T03:03:10.665Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "frmAdminTopics.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\LEGION\\Desktop\\Huy\\K\u00EC 2 n\u0103m 2\\Ki2_Nam2\\202605_D\u1EF1 \u00E1n KTLT\\WordQuest_1 - Copy\\WordQuest\\GUI\\frmAdminTopics.cs",
+              "RelativeDocumentMoniker": "WordQuest\\GUI\\frmAdminTopics.cs",
+              "ToolTip": "C:\\Users\\LEGION\\Desktop\\Huy\\K\u00EC 2 n\u0103m 2\\Ki2_Nam2\\202605_D\u1EF1 \u00E1n KTLT\\WordQuest_1\\WordQuest\\GUI\\frmAdminTopics.cs [Design]",
+              "RelativeToolTip": "..\\WordQuest_1\\WordQuest\\GUI\\frmAdminTopics.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-18T07:21:05.216Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "rename_ui_final.ps1",
+              "DocumentMoniker": "C:\\Users\\LEGION\\Desktop\\Huy\\K\u00EC 2 n\u0103m 2\\Ki2_Nam2\\202605_D\u1EF1 \u00E1n KTLT\\WordQuest_1 - Copy\\WordQuest\\rename_ui_final.ps1",
+              "RelativeDocumentMoniker": "WordQuest\\rename_ui_final.ps1",
+              "ToolTip": "C:\\Users\\LEGION\\Desktop\\Huy\\K\u00EC 2 n\u0103m 2\\Ki2_Nam2\\202605_D\u1EF1 \u00E1n KTLT\\WordQuest_1 - Copy\\WordQuest\\rename_ui_final.ps1",
+              "RelativeToolTip": "WordQuest\\rename_ui_final.ps1",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-06-18T13:08:51.393Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "GameRuleBUS.cs",
+              "DocumentMoniker": "C:\\Users\\LEGION\\Desktop\\Huy\\K\u00EC 2 n\u0103m 2\\Ki2_Nam2\\202605_D\u1EF1 \u00E1n KTLT\\WordQuest_1 - Copy\\WordQuest\\BUS\\GameRuleBUS.cs",
+              "RelativeDocumentMoniker": "WordQuest\\BUS\\GameRuleBUS.cs",
+              "ToolTip": "C:\\Users\\LEGION\\Desktop\\Huy\\K\u00EC 2 n\u0103m 2\\Ki2_Nam2\\202605_D\u1EF1 \u00E1n KTLT\\WordQuest_1 - Copy\\WordQuest\\BUS\\GameRuleBUS.cs",
+              "RelativeToolTip": "WordQuest\\BUS\\GameRuleBUS.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAA1wB4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-14T05:32:06.193Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ImageBUS.cs",
+              "DocumentMoniker": "C:\\Users\\LEGION\\Desktop\\Huy\\K\u00EC 2 n\u0103m 2\\Ki2_Nam2\\202605_D\u1EF1 \u00E1n KTLT\\WordQuest_1 - Copy\\WordQuest\\BUS\\ImageBUS.cs",
+              "RelativeDocumentMoniker": "WordQuest\\BUS\\ImageBUS.cs",
+              "ToolTip": "C:\\Users\\LEGION\\Desktop\\Huy\\K\u00EC 2 n\u0103m 2\\Ki2_Nam2\\202605_D\u1EF1 \u00E1n KTLT\\WordQuest_1 - Copy\\WordQuest\\BUS\\ImageBUS.cs",
+              "RelativeToolTip": "WordQuest\\BUS\\ImageBUS.cs",
+              "ViewState": "AgIAAFUAAAAAAAAAAADwv1kAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-13T21:35:08.77Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "LevelBUS.cs",
+              "DocumentMoniker": "C:\\Users\\LEGION\\Desktop\\Huy\\K\u00EC 2 n\u0103m 2\\Ki2_Nam2\\202605_D\u1EF1 \u00E1n KTLT\\WordQuest_1 - Copy\\WordQuest\\BUS\\LevelBUS.cs",
+              "RelativeDocumentMoniker": "WordQuest\\BUS\\LevelBUS.cs",
+              "ToolTip": "C:\\Users\\LEGION\\Desktop\\Huy\\K\u00EC 2 n\u0103m 2\\Ki2_Nam2\\202605_D\u1EF1 \u00E1n KTLT\\WordQuest_1 - Copy\\WordQuest\\BUS\\LevelBUS.cs",
+              "RelativeToolTip": "WordQuest\\BUS\\LevelBUS.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-13T21:35:03.626Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "TopicBUS.cs",
+              "DocumentMoniker": "C:\\Users\\LEGION\\Desktop\\Huy\\K\u00EC 2 n\u0103m 2\\Ki2_Nam2\\202605_D\u1EF1 \u00E1n KTLT\\WordQuest_1 - Copy\\WordQuest\\BUS\\TopicBUS.cs",
+              "RelativeDocumentMoniker": "WordQuest\\BUS\\TopicBUS.cs",
+              "ToolTip": "C:\\Users\\LEGION\\Desktop\\Huy\\K\u00EC 2 n\u0103m 2\\Ki2_Nam2\\202605_D\u1EF1 \u00E1n KTLT\\WordQuest_1 - Copy\\WordQuest\\BUS\\TopicBUS.cs",
+              "RelativeToolTip": "WordQuest\\BUS\\TopicBUS.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC8AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-13T21:35:30.781Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "WordBUS.cs",
+              "DocumentMoniker": "C:\\Users\\LEGION\\Desktop\\Huy\\K\u00EC 2 n\u0103m 2\\Ki2_Nam2\\202605_D\u1EF1 \u00E1n KTLT\\WordQuest_1 - Copy\\WordQuest\\BUS\\WordBUS.cs",
+              "RelativeDocumentMoniker": "WordQuest\\BUS\\WordBUS.cs",
+              "ToolTip": "C:\\Users\\LEGION\\Desktop\\Huy\\K\u00EC 2 n\u0103m 2\\Ki2_Nam2\\202605_D\u1EF1 \u00E1n KTLT\\WordQuest_1 - Copy\\WordQuest\\BUS\\WordBUS.cs",
+              "RelativeToolTip": "WordQuest\\BUS\\WordBUS.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-14T02:00:37.015Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "frmAdmin.cs",
+              "DocumentMoniker": "C:\\Users\\LEGION\\Desktop\\Huy\\K\u00EC 2 n\u0103m 2\\Ki2_Nam2\\202605_D\u1EF1 \u00E1n KTLT\\WordQuest_1 - Copy\\WordQuest\\GUI\\frmAdmin.cs",
+              "RelativeDocumentMoniker": "WordQuest\\GUI\\frmAdmin.cs",
+              "ToolTip": "C:\\Users\\LEGION\\Desktop\\Huy\\K\u00EC 2 n\u0103m 2\\Ki2_Nam2\\202605_D\u1EF1 \u00E1n KTLT\\WordQuest_1 - Copy\\WordQuest\\GUI\\frmAdmin.cs",
+              "RelativeToolTip": "WordQuest\\GUI\\frmAdmin.cs",
+              "ViewState": "AgIAAPABAAAAAAAAAAAmwAcCAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-18T08:12:10.351Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "frmAdmin.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\LEGION\\Desktop\\Huy\\K\u00EC 2 n\u0103m 2\\Ki2_Nam2\\202605_D\u1EF1 \u00E1n KTLT\\WordQuest_1 - Copy\\WordQuest\\GUI\\frmAdmin.cs",
+              "RelativeDocumentMoniker": "WordQuest\\GUI\\frmAdmin.cs",
+              "ToolTip": "C:\\Users\\LEGION\\Desktop\\Huy\\K\u00EC 2 n\u0103m 2\\Ki2_Nam2\\202605_D\u1EF1 \u00E1n KTLT\\WordQuest_1\\WordQuest\\GUI\\frmAdmin.cs [Design]",
+              "RelativeToolTip": "..\\WordQuest_1\\WordQuest\\GUI\\frmAdmin.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-14T01:58:24.007Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "frmTopics.cs",
+              "DocumentMoniker": "C:\\Users\\LEGION\\Desktop\\Huy\\K\u00EC 2 n\u0103m 2\\Ki2_Nam2\\202605_D\u1EF1 \u00E1n KTLT\\WordQuest_1 - Copy\\WordQuest\\GUI\\frmTopics.cs",
+              "RelativeDocumentMoniker": "WordQuest\\GUI\\frmTopics.cs",
+              "ToolTip": "C:\\Users\\LEGION\\Desktop\\Huy\\K\u00EC 2 n\u0103m 2\\Ki2_Nam2\\202605_D\u1EF1 \u00E1n KTLT\\WordQuest_1 - Copy\\WordQuest\\GUI\\frmTopics.cs",
+              "RelativeToolTip": "WordQuest\\GUI\\frmTopics.cs",
+              "ViewState": "AgIAADQAAAAAAAAAAAAiwFQAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-14T12:53:58.83Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "frmTopics.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\LEGION\\Desktop\\Huy\\K\u00EC 2 n\u0103m 2\\Ki2_Nam2\\202605_D\u1EF1 \u00E1n KTLT\\WordQuest_1 - Copy\\WordQuest\\GUI\\frmTopics.cs",
+              "RelativeDocumentMoniker": "WordQuest\\GUI\\frmTopics.cs",
+              "ToolTip": "C:\\Users\\LEGION\\Desktop\\Huy\\K\u00EC 2 n\u0103m 2\\Ki2_Nam2\\202605_D\u1EF1 \u00E1n KTLT\\WordQuest_1\\WordQuest\\GUI\\frmTopics.cs [Design]",
+              "RelativeToolTip": "..\\WordQuest_1\\WordQuest\\GUI\\frmTopics.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-14T03:39:16.089Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "frmLevels.cs",
+              "DocumentMoniker": "C:\\Users\\LEGION\\Desktop\\Huy\\K\u00EC 2 n\u0103m 2\\Ki2_Nam2\\202605_D\u1EF1 \u00E1n KTLT\\WordQuest_1 - Copy\\WordQuest\\GUI\\frmLevels.cs",
+              "RelativeDocumentMoniker": "WordQuest\\GUI\\frmLevels.cs",
+              "ToolTip": "C:\\Users\\LEGION\\Desktop\\Huy\\K\u00EC 2 n\u0103m 2\\Ki2_Nam2\\202605_D\u1EF1 \u00E1n KTLT\\WordQuest_1 - Copy\\WordQuest\\GUI\\frmLevels.cs",
+              "RelativeToolTip": "WordQuest\\GUI\\frmLevels.cs",
+              "ViewState": "AgIAANIAAAAAAAAAAAAIwNQAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-14T12:51:35.336Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "frmLevels.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\LEGION\\Desktop\\Huy\\K\u00EC 2 n\u0103m 2\\Ki2_Nam2\\202605_D\u1EF1 \u00E1n KTLT\\WordQuest_1 - Copy\\WordQuest\\GUI\\frmLevels.cs",
+              "RelativeDocumentMoniker": "WordQuest\\GUI\\frmLevels.cs",
+              "ToolTip": "C:\\Users\\LEGION\\Desktop\\Huy\\K\u00EC 2 n\u0103m 2\\Ki2_Nam2\\202605_D\u1EF1 \u00E1n KTLT\\WordQuest_1\\WordQuest\\GUI\\frmLevels.cs [Design]",
+              "RelativeToolTip": "..\\WordQuest_1\\WordQuest\\GUI\\frmLevels.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-14T03:42:55.974Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "frmLogin.cs",
+              "DocumentMoniker": "C:\\Users\\LEGION\\Desktop\\Huy\\K\u00EC 2 n\u0103m 2\\Ki2_Nam2\\202605_D\u1EF1 \u00E1n KTLT\\WordQuest_1 - Copy\\WordQuest\\GUI\\frmLogin.cs",
+              "RelativeDocumentMoniker": "WordQuest\\GUI\\frmLogin.cs",
+              "ToolTip": "C:\\Users\\LEGION\\Desktop\\Huy\\K\u00EC 2 n\u0103m 2\\Ki2_Nam2\\202605_D\u1EF1 \u00E1n KTLT\\WordQuest_1 - Copy\\WordQuest\\GUI\\frmLogin.cs",
+              "RelativeToolTip": "WordQuest\\GUI\\frmLogin.cs",
+              "ViewState": "AgIAAF8AAAAAAAAAAAAgwGgAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-14T12:52:28.058Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "frmLogin.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\LEGION\\Desktop\\Huy\\K\u00EC 2 n\u0103m 2\\Ki2_Nam2\\202605_D\u1EF1 \u00E1n KTLT\\WordQuest_1 - Copy\\WordQuest\\GUI\\frmLogin.cs",
+              "RelativeDocumentMoniker": "WordQuest\\GUI\\frmLogin.cs",
+              "ToolTip": "C:\\Users\\LEGION\\Desktop\\Huy\\K\u00EC 2 n\u0103m 2\\Ki2_Nam2\\202605_D\u1EF1 \u00E1n KTLT\\WordQuest_1\\WordQuest\\GUI\\frmLogin.cs [Design]",
+              "RelativeToolTip": "..\\WordQuest_1\\WordQuest\\GUI\\frmLogin.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-14T03:37:46.921Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "frmAdminPlayers.cs",
+              "DocumentMoniker": "C:\\Users\\LEGION\\Desktop\\Huy\\K\u00EC 2 n\u0103m 2\\Ki2_Nam2\\202605_D\u1EF1 \u00E1n KTLT\\WordQuest_1 - Copy\\WordQuest\\GUI\\frmAdminPlayers.cs",
+              "RelativeDocumentMoniker": "WordQuest\\GUI\\frmAdminPlayers.cs",
+              "ToolTip": "C:\\Users\\LEGION\\Desktop\\Huy\\K\u00EC 2 n\u0103m 2\\Ki2_Nam2\\202605_D\u1EF1 \u00E1n KTLT\\WordQuest_1 - Copy\\WordQuest\\GUI\\frmAdminPlayers.cs",
+              "RelativeToolTip": "WordQuest\\GUI\\frmAdminPlayers.cs",
+              "ViewState": "AgIAAGgBAAAAAAAAAAAAAIABAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-14T05:49:40.662Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "frmAdmin.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\LEGION\\Desktop\\Huy\\K\u00EC 2 n\u0103m 2\\Ki2_Nam2\\202605_D\u1EF1 \u00E1n KTLT\\WordQuest_1 - Copy\\WordQuest\\GUI\\frmAdmin.Designer.cs",
+              "RelativeDocumentMoniker": "WordQuest\\GUI\\frmAdmin.Designer.cs",
+              "ToolTip": "C:\\Users\\LEGION\\Desktop\\Huy\\K\u00EC 2 n\u0103m 2\\Ki2_Nam2\\202605_D\u1EF1 \u00E1n KTLT\\WordQuest_1 - Copy\\WordQuest\\GUI\\frmAdmin.Designer.cs",
+              "RelativeToolTip": "WordQuest\\GUI\\frmAdmin.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-18T09:16:04.526Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "frmAdminPlayers.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\LEGION\\Desktop\\Huy\\K\u00EC 2 n\u0103m 2\\Ki2_Nam2\\202605_D\u1EF1 \u00E1n KTLT\\WordQuest_1 - Copy\\WordQuest\\GUI\\frmAdminPlayers.cs",
+              "RelativeDocumentMoniker": "WordQuest\\GUI\\frmAdminPlayers.cs",
+              "ToolTip": "C:\\Users\\LEGION\\Desktop\\Huy\\K\u00EC 2 n\u0103m 2\\Ki2_Nam2\\202605_D\u1EF1 \u00E1n KTLT\\WordQuest_1\\WordQuest\\GUI\\frmAdminPlayers.cs [Design]",
+              "RelativeToolTip": "..\\WordQuest_1\\WordQuest\\GUI\\frmAdminPlayers.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-14T03:32:29.801Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "frmAdminMenu.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\LEGION\\Desktop\\Huy\\K\u00EC 2 n\u0103m 2\\Ki2_Nam2\\202605_D\u1EF1 \u00E1n KTLT\\WordQuest_1 - Copy\\WordQuest\\GUI\\frmAdminMenu.cs",
+              "RelativeDocumentMoniker": "WordQuest\\GUI\\frmAdminMenu.cs",
+              "ToolTip": "C:\\Users\\LEGION\\Desktop\\Huy\\K\u00EC 2 n\u0103m 2\\Ki2_Nam2\\202605_D\u1EF1 \u00E1n KTLT\\WordQuest_1\\WordQuest\\GUI\\frmAdminMenu.cs [Design]",
+              "RelativeToolTip": "..\\WordQuest_1\\WordQuest\\GUI\\frmAdminMenu.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-14T04:21:15.727Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "frmAdminRules.cs",
+              "DocumentMoniker": "C:\\Users\\LEGION\\Desktop\\Huy\\K\u00EC 2 n\u0103m 2\\Ki2_Nam2\\202605_D\u1EF1 \u00E1n KTLT\\WordQuest_1 - Copy\\WordQuest\\GUI\\frmAdminRules.cs",
+              "RelativeDocumentMoniker": "WordQuest\\GUI\\frmAdminRules.cs",
+              "ToolTip": "C:\\Users\\LEGION\\Desktop\\Huy\\K\u00EC 2 n\u0103m 2\\Ki2_Nam2\\202605_D\u1EF1 \u00E1n KTLT\\WordQuest_1 - Copy\\WordQuest\\GUI\\frmAdminRules.cs",
+              "RelativeToolTip": "WordQuest\\GUI\\frmAdminRules.cs",
+              "ViewState": "AgIAAHAAAAAAAAAAAADwvy0AAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-18T07:59:10.24Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "frmAdminTopics.cs",
+              "DocumentMoniker": "C:\\Users\\LEGION\\Desktop\\Huy\\K\u00EC 2 n\u0103m 2\\Ki2_Nam2\\202605_D\u1EF1 \u00E1n KTLT\\WordQuest_1 - Copy\\WordQuest\\GUI\\frmAdminTopics.cs",
+              "RelativeDocumentMoniker": "WordQuest\\GUI\\frmAdminTopics.cs",
+              "ToolTip": "C:\\Users\\LEGION\\Desktop\\Huy\\K\u00EC 2 n\u0103m 2\\Ki2_Nam2\\202605_D\u1EF1 \u00E1n KTLT\\WordQuest_1 - Copy\\WordQuest\\GUI\\frmAdminTopics.cs",
+              "RelativeToolTip": "WordQuest\\GUI\\frmAdminTopics.cs",
+              "ViewState": "AgIAAFUCAAAAAAAAAAAWwEICAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-18T07:21:06.982Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "frmAdminRules.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\LEGION\\Desktop\\Huy\\K\u00EC 2 n\u0103m 2\\Ki2_Nam2\\202605_D\u1EF1 \u00E1n KTLT\\WordQuest_1 - Copy\\WordQuest\\GUI\\frmAdminRules.cs",
+              "RelativeDocumentMoniker": "WordQuest\\GUI\\frmAdminRules.cs",
+              "ToolTip": "C:\\Users\\LEGION\\Desktop\\Huy\\K\u00EC 2 n\u0103m 2\\Ki2_Nam2\\202605_D\u1EF1 \u00E1n KTLT\\WordQuest_1\\WordQuest\\GUI\\frmAdminRules.cs [Design]",
+              "RelativeToolTip": "..\\WordQuest_1\\WordQuest\\GUI\\frmAdminRules.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-14T03:03:14.367Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "rename_final.ps1",
+              "DocumentMoniker": "C:\\Users\\LEGION\\Desktop\\Huy\\K\u00EC 2 n\u0103m 2\\Ki2_Nam2\\202605_D\u1EF1 \u00E1n KTLT\\WordQuest_1 - Copy\\WordQuest\\rename_final.ps1",
+              "RelativeDocumentMoniker": "WordQuest\\rename_final.ps1",
+              "ToolTip": "C:\\Users\\LEGION\\Desktop\\Huy\\K\u00EC 2 n\u0103m 2\\Ki2_Nam2\\202605_D\u1EF1 \u00E1n KTLT\\WordQuest_1 - Copy\\WordQuest\\rename_final.ps1",
+              "RelativeToolTip": "WordQuest\\rename_final.ps1",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-06-14T02:03:10.508Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "rename_dto.ps1",
+              "DocumentMoniker": "C:\\Users\\LEGION\\Desktop\\Huy\\K\u00EC 2 n\u0103m 2\\Ki2_Nam2\\202605_D\u1EF1 \u00E1n KTLT\\WordQuest_1 - Copy\\WordQuest\\rename_dto.ps1",
+              "RelativeDocumentMoniker": "WordQuest\\rename_dto.ps1",
+              "ToolTip": "C:\\Users\\LEGION\\Desktop\\Huy\\K\u00EC 2 n\u0103m 2\\Ki2_Nam2\\202605_D\u1EF1 \u00E1n KTLT\\WordQuest_1 - Copy\\WordQuest\\rename_dto.ps1",
+              "RelativeToolTip": "WordQuest\\rename_dto.ps1",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-06-15T15:46:16.536Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "frmAdminMenu.cs",
+              "DocumentMoniker": "C:\\Users\\LEGION\\Desktop\\Huy\\K\u00EC 2 n\u0103m 2\\Ki2_Nam2\\202605_D\u1EF1 \u00E1n KTLT\\WordQuest_1 - Copy\\WordQuest\\GUI\\frmAdminMenu.cs",
+              "RelativeDocumentMoniker": "WordQuest\\GUI\\frmAdminMenu.cs",
+              "ToolTip": "C:\\Users\\LEGION\\Desktop\\Huy\\K\u00EC 2 n\u0103m 2\\Ki2_Nam2\\202605_D\u1EF1 \u00E1n KTLT\\WordQuest_1 - Copy\\WordQuest\\GUI\\frmAdminMenu.cs",
+              "RelativeToolTip": "WordQuest\\GUI\\frmAdminMenu.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-14T05:49:28.235Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "PlayerDTOs.cs",
+              "DocumentMoniker": "C:\\Users\\LEGION\\Desktop\\Huy\\K\u00EC 2 n\u0103m 2\\Ki2_Nam2\\202605_D\u1EF1 \u00E1n KTLT\\WordQuest_1 - Copy\\WordQuest\\DTO\\PlayerDTOs.cs",
+              "RelativeDocumentMoniker": "WordQuest\\DTO\\PlayerDTOs.cs",
+              "ToolTip": "C:\\Users\\LEGION\\Desktop\\Huy\\K\u00EC 2 n\u0103m 2\\Ki2_Nam2\\202605_D\u1EF1 \u00E1n KTLT\\WordQuest_1 - Copy\\WordQuest\\DTO\\PlayerDTOs.cs",
+              "RelativeToolTip": "WordQuest\\DTO\\PlayerDTOs.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-14T05:27:00.982Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "CatalogDTOs.cs",
+              "DocumentMoniker": "C:\\Users\\LEGION\\Desktop\\Huy\\K\u00EC 2 n\u0103m 2\\Ki2_Nam2\\202605_D\u1EF1 \u00E1n KTLT\\WordQuest_1 - Copy\\WordQuest\\DTO\\CatalogDTOs.cs",
+              "RelativeDocumentMoniker": "WordQuest\\DTO\\CatalogDTOs.cs",
+              "ToolTip": "C:\\Users\\LEGION\\Desktop\\Huy\\K\u00EC 2 n\u0103m 2\\Ki2_Nam2\\202605_D\u1EF1 \u00E1n KTLT\\WordQuest_1 - Copy\\WordQuest\\DTO\\CatalogDTOs.cs",
+              "RelativeToolTip": "WordQuest\\DTO\\CatalogDTOs.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-14T05:41:42.464Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "AnswerManagerBUS.cs",
+              "DocumentMoniker": "C:\\Users\\LEGION\\Desktop\\Huy\\K\u00EC 2 n\u0103m 2\\Ki2_Nam2\\202605_D\u1EF1 \u00E1n KTLT\\WordQuest_1 - Copy\\WordQuest\\BUS\\AnswerManagerBUS.cs",
+              "RelativeDocumentMoniker": "WordQuest\\BUS\\AnswerManagerBUS.cs",
+              "ToolTip": "C:\\Users\\LEGION\\Desktop\\Huy\\K\u00EC 2 n\u0103m 2\\Ki2_Nam2\\202605_D\u1EF1 \u00E1n KTLT\\WordQuest_1 - Copy\\WordQuest\\BUS\\AnswerManagerBUS.cs",
+              "RelativeToolTip": "WordQuest\\BUS\\AnswerManagerBUS.cs",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAIwD8AAABcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-14T04:55:20.318Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "frmWin.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\LEGION\\Desktop\\Huy\\K\u00EC 2 n\u0103m 2\\Ki2_Nam2\\202605_D\u1EF1 \u00E1n KTLT\\WordQuest_1 - Copy\\WordQuest\\GUI\\frmWin.cs",
+              "RelativeDocumentMoniker": "WordQuest\\GUI\\frmWin.cs",
+              "ToolTip": "C:\\Users\\LEGION\\Desktop\\Huy\\K\u00EC 2 n\u0103m 2\\Ki2_Nam2\\202605_D\u1EF1 \u00E1n KTLT\\WordQuest_1\\WordQuest\\GUI\\frmWin.cs [Design]",
+              "RelativeToolTip": "..\\WordQuest_1\\WordQuest\\GUI\\frmWin.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-14T03:49:07.034Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "frmWin.cs",
+              "DocumentMoniker": "C:\\Users\\LEGION\\Desktop\\Huy\\K\u00EC 2 n\u0103m 2\\Ki2_Nam2\\202605_D\u1EF1 \u00E1n KTLT\\WordQuest_1 - Copy\\WordQuest\\GUI\\frmWin.cs",
+              "RelativeDocumentMoniker": "WordQuest\\GUI\\frmWin.cs",
+              "ToolTip": "C:\\Users\\LEGION\\Desktop\\Huy\\K\u00EC 2 n\u0103m 2\\Ki2_Nam2\\202605_D\u1EF1 \u00E1n KTLT\\WordQuest_1 - Copy\\WordQuest\\GUI\\frmWin.cs",
+              "RelativeToolTip": "WordQuest\\GUI\\frmWin.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAUwB0AAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-14T12:54:22.636Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "frmLeaderboard.cs",
+              "DocumentMoniker": "C:\\Users\\LEGION\\Desktop\\Huy\\K\u00EC 2 n\u0103m 2\\Ki2_Nam2\\202605_D\u1EF1 \u00E1n KTLT\\WordQuest_1 - Copy\\WordQuest\\GUI\\frmLeaderboard.cs",
+              "RelativeDocumentMoniker": "WordQuest\\GUI\\frmLeaderboard.cs",
+              "ToolTip": "C:\\Users\\LEGION\\Desktop\\Huy\\K\u00EC 2 n\u0103m 2\\Ki2_Nam2\\202605_D\u1EF1 \u00E1n KTLT\\WordQuest_1 - Copy\\WordQuest\\GUI\\frmLeaderboard.cs",
+              "RelativeToolTip": "WordQuest\\GUI\\frmLeaderboard.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABoAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-14T04:52:56.142Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "AppConfig.cs",
+              "DocumentMoniker": "C:\\Users\\LEGION\\Desktop\\Huy\\K\u00EC 2 n\u0103m 2\\Ki2_Nam2\\202605_D\u1EF1 \u00E1n KTLT\\WordQuest_1 - Copy\\WordQuest\\AppConfig.cs",
+              "RelativeDocumentMoniker": "WordQuest\\AppConfig.cs",
+              "ToolTip": "C:\\Users\\LEGION\\Desktop\\Huy\\K\u00EC 2 n\u0103m 2\\Ki2_Nam2\\202605_D\u1EF1 \u00E1n KTLT\\WordQuest_1 - Copy\\WordQuest\\AppConfig.cs",
+              "RelativeToolTip": "WordQuest\\AppConfig.cs",
+              "ViewState": "AgIAADMAAAAAAAAAAAAYwEEAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-14T04:53:21.841Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "rename_other.ps1",
+              "DocumentMoniker": "C:\\Users\\LEGION\\Desktop\\Huy\\K\u00EC 2 n\u0103m 2\\Ki2_Nam2\\202605_D\u1EF1 \u00E1n KTLT\\WordQuest_1 - Copy\\WordQuest\\rename_other.ps1",
+              "RelativeDocumentMoniker": "WordQuest\\rename_other.ps1",
+              "ToolTip": "C:\\Users\\LEGION\\Desktop\\Huy\\K\u00EC 2 n\u0103m 2\\Ki2_Nam2\\202605_D\u1EF1 \u00E1n KTLT\\WordQuest_1 - Copy\\WordQuest\\rename_other.ps1",
+              "RelativeToolTip": "WordQuest\\rename_other.ps1",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-06-17T09:21:12.222Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "frmLogin.resx",
+              "DocumentMoniker": "C:\\Users\\LEGION\\Desktop\\Huy\\K\u00EC 2 n\u0103m 2\\Ki2_Nam2\\202605_D\u1EF1 \u00E1n KTLT\\WordQuest_1 - Copy\\WordQuest\\GUI\\frmLogin.resx",
+              "RelativeDocumentMoniker": "WordQuest\\GUI\\frmLogin.resx",
+              "ToolTip": "C:\\Users\\LEGION\\Desktop\\Huy\\K\u00EC 2 n\u0103m 2\\Ki2_Nam2\\202605_D\u1EF1 \u00E1n KTLT\\WordQuest_1 - Copy\\WordQuest\\GUI\\frmLogin.resx",
+              "RelativeToolTip": "WordQuest\\GUI\\frmLogin.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2026-06-17T09:09:15.122Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "nlog.config",
+              "DocumentMoniker": "C:\\Users\\LEGION\\Desktop\\Huy\\K\u00EC 2 n\u0103m 2\\Ki2_Nam2\\202605_D\u1EF1 \u00E1n KTLT\\WordQuest_1 - Copy\\WordQuest\\nlog.config",
+              "RelativeDocumentMoniker": "WordQuest\\nlog.config",
+              "ToolTip": "C:\\Users\\LEGION\\Desktop\\Huy\\K\u00EC 2 n\u0103m 2\\Ki2_Nam2\\202605_D\u1EF1 \u00E1n KTLT\\WordQuest_1 - Copy\\WordQuest\\nlog.config",
+              "RelativeToolTip": "WordQuest\\nlog.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2026-06-16T08:36:26.261Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "rename_game.ps1",
+              "DocumentMoniker": "C:\\Users\\LEGION\\Desktop\\Huy\\K\u00EC 2 n\u0103m 2\\Ki2_Nam2\\202605_D\u1EF1 \u00E1n KTLT\\WordQuest_1 - Copy\\WordQuest\\rename_game.ps1",
+              "RelativeDocumentMoniker": "WordQuest\\rename_game.ps1",
+              "ToolTip": "C:\\Users\\LEGION\\Desktop\\Huy\\K\u00EC 2 n\u0103m 2\\Ki2_Nam2\\202605_D\u1EF1 \u00E1n KTLT\\WordQuest_1 - Copy\\WordQuest\\rename_game.ps1",
+              "RelativeToolTip": "WordQuest\\rename_game.ps1",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-06-14T01:30:36.773Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\LEGION\\Desktop\\Huy\\K\u00EC 2 n\u0103m 2\\Ki2_Nam2\\202605_D\u1EF1 \u00E1n KTLT\\WordQuest_1 - Copy\\WordQuest\\appsettings.json",
+              "RelativeDocumentMoniker": "WordQuest\\appsettings.json",
+              "ToolTip": "C:\\Users\\LEGION\\Desktop\\Huy\\K\u00EC 2 n\u0103m 2\\Ki2_Nam2\\202605_D\u1EF1 \u00E1n KTLT\\WordQuest_1 - Copy\\WordQuest\\appsettings.json",
+              "RelativeToolTip": "WordQuest\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-06-15T15:46:40.276Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "appsettings.example.json",
+              "DocumentMoniker": "C:\\Users\\LEGION\\Desktop\\Huy\\K\u00EC 2 n\u0103m 2\\Ki2_Nam2\\202605_D\u1EF1 \u00E1n KTLT\\WordQuest_1 - Copy\\WordQuest\\appsettings.example.json",
+              "RelativeDocumentMoniker": "WordQuest\\appsettings.example.json",
+              "ToolTip": "C:\\Users\\LEGION\\Desktop\\Huy\\K\u00EC 2 n\u0103m 2\\Ki2_Nam2\\202605_D\u1EF1 \u00E1n KTLT\\WordQuest_1 - Copy\\WordQuest\\appsettings.example.json",
+              "RelativeToolTip": "WordQuest\\appsettings.example.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-06-15T15:46:21.104Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "build_warnings_output.txt",
+              "DocumentMoniker": "C:\\Users\\LEGION\\Desktop\\Huy\\K\u00EC 2 n\u0103m 2\\Ki2_Nam2\\202605_D\u1EF1 \u00E1n KTLT\\WordQuest_1 - Copy\\WordQuest\\build_warnings_output.txt",
+              "RelativeDocumentMoniker": "WordQuest\\build_warnings_output.txt",
+              "ToolTip": "C:\\Users\\LEGION\\Desktop\\Huy\\K\u00EC 2 n\u0103m 2\\Ki2_Nam2\\202605_D\u1EF1 \u00E1n KTLT\\WordQuest_1 - Copy\\WordQuest\\build_warnings_output.txt",
+              "RelativeToolTip": "WordQuest\\build_warnings_output.txt",
+              "ViewState": "AgIAALwAAAAAAAAAAAAmwNIAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2026-06-15T15:46:19.789Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "rename_ui.ps1",
+              "DocumentMoniker": "C:\\Users\\LEGION\\Desktop\\Huy\\K\u00EC 2 n\u0103m 2\\Ki2_Nam2\\202605_D\u1EF1 \u00E1n KTLT\\WordQuest_1 - Copy\\WordQuest\\rename_ui.ps1",
+              "RelativeDocumentMoniker": "WordQuest\\rename_ui.ps1",
+              "ToolTip": "C:\\Users\\LEGION\\Desktop\\Huy\\K\u00EC 2 n\u0103m 2\\Ki2_Nam2\\202605_D\u1EF1 \u00E1n KTLT\\WordQuest_1 - Copy\\WordQuest\\rename_ui.ps1",
+              "RelativeToolTip": "WordQuest\\rename_ui.ps1",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-06-16T08:36:21.445Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "rename_locals.ps1",
+              "DocumentMoniker": "C:\\Users\\LEGION\\Desktop\\Huy\\K\u00EC 2 n\u0103m 2\\Ki2_Nam2\\202605_D\u1EF1 \u00E1n KTLT\\WordQuest_1 - Copy\\WordQuest\\rename_locals.ps1",
+              "RelativeDocumentMoniker": "WordQuest\\rename_locals.ps1",
+              "ToolTip": "C:\\Users\\LEGION\\Desktop\\Huy\\K\u00EC 2 n\u0103m 2\\Ki2_Nam2\\202605_D\u1EF1 \u00E1n KTLT\\WordQuest_1 - Copy\\WordQuest\\rename_locals.ps1",
+              "RelativeToolTip": "WordQuest\\rename_locals.ps1",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-06-15T15:46:14.44Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "LevelDAL.cs",
+              "DocumentMoniker": "C:\\Users\\LEGION\\Desktop\\Huy\\K\u00EC 2 n\u0103m 2\\Ki2_Nam2\\202605_D\u1EF1 \u00E1n KTLT\\WordQuest_1 - Copy\\WordQuest\\DAL\\LevelDAL.cs",
+              "RelativeDocumentMoniker": "WordQuest\\DAL\\LevelDAL.cs",
+              "ToolTip": "C:\\Users\\LEGION\\Desktop\\Huy\\K\u00EC 2 n\u0103m 2\\Ki2_Nam2\\202605_D\u1EF1 \u00E1n KTLT\\WordQuest_1 - Copy\\WordQuest\\DAL\\LevelDAL.cs",
+              "RelativeToolTip": "WordQuest\\DAL\\LevelDAL.cs",
+              "ViewState": "AgIAAGEAAAAAAAAAAAAwwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-14T05:27:06.505Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "PlayerProgressDAL.cs",
+              "DocumentMoniker": "C:\\Users\\LEGION\\Desktop\\Huy\\K\u00EC 2 n\u0103m 2\\Ki2_Nam2\\202605_D\u1EF1 \u00E1n KTLT\\WordQuest_1 - Copy\\WordQuest\\DAL\\PlayerProgressDAL.cs",
+              "RelativeDocumentMoniker": "WordQuest\\DAL\\PlayerProgressDAL.cs",
+              "ToolTip": "C:\\Users\\LEGION\\Desktop\\Huy\\K\u00EC 2 n\u0103m 2\\Ki2_Nam2\\202605_D\u1EF1 \u00E1n KTLT\\WordQuest_1 - Copy\\WordQuest\\DAL\\PlayerProgressDAL.cs",
+              "RelativeToolTip": "WordQuest\\DAL\\PlayerProgressDAL.cs",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-14T02:14:37.063Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 57,
+              "Title": "ScoreHistoryDAL.cs",
+              "DocumentMoniker": "C:\\Users\\LEGION\\Desktop\\Huy\\K\u00EC 2 n\u0103m 2\\Ki2_Nam2\\202605_D\u1EF1 \u00E1n KTLT\\WordQuest_1 - Copy\\WordQuest\\DAL\\ScoreHistoryDAL.cs",
+              "RelativeDocumentMoniker": "WordQuest\\DAL\\ScoreHistoryDAL.cs",
+              "ToolTip": "C:\\Users\\LEGION\\Desktop\\Huy\\K\u00EC 2 n\u0103m 2\\Ki2_Nam2\\202605_D\u1EF1 \u00E1n KTLT\\WordQuest_1 - Copy\\WordQuest\\DAL\\ScoreHistoryDAL.cs",
+              "RelativeToolTip": "WordQuest\\DAL\\ScoreHistoryDAL.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAzwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-14T05:41:15.275Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 60,
+              "Title": "CurrentQuestionDTO.cs",
+              "DocumentMoniker": "D:\\Program_D\\D\u1EF1 \u00E1n m\u1EDBi\\WordQuest_1 - \u0111ang l\u00E0m\\WordQuest\\DTO\\CurrentQuestionDTO.cs",
+              "ToolTip": "D:\\Program_D\\D\u1EF1 \u00E1n m\u1EDBi\\WordQuest_1 - \u0111ang l\u00E0m\\WordQuest\\DTO\\CurrentQuestionDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-14T16:20:28.061Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 61,
+              "Title": "TimeOutDTO.cs",
+              "DocumentMoniker": "D:\\Program_D\\D\u1EF1 \u00E1n m\u1EDBi\\WordQuest_1 - \u0111ang l\u00E0m\\WordQuest\\DTO\\TimeOutDTO.cs",
+              "ToolTip": "D:\\Program_D\\D\u1EF1 \u00E1n m\u1EDBi\\WordQuest_1 - \u0111ang l\u00E0m\\WordQuest\\DTO\\TimeOutDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-14T16:20:34.447Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 62,
+              "Title": "LevelDTO.cs",
+              "DocumentMoniker": "D:\\Program_D\\D\u1EF1 \u00E1n m\u1EDBi\\WordQuest_1 - \u0111ang l\u00E0m\\WordQuest\\DTO\\LevelDTO.cs",
+              "ToolTip": "D:\\Program_D\\D\u1EF1 \u00E1n m\u1EDBi\\WordQuest_1 - \u0111ang l\u00E0m\\WordQuest\\DTO\\LevelDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-05T16:29:58.236Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 63,
+              "Title": "TopicDTO.cs",
+              "DocumentMoniker": "D:\\Program_D\\D\u1EF1 \u00E1n m\u1EDBi\\WordQuest_1 - \u0111ang l\u00E0m\\WordQuest\\DTO\\TopicDTO.cs",
+              "ToolTip": "D:\\Program_D\\D\u1EF1 \u00E1n m\u1EDBi\\WordQuest_1 - \u0111ang l\u00E0m\\WordQuest\\DTO\\TopicDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-05T16:30:07.279Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 70,
+              "Title": "WordFilterDTO.cs",
+              "DocumentMoniker": "D:\\Program_D\\D\u1EF1 \u00E1n m\u1EDBi\\WordQuest_1 - \u0111ang l\u00E0m\\WordQuest\\DTO\\WordFilterDTO.cs",
+              "ToolTip": "D:\\Program_D\\D\u1EF1 \u00E1n m\u1EDBi\\WordQuest_1 - \u0111ang l\u00E0m\\WordQuest\\DTO\\WordFilterDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-05T13:29:04.9Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 59,
+              "Title": "AnswerOutcomeDTO.cs",
+              "DocumentMoniker": "D:\\Program_D\\D\u1EF1 \u00E1n m\u1EDBi\\WordQuest_1 - \u0111ang l\u00E0m\\WordQuest\\DTO\\AnswerOutcomeDTO.cs",
+              "ToolTip": "D:\\Program_D\\D\u1EF1 \u00E1n m\u1EDBi\\WordQuest_1 - \u0111ang l\u00E0m\\WordQuest\\DTO\\AnswerOutcomeDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-14T16:20:25.624Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 58,
+              "Title": "HintResultDTO.cs",
+              "DocumentMoniker": "D:\\Program_D\\D\u1EF1 \u00E1n m\u1EDBi\\WordQuest_1 - \u0111ang l\u00E0m\\WordQuest\\DTO\\HintResultDTO.cs",
+              "ToolTip": "D:\\Program_D\\D\u1EF1 \u00E1n m\u1EDBi\\WordQuest_1 - \u0111ang l\u00E0m\\WordQuest\\DTO\\HintResultDTO.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-14T16:19:56.823Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 71,
+              "Title": "PlayerDTO.cs",
+              "DocumentMoniker": "D:\\Program_D\\D\u1EF1 \u00E1n m\u1EDBi\\WordQuest_1 - \u0111ang l\u00E0m\\WordQuest\\DTO\\PlayerDTO.cs",
+              "ToolTip": "D:\\Program_D\\D\u1EF1 \u00E1n m\u1EDBi\\WordQuest_1 - \u0111ang l\u00E0m\\WordQuest\\DTO\\PlayerDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-05T08:01:41.176Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 64,
+              "Title": "GameStateDTO.cs",
+              "DocumentMoniker": "D:\\Program_D\\D\u1EF1 \u00E1n m\u1EDBi\\WordQuest_1 - \u0111ang l\u00E0m\\WordQuest\\DTO\\GameStateDTO.cs",
+              "ToolTip": "D:\\Program_D\\D\u1EF1 \u00E1n m\u1EDBi\\WordQuest_1 - \u0111ang l\u00E0m\\WordQuest\\DTO\\GameStateDTO.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAkwCkAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-05T15:42:33.832Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 65,
+              "Title": "WordDTO.cs",
+              "DocumentMoniker": "D:\\Program_D\\D\u1EF1 \u00E1n m\u1EDBi\\WordQuest_1 - \u0111ang l\u00E0m\\WordQuest\\DTO\\WordDTO.cs",
+              "ToolTip": "D:\\Program_D\\D\u1EF1 \u00E1n m\u1EDBi\\WordQuest_1 - \u0111ang l\u00E0m\\WordQuest\\DTO\\WordDTO.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAADwvw8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-05T00:57:40.931Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 66,
+              "Title": "GameRuleDTO.cs",
+              "DocumentMoniker": "D:\\Program_D\\D\u1EF1 \u00E1n m\u1EDBi\\WordQuest_1 - \u0111ang l\u00E0m\\WordQuest\\DTO\\GameRuleDTO.cs",
+              "ToolTip": "D:\\Program_D\\D\u1EF1 \u00E1n m\u1EDBi\\WordQuest_1 - \u0111ang l\u00E0m\\WordQuest\\DTO\\GameRuleDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-05T08:01:32.302Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 67,
+              "Title": "GameResultDTO.cs",
+              "DocumentMoniker": "D:\\Program_D\\D\u1EF1 \u00E1n m\u1EDBi\\WordQuest_1 - \u0111ang l\u00E0m\\WordQuest\\DTO\\GameResultDTO.cs",
+              "ToolTip": "D:\\Program_D\\D\u1EF1 \u00E1n m\u1EDBi\\WordQuest_1 - \u0111ang l\u00E0m\\WordQuest\\DTO\\GameResultDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-05T16:58:08.349Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 68,
+              "Title": "AnswerStateDTO.cs",
+              "DocumentMoniker": "D:\\Program_D\\D\u1EF1 \u00E1n m\u1EDBi\\WordQuest_1 - \u0111ang l\u00E0m\\WordQuest\\DTO\\AnswerStateDTO.cs",
+              "ToolTip": "D:\\Program_D\\D\u1EF1 \u00E1n m\u1EDBi\\WordQuest_1 - \u0111ang l\u00E0m\\WordQuest\\DTO\\AnswerStateDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-05T15:43:40.387Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 69,
+              "Title": "ScoreHistoryDTO.cs",
+              "DocumentMoniker": "D:\\Program_D\\D\u1EF1 \u00E1n m\u1EDBi\\WordQuest_1 - \u0111ang l\u00E0m\\WordQuest\\DTO\\ScoreHistoryDTO.cs",
+              "ToolTip": "D:\\Program_D\\D\u1EF1 \u00E1n m\u1EDBi\\WordQuest_1 - \u0111ang l\u00E0m\\WordQuest\\DTO\\ScoreHistoryDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-05T16:30:05.666Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

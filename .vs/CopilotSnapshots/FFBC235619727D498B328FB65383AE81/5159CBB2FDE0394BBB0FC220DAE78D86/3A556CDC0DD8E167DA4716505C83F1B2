@@ -1,0 +1,551 @@
+﻿using System;
+using System.Data;
+using System.Drawing;
+using System.IO;
+using System.Net.Http;
+using System.Text.Json;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using Microsoft.Data.SqlClient;
+
+namespace WordQuest
+{
+    public partial class frmImage : Form
+    {
+        // ── trả về path cho frmAdmin khi chọn ảnh ──
+        public string SelectedImagePath { get; private set; } = "";
+
+        private readonly string imagesFolder =
+            Path.Combine(Application.StartupPath, "Images");
+
+        private static readonly HttpClient httpClient = new();
+
+        // Pixabay API key — đăng ký miễn phí tại pixabay.com/api
+        private const string PixabayApiKey = "55569915-c60f8d14e1ac943e537881b67";
+
+        public frmImage()
+        {
+            InitializeComponent();
+        }
+
+        // ═══════════════════════════════════════════
+        //  LOAD FORM
+        // ═══════════════════════════════════════════
+        private void frmImage_Load(object sender, EventArgs e)
+        {
+            Directory.CreateDirectory(imagesFolder);
+
+            SetupControls();
+            ShowTab(1);
+            LoadLibrary();
+
+            // No preview initially
+            picPreview.Image = null;
+        }
+
+        private void SetupControls()
+        {
+            // ComboBox lọc
+            cboFilterImage.Items.Clear();
+            cboFilterImage.Items.AddRange(new string[] { "Tất cả", "Đang dùng", "Chưa dùng" });
+            cboFilterImage.SelectedIndex = 0;
+
+            // ImageList
+            imgListLarge.ImageSize = new Size(80, 80);
+            imgListLarge.ColorDepth = ColorDepth.Depth32Bit;
+
+            imgListPixabay.ImageSize = new Size(80, 80);
+            imgListPixabay.ColorDepth = ColorDepth.Depth32Bit;
+
+            lvImages.LargeImageList = imgListLarge;
+            lvPixResult.LargeImageList = imgListPixabay;
+
+            // Preview trống lúc đầu
+            picPreview.Image = null;
+            lblFileName.Text = "Tên file:";
+            lblFilePath.Text = "Đường dẫn:";
+            lblFileStatus.Text = "Trạng thái:";
+        }
+
+        // ═══════════════════════════════════════════
+        //  CHUYỂN TAB
+        // ═══════════════════════════════════════════
+        private void btnTab1_Click(object sender, EventArgs e) => ShowTab(1);
+        private void btnTab2_Click(object sender, EventArgs e)
+        {
+            ShowTab(2);
+        }
+
+        private void ShowTab(int tab)
+        {
+            pnlLibrary.Visible = (tab == 1);
+            pnlPixabay.Visible = (tab == 2);
+
+            // Đảm bảo cùng vị trí và kích thước
+            pnlPixabay.Location = pnlLibrary.Location;
+            pnlPixabay.Size = pnlLibrary.Size;
+
+            // Màu nút tab
+            btnTab1.BackColor = tab == 1 ? Color.FromArgb(37, 99, 176) : Color.FromArgb(220, 220, 230);
+            btnTab2.BackColor = tab == 2 ? Color.FromArgb(37, 99, 176) : Color.FromArgb(220, 220, 230);
+            btnTab1.ForeColor = tab == 1 ? Color.White : Color.FromArgb(80, 80, 80);
+            btnTab2.ForeColor = tab == 2 ? Color.White : Color.FromArgb(80, 80, 80);
+        }
+
+
+
+        // ═══════════════════════════════════════════
+        //  TAB 1 — THƯ VIỆN ẢNH
+        // ═══════════════════════════════════════════
+        private void LoadLibrary(string keyword = "", string filter = "Tất cả")
+        {
+            lvImages.Items.Clear();
+            imgListLarge.Images.Clear();
+
+            string sql = @"
+                SELECT i.ImageID, i.ImageName, i.ImagePath,
+                       CASE WHEN EXISTS (
+                           SELECT 1 FROM Words w WHERE w.ImagePath = i.ImagePath
+                       ) THEN 1 ELSE 0 END AS IsUsed
+                FROM Images i
+                WHERE (@keyword = '' OR i.ImageName LIKE '%' + @keyword + '%')
+                ORDER BY i.ImageName";
+
+            DataTable dt = DatabaseHelper.ExecuteQuery(sql,
+                new SqlParameter[] { new SqlParameter("@keyword", keyword) });
+
+            foreach (DataRow row in dt.Rows)
+            {
+                bool isUsed = Convert.ToInt32(row["IsUsed"]) == 1;
+                string imagePath = row["ImagePath"].ToString();
+                string imageName = row["ImageName"].ToString();
+                int imageID = Convert.ToInt32(row["ImageID"]);
+
+                // Lọc theo trạng thái
+                if (filter == "Đang dùng" && !isUsed) continue;
+                if (filter == "Chưa dùng" && isUsed) continue;
+
+                // Load ảnh từ file without locking it (use a cloned Bitmap)
+                string fullPath = Path.Combine(Application.StartupPath, imagePath);
+                Image img = LoadImageSafe(fullPath);
+
+                string key = imageID.ToString();
+                imgListLarge.Images.Add(key, img);
+
+                ListViewItem item = new(imageName)
+                {
+                    ImageKey = key,
+                    Tag = row
+                };
+
+                // Badge màu theo trạng thái
+                item.ForeColor = isUsed
+                    ? Color.FromArgb(29, 78, 216)
+                    : Color.FromArgb(120, 120, 120);
+
+                lvImages.Items.Add(item);
+            }
+
+            lblStatusBar.Text =
+                $"Tổng: {lvImages.Items.Count} ảnh  ·  " +
+                $"{CountUsed(dt)} đang dùng  ·  " +
+                $"{dt.Rows.Count - CountUsed(dt)} chưa dùng";
+        }
+
+        private int CountUsed(DataTable dt)
+        {
+            int count = 0;
+            foreach (DataRow row in dt.Rows)
+                if (Convert.ToInt32(row["IsUsed"]) == 1) count++;
+            return count;
+        }
+
+        // Thêm ảnh từ máy
+        private void btnAddImage_Click(object sender, EventArgs e)
+        {
+            using OpenFileDialog dlg = new();
+            dlg.Filter = "Image Files|*.png;*.jpg;*.jpeg;*.bmp";
+            dlg.Title = "Chọn ảnh";
+
+            if (dlg.ShowDialog() != DialogResult.OK) return;
+
+            string fileName = Path.GetFileName(dlg.FileName);
+            string destPath = Path.Combine(imagesFolder, fileName);
+            string relativePath = Path.Combine("Images", fileName);
+            string imageName = Path.GetFileNameWithoutExtension(fileName);
+
+            // Copy file
+            File.Copy(dlg.FileName, destPath, overwrite: true);
+
+            // Kiểm tra đã có trong DB chưa
+            object exists = DatabaseHelper.ExecuteScalar(
+                "SELECT COUNT(1) FROM Images WHERE ImagePath = @path",
+                new SqlParameter[] { new SqlParameter("@path", relativePath) });
+
+            if (Convert.ToInt32(exists) == 0)
+            {
+                DatabaseHelper.ExecuteNonQuery(
+                    "INSERT INTO Images (ImageName, ImagePath) VALUES (@name, @path)",
+                    new SqlParameter[] {
+                            new SqlParameter("@name", imageName),
+                            new SqlParameter("@path", relativePath)
+                    });
+            }
+
+            LoadLibrary();
+        }
+
+        // Xóa ảnh đã chọn
+        private void btnDeleteImage_Click(object sender, EventArgs e)
+        {
+            if (lvImages.SelectedItems.Count == 0)
+            {
+                MessageBox.Show("Vui lòng chọn ảnh cần xóa!", "Thông báo",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+
+            DataRow row = (DataRow)lvImages.SelectedItems[0].Tag;
+            string imagePath = row["ImagePath"].ToString();
+            bool isUsed = Convert.ToInt32(row["IsUsed"]) == 1;
+            int imageID = Convert.ToInt32(row["ImageID"]);
+
+            if (isUsed)
+            {
+                MessageBox.Show("Ảnh này đang được dùng bởi một từ vựng!\nKhông thể xóa.",
+                    "Không thể xóa", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            DialogResult confirm = MessageBox.Show(
+                $"Xóa ảnh '{row["ImageName"]}' khỏi thư viện và máy?",
+                "Xác nhận xóa", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (confirm != DialogResult.Yes) return;
+
+            // Xóa file
+            string fullPath = Path.Combine(Application.StartupPath, imagePath);
+            if (File.Exists(fullPath)) File.Delete(fullPath);
+
+            // Xóa DB
+            DatabaseHelper.ExecuteNonQuery(
+                "DELETE FROM Images WHERE ImageID = @id",
+                new SqlParameter[] { new SqlParameter("@id", imageID) });
+
+            picPreview.Image = null;
+            lblFileName.Text = "Tên file:";
+            lblFilePath.Text = "Đường dẫn:";
+            lblFileStatus.Text = "Trạng thái:";
+
+            LoadLibrary();
+        }
+
+        // Tìm kiếm
+        private void btnSearchImage_Click(object sender, EventArgs e)
+        {
+            LoadLibrary(
+                keyword: txtSearchImage.Text.Trim(),
+                filter: cboFilterImage.SelectedItem?.ToString() ?? "Tất cả");
+        }
+
+        // Lọc
+        private void cboFilterImage_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            LoadLibrary(
+                keyword: txtSearchImage.Text.Trim(),
+                filter: cboFilterImage.SelectedItem?.ToString() ?? "Tất cả");
+        }
+
+        // Click vào ảnh trong thư viện → xem trước
+        private void lvImages_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (lvImages.SelectedItems.Count == 0) return;
+
+            DataRow row = (DataRow)lvImages.SelectedItems[0].Tag;
+            string imagePath = row["ImagePath"].ToString();
+            bool isUsed = Convert.ToInt32(row["IsUsed"]) == 1;
+
+            ShowPreview(
+                imagePath: imagePath,
+                fileName: row["ImageName"].ToString() + Path.GetExtension(imagePath),
+                isUsed: isUsed);
+        }
+
+        // ═══════════════════════════════════════════
+        //  TAB 2 — PIXABAY
+        // ═══════════════════════════════════════════
+        private async void btnPixSearch_Click(object sender, EventArgs e)
+        {
+            string keyword = txtPixSearch.Text.Trim();
+            if (string.IsNullOrEmpty(keyword))
+            {
+                MessageBox.Show("Vui lòng nhập từ tiếng Anh!", "Thông báo",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+
+            btnPixSearch.Enabled = false;
+            btnPixSearch.Text = "Đang tìm...";
+            lvPixResult.Items.Clear();
+            imgListPixabay.Images.Clear();
+
+            try
+            {
+                string url = $"https://pixabay.com/api/?key={PixabayApiKey}" +
+                             $"&q={Uri.EscapeDataString(keyword)}" +
+                             $"&image_type=illustration&per_page=15&safesearch=true";
+
+                string json = await httpClient.GetStringAsync(url);
+                var document = JsonDocument.Parse(json);
+                var hits = document.RootElement.GetProperty("hits");
+
+                int index = 0;
+                foreach (var hit in hits.EnumerateArray())
+                {
+                    string previewUrl = hit.GetProperty("previewURL").GetString() ?? "";
+                    string tags = hit.GetProperty("tags").GetString() ?? "";
+                    int pixID = hit.GetProperty("id").GetInt32();
+
+                    // Tải ảnh thumbnail
+                    byte[] imgBytes = await httpClient.GetByteArrayAsync(previewUrl);
+                    using MemoryStream ms = new(imgBytes);
+                    Image img = Image.FromStream(ms);
+
+                    string key = $"pix_{index}";
+                    imgListPixabay.Images.Add(key, img);
+
+                    ListViewItem item = new(tags.Length > 15 ? tags[..15] + "..." : tags)
+                    {
+                        ImageKey = key,
+                        Tag = new PixabayResult
+                        {
+                            PixID = pixID,
+                            Tags = tags,
+                            PreviewURL = previewUrl,
+                            FullURL = hit.GetProperty("largeImageURL").GetString() ?? previewUrl
+                        }
+                    };
+
+                    lvPixResult.Items.Add(item);
+                    index++;
+                }
+
+                if (lvPixResult.Items.Count == 0)
+                    MessageBox.Show("Không tìm thấy ảnh phù hợp!", "Thông báo",
+                        MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (HttpRequestException)
+            {
+                MessageBox.Show("Không có kết nối mạng hoặc API key chưa đúng!\n" +
+                                "Tab 1 (Thư viện) vẫn dùng được offline.",
+                    "Lỗi kết nối", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi: " + ex.Message, "Lỗi",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                btnPixSearch.Enabled = true;
+                btnPixSearch.Text = "🔍 Tìm ảnh trên Pixabay";
+            }
+        }
+
+        // Click ảnh Pixabay → xem trước
+        private void lvPixResult_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (lvPixResult.SelectedItems.Count == 0) return;
+
+            var result = (PixabayResult)lvPixResult.SelectedItems[0].Tag;
+
+            // Hiện ảnh preview từ ImageList
+            string key = lvPixResult.SelectedItems[0].ImageKey;
+            if (imgListPixabay.Images.ContainsKey(key))
+                picPreview.Image = imgListPixabay.Images[key];
+
+            lblFileName.Text = $"Tên file: {result.Tags}";
+            lblFilePath.Text = $"Nguồn: Pixabay #{result.PixID}";
+            lblFileStatus.Text = "Trạng thái: Chưa tải về";
+        }
+
+        // Tải ảnh Pixabay về thư viện
+        private async void btnDownload_Click(object sender, EventArgs e)
+        {
+            if (lvPixResult.SelectedItems.Count == 0)
+            {
+                MessageBox.Show("Vui lòng chọn ảnh cần tải!", "Thông báo",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+
+            var result = (PixabayResult)lvPixResult.SelectedItems[0].Tag;
+            string fileName = $"pixabay_{result.PixID}.jpg";
+            string destPath = Path.Combine(imagesFolder, fileName);
+            string relPath = Path.Combine("Images", fileName);
+
+            btnDownload.Enabled = false;
+            btnDownload.Text = "Đang tải...";
+
+            try
+            {
+                // Tải ảnh full
+                byte[] imgBytes = await httpClient.GetByteArrayAsync(result.FullURL);
+                await File.WriteAllBytesAsync(destPath, imgBytes);
+
+                // Lưu vào DB
+                string imageName = result.Tags.Split(',')[0].Trim();
+
+                object exists = DatabaseHelper.ExecuteScalar(
+                    "SELECT COUNT(1) FROM Images WHERE ImagePath = @path",
+                    new SqlParameter[] { new SqlParameter("@path", relPath) });
+
+                if (Convert.ToInt32(exists) == 0)
+                {
+                    DatabaseHelper.ExecuteNonQuery(
+                        "INSERT INTO Images (ImageName, ImagePath) VALUES (@name, @path)",
+                        new SqlParameter[] {
+                            new SqlParameter("@name", imageName),
+                            new SqlParameter("@path", relPath)
+                        });
+                }
+
+                // Remember the downloaded image path so user can select it
+                SelectedImagePath = relPath;
+
+                MessageBox.Show($"Đã tải và lưu ảnh '{imageName}' vào thư viện!",
+                    "Thành công", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                // Chuyển sang Tab 1 để thấy ảnh vừa tải và select nó
+                ShowTab(1);
+                LoadLibrary();
+
+                // Select the newly added image in the list and show preview
+                foreach (ListViewItem it in lvImages.Items)
+                {
+                    if (it.Tag is DataRow r && (r["ImagePath"]?.ToString() ?? "") == relPath)
+                    {
+                        it.Selected = true;
+                        it.Focused = true;
+                        lvImages.EnsureVisible(it.Index);
+                        ShowPreview(relPath, r["ImageName"].ToString() + Path.GetExtension(relPath),
+                            Convert.ToInt32(r["IsUsed"]) == 1);
+                        break;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi tải ảnh: " + ex.Message, "Lỗi",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                btnDownload.Enabled = true;
+                btnDownload.Text = "⬇ Tải về & lưu vào thư viện";
+            }
+        }
+
+        // ═══════════════════════════════════════════
+        //  XEM TRƯỚC & CHỌN ẢNH
+        // ═══════════════════════════════════════════
+        private void ShowPreview(string imagePath, string fileName, bool isUsed)
+        {
+            string fullPath = Path.Combine(Application.StartupPath, imagePath);
+
+            picPreview.Image = File.Exists(fullPath) ? LoadImageSafe(fullPath) : null;
+
+            lblFileName.Text = $"Tên file:     {fileName}";
+            lblFilePath.Text = $"Đường dẫn:  {imagePath}";
+            lblFileStatus.Text = isUsed
+                ? "Trạng thái:  Đang dùng"
+                : "Trạng thái:  Chưa dùng";
+        }
+
+        // Nút "Chọn ảnh" → trả về frmAdmin
+        private void btnSelectImage_Click(object sender, EventArgs e)
+        {
+            // Tab 1 đang active
+            if (pnlLibrary.Visible)
+            {
+                if (lvImages.SelectedItems.Count == 0)
+                {
+                    MessageBox.Show("Vui lòng chọn ảnh trong thư viện!", "Thông báo",
+                        MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    return;
+                }
+
+                DataRow row = (DataRow)lvImages.SelectedItems[0].Tag;
+                SelectedImagePath = row["ImagePath"].ToString();
+            }
+            // Tab 2 đang active — phải tải về trước
+            else
+            {
+                if (string.IsNullOrEmpty(SelectedImagePath))
+                {
+                    MessageBox.Show("Vui lòng tải ảnh Pixabay về thư viện trước!",
+                        "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    return;
+                }
+            }
+
+            this.DialogResult = DialogResult.OK;
+            this.Close();
+        }
+
+        // ═══════════════════════════════════════════
+        //  ĐÓNG → QUAY VỀ frmAdminMenu
+        // ═══════════════════════════════════════════
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            this.DialogResult = DialogResult.Cancel;
+            this.Close();
+        }
+
+        // ═══════════════════════════════════════════
+        //  HELPER CLASS — kết quả Pixabay
+        // ═══════════════════════════════════════════
+        private class PixabayResult
+        {
+            public int PixID { get; set; }
+            public string Tags { get; set; } = "";
+            public string PreviewURL { get; set; } = "";
+            public string FullURL { get; set; } = "";
+        }
+
+        private void btnTab2_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnTab1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private Image LoadImageSafe(string fullPath)
+        {
+            if (!File.Exists(fullPath))
+                return SystemIcons.Question.ToBitmap();
+
+            try
+            {
+                byte[] bytes = File.ReadAllBytes(fullPath);
+                using var ms = new MemoryStream(bytes);
+                using var tmp = Image.FromStream(ms);
+                return new Bitmap(tmp);
+            }
+            catch
+            {
+                return SystemIcons.Question.ToBitmap();
+            }
+        }
+
+        private void SetPreviewImage(Image newImage)
+        {
+            var old = picPreview.Image;
+            picPreview.Image = newImage;
+            old?.Dispose(); // giải phóng ảnh cũ
+        }
+    }
+}

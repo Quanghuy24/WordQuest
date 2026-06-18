@@ -1,0 +1,87 @@
+2026-06-18 07:48:22.3472|INFO|WordQuest.Program|================================================== 
+2026-06-18 07:48:22.4150|INFO|WordQuest.Program|WordQuest App Started. Version: 1.0.0 
+2026-06-18 08:22:31.5263|INFO|WordQuest.Program|================================================== 
+2026-06-18 08:22:31.5845|INFO|WordQuest.Program|WordQuest App Started. Version: 1.0.0 
+2026-06-18 08:23:41.3910|INFO|WordQuest.Program|================================================== 
+2026-06-18 08:23:41.4397|INFO|WordQuest.Program|WordQuest App Started. Version: 1.0.0 
+2026-06-18 08:26:05.2551|INFO|WordQuest.Program|================================================== 
+2026-06-18 08:26:05.3039|INFO|WordQuest.Program|WordQuest App Started. Version: 1.0.0 
+2026-06-18 08:27:38.2546|INFO|WordQuest.Program|================================================== 
+2026-06-18 08:27:38.3038|INFO|WordQuest.Program|WordQuest App Started. Version: 1.0.0 
+2026-06-18 09:05:43.9142|INFO|WordQuest.Program|================================================== 
+2026-06-18 09:05:44.0130|INFO|WordQuest.Program|WordQuest App Started. Version: 1.0.0 
+2026-06-18 09:30:57.3954|INFO|WordQuest.Program|================================================== 
+2026-06-18 09:30:57.4517|INFO|WordQuest.Program|WordQuest App Started. Version: 1.0.0 
+2026-06-18 09:35:30.6404|INFO|WordQuest.Program|================================================== 
+2026-06-18 09:35:30.7004|INFO|WordQuest.Program|WordQuest App Started. Version: 1.0.0 
+2026-06-18 09:39:06.9565|INFO|WordQuest.Program|================================================== 
+2026-06-18 09:39:07.0015|INFO|WordQuest.Program|WordQuest App Started. Version: 1.0.0 
+2026-06-18 09:40:19.1127|INFO|WordQuest.Program|================================================== 
+2026-06-18 09:40:19.1721|INFO|WordQuest.Program|WordQuest App Started. Version: 1.0.0 
+2026-06-18 09:40:21.4562|ERROR|WordQuest.DAL.DatabaseHelper|ExecuteScalar failed. SQL: INSERT INTO Players (TenNguoiChoi) OUTPUT INSERTEDễMaNguoiChoi VALUES (@name) Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'INSERTEDễMaNguoiChoi'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, SqlCommand command, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteScalar()
+   at WordQuest.DAL.DatabaseHelper.ExecuteScalar(String sql, SqlParameter[] parameters, SqlTransaction transaction) in C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1\WordQuest\DAL\DatabaseHelper.cs:line 85
+ClientConnectionId:14f690e7-9583-4d77-8fba-5fd955bb06b0
+Error Number:207,State:1,Class:16
+2026-06-18 09:40:28.0111|INFO|WordQuest.Program|================================================== 
+2026-06-18 09:40:28.0688|INFO|WordQuest.Program|WordQuest App Started. Version: 1.0.0 
+2026-06-18 09:40:57.5842|INFO|WordQuest.Program|================================================== 
+2026-06-18 09:40:57.6407|INFO|WordQuest.Program|WordQuest App Started. Version: 1.0.0 
+2026-06-18 09:58:50.0766|INFO|WordQuest.Program|================================================== 
+2026-06-18 09:58:50.1368|INFO|WordQuest.Program|WordQuest App Started. Version: 1.0.0 
+2026-06-18 09:59:43.8380|INFO|WordQuest.Program|================================================== 
+2026-06-18 09:59:43.8925|INFO|WordQuest.Program|WordQuest App Started. Version: 1.0.0 
+2026-06-18 15:26:57.0364|INFO|WordQuest.Program|================================================== 
+2026-06-18 15:26:57.1069|INFO|WordQuest.Program|WordQuest App Started. Version: 1.0.0 
+2026-06-18 15:34:16.0741|INFO|WordQuest.Program|================================================== 
+2026-06-18 15:34:16.1250|INFO|WordQuest.Program|WordQuest App Started. Version: 1.0.0 
+2026-06-18 15:39:12.1316|INFO|WordQuest.Program|================================================== 
+2026-06-18 15:39:12.1837|INFO|WordQuest.Program|WordQuest App Started. Version: 1.0.0 
+2026-06-18 15:42:16.8655|INFO|WordQuest.Program|================================================== 
+2026-06-18 15:42:16.9140|INFO|WordQuest.Program|WordQuest App Started. Version: 1.0.0 
+2026-06-18 15:43:33.2106|INFO|WordQuest.Program|================================================== 
+2026-06-18 15:43:33.2641|INFO|WordQuest.Program|WordQuest App Started. Version: 1.0.0 
+2026-06-18 16:06:29.4064|INFO|WordQuest.Program|================================================== 
+2026-06-18 16:06:29.4575|INFO|WordQuest.Program|WordQuest App Started. Version: 1.0.0 
+2026-06-18 16:15:56.2914|INFO|WordQuest.Program|================================================== 
+2026-06-18 16:15:56.3418|INFO|WordQuest.Program|WordQuest App Started. Version: 1.0.0 
+2026-06-18 17:02:58.2118|INFO|WordQuest.Program|================================================== 
+2026-06-18 17:02:58.2667|INFO|WordQuest.Program|WordQuest App Started. Version: 1.0.0 
+2026-06-18 22:50:59.0590|INFO|WordQuest.Program|================================================== 
+2026-06-18 22:50:59.1599|INFO|WordQuest.Program|WordQuest App Started. Version: 1.0.0 
+2026-06-18 23:54:18.1837|INFO|WordQuest.Program|================================================== 
+2026-06-18 23:54:18.2642|INFO|WordQuest.Program|WordQuest App Started. Version: 1.0.0 
+2026-06-18 23:54:20.3013|ERROR|WordQuest.DAL.DatabaseHelper|ExecuteQuery failed. SQL: sp_GetAllTopics Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'TopicID'.
+Invalid column name 'TopicName'.
+Invalid column name 'TopicIcon'.
+Invalid column name 'StarsToUnlock'.
+Invalid column name 'ParentID'.
+Invalid column name 'SortOrder'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, SqlCommand command, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   at WordQuest.DAL.DatabaseHelper.ExecuteQuery(String sql, CommandType commandType, SqlParameter[] parameters) in C:\Users\LEGION\Desktop\Huy\Kì 2 năm 2\Ki2_Nam2\202605_Dự án KTLT\WordQuest_1 - Copy\WordQuest\DAL\DatabaseHelper.cs:line 135
+ClientConnectionId:6ab983e9-58e7-4a83-8664-44ad7ab80cbf
+Error Number:207,State:1,Class:16

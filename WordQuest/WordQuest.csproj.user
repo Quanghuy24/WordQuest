@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_LastSelectedProfileId>D:\Program_D\Dự án mới\WordQuest\WordQuest\Properties\PublishProfiles\FolderProfile.pubxml</_LastSelectedProfileId>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Update="GUI\frmAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="GUI\frmImage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="GUI\frmAdminTopics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="GUI\frmAdminRules.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="GUI\frmAdminPlayers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="GUI\frmAdminMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="GUI\frmLeaderboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="GUI\frmWin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="GUI\frmGame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="GUI\frmLevels.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="GUI\frmTopics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="GUI\frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>

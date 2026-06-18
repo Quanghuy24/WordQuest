@@ -1,0 +1,545 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Data;
+using System.Drawing;
+using System.IO;
+using System.Linq;
+using System.Reflection.PortableExecutable;
+using System.Speech.Synthesis;
+using System.Windows.Forms;
+using WordQuest.BUS;
+using WordQuest.DTO;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.TaskbarClock;
+
+namespace WordQuest.GUI
+{
+    public partial class frmGame : Form
+    {
+        private readonly int _playerID;
+        private readonly string _username;
+        private readonly int _topicID;
+        private readonly string _topicName;
+        private readonly string _topicEmoji;
+        private readonly int _levelNum;
+        private readonly string _gameMode;
+        private readonly int _levelID;
+
+        private readonly GameBUS _gameBUS = new();
+        private readonly ScoreHistoryBUS _scoreBUS = new();
+        private readonly PlayerProgressBUS _progressBUS = new();
+        private readonly PlayerBUS _playerBUS = new();
+
+        private DataTable _wordsTable;
+        private int _currentWordIndex = 0;
+        private string _currentAnswer = string.Empty;
+        private List<Button> _answerSlots = new();
+        private List<Button> _letterButtons = new();
+        private List<string> _filledLetters = new();
+
+        private GameRuleDTO _currentRule;
+        private int _lives;
+        private int _streak;
+        private int _score;
+        private int _timeLeft;
+        private int _correctCount;
+        private int _totalTimeSpent;
+        private bool _answered;
+
+        public frmGame(int playerID, string username, int topicID, string topicName, string topicEmoji, int levelNum, string gameMode, int levelID)
+        {
+            InitializeComponent();
+            _playerID = playerID;
+            _username = username;
+            _topicID = topicID;
+            _topicName = topicName;
+            _topicEmoji = topicEmoji;
+            _levelNum = levelNum;
+            _gameMode = gameMode;
+            _levelID = levelID;
+
+            lblTopic.Text = $"{_topicEmoji} {_topicName} - Màn {_levelNum}";
+        }
+
+        private async void frmGame_Load(object sender, EventArgs e)
+        {
+            await InitializeGame();
+        }
+
+        private async System.Threading.Tasks.Task InitializeGame()
+        {
+            try
+            {
+                _currentRule = await System.Threading.Tasks.Task.Run(() => _gameBUS.GetGameRule());
+
+                _lives = _currentRule.Lives;
+                _streak = 0;
+                _score = 0;
+                _correctCount = 0;
+                _totalTimeSpent = 0;
+                _currentWordIndex = 0;
+
+                SetupUI();
+
+                _wordsTable = await System.Threading.Tasks.Task.Run(() => _gameBUS.GetWordsForLevel(_levelID));
+
+                if (_wordsTable.Rows.Count == 0)
+                {
+                    MessageBox.Show("Không có dữ liệu câu hỏi cho màn này!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    Close();
+                    return;
+                }
+
+                ShowCurrentWord();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Lỗi khởi tạo game: {ex.Message}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                Close();
+            }
+        }
+
+        private void SetupUI()
+        {
+            this.StartPosition = FormStartPosition.CenterScreen;
+            this.BackColor = Color.FromArgb(101, 67, 33);
+
+            pnlHeader.BackColor = Color.FromArgb(75, 45, 15);
+            picWord.BackColor = Color.FromArgb(120, 80, 40);
+
+            lblStreak.Text = "🔥 0";
+            lblQuestion.ForeColor = Color.White;
+            lblTimer.ForeColor = Color.FromArgb(78, 203, 113);
+            lblEnglish.Visible = false;
+
+            btnHint.BackColor = Color.FromArgb(247, 201, 72);
+            btnHint.FlatStyle = FlatStyle.Flat;
+            btnHint.Click += BtnHint_Click;
+
+            btnExit.Click += BtnExit_Click;
+            gameTimer.Tick += GameTimer_Tick;
+
+            UpdateLivesUI();
+        }
+
+        private void ShowCurrentWord()
+        {
+            lblEnglish.Visible = false;
+
+            if (_currentWordIndex >= _wordsTable.Rows.Count)
+            {
+                EndGame();
+                return;
+            }
+
+            _answered = false;
+
+            var row = _wordsTable.Rows[_currentWordIndex];
+            _currentAnswer = (_gameMode == "VI" ? row["VietnameseMeaning"]?.ToString() : row["EnglishWord"]?.ToString()) ?? "";
+            _currentAnswer = _currentAnswer.Trim().ToUpper();
+
+            lblQuestion.Text = $"Câu {_currentWordIndex + 1}/{_wordsTable.Rows.Count}";
+
+            string imgPath = row["ImagePath"]?.ToString() ?? "";
+            string emoji = row["EmojiIcon"]?.ToString() ?? "";
+            RenderWordImage(imgPath, emoji);
+
+            BuildAnswerSlots();
+            BuildLetterButtons();
+            ResetTimer();
+        }
+
+        private void RenderWordImage(string imagePath, string emoji)
+        {
+            if (!string.IsNullOrEmpty(imagePath))
+            {
+                string fullPath = Path.Combine(Application.StartupPath, imagePath);
+                if (File.Exists(fullPath))
+                {
+                    // Load image without locking the file: read into memory and create a cloned Bitmap
+                    try
+                    {
+                        using var fs = new FileStream(fullPath, FileMode.Open, FileAccess.Read, FileShare.Read);
+                        using var img = Image.FromStream(fs, true, true);
+                        picWord.Image?.Dispose();
+                        picWord.Image = new Bitmap(img);
+                        picWord.SizeMode = PictureBoxSizeMode.Zoom;
+                        return;
+                    }
+                    catch
+                    {
+                        // fallback to emoji if image cannot be loaded
+                    }
+                }
+            }
+            RenderEmoji(emoji);
+        }
+
+        private void RenderEmoji(string emoji)
+        {
+            int width = picWord.Width > 0 ? picWord.Width : 300;
+            int height = picWord.Height > 0 ? picWord.Height : 280;
+            var bmp = new Bitmap(width, height);
+            using (var g = Graphics.FromImage(bmp))
+            {
+                g.Clear(Color.FromArgb(26, 21, 66));
+                using var font = new Font("Segoe UI Emoji", 80);
+                var size = g.MeasureString(emoji, font);
+                float x = (bmp.Width - size.Width) / 2;
+                float y = (bmp.Height - size.Height) / 2;
+                g.DrawString(emoji, font, Brushes.White, x, y);
+            }
+            picWord.Image = bmp;
+        }
+
+        private void BuildAnswerSlots()
+        {
+            pnlAnswer.Controls.Clear();
+            _answerSlots.Clear();
+            _filledLetters.Clear();
+
+            char[] chars = _currentAnswer.ToCharArray();
+            int slotW = 45, slotH = 50, gap = 6;
+            int totalW = chars.Length * (slotW + gap);
+            int startX = Math.Max(5, (pnlAnswer.Width - totalW) / 2);
+
+            for (int i = 0; i < chars.Length; i++)
+            {
+                if (chars[i] == ' ')
+                {
+                    var space = new Label { Size = new Size(15, slotH), Location = new Point(startX + i * (slotW + gap), 5) };
+                    pnlAnswer.Controls.Add(space);
+                    continue;
+                }
+
+                var slot = new Button
+                {
+                    Size = new Size(slotW, slotH),
+                    Location = new Point(startX + i * (slotW + gap), 5),
+                    Text = "",
+                    Font = new Font("Segoe UI", 14, FontStyle.Bold),
+                    ForeColor = Color.White,
+                    BackColor = Color.FromArgb(139, 90, 43),
+                    FlatStyle = FlatStyle.Flat,
+                    Tag = i
+                };
+                slot.FlatAppearance.BorderColor = Color.FromArgb(210, 150, 80);
+                slot.FlatAppearance.BorderSize = 2;
+                slot.Click += AnswerSlot_Click;
+
+                pnlAnswer.Controls.Add(slot);
+                _answerSlots.Add(slot);
+            }
+        }
+
+        private void BuildLetterButtons()
+        {
+            pnlLetters.Controls.Clear();
+            _letterButtons.Clear();
+
+            string answerWithoutSpaces = _currentAnswer.Replace(" ", "");
+            var letters = answerWithoutSpaces.ToCharArray().Select(c => c.ToString()).ToList();
+
+            var rnd = new Random();
+            const string extra = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+            int noiseCount = Math.Min(4, Math.Max(0, 12 - letters.Count));
+            for (int i = 0; i < noiseCount; i++)
+                letters.Add(extra[rnd.Next(extra.Length)].ToString());
+
+            var shuffled = letters.OrderBy(x => rnd.Next()).ToList();
+
+            int btnW = 55, btnH = 55, gap = 8;
+            int totalW = shuffled.Count * (btnW + gap);
+            int startX = Math.Max(5, (pnlLetters.Width - totalW) / 2);
+
+            for (int i = 0; i < shuffled.Count; i++)
+            {
+                var btn = new Button
+                {
+                    Size = new Size(btnW, btnH),
+                    Location = new Point(startX + i * (btnW + gap), 5),
+                    Text = shuffled[i],
+                    Font = new Font("Segoe UI", 16, FontStyle.Bold),
+                    ForeColor = Color.White,
+                    BackColor = Color.FromArgb(180, 100, 30),
+                    FlatStyle = FlatStyle.Flat,
+                    Cursor = Cursors.Hand,
+                    Tag = i
+                };
+                btn.Click += LetterButton_Click;
+                pnlLetters.Controls.Add(btn);
+                _letterButtons.Add(btn);
+            }
+        }
+
+        private void LetterButton_Click(object sender, EventArgs e)
+        {
+            if (_answered || sender is not Button btn) return;
+
+            int nextSlotIndex = _filledLetters.Count;
+            if (nextSlotIndex >= _answerSlots.Count) return;
+
+            _filledLetters.Add(btn.Text);
+            _answerSlots[nextSlotIndex].Text = btn.Text;
+            _answerSlots[nextSlotIndex].BackColor = Color.FromArgb(50, 45, 100);
+            _answerSlots[nextSlotIndex].Tag = btn;
+            btn.Visible = false;
+
+            if (_filledLetters.Count == _answerSlots.Count)
+                CheckAnswer();
+        }
+
+        private void AnswerSlot_Click(object sender, EventArgs e)
+        {
+            if (_answered || sender is not Button slot) return;
+
+            int slotIndex = _answerSlots.IndexOf(slot);
+            if (slotIndex < 0 || slotIndex >= _filledLetters.Count) return;
+
+            for (int i = _filledLetters.Count - 1; i >= slotIndex; i--)
+            {
+                if (_answerSlots[i].Tag is Button originalButton)
+                    originalButton.Visible = true;
+                _answerSlots[i].Text = "";
+                _answerSlots[i].BackColor = Color.FromArgb(139, 90, 43);
+                _answerSlots[i].Tag = i;
+                _filledLetters.RemoveAt(i);
+            }
+        }
+
+        private void CheckAnswer()
+        {
+            _answered = true;
+            gameTimer.Stop();
+
+            string userAnswer = string.Join("", _filledLetters);
+            string correctAnswer = _currentAnswer.Replace(" ", "");
+
+            if (userAnswer == correctAnswer)
+                HandleCorrectAnswer();
+            else
+                HandleWrongAnswer();
+        }
+
+        private void HandleCorrectAnswer()
+        {
+            System.Media.SystemSounds.Asterisk.Play();
+
+            _streak++;
+            _correctCount++;
+            _score += 10 + (_streak >= 3 ? _currentRule.StreakBonus : 0);
+
+            lblStreak.Text = $"🔥 {_streak}";
+
+            foreach (var slot in _answerSlots)
+                slot.BackColor = Color.FromArgb(78, 203, 113);
+
+            SpeakCurrentWord();
+            ShowEnglishInfo();
+
+            var timer = new Timer { Interval = 3000 };
+            timer.Tick += (s, e) =>
+            {
+                timer.Stop();
+                timer.Dispose();
+                _currentWordIndex++;
+                ShowCurrentWord();
+            };
+            timer.Start();
+        }
+
+        private void HandleWrongAnswer()
+        {
+            System.Media.SystemSounds.Hand.Play();
+
+            _streak = 0;
+            _lives--;
+            lblStreak.Text = "🔥 0";
+            UpdateLivesUI();
+
+            foreach (var slot in _answerSlots)
+                slot.BackColor = Color.FromArgb(255, 107, 107);
+
+            var timer1 = new Timer { Interval = 1000 };
+            timer1.Tick += (s1, e1) =>
+            {
+                timer1.Stop();
+                timer1.Dispose();
+                ShowCorrectAnswer();
+
+                var timer2 = new Timer { Interval = 1500 };
+                timer2.Tick += (s2, e2) =>
+                {
+                    timer2.Stop();
+                    timer2.Dispose();
+                    if (_lives <= 0)
+                        EndGame();
+                    else
+                    {
+                        _currentWordIndex++;
+                        ShowCurrentWord();
+                    }
+                };
+                timer2.Start();
+            };
+            timer1.Start();
+        }
+
+        private void ShowCorrectAnswer()
+        {
+            string correct = _currentAnswer.Replace(" ", "");
+            for (int i = 0; i < _answerSlots.Count && i < correct.Length; i++)
+            {
+                _answerSlots[i].Text = correct[i].ToString();
+                _answerSlots[i].BackColor = Color.FromArgb(78, 203, 113);
+            }
+        }
+
+        private void ShowEnglishInfo()
+        {
+            var row = _wordsTable.Rows[_currentWordIndex];
+            string englishWord = row["EnglishWord"]?.ToString() ?? "";
+            string phonetic = row["Phonetic"]?.ToString() ?? "";
+            lblEnglish.Text = $"{phonetic}  {englishWord}";
+            lblEnglish.Visible = true;
+        }
+
+        private void SpeakCurrentWord()
+        {
+            try
+            {
+                string englishWord = _wordsTable.Rows[_currentWordIndex]["EnglishWord"]?.ToString() ?? "";
+                using var synth = new SpeechSynthesizer();
+                synth.SelectVoiceByHints(VoiceGender.Female, VoiceAge.Child);
+                synth.SpeakAsync(englishWord);
+            }
+            catch { }
+        }
+
+        private void BtnHint_Click(object sender, EventArgs e)
+        {
+            int nextSlotIndex = _filledLetters.Count;
+            if (nextSlotIndex >= _answerSlots.Count) return;
+
+            string correct = _currentAnswer.Replace(" ", "");
+            string hintLetter = correct[nextSlotIndex].ToString();
+
+            foreach (var btn in _letterButtons)
+            {
+                if (btn.Visible && btn.Text == hintLetter)
+                {
+                    LetterButton_Click(btn, EventArgs.Empty);
+                    _score = Math.Max(0, _score - 3);
+                    break;
+                }
+            }
+        }
+
+        private void GameTimer_Tick(object sender, EventArgs e)
+        {
+            _timeLeft--;
+            _totalTimeSpent++;
+
+            pbTime.Value = Math.Max(0, _timeLeft);
+            lblTimer.Text = $"{_timeLeft}s";
+
+            if (_timeLeft <= 10)
+                lblTimer.ForeColor = Color.FromArgb(255, 107, 107);
+            else if (_timeLeft <= 20)
+                lblTimer.ForeColor = Color.FromArgb(247, 201, 72);
+            else
+                lblTimer.ForeColor = Color.FromArgb(78, 203, 113);
+
+            if (_timeLeft <= 0)
+            {
+                gameTimer.Stop();
+                _lives--;
+                UpdateLivesUI();
+                ShowCorrectAnswer();
+
+                var timer = new Timer { Interval = 1500 };
+                timer.Tick += (s, ev) =>
+                {
+                    timer.Stop();
+                    timer.Dispose();
+                    if (_lives <= 0)
+                        EndGame();
+                    else
+                    {
+                        _currentWordIndex++;
+                        ShowCurrentWord();
+                    }
+                };
+                timer.Start();
+            }
+        }
+
+        private void ResetTimer()
+        {
+            _timeLeft = _currentRule.TimeLimit;
+            pbTime.Minimum = 0;
+            pbTime.Maximum = _currentRule.TimeLimit;
+            pbTime.Value = _currentRule.TimeLimit;
+            lblTimer.Text = $"{_currentRule.TimeLimit}s";
+            lblTimer.ForeColor = Color.FromArgb(78, 203, 113);
+            gameTimer.Start();
+        }
+
+        private void UpdateLivesUI()
+        {
+            int maxLives = Math.Max(1, _currentRule.Lives);
+            lblLives.Text = string.Concat(Enumerable.Range(0, maxLives).Select(i => i < _lives ? "❤️" : "🖤"));
+        }
+
+        private int CalculateStars()
+        {
+            if (_correctCount >= _currentRule.Star3Threshold) return 3;
+            if (_correctCount >= _currentRule.Star2Threshold) return 2;
+            if (_correctCount >= _currentRule.Star1Threshold) return 1;
+            return 0;
+        }
+
+        private async void EndGame()
+        {
+            gameTimer.Stop();
+
+            int stars = CalculateStars();
+
+            try
+            {
+                await System.Threading.Tasks.Task.Run(() =>
+                {
+                    _progressBUS.SaveProgress(_playerID, _topicID, _levelNum, _score, stars);
+                    _scoreBUS.SaveScoreHistory(_playerID, _topicID, _levelNum, _score, stars, _totalTimeSpent);
+                    _playerBUS.UpdatePlayerStats(_playerID, _score, stars);
+                });
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Lỗi lưu tiến độ: {ex.Message}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+            var frmWin = new frmWin(_playerID, _username, _topicID, _topicName, _topicEmoji,
+                _levelNum, _score, stars, _correctCount, _totalTimeSpent, _wordsTable.Rows.Count, _gameMode);
+            frmWin.Owner = this.Owner;
+            frmWin.Show();
+            this.Close();
+        }
+
+        private void BtnExit_Click(object sender, EventArgs e)
+        {
+            gameTimer.Stop();
+            var result = MessageBox.Show("Bạn có chắc muốn thoát?\nTiến độ sẽ không được lưu!",
+                "Thoát game", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result == DialogResult.Yes)
+            {
+                if (this.Owner != null)
+                    this.Owner.Show();
+                Close();
+            }
+            else
+            {
+                gameTimer.Start();
+            }
+        }
+    }
+}

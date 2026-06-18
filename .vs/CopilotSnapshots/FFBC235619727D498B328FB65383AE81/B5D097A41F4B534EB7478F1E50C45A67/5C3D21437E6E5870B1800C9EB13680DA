@@ -1,0 +1,700 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Data;
+using System.Linq;
+using System.Threading;
+using System.Threading.Tasks;
+using WordQuest.DAL;
+using WordQuest.DTO;
+
+namespace WordQuest.BUS
+{
+    /// <summary>
+    /// Lớp xử lý toàn bộ logic nghiệp vụ của game
+    /// </summary>
+    public class GameBUS
+    {
+        #region ==================== Events ====================
+
+        /// <summary>Sự kiện khi trạng thái game thay đổi</summary>
+        public event Action<GameStateDTO> OnStateChanged;
+
+        /// <summary>Sự kiện khi trả lời xong (đúng/sai)</summary>
+        public event Action<bool, string> OnAnswerCompleted;
+
+        /// <summary>Sự kiện khi hết giờ</summary>
+        public event Action OnTimeOut;
+
+        /// <summary>Sự kiện khi game kết thúc</summary>
+        public event Action<GameResultDTO> OnGameEnded;
+
+        /// <summary>Sự kiện khi cần chuyển câu tiếp theo</summary>
+        public event Action OnNextWordRequested;
+
+        /// <summary>Sự kiện khi điểm số thay đổi</summary>
+        public event Action<int, int> OnScoreChanged; // newScore, streakBonus
+
+        #endregion
+
+        #region ==================== Fields ====================
+
+        private GameStateDTO _state;
+        private GameRuleDTO _rule;
+        private DataTable _wordsTable;
+
+        private Timer _logicTimer;      // Timer xử lý logic, không phải UI timer
+        private readonly object _lockObject = new object();
+
+        private readonly WordDAL _wordDAL;
+        private readonly LevelDAL _levelDAL;
+        private readonly GameRuleDAL _ruleDAL;
+
+        private bool _isWaitingForNext;
+        private int _currentWordIndex;
+
+        #endregion
+
+        #region ==================== Constructor ====================
+
+        public GameBUS()
+        {
+            _wordDAL = new WordDAL();
+            _levelDAL = new LevelDAL();
+            _ruleDAL = new GameRuleDAL();
+            _state = new GameStateDTO();
+        }
+
+        #endregion
+
+        #region ==================== Public Methods ====================
+
+        /// <summary>
+        /// Khởi tạo game mới
+        /// </summary>
+        /// <param name="levelID">ID của màn chơi</param>
+        /// <param name="gameMode">Chế độ chơi (EN->VI hoặc VI->EN)</param>
+        public async Task InitializeGameAsync(int levelID, string gameMode)
+        {
+            try
+            {
+                // Tải luật chơi
+                _rule = await Task.Run(() => _ruleDAL.GetGameRule());
+
+                // Tải danh sách câu hỏi
+                _wordsTable = await Task.Run(() => GetWordsForLevel(levelID));
+
+                if (_wordsTable == null || _wordsTable.Rows.Count == 0)
+                {
+                    throw new Exception("Không có câu hỏi cho màn chơi này!");
+                }
+
+                // Khởi tạo state
+                _state = new GameStateDTO
+                {
+                    PlayerID = 0, // Sẽ set sau
+                    TopicID = 0,
+                    LevelID = levelID,
+                    LevelNum = 0,
+                    GameMode = gameMode,
+
+                    Lives = _rule.Lives,
+                    MaxLives = _rule.Lives,
+                    Score = 0,
+                    Streak = 0,
+                    CorrectCount = 0,
+                    TotalQuestions = _wordsTable.Rows.Count,
+
+                    RemainingTimeMs = _rule.TimeLimit * 1000,
+                    MaxTimeMs = _rule.TimeLimit * 1000,
+                    TotalTimeSpentMs = 0,
+
+                    CurrentWordIndex = 0,
+                    IsAnswered = false,
+                    IsGameOver = false,
+                    IsWaitingForNext = false,
+
+                    CurrentInput = new List<char>(),
+                    AvailableLetters = new List<char>(),
+                    CorrectAnswer = "",
+                    CurrentQuestionText = ""
+                };
+
+                _currentWordIndex = 0;
+                _isWaitingForNext = false;
+
+                // Tải câu hỏi đầu tiên
+                LoadCurrentWord();
+
+                // Bắt đầu timer
+                StartLogicTimer();
+
+                // Trigger event
+                OnStateChanged?.Invoke(_state);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception($"Khởi tạo game thất bại: {ex.Message}", ex);
+            }
+        }
+
+        /// <summary>
+        /// Thêm một chữ cái vào câu trả lời
+        /// </summary>
+        /// <returns>Kết quả sau khi thêm</returns>
+        public AnswerResult AddLetter(char letter)
+        {
+            lock (_lockObject)
+            {
+                // Kiểm tra điều kiện
+                if (_state.IsAnswered || _state.IsGameOver || _state.IsWaitingForNext)
+                    return AnswerResult.Invalid;
+
+                if (_state.CurrentInput.Count >= _state.CorrectAnswer.Length)
+                    return AnswerResult.Full;
+
+                // Thêm chữ cái
+                _state.CurrentInput.Add(letter);
+                RemoveLetterFromAvailable(letter);
+
+                // Trigger cập nhật UI
+                OnStateChanged?.Invoke(_state);
+
+                // Kiểm tra nếu đã điền đầy đủ
+                if (_state.CurrentInput.Count == _state.CorrectAnswer.Length)
+                {
+                    return CheckAnswer();
+                }
+
+                return AnswerResult.Added;
+            }
+        }
+
+        /// <summary>
+        /// Xóa chữ cái từ vị trí index trở đi
+        /// </summary>
+        public void RemoveLettersFrom(int startIndex)
+        {
+            lock (_lockObject)
+            {
+                if (_state.IsAnswered || _state.IsGameOver || _state.IsWaitingForNext)
+                    return;
+
+                // Trả lại các chữ cái đã xóa vào danh sách available
+                for (int i = _state.CurrentInput.Count - 1; i >= startIndex; i--)
+                {
+                    char removedChar = _state.CurrentInput[i];
+                    _state.CurrentInput.RemoveAt(i);
+                    ReturnLetterToAvailable(removedChar);
+                }
+
+                OnStateChanged?.Invoke(_state);
+            }
+        }
+
+        /// <summary>
+        /// Sử dụng gợi ý (tự động điền chữ cái tiếp theo)
+        /// </summary>
+        /// <returns>Chữ cái được gợi ý, null nếu không thể</returns>
+        public char? UseHint()
+        {
+            lock (_lockObject)
+            {
+                if (_state.IsAnswered || _state.IsGameOver || _state.IsWaitingForNext)
+                    return null;
+
+                int nextIndex = _state.CurrentInput.Count;
+                if (nextIndex >= _state.CorrectAnswer.Length)
+                    return null;
+
+                char hintChar = _state.CorrectAnswer[nextIndex];
+
+                // Thêm chữ cái
+                _state.CurrentInput.Add(hintChar);
+                RemoveLetterFromAvailable(hintChar);
+
+                // Trừ điểm khi dùng gợi ý
+                _state.Score = Math.Max(0, _state.Score - _rule.HintPenalty);
+                _state.HintUsedCount++;
+
+                OnScoreChanged?.Invoke(_state.Score, 0);
+                OnStateChanged?.Invoke(_state);
+
+                // Kiểm tra nếu đã điền đầy đủ
+                if (_state.CurrentInput.Count == _state.CorrectAnswer.Length)
+                {
+                    CheckAnswer();
+                }
+
+                return hintChar;
+            }
+        }
+
+        /// <summary>
+        /// Chuyển sang câu hỏi tiếp theo
+        /// </summary>
+        public void NextWord()
+        {
+            lock (_lockObject)
+            {
+                if (!_state.IsWaitingForNext) return;
+
+                _currentWordIndex++;
+                _state.IsWaitingForNext = false;
+
+                if (_currentWordIndex >= _wordsTable.Rows.Count)
+                {
+                    EndGame();
+                }
+                else
+                {
+                    LoadCurrentWord();
+                    ResetTimer();
+                    OnStateChanged?.Invoke(_state);
+                    OnNextWordRequested?.Invoke();
+                }
+            }
+        }
+
+        /// <summary>
+        /// Lấy thông tin câu hỏi hiện tại để hiển thị
+        /// </summary>
+        public CurrentQuestionDTO GetCurrentQuestion()
+        {
+            if (_wordsTable == null || _currentWordIndex >= _wordsTable.Rows.Count)
+                return null;
+
+            var row = _wordsTable.Rows[_currentWordIndex];
+
+            return new CurrentQuestionDTO
+            {
+                WordID = Convert.ToInt32(row["WordID"]),
+                QuestionText = GetQuestionText(row),
+                CorrectAnswer = GetCorrectAnswer(row),
+                EnglishWord = row["EnglishWord"]?.ToString() ?? "",
+                VietnameseMeaning = row["VietnameseMeaning"]?.ToString() ?? "",
+                Phonetic = row["Phonetic"]?.ToString() ?? "",
+                ImagePath = row["ImagePath"]?.ToString() ?? "",
+                EmojiIcon = row["EmojiIcon"]?.ToString() ?? "📝",
+                CurrentIndex = _currentWordIndex + 1,
+                TotalQuestions = _state.TotalQuestions
+            };
+        }
+
+        /// <summary>
+        /// Lấy trạng thái hiện tại của game
+        /// </summary>
+        public GameStateDTO GetCurrentState()
+        {
+            lock (_lockObject)
+            {
+                return _state.Clone();
+            }
+        }
+
+        /// <summary>
+        /// Lấy danh sách chữ cái có sẵn để hiển thị
+        /// </summary>
+        public List<char> GetAvailableLetters()
+        {
+            lock (_lockObject)
+            {
+                return new List<char>(_state.AvailableLetters);
+            }
+        }
+
+        /// <summary>
+        /// Lấy câu trả lời hiện tại (các chữ đã điền)
+        /// </summary>
+        public List<char> GetCurrentInput()
+        {
+            lock (_lockObject)
+            {
+                return new List<char>(_state.CurrentInput);
+            }
+        }
+
+        /// <summary>
+        /// Lấy đáp án đúng của câu hiện tại
+        /// </summary>
+        public string GetCorrectAnswer()
+        {
+            return _state.CorrectAnswer;
+        }
+
+        /// <summary>
+        /// Lưu kết quả game vào database
+        /// </summary>
+        public async Task<bool> SaveGameResultAsync(int playerID, int topicID, int levelNum)
+        {
+            try
+            {
+                var result = new GameResultDTO
+                {
+                    PlayerID = playerID,
+                    TopicID = topicID,
+                    LevelNum = levelNum,
+                    Score = _state.Score,
+                    Stars = CalculateStars(),
+                    CorrectCount = _state.CorrectCount,
+                    TotalQuestions = _state.TotalQuestions,
+                    TimeTaken = _state.TotalTimeSpentMs / 1000,
+                    Streak = _state.Streak
+                };
+
+                return await Task.Run(() =>
+                {
+                    // TODO: Gọi DAL để lưu
+                    // _progressDAL.SaveProgress(...);
+                    // _scoreDAL.SaveHistory(...);
+                    // _playerDAL.UpdateStats(...);
+                    return true;
+                });
+            }
+            catch
+            {
+                return false;
+            }
+        }
+
+        /// <summary>
+        /// Hủy game (thoát giữa chừng)
+        /// </summary>
+        public void CancelGame()
+        {
+            StopLogicTimer();
+            _state.IsGameOver = true;
+        }
+
+        #endregion
+
+        #region ==================== Private Logic ====================
+
+        /// <summary>
+        /// Tải danh sách từ cho level
+        /// </summary>
+        private DataTable GetWordsForLevel(int levelID)
+        {
+            var level = _levelDAL.GetLevelByID(levelID);
+            if (level == null) return null;
+
+            _state.LevelNum = level.LevelNum;
+            _state.TopicID = level.TopicID;
+
+            if (level.Mode == "Fixed")
+            {
+                return _levelDAL.GetFixedWordsForLevel(levelID);
+            }
+            else
+            {
+                int difficulty = level.DifficultyLevel switch
+                {
+                    "Dễ" => 1,
+                    "Trung bình" => 2,
+                    "Khó" => 3,
+                    _ => 2
+                };
+                return _wordDAL.GetWordsByTopicAndDifficulty(level.TopicID, difficulty, level.QuestionCount);
+            }
+        }
+
+        /// <summary>
+        /// Tải câu hỏi hiện tại
+        /// </summary>
+        private void LoadCurrentWord()
+        {
+            var row = _wordsTable.Rows[_currentWordIndex];
+
+            _state.CurrentWordIndex = _currentWordIndex;
+            _state.CorrectAnswer = GetCorrectAnswer(row).Trim().ToUpper();
+            _state.CurrentQuestionText = GetQuestionText(row);
+            _state.CurrentInput = new List<char>();
+            _state.IsAnswered = false;
+            _state.IsWaitingForNext = false;
+
+            // Tạo danh sách chữ cái xáo trộn
+            _state.AvailableLetters = GenerateShuffledLetters(_state.CorrectAnswer);
+        }
+
+        /// <summary>
+        /// Lấy câu hỏi hiển thị (dựa trên chế độ chơi)
+        /// </summary>
+        private string GetQuestionText(DataRow row)
+        {
+            return _state.GameMode == "VI"
+                ? row["EnglishWord"]?.ToString() ?? ""
+                : row["VietnameseMeaning"]?.ToString() ?? "";
+        }
+
+        /// <summary>
+        /// Lấy đáp án đúng (dựa trên chế độ chơi)
+        /// </summary>
+        private string GetCorrectAnswer(DataRow row)
+        {
+            return _state.GameMode == "VI"
+                ? row["VietnameseMeaning"]?.ToString() ?? ""
+                : row["EnglishWord"]?.ToString() ?? "";
+        }
+
+        /// <summary>
+        /// Tạo danh sách chữ cái xáo trộn (gồm chữ trong đáp án + chữ random)
+        /// </summary>
+        private List<char> GenerateShuffledLetters(string correctAnswer)
+        {
+            var random = new Random();
+            var letters = correctAnswer.Where(c => c != ' ').Select(c => c).ToList();
+
+            const string extraLetters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+            int targetCount = Math.Min(12, correctAnswer.Length + 6);
+
+            while (letters.Count < targetCount)
+            {
+                letters.Add(extraLetters[random.Next(extraLetters.Length)]);
+            }
+
+            return letters.OrderBy(x => random.Next()).ToList();
+        }
+
+        /// <summary>
+        /// Xóa chữ cái khỏi danh sách available
+        /// </summary>
+        private void RemoveLetterFromAvailable(char letter)
+        {
+            var toRemove = _state.AvailableLetters.FirstOrDefault(l => l == letter);
+            if (toRemove != default)
+            {
+                _state.AvailableLetters.Remove(toRemove);
+            }
+        }
+
+        /// <summary>
+        /// Trả chữ cái về danh sách available
+        /// </summary>
+        private void ReturnLetterToAvailable(char letter)
+        {
+            _state.AvailableLetters.Add(letter);
+            _state.AvailableLetters = _state.AvailableLetters.OrderBy(x => Guid.NewGuid()).ToList();
+        }
+
+        /// <summary>
+        /// Kiểm tra câu trả lời
+        /// </summary>
+        private AnswerResult CheckAnswer()
+        {
+            _state.IsAnswered = true;
+            bool isCorrect = IsCurrentAnswerCorrect();
+
+            if (isCorrect)
+            {
+                HandleCorrectAnswer();
+            }
+            else
+            {
+                HandleWrongAnswer();
+            }
+
+            OnAnswerCompleted?.Invoke(isCorrect, _state.CorrectAnswer);
+            OnStateChanged?.Invoke(_state);
+
+            return isCorrect ? AnswerResult.Correct : AnswerResult.Wrong;
+        }
+
+        /// <summary>
+        /// Kiểm tra câu trả lời hiện tại có đúng không
+        /// </summary>
+        private bool IsCurrentAnswerCorrect()
+        {
+            string currentAnswer = new string(_state.CurrentInput.ToArray());
+            return currentAnswer == _state.CorrectAnswer;
+        }
+
+        /// <summary>
+        /// Xử lý khi trả lời đúng
+        /// </summary>
+        private void HandleCorrectAnswer()
+        {
+            // Tính điểm
+            int streakBonus = (_state.Streak + 1 >= 3) ? _rule.StreakBonus : 0;
+            int earnScore = _rule.BaseScore + streakBonus;
+
+            _state.Streak++;
+            _state.CorrectCount++;
+            _state.Score += earnScore;
+
+            OnScoreChanged?.Invoke(_state.Score, streakBonus);
+
+            // Đánh dấu chờ chuyển câu
+            _state.IsWaitingForNext = true;
+        }
+
+        /// <summary>
+        /// Xử lý khi trả lời sai
+        /// </summary>
+        private void HandleWrongAnswer()
+        {
+            _state.Streak = 0;
+            _state.Lives--;
+
+            OnScoreChanged?.Invoke(_state.Score, 0);
+
+            if (_state.Lives <= 0)
+            {
+                EndGame();
+            }
+            else
+            {
+                _state.IsWaitingForNext = true;
+            }
+        }
+
+        /// <summary>
+        /// Xử lý khi hết giờ
+        /// </summary>
+        private void HandleTimeOut()
+        {
+            lock (_lockObject)
+            {
+                if (_state.IsAnswered || _state.IsGameOver || _state.IsWaitingForNext)
+                    return;
+
+                _state.IsAnswered = true;
+                _state.Lives--;
+
+                OnTimeOut?.Invoke();
+
+                if (_state.Lives <= 0)
+                {
+                    EndGame();
+                }
+                else
+                {
+                    _state.IsWaitingForNext = true;
+                    OnStateChanged?.Invoke(_state);
+                }
+            }
+        }
+
+        /// <summary>
+        /// Kết thúc game
+        /// </summary>
+        private void EndGame()
+        {
+            StopLogicTimer();
+            _state.IsGameOver = true;
+
+            var result = new GameResultDTO
+            {
+                Score = _state.Score,
+                Stars = CalculateStars(),
+                CorrectCount = _state.CorrectCount,
+                TotalQuestions = _state.TotalQuestions,
+                TimeTaken = _state.TotalTimeSpentMs / 1000
+            };
+
+            OnGameEnded?.Invoke(result);
+        }
+
+        /// <summary>
+        /// Tính số sao đạt được
+        /// </summary>
+        private int CalculateStars()
+        {
+            if (_state.CorrectCount >= _rule.Star3Threshold) return 3;
+            if (_state.CorrectCount >= _rule.Star2Threshold) return 2;
+            if (_state.CorrectCount >= _rule.Star1Threshold) return 1;
+            return 0;
+        }
+
+        /// <summary>
+        /// Reset timer cho câu mới
+        /// </summary>
+        private void ResetTimer()
+        {
+            _state.RemainingTimeMs = _rule.TimeLimit * 1000;
+            _state.IsAnswered = false;
+        }
+
+        #endregion
+
+        #region ==================== Timer Logic ====================
+
+        /// <summary>
+        /// Bắt đầu timer logic (chạy trên thread riêng)
+        /// </summary>
+        private void StartLogicTimer()
+        {
+            _logicTimer = new Timer(UpdateTimerCallback, null, 0, TIMER_INTERVAL_MS);
+        }
+
+        /// <summary>
+        /// Dừng timer
+        /// </summary>
+        private void StopLogicTimer()
+        {
+            _logicTimer?.Dispose();
+            _logicTimer = null;
+        }
+
+        private const int TIMER_INTERVAL_MS = 8;
+
+        /// <summary>
+        /// Callback của timer (chạy trên thread pool)
+        /// </summary>
+        private void UpdateTimerCallback(object state)
+        {
+            lock (_lockObject)
+            {
+                if (_state.IsAnswered || _state.IsGameOver || _state.IsWaitingForNext)
+                    return;
+
+                if (_state.RemainingTimeMs > 0)
+                {
+                    _state.RemainingTimeMs -= TIMER_INTERVAL_MS;
+                    _state.TotalTimeSpentMs += TIMER_INTERVAL_MS;
+
+                    // Trigger UI update
+                    OnStateChanged?.Invoke(_state);
+                }
+
+                if (_state.RemainingTimeMs <= 0)
+                {
+                    HandleTimeOut();
+                }
+            }
+        }
+
+        #endregion
+    }
+
+    #region ==================== Supporting Classes ====================
+
+    /// <summary>
+    /// Kết quả của việc thêm chữ cái
+    /// </summary>
+    public enum AnswerResult
+    {
+        Added,      // Đã thêm, chưa đủ
+        Full,       // Đã đầy nhưng chưa check
+        Correct,    // Đúng
+        Wrong,      // Sai
+        Invalid     // Không hợp lệ (đã trả lời rồi)
+    }
+
+    /// <summary>
+    /// DTO cho câu hỏi hiện tại
+    /// </summary>
+    public class CurrentQuestionDTO
+    {
+        public int WordID { get; set; }
+        public string QuestionText { get; set; } = "";
+        public string CorrectAnswer { get; set; } = "";
+        public string EnglishWord { get; set; } = "";
+        public string VietnameseMeaning { get; set; } = "";
+        public string Phonetic { get; set; } = "";
+        public string ImagePath { get; set; } = "";
+        public string EmojiIcon { get; set; } = "";
+        public int CurrentIndex { get; set; }
+        public int TotalQuestions { get; set; }
+    }
+
+    #endregion
+}

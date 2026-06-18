@@ -1,0 +1,63 @@
+﻿using System;
+using System.Data;
+using System.IO;
+using WordQuest.DAL;
+
+namespace WordQuest.BUS
+{
+    public class ImageBUS
+    {
+        private readonly ImageDAL _imageDAL = new();
+        private readonly string _imagesFolder = Path.Combine(Application.StartupPath, "Images");
+
+        public ImageBUS()
+        {
+            if (!Directory.Exists(_imagesFolder))
+                Directory.CreateDirectory(_imagesFolder);
+        }
+
+        public DataTable GetAllImages(string keyword = "") => _imageDAL.GetAllImages(keyword);
+
+        public string AddImageFromFile(string sourceFilePath)
+        {
+            if (!File.Exists(sourceFilePath))
+                throw new Exception("File ảnh không tồn tại!");
+
+            string fileName = Path.GetFileName(sourceFilePath);
+            string destPath = Path.Combine(_imagesFolder, fileName);
+            string relativePath = Path.Combine("Images", fileName);
+            string imageName = Path.GetFileNameWithoutExtension(fileName);
+
+            File.Copy(sourceFilePath, destPath, overwrite: true);
+
+            if (!_imageDAL.IsImageExists(relativePath))
+                _imageDAL.InsertImage(imageName, relativePath);
+
+            return relativePath;
+        }
+
+        public string AddImageFromUrl(byte[] imageData, string suggestedName)
+        {
+            string fileName = suggestedName;
+            string destPath = Path.Combine(_imagesFolder, fileName);
+            string relativePath = Path.Combine("Images", fileName);
+            string imageName = Path.GetFileNameWithoutExtension(fileName);
+
+            File.WriteAllBytes(destPath, imageData);
+
+            if (!_imageDAL.IsImageExists(relativePath))
+                _imageDAL.InsertImage(imageName, relativePath);
+
+            return relativePath;
+        }
+
+        public bool DeleteImage(int imageID)
+        {
+            // Kiểm tra xem ảnh có đang được dùng không
+            if (_imageDAL.IsImageInUse(imageID))
+                throw new Exception("Ảnh đang được dùng bởi một từ vựng! Không thể xóa.");
+
+            return _imageDAL.DeleteImage(imageID);
+        }
+    }
+}

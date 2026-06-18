@@ -1,0 +1,17 @@
+# Các thư mục biên dịch của C# (Rất nặng và chứa file mã máy Agent không đọc được)
+bin/
+obj/
+
+# Các thư mục cấu hình và cache của Visual Studio / IDE
+.vs/
+.idea/
+*.user
+*.suo
+
+# Thư mục chứa các thư viện tải về
+packages/
+
+# Các file dữ liệu nặng của SQL Server (Nếu bạn để chung trong thư mục code)
+*.mdf
+*.ldf
+*.bak

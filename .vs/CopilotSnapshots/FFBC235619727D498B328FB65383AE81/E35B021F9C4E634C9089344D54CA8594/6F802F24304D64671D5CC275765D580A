@@ -1,0 +1,48 @@
+﻿using System.Data;
+using Microsoft.Data.SqlClient;
+
+namespace WordQuest.DAL
+{
+    public class ImageDAL
+    {
+        public DataTable GetAllImages(string keyword = "")
+        {
+            string sql = @"SELECT i.ImageID, i.ImageName, i.ImagePath,
+                                  CASE WHEN EXISTS (SELECT 1 FROM Words w WHERE w.ImagePath = i.ImagePath) THEN 1 ELSE 0 END AS IsUsed
+                           FROM Images i";
+            if (!string.IsNullOrEmpty(keyword))
+                sql += " WHERE i.ImageName LIKE @kw";
+            sql += " ORDER BY i.ImageName";
+
+            if (!string.IsNullOrEmpty(keyword))
+                return DatabaseHelper.ExecuteQuery(sql, new SqlParameter("@kw", "%" + keyword + "%"));
+            return DatabaseHelper.ExecuteQuery(sql);
+        }
+
+        public bool InsertImage(string imageName, string imagePath)
+        {
+            const string sql = "INSERT INTO Images (ImageName, ImagePath) VALUES (@name, @path)";
+            return DatabaseHelper.ExecuteNonQuery(sql,
+                new SqlParameter("@name", imageName),
+                new SqlParameter("@path", imagePath)) > 0;
+        }
+
+        public bool DeleteImage(int imageID)
+        {
+            const string sql = "DELETE FROM Images WHERE ImageID = @id";
+            return DatabaseHelper.ExecuteNonQuery(sql, new SqlParameter("@id", imageID)) > 0;
+        }
+
+        public bool IsImageExists(string imagePath)
+        {
+            const string sql = "SELECT COUNT(1) FROM Images WHERE ImagePath = @path";
+            return Convert.ToInt32(DatabaseHelper.ExecuteScalar(sql, new SqlParameter("@path", imagePath))) > 0;
+        }
+
+        public bool IsImageInUse(int imageID)
+        {
+            const string sql = @"SELECT COUNT(1) FROM Words WHERE ImagePath = (SELECT ImagePath FROM Images WHERE ImageID = @id)";
+            return Convert.ToInt32(DatabaseHelper.ExecuteScalar(sql, new SqlParameter("@id", imageID))) > 0;
+        }
+    }
+}
