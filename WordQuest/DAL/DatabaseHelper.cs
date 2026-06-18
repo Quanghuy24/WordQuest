@@ -170,5 +170,4 @@ namespace WordQuest.DAL
                 cmd.Parameters.AddRange(parameters);
         }
     }
-}//gfùulysdgfghsd;shvsrgffxbvzvsrgsdgrdgdgd
-/////Áegfrsgsgsf
+}
